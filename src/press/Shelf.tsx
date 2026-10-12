@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
+import { conceptIndex } from '@/content/api'
 import { books } from './books'
 import { useShelf } from './store'
 
@@ -10,8 +11,11 @@ import { useShelf } from './store'
  */
 export default function Shelf({ hidden }: { hidden?: boolean }) {
   const setHovered = useShelf((s) => s.setHovered)
+  const setEntry = useShelf((s) => s.setEntry)
   const registerRow = useShelf((s) => s.registerRow)
+  const hovered = useShelf((s) => s.hovered)
   const [current, setCurrent] = useState(0)
+  const topics = useMemo(() => topicCounts(), [])
 
   // Which row is nearest the viewport centre (for the rail).
   useEffect(() => {
@@ -60,32 +64,58 @@ export default function Shelf({ hidden }: { hidden?: boolean }) {
         </div>
       </header>
 
-      <Rail current={current} onJump={jump} hidden={!!hidden} />
+      {!hidden && <Rail current={current} onJump={jump} hidden={false} />}
 
       <div className={`PressList__container ${hidden ? 'is-hidden' : ''}`}>
         <ol className="PressList" aria-label="Books">
-          {books.map((b) => (
-            <li key={b.id} className="PressBook">
-              <Link
-                to={`/book/${b.id}`}
-                className="PressBook__link"
-                ref={(el) => registerRow(b.id, el)}
-                onMouseEnter={() => setHovered(b.id)}
-                onMouseLeave={() => setHovered(null)}
-                onFocus={() => setHovered(b.id)}
-                onBlur={() => setHovered(null)}
-              >
-                <span className="PressBook__text">
-                  <span className="PressBook__title">{b.title}</span>
-                  <span className="PressBook__author">{b.author}</span>
-                </span>
-              </Link>
-            </li>
-          ))}
+          {books.map((b) => {
+            const n = topics.get(b.id) ?? 1
+            return (
+              <li key={b.id} className="PressBook">
+                <Link
+                  to={`/book/${b.id}`}
+                  className="PressBook__link"
+                  ref={(el) => registerRow(b.id, el)}
+                  onMouseEnter={() => setHovered(b.id)}
+                  onMouseLeave={() => setHovered(null)}
+                  onFocus={() => setHovered(b.id)}
+                  onBlur={() => setHovered(null)}
+                  onClick={() => setEntry(b.id)}
+                >
+                  <span className="PressBook__text">
+                    <span className="PressBook__title">{b.title}</span>
+                    <span className="PressBook__author">{b.author}</span>
+                  </span>
+                  <span className={`PressBook__badge ${hovered === b.id ? 'is-visible' : ''}`} aria-hidden="true">
+                    <span className="PressBook__badgeCount">{n}</span> {n === 1 ? 'topic' : 'topics'}
+                  </span>
+                </Link>
+              </li>
+            )
+          })}
         </ol>
       </div>
     </>
   )
+}
+
+/** Topics in a book = the concept itself plus everything beneath it in the hierarchy. */
+function topicCounts(): Map<string, number> {
+  const children = new Map<string, string[]>()
+  for (const c of conceptIndex) {
+    if (!c.parent) continue
+    if (!children.has(c.parent)) children.set(c.parent, [])
+    children.get(c.parent)!.push(c.id)
+  }
+  const memo = new Map<string, number>()
+  const count = (id: string): number => {
+    if (memo.has(id)) return memo.get(id)!
+    const n = 1 + (children.get(id) ?? []).reduce((acc, ch) => acc + count(ch), 0)
+    memo.set(id, n)
+    return n
+  }
+  for (const c of conceptIndex) count(c.id)
+  return memo
 }
 
 export function Rail({ current, onJump, hidden, back }: { current: number; onJump: (i: number) => void; hidden: boolean; back?: boolean }) {
@@ -117,7 +147,7 @@ export function Rail({ current, onJump, hidden, back }: { current: number; onJum
       </button>
       {help && (
         <div className="PressRail__helpBox" role="dialog">
-          Scroll to browse the shelf. Hover a book to lift it. Click to open it. Press <kbd>Esc</kbd> to put it back.
+          Scroll to browse the shelf. Hover a book to lift it. Click to open it; keep scrolling to read the next book. Drag the standing book to turn it. <kbd>Esc</kbd> puts it back.
         </div>
       )}
     </nav>

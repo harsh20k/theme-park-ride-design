@@ -639,3 +639,89 @@ kbd {
     animation: none;
   }
 }
+
+/* ---------- draft 2: reading flow, sticky book anchor, hover badge ---------- */
+body {
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+.PressBook__badge {
+  position: absolute;
+  right: -2vw;
+  top: 50%;
+  transform: translate(100%, -50%) translateX(-6px);
+  white-space: nowrap;
+  font-family: var(--fontHeadline);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+.PressBook__badge.is-visible {
+  opacity: 0.85;
+  transform: translate(100%, -50%) translateX(0);
+}
+.PressBook__badgeCount {
+  font-style: normal;
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.PressDetails__section {
+  position: relative;
+  padding-bottom: calc(var(--vh) * 12);
+}
+.PressDetails__section + .PressDetails__section {
+  padding-top: calc(var(--vh) * 10);
+}
+.PressDetails__section + .PressDetails__section::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--color);
+  opacity: 0.4;
+  margin: 0 auto calc(var(--vh) * 10);
+}
+.PressDetails__left {
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+.PressDetails__left:active {
+  cursor: grabbing;
+}
+.PressDetails__anchor {
+  position: sticky;
+  top: 14vh;
+  height: 72vh;
+  width: 100%;
+}
+@media (min-width: 900px) {
+  .PressDetails__left {
+    padding-top: 0;
+    height: auto;
+    align-items: stretch;
+  }
+}
+@media (min-width: 900px) {
+  .PressDetails__right {
+    min-height: 100vh;
+  }
+}
+.PressDetails__end {
+  max-width: 1280px;
+  margin: calc(var(--vh) * 10) auto 0;
+  padding-top: calc(var(--vh) * 8);
+  border-top: 1px solid var(--color);
+  text-align: center;
+  font-style: italic;
+  font-size: 21px;
+  font-family: var(--fontDisplay);
+}
+.PressDetails__endInner p {
+  margin-bottom: 12px;
+}

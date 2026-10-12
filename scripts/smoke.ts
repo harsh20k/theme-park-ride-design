@@ -47,13 +47,20 @@ await page.goto(base + `/book/${bookId}`, { waitUntil: 'networkidle' })
 await page.waitForTimeout(5000)
 await page.screenshot({ path: path.join(outDir, 'book.png') })
 console.log('shot book')
-await page.mouse.wheel(0, 800)
-await page.waitForTimeout(1200)
-await page.screenshot({ path: path.join(outDir, 'book-scrolled.png') })
-await page.mouse.wheel(0, 1200)
-await page.waitForTimeout(1200)
-await page.screenshot({ path: path.join(outDir, 'book-scrolled2.png') })
-console.log('shot book-scrolled')
+let total = 0
+for (const [step, name] of [
+  [700, 'book-scrolled'],
+  [900, 'book-scrolled2'],
+  [900, 'book-scrolled3'],
+  [900, 'book-scrolled4'],
+  [1200, 'book-scrolled5'],
+] as [number, string][]) {
+  await page.mouse.wheel(0, step)
+  total += step
+  await page.waitForTimeout(1400)
+  await page.screenshot({ path: path.join(outDir, `${name}.png`) })
+  console.log(`shot ${name} (scrollY≈${total}) url=${page.url()}`)
+}
 
 // Click-through transition from the shelf.
 await page.goto(base + '/', { waitUntil: 'networkidle' })

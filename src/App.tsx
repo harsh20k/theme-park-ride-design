@@ -20,21 +20,35 @@ export default function App() {
 
 function ShelfPage() {
   const setActive = useShelf((s) => s.setActive)
+  const setEntry = useShelf((s) => s.setEntry)
   useEffect(() => {
+    // Coming back from a book: land on its row so the book lies back down in place.
+    const last = useShelf.getState().active
     setActive(null)
+    setEntry(null)
     document.body.classList.remove('is-activeProduct')
-  }, [setActive])
+    if (last) {
+      requestAnimationFrame(() => {
+        const el = useShelf.getState().rows.get(last)
+        if (!el) return
+        const r = el.getBoundingClientRect()
+        window.scrollTo({ top: window.scrollY + r.top + r.height / 2 - window.innerHeight / 2 })
+      })
+    }
+  }, [setActive, setEntry])
   return <Shelf />
 }
 
 function BookPage() {
   const { id = '' } = useParams()
   const setActive = useShelf((s) => s.setActive)
+  const setEntry = useShelf((s) => s.setEntry)
   useEffect(() => {
     setActive(id)
+    if (!useShelf.getState().entry) setEntry(id)
     document.body.classList.add('is-activeProduct')
-    return () => document.body.classList.remove('is-activeProduct')
-  }, [id, setActive])
+  }, [id, setActive, setEntry])
+  useEffect(() => () => document.body.classList.remove('is-activeProduct'), [])
   return (
     <>
       <Shelf hidden />

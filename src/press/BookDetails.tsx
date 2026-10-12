@@ -1,63 +1,94 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
 import type { Concept } from '@content/schema'
 import { conceptIdFromHref } from '@content/markdown'
 import { conceptById, content, loadConcept, localGraph } from '@/content/api'
-import { bookById } from './books'
+import { books, bookById, type Book } from './books'
 import { useShelf } from './store'
 import Markdown from './Markdown'
 import Visual from '@/ui/visuals/Visual'
 import { Rail } from './Shelf'
 
 /**
- * The book page, mirroring press.stripe.com/<book>: 58/42 split, the 3D book
- * standing in the left column (drawn by <Books3D/>), serif text on the right.
- * Explore-further links become the bordered link rows; related concepts fill
- * the "praise" grid.
+ * The reading flow, mirroring press.stripe.com/<book>: a 58/42 split with the
+ * 3D book standing in the left column (drawn by <Books3D/>, tracking the
+ * sticky anchor) and serif text on the right. Sections run continuously from
+ * the clicked book to the end of the shelf; the URL, rail and page tint follow
+ * whichever section is in view.
  */
 export default function BookDetails({ id }: { id: string }) {
-  const book = bookById.get(id)
-  const [concept, setConcept] = useState<Concept | null>(null)
   const navigate = useNavigate()
-  const setTilt = useShelf((s) => s.setTilt)
+  const entry = useShelf((s) => s.entry) ?? id
+  const entryIndex = Math.max(0, books.findIndex((b) => b.id === entry))
+  const flow = useMemo(() => books.slice(entryIndex), [entryIndex])
+  const [current, setCurrent] = useState(id)
+  const currentRef = useRef(id)
 
+  // Which section is in view → URL + tint + rail.
   useEffect(() => {
-    let alive = true
-    setConcept(null)
-    loadConcept(id).then((c) => alive && setConcept(c))
-    return () => {
-      alive = false
+    const onScroll = () => {
+      const anchors = useShelf.getState().anchors
+      const probe = window.innerHeight * 0.45
+      let best: string | null = null
+      let bestD = Infinity
+      for (const b of flow) {
+        const r = anchors.get(b.id)?.getBoundingClientRect()
+        if (!r) continue
+        const d = Math.abs(r.top + r.height / 2 - probe)
+        if (d < bestD) {
+          bestD = d
+          best = b.id
+        }
+      }
+      if (best && best !== currentRef.current) {
+        currentRef.current = best
+        setCurrent(best)
+        navigate(`/book/${best}`, { replace: true })
+      }
     }
-  }, [id])
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
+  }, [flow, navigate])
 
-  // The whole page takes the book's colours (as press.stripe.com does on the body).
+  // The whole page takes the current book's colours (as press.stripe.com does on the body).
   useEffect(() => {
+    const book = bookById.get(current)
     if (!book) return
     const b = document.body
     b.style.setProperty('--backgroundColor', book.theme.bg)
     b.style.setProperty('--color', book.theme.color)
-    return () => {
-      b.style.removeProperty('--backgroundColor')
-      b.style.removeProperty('--color')
-    }
-  }, [book])
+  }, [current])
+  useEffect(
+    () => () => {
+      document.body.style.removeProperty('--backgroundColor')
+      document.body.style.removeProperty('--color')
+    },
+    [],
+  )
 
+  // Opening a book always starts at the top of its page (the URL then follows the scroll).
   useEffect(() => {
     window.scrollTo({ top: 0 })
+  }, [])
+
+  useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') navigate('/')
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [id, navigate])
+  }, [navigate])
 
-  const graph = useMemo(() => localGraph(id), [id])
-  const explore = useMemo(() => (concept ? parseExplore(concept.body.exploreFurther) : []), [concept])
-  const sources = useMemo(() => (concept ? resolveSources(concept) : []), [concept])
+  const currentIndex = books.findIndex((b) => b.id === current)
 
-  if (!book) {
+  if (!bookById.get(id)) {
     return (
-      <main className="PressDetails" style={{ ['--backgroundColor' as string]: '#201819', ['--color' as string]: '#fff' }}>
+      <main className="PressDetails">
         <div className="PressDetails__info">
           <div className="PressDetails__right">
             <div className="PressDetails__title">No book called “{id}”.</div>
@@ -70,27 +101,103 @@ export default function BookDetails({ id }: { id: string }) {
     )
   }
 
-  const related = graph ? [...(graph.parent ? [{ concept: graph.parent, type: 'parent of this idea' }] : []), ...graph.children.map((c) => ({ concept: c, type: 'builds on this idea' })), ...graph.related.map((r) => ({ concept: r.concept, type: r.type.replace(/-/g, ' ') }))] : []
-
   return (
     <main className="PressDetails">
-      <Rail current={-1} onJump={() => undefined} hidden={false} back />
+      <Rail current={currentIndex} onJump={() => undefined} hidden={false} back />
+      {flow.map((b, i) => (
+        <BookSection key={b.id} book={b} first={i === 0} />
+      ))}
+      <footer className="PressDetails__end">
+        <div className="PressDetails__endInner">
+          <p>That is the whole shelf.</p>
+          <Link to="/" className="Link">
+            Back to the beginning
+          </Link>
+        </div>
+      </footer>
+    </main>
+  )
+}
+
+function useInView(ref: React.RefObject<HTMLElement | null>, margin = '60% 0px') {
+  const [seen, setSeen] = useState(false)
+  useEffect(() => {
+    const el = ref.current
+    if (!el || seen) return
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) setSeen(true)
+      },
+      { rootMargin: margin },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [ref, seen, margin])
+  return seen
+}
+
+function BookSection({ book, first }: { book: Book; first: boolean }) {
+  const registerAnchor = useShelf((s) => s.registerAnchor)
+  const setDrag = useShelf((s) => s.setDrag)
+  const sectionRef = useRef<HTMLElement>(null)
+  const near = useInView(sectionRef)
+  const [concept, setConcept] = useState<Concept | null>(null)
+
+  useEffect(() => {
+    if (!near || concept) return
+    let alive = true
+    loadConcept(book.id).then((c) => alive && setConcept(c))
+    return () => {
+      alive = false
+    }
+  }, [near, concept, book.id])
+
+  const graph = useMemo(() => localGraph(book.id), [book.id])
+  const explore = useMemo(() => (concept ? parseExplore(concept.body.exploreFurther) : []), [concept])
+  const sources = useMemo(() => (concept ? resolveSources(concept) : []), [concept])
+  const related = graph
+    ? [
+        ...(graph.parent ? [{ concept: graph.parent, type: 'parent of this idea' }] : []),
+        ...graph.children.map((c) => ({ concept: c, type: 'builds on this idea' })),
+        ...graph.related.map((r) => ({ concept: r.concept, type: r.type.replace(/-/g, ' ') })),
+      ]
+    : []
+
+  // Drag to turn the standing book; springs back on release.
+  const drag = useRef<{ x: number; yaw: number } | null>(null)
+
+  return (
+    <section ref={sectionRef} className={`PressDetails__section ${first ? 'is-first' : ''}`} data-book={book.id}>
       <div className="PressDetails__info">
         <div
           className="PressDetails__left"
           aria-hidden="true"
-          onMouseMove={(e) => {
-            const r = e.currentTarget.getBoundingClientRect()
-            setTilt([((e.clientX - r.left) / r.width) * 2 - 1, ((e.clientY - r.top) / r.height) * 2 - 1])
+          onPointerDown={(e) => {
+            drag.current = { x: e.clientX, yaw: useShelf.getState().dragYaw }
+            e.currentTarget.setPointerCapture(e.pointerId)
+            setDrag(useShelf.getState().dragYaw, true)
           }}
-          onMouseLeave={() => setTilt([0, 0])}
-        />
+          onPointerMove={(e) => {
+            if (!drag.current) return
+            setDrag(drag.current.yaw + (e.clientX - drag.current.x) * 0.012, true)
+          }}
+          onPointerUp={() => {
+            drag.current = null
+            setDrag(0, false)
+          }}
+          onPointerCancel={() => {
+            drag.current = null
+            setDrag(0, false)
+          }}
+        >
+          <div className="PressDetails__anchor" ref={(el) => registerAnchor(book.id, el)} />
+        </div>
         <div className="PressDetails__right">
           <h1 className="PressDetails__title">{book.title}</h1>
           <p className="PressDetails__author">{book.author}</p>
           <div className="PressDetails__hr" />
 
-          {!concept && <p className="PressDetails__summary">Opening…</p>}
+          {!concept && <p className="PressDetails__summary">{book.entry.summary || 'Opening…'}</p>}
           {concept && (
             <>
               <Markdown className="PressDetails__summary">{concept.body.prose}</Markdown>
@@ -109,7 +216,7 @@ export default function BookDetails({ id }: { id: string }) {
                   <div className="PressDetails__buyGroup">
                     {explore.map((e, i) =>
                       e.to ? (
-                        <Link key={i} to={e.to} className="PressDetails__buy">
+                        <Link key={i} to={e.to} className="PressDetails__buy" onClick={() => jumpTo(e.to!)}>
                           <span className="PressDetails__buyHoverLeft" />
                           <span className="PressDetails__buyLabel">
                             {e.text}
@@ -165,7 +272,7 @@ export default function BookDetails({ id }: { id: string }) {
           <div className="PressPraiseList__label">Related ideas</div>
           <div className="PressPraiseList__carousel">
             {related.map(({ concept: c, type }) => (
-              <Link key={`${type}-${c.id}`} to={`/book/${c.id}`} className="PressPraise">
+              <Link key={`${type}-${c.id}`} to={`/book/${c.id}`} className="PressPraise" onClick={() => jumpTo(`/book/${c.id}`)}>
                 <div className="PressPraise__quote">{c.summary || c.title}</div>
                 <div className="PressPraise__name">{c.title}</div>
                 <div className="PressPraise__role">
@@ -176,8 +283,15 @@ export default function BookDetails({ id }: { id: string }) {
           </div>
         </section>
       )}
-    </main>
+    </section>
   )
+}
+
+/** Following a link to another book restarts the flow from that book. */
+function jumpTo(path: string) {
+  const id = path.replace('/book/', '')
+  useShelf.getState().setEntry(id)
+  window.scrollTo({ top: 0 })
 }
 
 function BuyIcon() {
@@ -199,7 +313,7 @@ interface ExploreItem {
   note?: string
 }
 
-/** `- [Title](../land/id.md) — note` lines → link rows. Plain bullets become notes without links. */
+/** `- [Title](../land/id.md) — note` lines → link rows. Resource-id bullets resolve against resources.json. */
 function parseExplore(md: string): ExploreItem[] {
   const out: ExploreItem[] = []
   for (const line of md.split('\n')) {

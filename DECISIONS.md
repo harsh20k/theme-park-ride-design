@@ -67,3 +67,34 @@ Key choices, trade-offs and cuts. Newest at the bottom of each section.
 - **Rapier, drei and post-processing are no longer used** (still in package.json
   until the direction is confirmed; removing them cuts ~1 MB gz from installs,
   not from the bundle, since they're not imported).
+
+## Draft 2 — built book, continuous reading, pinned-then-release
+
+- **Procedural hardcover instead of a downloaded model.** `BookModel.tsx` builds
+  two cover boards with overhang, an inset page block with page-edge texture, and
+  a shallow half-cylinder spine. Reasons over a glTF: our textures are generated
+  per concept, so UV layout must be ours; no licence review; no extra bytes.
+- **Materials are `MeshPhysicalMaterial`** with a clearcoat (laminate sheen), a
+  roughness map from the cloth grain, and a **metalness mask for foil** (gold
+  motifs and titles are metallic and smooth, cloth is not). Lighting is a
+  `RoomEnvironment` PMREM (no HDR download) plus one warm key light; ACES at 0.9.
+- **Art generates lazily, one book per frame**, only once a book is within
+  ~1.5 screens; a plain cloth material in the book's colour stands in. Generating
+  42 books × 3 maps up front stalled the first paint for seconds.
+- **All books share one size.** Spine and cover canvases are drawn at the true
+  L:T and W:L aspect of the mesh, so type is never stretched.
+- **Continuous reading flow.** The book page renders every book from the clicked
+  one to the end of the shelf as sections. A scroll probe at 45vh picks the
+  current section → `history.replaceState` to `/book/<id>`, the rail dash and the
+  body tint (`--backgroundColor`/`--color`, CSS-transitioned) follow. Following a
+  link inside the page restarts the flow from that book.
+- **Pinned-then-release** is pure CSS + tracking: a `position: sticky` anchor in
+  the left column; the 3D book tracks the anchor's rect each frame. When the next
+  section pushes the anchor above its sticky top, the book rises and shrinks by
+  the displacement. Section bodies (visuals included) mount via an
+  IntersectionObserver so far-off sections cost nothing.
+- **Pose**: yaw 26°, pitch 7°, roll −3.5° (spine toward the viewer on the left,
+  page block visible at the head), a 0.02 rad idle sway, drag-to-turn with
+  spring-back, no mouse-parallax.
+- **Hover badge** on the shelf shows "N topics" = the concept plus everything
+  under it in the hierarchy.
