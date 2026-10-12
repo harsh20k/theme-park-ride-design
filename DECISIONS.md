@@ -158,3 +158,26 @@ Key choices, trade-offs and cuts. Newest at the bottom of each section.
   keeps the procedural cover. (Reported "white covers" could not be reproduced
   in Chrome or WebKit against the dev server; the fallback removes the failure
   mode regardless.) The topic shelf's hover badge now says "illustrated cover".
+
+## Draft 5 — branded covers, the real mark everywhere, honest spines
+
+- **The three photo covers were regenerated in each book's own cloth colour**
+  (the site's `palette[0]` for the land: #bb1b5d, #2d23b4, #711bbb) through
+  `fal-ai/nano-banana-pro/edit` with the press mark uploaded as a reference
+  image, so the emblem on the cover is the real one. Nano Banana follows the
+  mark closely on two of three; Pepper's Ghost got a looser interpretation.
+- **The procedural art now draws the real emblem** (preloaded PNG, tinted on a
+  scratch canvas) in place of the old circle-and-chevron: gold at the top right
+  of every cover and at the tail of every spine, both in the foil mask.
+- **Spine text is never squeezed any more.** `fillText(maxWidth)` condensed
+  glyphs; now the topic name is the short imprint ("Human Factors", "Ride
+  Engineering" …), titles go to two stacked lines before the font shrinks, and
+  only then ellipsise. The spine canvas is drawn for the unrolled width of the
+  squashed half-cylinder (≈1.14 T) rather than T, which was stretching the mark.
+- **Cost of covering the whole press** (fal list prices on 2026-10-12, 1K
+  portrait, one image per book, no retries): Nano Banana Pro $0.15 → ≈$81;
+  Nano Banana 2 $0.08 → ≈$43; Nano Banana $0.04 → ≈$22; FLUX Pro 1.1 ≈$0.04 →
+  ≈$20 (no reference image for the mark). Budget ~20% for rerolls.
+- **Font options** are laid out at `/fonts.html` (nine free faces on the site's
+  background with header, title, body and spine samples). Switching is three
+  CSS variables, the Google Fonts link and `FONT` in `theme.ts`.

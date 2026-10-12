@@ -254,6 +254,19 @@ function grain(ctx: CanvasRenderingContext2D, w: number, h: number, seed: number
   ctx.putImageData(img, 0, 0)
 }
 
+/** Pick the largest font size (≤ basePx, ≥ minPx) at which `text` fits in maxW; ellipsise if it still does not. */
+function fitText(ctx: CanvasRenderingContext2D, text: string, maxW: number, basePx: number, minPx: number, font: (px: number) => string): { text: string; font: string } {
+  let px = basePx
+  ctx.font = font(px)
+  while (ctx.measureText(text).width > maxW && px > minPx) {
+    px -= 1
+    ctx.font = font(px)
+  }
+  let t = text
+  while (ctx.measureText(t).width > maxW && t.length > 4) t = t.replace(/[^…]{1}…?$/, '…')
+  return { text: t, font: ctx.font }
+}
+
 function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string[] {
   const words = text.split(/\s+/)
   const lines: string[] = []
@@ -269,7 +282,42 @@ function wrap(ctx: CanvasRenderingContext2D, text: string, maxW: number): string
   return lines
 }
 
+// ---------------------------------------------------------------------------
+// Press mark (the fal-generated emblem) — preloaded once, drawn tinted on canvases
+// ---------------------------------------------------------------------------
+let logoImg: HTMLImageElement | null = null
+let logoPromise: Promise<void> | null = null
+
+/** Resolve once the emblem is available (or failed); art generation waits for this. */
+export function preloadLogo(url: string): Promise<void> {
+  if (!logoPromise) {
+    logoPromise = new Promise((res) => {
+      const img = new Image()
+      img.onload = () => {
+        logoImg = img
+        res()
+      }
+      img.onerror = () => res()
+      img.src = url
+    })
+  }
+  return logoPromise
+}
+
+/** Draw the emblem centred at (x, y) with the given height, tinted to `color`. Falls back to a drawn mark. */
 function pressMark(ctx: CanvasRenderingContext2D, x: number, y: number, size: number, color: string) {
+  if (logoImg && logoImg.naturalWidth) {
+    const h = size
+    const w = (h * logoImg.naturalWidth) / logoImg.naturalHeight
+    const tmp = makeCanvas(Math.ceil(w), Math.ceil(h))
+    const t = tmp.getContext('2d')!
+    t.drawImage(logoImg, 0, 0, w, h)
+    t.globalCompositeOperation = 'source-in'
+    t.fillStyle = color
+    t.fillRect(0, 0, tmp.width, tmp.height)
+    ctx.drawImage(tmp, x - w / 2, y - h / 2)
+    return
+  }
   ctx.save()
   ctx.strokeStyle = color
   ctx.lineWidth = size * 0.07
@@ -324,9 +372,8 @@ export function drawCover(title: string, author: string, theme: BookTheme, seed:
   }
   text(ctx, '#fdf6e6')
   text(fctx, '#fff')
-  ctx.fillStyle = 'rgba(253,246,230,0.88)'
-  ctx.fillRect(w - 150, 0, 150, 110)
-  pressMark(ctx, w - 75, 55, 70, '#201819')
+  pressMark(ctx, w - 110, 118, 92, '#f1dc9a')
+  pressMark(fctx, w - 110, 118, 92, '#fff')
   return art
 }
 
@@ -339,20 +386,43 @@ export function drawSpine(title: string, author: string, theme: BookTheme, seed:
   const fctx = art.foil.getContext('2d')!
   ctx.fillStyle = 'rgba(0,0,0,0.18)'
   ctx.fillRect(0, 0, w, h)
+  const a = fitText(ctx, author, w * 0.25, Math.round(h * 0.2), Math.round(h * 0.13), (px) => `500 ${px}px ${FONT}`)
+  // Title: one line at full size if it fits; otherwise two stacked lines; only then shrink.
+  const titleMax = w * 0.4
+  const base = Math.round(h * 0.23)
+  ctx.font = `500 ${base}px ${FONT}`
+  let lines: string[]
+  let tfont = ctx.font
+  if (ctx.measureText(title).width <= titleMax) lines = [title]
+  else {
+    const two = Math.round(h * 0.17)
+    ctx.font = `500 ${two}px ${FONT}`
+    const wrapped = wrap(ctx, title, titleMax)
+    if (wrapped.length <= 2) {
+      lines = wrapped
+      tfont = ctx.font
+    } else {
+      const t = fitText(ctx, title, titleMax, base, Math.round(h * 0.13), (px) => `500 ${px}px ${FONT}`)
+      lines = [t.text]
+      tfont = t.font
+    }
+  }
   const text = (c: CanvasRenderingContext2D, color: string) => {
     c.fillStyle = color
     c.textBaseline = 'middle'
-    c.font = `500 ${Math.round(h * 0.21)}px ${FONT}`
     c.textAlign = 'left'
-    c.fillText(author, h * 0.35, h / 2 + 2, w * 0.25)
+    c.font = a.font
+    c.fillText(a.text, h * 0.35, h / 2 + 2)
     c.textAlign = 'center'
-    c.font = `500 ${Math.round(h * 0.23)}px ${FONT}`
-    c.fillText(title, w * 0.56, h / 2 + 2, w * 0.34)
+    c.font = tfont
+    const lh = parseInt(tfont, 10) * 1.02
+    const y0 = h / 2 + 2 - ((lines.length - 1) * lh) / 2
+    lines.forEach((line, i) => c.fillText(line, w * 0.56, y0 + i * lh))
   }
   text(ctx, '#fdf6e6')
   text(fctx, '#fff')
-  pressMark(ctx, w - h * 0.5, h / 2, h * 0.28, '#fdf6e6')
-  pressMark(fctx, w - h * 0.5, h / 2, h * 0.28, '#fff')
+  pressMark(ctx, w - h * 0.5, h / 2, h * 0.3, '#fdf6e6')
+  pressMark(fctx, w - h * 0.5, h / 2, h * 0.3, '#fff')
   return art
 }
 

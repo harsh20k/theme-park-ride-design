@@ -12,6 +12,24 @@ export interface Book {
   entry: ConceptIndexEntry
   /** Section (super-concept) this book belongs to; a section book points at itself. */
   section: string
+  /** Short topic name used on spines and covers, where the full land title will not fit. */
+  imprint: string
+}
+
+const SHORT: Record<string, string> = {
+  'story-experience': 'Story & Experience',
+  'human-factors': 'Human Factors',
+  masterplanning: 'Masterplanning',
+  'ride-systems': 'Ride Systems',
+  'ride-engineering': 'Ride Engineering',
+  'safety-standards': 'Safety & Standards',
+  'show-technology': 'Show Technology',
+  'sensory-environment': 'Sensory Design',
+  'design-process': 'Design Process',
+  'operations-business': 'Operations',
+  history: 'History',
+  'ai-future': 'AI & Future',
+  careers: 'Careers',
 }
 
 const landIndex = new Map(lands.map((l, i) => [l.id, i]))
@@ -28,6 +46,7 @@ function toBook(entry: ConceptIndexEntry, section: string): Book {
     seed: seedFrom(entry.id),
     entry,
     section,
+    imprint: SHORT[entry.land] ?? land?.title ?? entry.land,
   }
 }
 

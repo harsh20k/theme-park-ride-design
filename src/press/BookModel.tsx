@@ -34,6 +34,9 @@ interface Props {
   wanted: boolean
 }
 
+/** Unrolled width of the squashed spine as a multiple of the thickness T. */
+export const SPINE_ARC = 1.14
+
 /** Width of the hinge strip as a fraction of the board width. */
 export const HINGE_FRAC = 0.045
 
@@ -151,12 +154,13 @@ export function useBookMaterials(book: Book, dims: BookDims, wanted: boolean): B
     enqueue(() => {
       if (!alive) return
       const aspect = dims.W / dims.L
-      const coverArt = drawCover(book.title, book.author, book.theme, book.seed, aspect)
+      const coverArt = drawCover(book.title, book.imprint, book.theme, book.seed, aspect)
       const image = COVER_IMAGES[book.id]
       const cover = image ? imageCoverMaterial(image, aspect, coverArt) : coverMaterial(coverArt, false)
       // Back board: same cloth/marble, no text — reuse the pre-text art.
       const back = coverMaterial(coverArt.plain, false)
-      const spine = coverMaterial(drawSpine(book.title, book.author, book.theme, book.seed, dims.L / dims.T), true)
+      // The spine is a half-cylinder squashed to 38% depth: its unrolled width is ≈1.14 T, so draw the art for that, not for T.
+      const spine = coverMaterial(drawSpine(book.title, book.imprint, book.theme, book.seed, dims.L / (SPINE_ARC * dims.T)), true)
       setArt({ cover, back, spine })
     })
     return () => {

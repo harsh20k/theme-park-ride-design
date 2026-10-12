@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Typography options</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,700;1,6..72,500&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;0,6..96,700;1,6..96,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Spectral:ital,wght@0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #201819;
+        --fg: #fdf6e6;
+        --gold: #e6c77a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: Newsreader, Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+        padding: 40px clamp(20px, 5vw, 80px) 80px;
+      }
+      header {
+        max-width: 1100px;
+        margin: 0 auto 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+      }
+      header p {
+        margin: 0;
+        opacity: 0.7;
+        font-style: italic;
+      }
+      .grid {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 24px;
+      }
+      .card {
+        border: 1px solid rgba(253, 246, 230, 0.25);
+        padding: 26px 28px 24px;
+        display: grid;
+        grid-template-columns: 1fr 86px;
+        gap: 18px;
+        position: relative;
+      }
+      .card.is-current {
+        border-color: var(--gold);
+      }
+      .meta {
+        position: absolute;
+        top: -11px;
+        left: 20px;
+        background: var(--bg);
+        padding: 0 8px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.75;
+      }
+      .name {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.1;
+      }
+      .tagline {
+        font-style: italic;
+        font-size: 17px;
+        margin: 4px 0 18px;
+        opacity: 0.9;
+      }
+      .title {
+        font-size: 44px;
+        line-height: 1.05;
+        font-weight: 700;
+        margin: 0 0 6px;
+      }
+      .author {
+        font-style: italic;
+        font-size: 20px;
+        opacity: 0.85;
+        margin: 0 0 16px;
+      }
+      .body {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        opacity: 0.9;
+      }
+      .body a {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .spine {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        background: #bb1b5d;
+        color: var(--gold);
+        font-size: 15px;
+        font-weight: 500;
+        padding: 14px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+        box-shadow: inset 6px 0 0 rgba(0, 0, 0, 0.25);
+      }
+      .spine small {
+        font-size: 11px;
+        opacity: 0.85;
+      }
+      .note {
+        max-width: 1100px;
+        margin: 36px auto 0;
+        font-size: 15px;
+        line-height: 1.55;
+        opacity: 0.8;
+      }
+      code {
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 13px;
+      }
+      /* the eight candidates */
+      .f-newsreader { font-family: 'Newsreader', Georgia, serif; font-optical-sizing: auto; }
+      .f-fraunces { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; font-variation-settings: 'SOFT' 60; }
+      .f-playfair { font-family: 'Playfair Display', Georgia, serif; }
+      .f-cormorant { font-family: 'Cormorant Garamond', Garamond, serif; }
+      .f-cormorant .title { font-weight: 600; font-size: 50px; }
+      .f-cormorant .body { font-size: 18px; }
+      .f-bodoni { font-family: 'Bodoni Moda', 'Didot', serif; font-optical-sizing: auto; }
+      .f-caslon { font-family: 'Libre Caslon Text', 'Caslon', serif; }
+      .f-instrument { font-family: 'Instrument Serif', Georgia, serif; }
+      .f-instrument .title { font-weight: 400; font-size: 50px; }
+      .f-instrument .name { font-weight: 400; }
+      .f-dmserif { font-family: 'DM Serif Display', Georgia, serif; }
+      .f-dmserif .title { font-weight: 400; }
+      .f-spectral { font-family: 'Spectral', Georgia, serif; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Typography options for Theme Park Press</h1>
+      <p>Each card shows the header, a book title and author line, body text, and a spine. All are free Google Fonts.</p>
+    </header>
+    <div class="grid" id="grid"></div>
+    <p class="note">
+      To adopt one, change three variables in <code>src/press/press.css</code> (<code>--fontDisplay</code>, <code>--fontHeadline</code>, <code>--fontText</code>), the Google Fonts link in
+      <code>index.html</code>, and <code>FONT</code> in <code>src/press/theme.ts</code> (the covers and spines are drawn on canvas with the same face). A display face can be paired with a
+      quieter text face: for example Fraunces or Bodoni Moda for titles with Newsreader or Spectral for body text.
+    </p>
+    <script>
+      const options = [
+        ['f-newsreader', 'Newsreader', 'current · Stripe Press feel, optical sizes', true],
+        ['f-fraunces', 'Fraunces', 'soft, slightly wonky old-style; very characterful'],
+        ['f-playfair', 'Playfair Display', 'high-contrast transitional; classic book-jacket look'],
+        ['f-cormorant', 'Cormorant Garamond', 'refined Garamond; elegant at large sizes'],
+        ['f-bodoni', 'Bodoni Moda', 'modern Didone; fashion-magazine sharpness'],
+        ['f-caslon', 'Libre Caslon Text', 'warm, bookish Caslon; literary'],
+        ['f-instrument', 'Instrument Serif', 'condensed, editorial; strong personality'],
+        ['f-dmserif', 'DM Serif Display', 'bold display serif; punchy titles'],
+        ['f-spectral', 'Spectral', 'screen-first serif; calm and readable'],
+      ]
+      const grid = document.getElementById('grid')
+      for (const [cls, name, note, current] of options) {
+        const el = document.createElement('section')
+        el.className = `card ${cls} ${current ? 'is-current' : ''}`
+        el.innerHTML = `
+          <span class="meta">${name} — ${note}</span>
+          <div>
+            <div class="name">Theme Park Press</div>
+            <div class="tagline">Ideas for designing joy</div>
+            <h2 class="title">Peak-End Rule</h2>
+            <p class="author">Human Factors &amp; Guest Psychology</p>
+            <p class="body">We judge an experience by its most intense moment and its ending, not its average. A strong <a href="#">finale</a> and a clean, unhurried unload can lift the memory of an entire day.</p>
+          </div>
+          <div class="spine"><small>Human Factors</small><span>Peak-End Rule</span><small>◎</small></div>`
+        grid.appendChild(el)
+      }
+    </script>
+  </body>
+</html>

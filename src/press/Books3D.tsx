@@ -6,6 +6,8 @@ import { lands } from '@/content/api'
 import { books, libraryIndex, sectionsByLand, type Book } from './books'
 import { useShelf } from './store'
 import BookModel, { useBookMaterials, type BookDims } from './BookModel'
+import { LOGO_URL } from './covers'
+import { preloadLogo } from './theme'
 
 /**
  * Fixed, full-height, 70vw-wide canvas (as on press.stripe.com).
@@ -86,8 +88,8 @@ function useFontsReady(): boolean {
     let alive = true
     const fonts = (document as Document & { fonts?: FontFaceSet }).fonts
     const p = fonts
-      ? Promise.all([fonts.load('700 76px Newsreader'), fonts.load('italic 500 42px Newsreader'), fonts.load('500 58px Newsreader')]).then(() => fonts.ready)
-      : Promise.resolve()
+      ? Promise.all([fonts.load('700 76px Newsreader'), fonts.load('italic 500 42px Newsreader'), fonts.load('500 58px Newsreader'), preloadLogo(LOGO_URL)]).then(() => fonts.ready)
+      : preloadLogo(LOGO_URL)
     p.then(() => alive && setReady(true)).catch(() => alive && setReady(true))
     return () => {
       alive = false
