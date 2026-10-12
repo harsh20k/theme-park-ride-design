@@ -1,0 +1,152 @@
+[
+ {
+  "term": "Hub-and-spoke",
+  "definition": "A park layout with one entrance, a central plaza and themed lands radiating out from it.",
+  "land": "masterplanning",
+  "concept": "hub-and-spoke"
+ },
+ {
+  "term": "Loop layout",
+  "definition": "A park plan where lands are arranged around a ring path, often circling a lagoon.",
+  "land": "masterplanning",
+  "concept": "loop-and-linear-layouts"
+ },
+ {
+  "term": "Land",
+  "definition": "A themed zone of a park where architecture, sound, food and rides all describe one place and story.",
+  "land": "masterplanning",
+  "concept": "land-design"
+ },
+ {
+  "term": "Central icon",
+  "definition": "The tall landmark at the heart of a park, such as a castle or mountain, that orients guests and brands the place.",
+  "land": "masterplanning",
+  "concept": "central-icon"
+ },
+ {
+  "term": "Entry sequence",
+  "definition": "The staged route from car park to first land that moves guests from the real world into the story.",
+  "land": "masterplanning",
+  "concept": "entry-sequence"
+ },
+ {
+  "term": "Transition",
+  "definition": "The designed seam between two lands where music, paving and planting change over.",
+  "land": "masterplanning",
+  "concept": "land-transitions"
+ },
+ {
+  "term": "Feasibility study",
+  "definition": "An early economic study of market, attendance and cost that decides whether and where a park should be built.",
+  "land": "masterplanning",
+  "concept": "site-selection"
+ },
+ {
+  "term": "Design day",
+  "definition": "The typical busy day a park is sized for, usually the average of its busiest 15 to 25 days rather than the record day.",
+  "land": "masterplanning",
+  "concept": "design-day"
+ },
+ {
+  "term": "Entertainment units",
+  "definition": "A planner's tally of hourly capacity across rides, shows and games that a park must provide.",
+  "land": "masterplanning",
+  "concept": "capacity-planning"
+ },
+ {
+  "term": "Attractions per guest hour",
+  "definition": "A benchmark of how many attractions a guest should be able to experience per hour, used to size the attraction mix.",
+  "land": "masterplanning",
+  "concept": "attraction-mix"
+ },
+ {
+  "term": "Attraction mix",
+  "definition": "The chosen blend of thrill, family, kiddie and show content so every guest type stays busy all day.",
+  "land": "masterplanning",
+  "concept": "attraction-mix"
+ },
+ {
+  "term": "Rope drop",
+  "definition": "The morning rush when gates open and guests race to the most popular rides.",
+  "land": "masterplanning",
+  "concept": "guest-flow-patterns"
+ },
+ {
+  "term": "Pinch point",
+  "definition": "A narrow spot where paths, queues or exits collide and the crowd slows or stalls.",
+  "land": "masterplanning",
+  "concept": "pinch-points"
+ },
+ {
+  "term": "Level of service",
+  "definition": "Fruin's A-to-F grade of how much space each walking person has, used to judge path width.",
+  "land": "masterplanning",
+  "concept": "level-of-service"
+ },
+ {
+  "term": "Pedestrian space",
+  "definition": "The area available per walking person, in square metres, the basic measure behind level of service.",
+  "land": "masterplanning",
+  "concept": "level-of-service"
+ },
+ {
+  "term": "Onstage",
+  "definition": "Any part of the park a guest can see, hear or smell, which must belong to the story.",
+  "land": "masterplanning",
+  "concept": "onstage-backstage"
+ },
+ {
+  "term": "Backstage",
+  "definition": "Service areas hidden from guests: docks, plant rooms, wardrobe, break rooms and roads.",
+  "land": "masterplanning",
+  "concept": "onstage-backstage"
+ },
+ {
+  "term": "Utilidor",
+  "definition": "A utility corridor; at Magic Kingdom, the ground-level service tunnels the park was built on top of.",
+  "land": "masterplanning",
+  "concept": "utilidors"
+ },
+ {
+  "term": "Central plant",
+  "definition": "A backstage facility that makes chilled water, hot water and sometimes power for the whole park.",
+  "land": "masterplanning",
+  "concept": "utilities-and-central-plant"
+ },
+ {
+  "term": "Means of egress",
+  "definition": "The code term for the protected route out of a building or area, sized by occupancy under rules like NFPA 101.",
+  "land": "masterplanning",
+  "concept": "emergency-access"
+ },
+ {
+  "term": "Destination park",
+  "definition": "A park that draws guests from across a country or the world for multi-day stays, usually with hotels on site.",
+  "land": "masterplanning",
+  "concept": "regional-vs-destination"
+ },
+ {
+  "term": "Bather load",
+  "definition": "The capacity measure for a water park: how many people can safely be in the water and on the decks at once.",
+  "land": "masterplanning",
+  "concept": "water-parks"
+ },
+ {
+  "term": "Land bank",
+  "definition": "Acreage reserved in a masterplan for future lands, gates or hotels.",
+  "land": "masterplanning",
+  "concept": "expansion-and-phasing"
+ },
+ {
+  "term": "Legibility",
+  "definition": "Kevin Lynch's term for how easily people can form a mental map of a place.",
+  "land": "masterplanning",
+  "concept": "urban-planning-parallels"
+ },
+ {
+  "term": "Integration",
+  "definition": "A space syntax measure of how few turns a path is from all others, which predicts how busy it will be.",
+  "land": "masterplanning",
+  "concept": "space-syntax"
+ }
+]

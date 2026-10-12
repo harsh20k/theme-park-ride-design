@@ -1,0 +1,2018 @@
+[
+ {
+  "term": "Acceleration envelope",
+  "definition": "A closed region of allowed combined accelerations, by duration, that a ride must stay inside.",
+  "land": "ride-engineering",
+  "concept": "acceleration-envelopes"
+ },
+ {
+  "term": "Accumulator",
+  "definition": "A pressure tank where hydraulic fluid compresses nitrogen gas to store launch energy.",
+  "land": "ride-systems",
+  "concept": "hydraulic-launch"
+ },
+ {
+  "term": "Action level",
+  "definition": "The noise exposure, 85 dBA averaged over eight hours in US rules, above which hearing protection and monitoring are required.",
+  "land": "human-factors",
+  "concept": "noise-exposure"
+ },
+ {
+  "term": "Actuator",
+  "definition": "A pneumatic, hydraulic or electric device that turns a control signal into one movement of a figure or set piece.",
+  "land": "show-technology",
+  "concept": "figure-actuation"
+ },
+ {
+  "term": "Agency",
+  "definition": "Janet Murray's term for the satisfying power to take meaningful action and see its results.",
+  "land": "human-factors",
+  "concept": "agency-vs-spectacle"
+ },
+ {
+  "term": "Agent-based simulation",
+  "definition": "A crowd model in which each simulated guest follows its own simple rules, so group behavior emerges from many individuals.",
+  "land": "ai-future",
+  "concept": "crowd-modeling"
+ },
+ {
+  "term": "Aging wash",
+  "definition": "A thin, dark, translucent coat of paint that settles into recesses to make a new surface look old and dirty.",
+  "land": "sensory-environment",
+  "concept": "faux-finishes-and-aging"
+ },
+ {
+  "term": "Airtime",
+  "definition": "The floating feeling near zero g when the track drops away faster than gravity pulls the rider.",
+  "land": "ride-engineering",
+  "concept": "airtime-and-negative-g"
+ },
+ {
+  "term": "Ambient loop",
+  "definition": "A long, seamless recording of environmental sound such as birds, wind or distant machinery that plays continuously in a space.",
+  "land": "sensory-environment",
+  "concept": "ambient-effects-loops"
+ },
+ {
+  "term": "Animatic",
+  "definition": "Storyboards or simple 3D shots cut to a soundtrack so the team can feel the pacing of a ride.",
+  "land": "design-process",
+  "concept": "previs"
+ },
+ {
+  "term": "Anthropometrics",
+  "definition": "Measured body dimensions from population surveys, used to size seats, restraints and reach limits.",
+  "land": "human-factors",
+  "concept": "anthropometrics"
+ },
+ {
+  "term": "Anti-rollback dog",
+  "definition": "A pivoting pawl under the car that drops into a ratchet so the train can climb but never slide back.",
+  "land": "ride-engineering",
+  "concept": "anti-rollback"
+ },
+ {
+  "term": "Area music",
+  "definition": "The looped background music a land plays to set its mood, usually without lyrics so it never competes with speech.",
+  "land": "sensory-environment",
+  "concept": "area-music"
+ },
+ {
+  "term": "Armature",
+  "definition": "The welded steel skeleton that gives rockwork or a figure its shape before any surface goes on.",
+  "land": "design-process",
+  "concept": "rockwork"
+ },
+ {
+  "term": "Art director",
+  "definition": "The person who guards the look of a project from first sketch to final paint on site.",
+  "land": "design-process",
+  "concept": "art-direction"
+ },
+ {
+  "term": "Art-Net",
+  "definition": "A royalty-free protocol from Artistic Licence that carries DMX512 and RDM data over Ethernet.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols"
+ },
+ {
+  "term": "ASTM F24",
+  "definition": "The ASTM International committee, formed in 1978, that writes the main North American amusement ride standards.",
+  "land": "safety-standards",
+  "concept": "astm-f24"
+ },
+ {
+  "term": "Atmospherics",
+  "definition": "Kotler's term for deliberately designing the sensory qualities of a space to produce a wanted response in visitors.",
+  "land": "sensory-environment",
+  "concept": "atmospherics"
+ },
+ {
+  "term": "Attention restoration",
+  "definition": "Kaplan's theory that softly fascinating natural scenes let the tired, effortful kind of attention recover.",
+  "land": "sensory-environment",
+  "concept": "biophilia"
+ },
+ {
+  "term": "Attraction mix",
+  "definition": "The chosen blend of thrill, family, kiddie and show content so every guest type stays busy all day.",
+  "land": "masterplanning",
+  "concept": "attraction-mix"
+ },
+ {
+  "term": "Attractions per guest hour",
+  "definition": "A benchmark of how many attractions a guest should be able to experience per hour, used to size the attraction mix.",
+  "land": "masterplanning",
+  "concept": "attraction-mix"
+ },
+ {
+  "term": "Audio bleed",
+  "definition": "Sound from one themed zone leaking into a neighbouring zone where it breaks the theme.",
+  "land": "sensory-environment",
+  "concept": "audio-zoning"
+ },
+ {
+  "term": "Audio-Animatronics",
+  "definition": "Disney's trademark for figures that move and speak in sync with recorded audio, first shown in 1963.",
+  "land": "history",
+  "concept": "walt-and-the-imagineers"
+ },
+ {
+  "term": "Augmented reality visor",
+  "definition": "A see-through head-mounted display that overlays characters and targets onto real sets, as on Mario Kart: Bowser's Challenge.",
+  "land": "ai-future",
+  "concept": "vr-ar-in-parks"
+ },
+ {
+  "term": "Availability",
+  "definition": "The share of scheduled operating time during which a ride is actually open to guests.",
+  "land": "operations-business",
+  "concept": "downtime-and-availability"
+ },
+ {
+  "term": "Awe",
+  "definition": "An emotion triggered by vastness that forces you to update how you see the world.",
+  "land": "human-factors",
+  "concept": "awe"
+ },
+ {
+  "term": "Backstage",
+  "definition": "Service areas hidden from guests: docks, plant rooms, wardrobe, break rooms and roads.",
+  "land": "masterplanning",
+  "concept": "onstage-backstage"
+ },
+ {
+  "term": "Backstory",
+  "definition": "What happened in a place before the guest arrived, usually implied by details rather than told.",
+  "land": "story-experience",
+  "concept": "story-bible"
+ },
+ {
+  "term": "Balking",
+  "definition": "Deciding not to join a queue because it looks too long.",
+  "land": "human-factors",
+  "concept": "balking-and-reneging"
+ },
+ {
+  "term": "Bather load",
+  "definition": "The capacity measure for a water park: how many people can safely be in the water and on the decks at once.",
+  "land": "masterplanning",
+  "concept": "water-parks"
+ },
+ {
+  "term": "BDX droid",
+  "definition": "Disney's small bipedal robot character, revealed in 2023 and roaming daily at Disneyland's Galaxy's Edge from April 2024.",
+  "land": "ai-future",
+  "concept": "free-roaming-robots"
+ },
+ {
+  "term": "Beat sheet",
+  "definition": "A numbered list of a ride's moments with what guests see, feel and learn at each one.",
+  "land": "story-experience",
+  "concept": "ride-beat-sheet"
+ },
+ {
+  "term": "Berm",
+  "definition": "The raised, planted earth wall around a park that hides the outside world from guests.",
+  "land": "story-experience",
+  "concept": "the-berm"
+ },
+ {
+  "term": "BIM",
+  "definition": "Building information modelling: one shared 3D model that carries geometry plus data for every discipline.",
+  "land": "design-process",
+  "concept": "engineering-handoff"
+ },
+ {
+  "term": "Biophilia",
+  "definition": "Our innate pull toward living things and natural settings, which planting and water in parks quietly satisfy.",
+  "land": "sensory-environment",
+  "concept": "biophilia"
+ },
+ {
+  "term": "Blacklight",
+  "definition": "A lamp that emits mostly long-wave ultraviolet light, making fluorescent paint glow while the room stays dark.",
+  "land": "show-technology",
+  "concept": "blacklight-and-uv-paint"
+ },
+ {
+  "term": "Block",
+  "definition": "A section of track with its own stop and start control; only one train may occupy it.",
+  "land": "ride-engineering",
+  "concept": "block-system"
+ },
+ {
+  "term": "Block system",
+  "definition": "Control logic that divides a track into sections and never lets two trains occupy the same one.",
+  "land": "safety-standards",
+  "concept": "ride-control-systems"
+ },
+ {
+  "term": "Blocking",
+  "definition": "The plan for where performers or figures stand and move so the audience can see the action.",
+  "land": "story-experience",
+  "concept": "theatre-staging"
+ },
+ {
+  "term": "Blue sky",
+  "definition": "The first idea stage where cost and practicality are set aside so the boldest concepts can surface.",
+  "land": "design-process",
+  "concept": "blue-sky"
+ },
+ {
+  "term": "Brake run",
+  "definition": "A stretch of track with brakes that slows or stops a train, usually before the station.",
+  "land": "ride-systems",
+  "concept": "coaster-anatomy"
+ },
+ {
+  "term": "Capital expenditure (capex)",
+  "definition": "Money spent on long-lived assets such as new rides, lands and hotels, as opposed to daily running costs.",
+  "land": "operations-business",
+  "concept": "capital-budgets"
+ },
+ {
+  "term": "Capture rate",
+  "definition": "The share of people in a market area expected to visit a park in a year.",
+  "land": "operations-business",
+  "concept": "roi-and-attendance-modeling"
+ },
+ {
+  "term": "Catch car",
+  "definition": "A sled running between the rails that hooks a train and tows it during a hydraulic or pneumatic launch.",
+  "land": "ride-systems",
+  "concept": "hydraulic-launch"
+ },
+ {
+  "term": "Central icon",
+  "definition": "The tall landmark at the heart of a park, such as a castle or mountain, that orients guests and brands the place.",
+  "land": "masterplanning",
+  "concept": "central-icon"
+ },
+ {
+  "term": "Central plant",
+  "definition": "A backstage facility that makes chilled water, hot water and sometimes power for the whole park.",
+  "land": "masterplanning",
+  "concept": "utilities-and-central-plant"
+ },
+ {
+  "term": "Chain dog",
+  "definition": "A pivoting hook under the train that catches the lift chain.",
+  "land": "ride-engineering",
+  "concept": "lift-systems"
+ },
+ {
+  "term": "Charrette",
+  "definition": "A short, intense workshop where client and designers sketch and argue through a concept together.",
+  "land": "design-process",
+  "concept": "blue-sky"
+ },
+ {
+  "term": "Choice architecture",
+  "definition": "The way options are arranged and defaulted, which steers decisions without removing any choice.",
+  "land": "human-factors",
+  "concept": "choice-architecture"
+ },
+ {
+  "term": "Clash detection",
+  "definition": "Software checking where one trade's pipes, steel or scenery collides with another's before construction.",
+  "land": "design-process",
+  "concept": "engineering-handoff"
+ },
+ {
+  "term": "Clothoid",
+  "definition": "A spiral whose curvature grows in proportion to distance along it, used for loops and transitions.",
+  "land": "ride-engineering",
+  "concept": "clothoid-loop"
+ },
+ {
+  "term": "Clothoid loop",
+  "definition": "A teardrop-shaped vertical loop whose tightening curve keeps forces tolerable, used on Revolution in 1976.",
+  "land": "history",
+  "concept": "loop-revival"
+ },
+ {
+  "term": "Coaster wars",
+  "definition": "The record race for taller and faster coasters that ran roughly from 1989 to 2005.",
+  "land": "history",
+  "concept": "coaster-milestones"
+ },
+ {
+  "term": "Coherence",
+  "definition": "How easily a scene reads as one organised whole; high coherence lets rich detail feel calm instead of noisy.",
+  "land": "sensory-environment",
+  "concept": "visual-complexity"
+ },
+ {
+  "term": "Colour script",
+  "definition": "A row of small colour thumbnails showing how colour and light change beat by beat through a story or ride.",
+  "land": "sensory-environment",
+  "concept": "color-scripts"
+ },
+ {
+  "term": "Colour temperature",
+  "definition": "A Kelvin number describing how warm (orange) or cool (blue) a white light looks; candlelight is low, overcast sky is high.",
+  "land": "sensory-environment",
+  "concept": "lighting-mood"
+ },
+ {
+  "term": "Concept art",
+  "definition": "Paintings and sketches that show what a place will feel like before anyone draws it to scale.",
+  "land": "design-process",
+  "concept": "concept-art"
+ },
+ {
+  "term": "Concept artist",
+  "definition": "The illustrator who produces the key paintings and sketches that define how an attraction looks and feels.",
+  "land": "careers",
+  "concept": "creative-roles"
+ },
+ {
+  "term": "Condition monitoring",
+  "definition": "Continuous measurement of vibration, temperature or pressure on ride components to detect changes from normal.",
+  "land": "ai-future",
+  "concept": "predictive-maintenance"
+ },
+ {
+  "term": "Containment class",
+  "definition": "A category assigned from a seat's accelerations that dictates the type and redundancy of restraint required.",
+  "land": "safety-standards",
+  "concept": "restraint-design-rules"
+ },
+ {
+  "term": "Controls engineer",
+  "definition": "An engineer who programs the PLC and safety logic that moves vehicles between block zones and stops them when sensors disagree.",
+  "land": "careers",
+  "concept": "engineering-roles"
+ },
+ {
+  "term": "Crossmodal correspondence",
+  "definition": "A reliable pairing between features of different senses, such as high pitch with brightness.",
+  "land": "human-factors",
+  "concept": "cross-modal-effects"
+ },
+ {
+  "term": "Dark adaptation",
+  "definition": "The eyes' slow gain in sensitivity after entering darkness, taking several minutes to approach full.",
+  "land": "human-factors",
+  "concept": "dark-adaptation"
+ },
+ {
+  "term": "Date-based pricing",
+  "definition": "Ticket prices that vary by calendar date to push demand toward quieter days.",
+  "land": "operations-business",
+  "concept": "pricing"
+ },
+ {
+  "term": "Declaration of Operational Compliance",
+  "definition": "The UK ADIPS certificate issued after pre-use or annual inspection confirming a ride may be operated.",
+  "land": "safety-standards",
+  "concept": "national-inspection-schemes"
+ },
+ {
+  "term": "Degrees of freedom",
+  "definition": "The number of independent ways a platform can move, up to six: surge, sway, heave, roll, pitch and yaw.",
+  "land": "ride-systems",
+  "concept": "motion-base"
+ },
+ {
+  "term": "Density vs crowding",
+  "definition": "Density is people per area; crowding is the unpleasant feeling that there are too many of them, which design can change.",
+  "land": "sensory-environment",
+  "concept": "crowding-and-enclosure"
+ },
+ {
+  "term": "Design day",
+  "definition": "The typical busy day a park is sized for, usually the average of its busiest 15 to 25 days rather than the record day.",
+  "land": "masterplanning",
+  "concept": "design-day"
+ },
+ {
+  "term": "Design intent",
+  "definition": "The written and drawn record of what the creative team means, which engineers and fabricators must honour.",
+  "land": "design-process",
+  "concept": "design-intent"
+ },
+ {
+  "term": "Desire line",
+  "definition": "A worn shortcut created by people repeatedly leaving the official path for a more direct route.",
+  "land": "human-factors",
+  "concept": "desire-lines"
+ },
+ {
+  "term": "Destination park",
+  "definition": "A park that draws guests from across a country or the world for multi-day stays, usually with hotels on site.",
+  "land": "masterplanning",
+  "concept": "regional-vs-destination"
+ },
+ {
+  "term": "Digital twin",
+  "definition": "A living model of one specific attraction that is kept in step with the real thing by sensor or design data.",
+  "land": "ai-future",
+  "concept": "digital-twins"
+ },
+ {
+  "term": "DISH",
+  "definition": "Imagineering's Digital Immersive Showroom, a projection room for walking through designs at full scale.",
+  "land": "design-process",
+  "concept": "vr-design-review"
+ },
+ {
+  "term": "Disney College Program",
+  "definition": "A front-line internship at Walt Disney World for enrolled US college students, a common first step into the industry.",
+  "land": "careers",
+  "concept": "entry-paths"
+ },
+ {
+  "term": "Dispatch interval",
+  "definition": "The time between one vehicle leaving the station and the next one leaving.",
+  "land": "operations-business",
+  "concept": "dispatch-interval"
+ },
+ {
+  "term": "DMX512",
+  "definition": "The 1986 serial lighting-control standard that sends 512 channel values per universe at 250 kbit/s.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols"
+ },
+ {
+  "term": "Duration neglect",
+  "definition": "How long an experience lasts has little effect on how good or bad it feels in memory.",
+  "land": "human-factors",
+  "concept": "duration-neglect"
+ },
+ {
+  "term": "Duty cycle",
+  "definition": "How many cycles a figure or effect runs per day, which drives wear, inspection and skin replacement.",
+  "land": "show-technology",
+  "concept": "figure-reliability"
+ },
+ {
+  "term": "Dynamic itinerary",
+  "definition": "A park plan that an app rewrites through the day as waits, bookings and a guest's choices change.",
+  "land": "ai-future",
+  "concept": "personalization"
+ },
+ {
+  "term": "Eddy current brake",
+  "definition": "A contactless brake in which magnets induce currents in a moving fin, producing drag that rises with speed.",
+  "land": "ride-engineering",
+  "concept": "brake-types"
+ },
+ {
+  "term": "Eddy-current brake",
+  "definition": "A contactless brake in which fins pass magnets and the induced currents slow the vehicle.",
+  "land": "ride-systems",
+  "concept": "drop-tower"
+ },
+ {
+  "term": "Edge blending",
+  "definition": "Fading the overlapping edges of neighbouring projectors so several images read as one seamless picture.",
+  "land": "show-technology",
+  "concept": "projector-blending"
+ },
+ {
+  "term": "Emergency stop",
+  "definition": "A latching red control that brings a ride to a defined safe stop and must be deliberately reset.",
+  "land": "safety-standards",
+  "concept": "emergency-stop-and-evacuation"
+ },
+ {
+  "term": "Emotional contagion",
+  "definition": "The automatic spread of feelings through a group via mimicry of faces, voices and posture.",
+  "land": "human-factors",
+  "concept": "emotional-contagion"
+ },
+ {
+  "term": "EN 13814",
+  "definition": "The European standard for fairground and amusement park rides, split since 2019 into design, operation and inspection parts.",
+  "land": "safety-standards",
+  "concept": "en-13814"
+ },
+ {
+  "term": "Enhanced Motion Vehicle",
+  "definition": "A tracked vehicle with an onboard motion base that adds tilt and bounce, first used on Indiana Jones Adventure.",
+  "land": "history",
+  "concept": "indiana-jones-adventure"
+ },
+ {
+  "term": "Entertainment units",
+  "definition": "A planner's tally of hourly capacity across rides, shows and games that a park must provide.",
+  "land": "masterplanning",
+  "concept": "capacity-planning"
+ },
+ {
+  "term": "Entry sequence",
+  "definition": "The staged route from car park to first land that moves guests from the real world into the story.",
+  "land": "masterplanning",
+  "concept": "entry-sequence"
+ },
+ {
+  "term": "Environmental storytelling",
+  "definition": "Telling a story through the physical traces left in a space so visitors reconstruct it themselves.",
+  "land": "story-experience",
+  "concept": "environmental-storytelling"
+ },
+ {
+  "term": "Erratic ride",
+  "definition": "Alterface's term for a trackless dark ride that routes vehicles through rooms in a different order each trip.",
+  "land": "ai-future",
+  "concept": "personalized-dark-rides"
+ },
+ {
+  "term": "Establishing shot",
+  "definition": "A wide view that shows where the story is set, borrowed from film and used at land entrances.",
+  "land": "story-experience",
+  "concept": "cinematic-grammar"
+ },
+ {
+  "term": "Excitation transfer",
+  "definition": "Leftover bodily arousal from one event spilling over and intensifying the feeling of the next.",
+  "land": "human-factors",
+  "concept": "excitation-transfer"
+ },
+ {
+  "term": "Exit intercept",
+  "definition": "A short survey interview with guests as they leave the park.",
+  "land": "operations-business",
+  "concept": "guest-research"
+ },
+ {
+  "term": "Fail-safe",
+  "definition": "A design whose default state on loss of power or signal is a safe one, such as a spring-applied brake.",
+  "land": "safety-standards",
+  "concept": "redundancy-and-fail-safe"
+ },
+ {
+  "term": "Faux finish",
+  "definition": "Paint and texture applied to a cheap or durable base to make it read as another material, such as aged wood or stone.",
+  "land": "sensory-environment",
+  "concept": "faux-finishes-and-aging"
+ },
+ {
+  "term": "Feasibility study",
+  "definition": "An early report that tests whether a project can work on this site, for this market, at this budget.",
+  "land": "design-process",
+  "concept": "feasibility-and-early-costing"
+ },
+ {
+  "term": "Figure programmer",
+  "definition": "The animator who authors an animatronic figure's movements and timing against the show's audio and ride cues.",
+  "land": "careers",
+  "concept": "show-tech-roles"
+ },
+ {
+  "term": "Fixed-site ride",
+  "definition": "A permanent ride at a park, which in the United States falls outside federal CPSC jurisdiction.",
+  "land": "safety-standards",
+  "concept": "regulatory-landscape"
+ },
+ {
+  "term": "Flying theatre",
+  "definition": "A simulator whose seats are lifted into a dome screen with riders' feet hanging free.",
+  "land": "ride-systems",
+  "concept": "flying-theatre"
+ },
+ {
+  "term": "FMEA",
+  "definition": "Failure Mode and Effects Analysis, a component-by-component list of how things can fail and what would happen.",
+  "land": "safety-standards",
+  "concept": "risk-assessment"
+ },
+ {
+  "term": "Forced perspective",
+  "definition": "Building upper floors or far ends at a smaller scale so a structure looks taller or farther away.",
+  "land": "story-experience",
+  "concept": "forced-perspective"
+ },
+ {
+  "term": "Fourth wall",
+  "definition": "The imagined barrier between performers and audience; role-play cast deliberately break it.",
+  "land": "story-experience",
+  "concept": "cast-role-play"
+ },
+ {
+  "term": "Framed curve",
+  "definition": "A 3-D curve paired with a moving frame, used to describe a coaster track's position and roll together for optimization.",
+  "land": "ai-future",
+  "concept": "procedural-layout"
+ },
+ {
+  "term": "Fulldome",
+  "definition": "A dome-shaped screen that fills the viewer's field of view, fed by a fisheye projector or several blended projectors.",
+  "land": "show-technology",
+  "concept": "domes-and-wraparound-screens"
+ },
+ {
+  "term": "Fundamental diagram",
+  "definition": "The curve relating crowd density to flow, which rises and then collapses as people pack too tightly to move.",
+  "land": "human-factors",
+  "concept": "crowd-behavior"
+ },
+ {
+  "term": "G-force",
+  "definition": "The push a seat or restraint gives a rider compared with sitting still, expressed as a multiple of gravity.",
+  "land": "ride-engineering",
+  "concept": "g-force-basics"
+ },
+ {
+  "term": "Gate review",
+  "definition": "A scheduled decision point where a project is approved, sent back or stopped before more money is spent.",
+  "land": "design-process",
+  "concept": "design-reviews-and-gates"
+ },
+ {
+  "term": "Generative concepting",
+  "definition": "Using image or text models, ideally trained on a studio's own archive, to turn a sketch or brief into many candidate concepts.",
+  "land": "ai-future",
+  "concept": "generative-concepting"
+ },
+ {
+  "term": "Gerb",
+  "definition": "A pyrotechnic fountain that produces a controlled plume of sparks for a set burn time.",
+  "land": "show-technology",
+  "concept": "pyrotechnics"
+ },
+ {
+  "term": "GFRC",
+  "definition": "Glass fibre reinforced concrete: thin, light panels used for themed facades and prefabricated rock.",
+  "land": "design-process",
+  "concept": "themed-facades"
+ },
+ {
+  "term": "Giga coaster",
+  "definition": "A full-circuit coaster between 300 and 399 ft tall, begun by Millennium Force in 2000.",
+  "land": "history",
+  "concept": "hyper-and-giga-era"
+ },
+ {
+  "term": "Go Away Green",
+  "definition": "A family of muted grey-greens Disney paints on fences, show buildings and utilities so the eye slides past them.",
+  "land": "sensory-environment",
+  "concept": "go-away-green"
+ },
+ {
+  "term": "Gobo",
+  "definition": "A thin metal or glass pattern placed in a spotlight to project a shape such as leaves or a window.",
+  "land": "show-technology",
+  "concept": "theatrical-lighting"
+ },
+ {
+  "term": "Golden age of coasters",
+  "definition": "The 1920s boom in wooden coasters that ended with the Great Depression.",
+  "land": "history",
+  "concept": "coney-island"
+ },
+ {
+  "term": "Greyout",
+  "definition": "Dimming, colourless vision caused by sustained positive g draining blood from the head.",
+  "land": "ride-engineering",
+  "concept": "greyout-and-redout"
+ },
+ {
+  "term": "Ground plane",
+  "definition": "Everything underfoot: paving colour, pattern, texture and scoring, treated as a designed storytelling surface.",
+  "land": "sensory-environment",
+  "concept": "ground-plane-storytelling"
+ },
+ {
+  "term": "Grouper",
+  "definition": "The platform position that sorts parties into numbered rows before the gates open.",
+  "land": "operations-business",
+  "concept": "load-unload-design"
+ },
+ {
+  "term": "Haptics",
+  "definition": "Technology that produces touch or force sensations, from seat vibration to pneumatic vests, timed to media events.",
+  "land": "ai-future",
+  "concept": "haptics-and-next-gen-motion"
+ },
+ {
+  "term": "Head Injury Criterion",
+  "definition": "A crash-test score computed from the head's acceleration over a short window, used to compare coasters with other activities.",
+  "land": "ride-engineering",
+  "concept": "head-and-neck-loads"
+ },
+ {
+  "term": "Headbanging",
+  "definition": "Repeated strikes of the head against a hard restraint caused by lateral jolts on a rough ride.",
+  "land": "ride-engineering",
+  "concept": "rough-rides"
+ },
+ {
+  "term": "Heartline",
+  "definition": "The roll axis chosen to pass through the average rider's chest so that rolls feel nearly force-free.",
+  "land": "ride-engineering",
+  "concept": "heartline"
+ },
+ {
+  "term": "Hip breadth",
+  "definition": "The seated width across the hips, the measurement that most often decides whether a guest fits a ride seat.",
+  "land": "human-factors",
+  "concept": "seat-width-and-hip-breadth"
+ },
+ {
+  "term": "Holding brake",
+  "definition": "The brake at the lip of a dive coaster's drop that pauses the train face-down before release.",
+  "land": "ride-systems",
+  "concept": "dive-coasters"
+ },
+ {
+  "term": "Hot-dip galvanizing",
+  "definition": "Coating steel by dipping it in molten zinc, which protects as a barrier and sacrificially.",
+  "land": "ride-engineering",
+  "concept": "corrosion-and-weathering"
+ },
+ {
+  "term": "Hub-and-spoke",
+  "definition": "A park layout with one entrance, a central plaza and themed lands radiating out from it.",
+  "land": "masterplanning",
+  "concept": "hub-and-spoke"
+ },
+ {
+  "term": "Hybrid coaster",
+  "definition": "A coaster with steel track on a mostly wooden structure, such as New Texas Giant.",
+  "land": "history",
+  "concept": "rmc-hybrid-era"
+ },
+ {
+  "term": "Hydraulic launch",
+  "definition": "A launch that fires a train with a cable pulled by hydraulic motors, as on Kingda Ka.",
+  "land": "history",
+  "concept": "launch-era"
+ },
+ {
+  "term": "Hypercoaster",
+  "definition": "A full-circuit coaster at least 200 ft tall, a class begun by Magnum XL-200 in 1989.",
+  "land": "history",
+  "concept": "hyper-and-giga-era"
+ },
+ {
+  "term": "I-Box track",
+  "definition": "RMC's steel I-beam track that replaces wooden rails on an existing wooden structure.",
+  "land": "history",
+  "concept": "rmc-hybrid-era"
+ },
+ {
+  "term": "IAAPA",
+  "definition": "The International Association of Amusement Parks and Attractions, the operators' and suppliers' trade body that runs the Expos.",
+  "land": "careers",
+  "concept": "professional-bodies"
+ },
+ {
+  "term": "ICAP / ICAE",
+  "definition": "IAAPA's Certified Attractions Professional and Certified Attractions Executive credentials, earned by exam and maintained with continuing education.",
+  "land": "careers",
+  "concept": "professional-bodies"
+ },
+ {
+  "term": "Imageability",
+  "definition": "Kevin Lynch's term for how easily a place forms a clear mental map in the people who use it.",
+  "land": "human-factors",
+  "concept": "wayfinding"
+ },
+ {
+  "term": "Imaginations",
+  "definition": "Walt Disney Imagineering's student design competition, started by Marty Sklar in 1991, with Hong Kong and Shanghai editions.",
+  "land": "careers",
+  "concept": "competitions"
+ },
+ {
+  "term": "Imagineer",
+  "definition": "A Walt Disney Imagineering employee; the company says it spans more than 100 disciplines, not only artists.",
+  "land": "careers",
+  "concept": "roles"
+ },
+ {
+  "term": "Imagineering in a Box",
+  "definition": "The free three-lesson Khan Academy course on theme park design that Disney Imagineering released in 2020.",
+  "land": "careers",
+  "concept": "imagineering-in-a-box"
+ },
+ {
+  "term": "Infinity mirror",
+  "definition": "A mirror facing a half-silvered mirror with lights between them, producing a tunnel of reflections that seems endless.",
+  "land": "show-technology",
+  "concept": "mirrors-and-infinity-rooms"
+ },
+ {
+  "term": "Inspection body",
+  "definition": "An organisation registered under a scheme such as ADIPS to review designs and inspect rides independently.",
+  "land": "safety-standards",
+  "concept": "national-inspection-schemes"
+ },
+ {
+  "term": "Integration",
+  "definition": "A space syntax measure of how few turns a path is from all others, which predicts how busy it will be.",
+  "land": "masterplanning",
+  "concept": "space-syntax"
+ },
+ {
+  "term": "Interpretation",
+  "definition": "The museum and park-ranger craft of helping visitors find meaning in a place, not just facts.",
+  "land": "story-experience",
+  "concept": "exhibit-interpretation"
+ },
+ {
+  "term": "ISO 17842",
+  "definition": "The international ride safety standard from ISO/TC 254, closely aligned with EN 13814.",
+  "land": "safety-standards",
+  "concept": "iso-17842"
+ },
+ {
+  "term": "Jerk",
+  "definition": "The rate at which acceleration changes; sudden jerk makes muscles overshoot and heads whip.",
+  "land": "ride-engineering",
+  "concept": "jerk-and-onset-rate"
+ },
+ {
+  "term": "Just culture",
+  "definition": "A workplace where honest errors can be reported without punishment while reckless acts are still addressed.",
+  "land": "safety-standards",
+  "concept": "safety-culture"
+ },
+ {
+  "term": "Kinetics",
+  "definition": "Small deliberate movement in a scene, such as a flag or steam, that keeps a space feeling alive.",
+  "land": "story-experience",
+  "concept": "kinetics-in-scenes"
+ },
+ {
+  "term": "Land",
+  "definition": "A themed zone of a park where architecture, sound, food and rides all describe one place and story.",
+  "land": "masterplanning",
+  "concept": "land-design"
+ },
+ {
+  "term": "Land bank",
+  "definition": "Acreage reserved in a masterplan for future lands, gates or hotels.",
+  "land": "masterplanning",
+  "concept": "expansion-and-phasing"
+ },
+ {
+  "term": "Lateral g",
+  "definition": "Sideways force on a rider in a turn, reduced by banking the track.",
+  "land": "ride-engineering",
+  "concept": "lateral-g"
+ },
+ {
+  "term": "Legibility",
+  "definition": "Kevin Lynch's term for how easily people can form a mental map of a place.",
+  "land": "masterplanning",
+  "concept": "urban-planning-parallels"
+ },
+ {
+  "term": "Length of stay",
+  "definition": "The number of days or nights a visiting party spends at a resort.",
+  "land": "operations-business",
+  "concept": "length-of-stay"
+ },
+ {
+  "term": "Level of service",
+  "definition": "Fruin's A-to-F grade of how much space each walking person has, used to judge path width.",
+  "land": "masterplanning",
+  "concept": "level-of-service"
+ },
+ {
+  "term": "Lift hill",
+  "definition": "The chain or cable slope that gives a coaster train its stored energy before the first drop.",
+  "land": "ride-systems",
+  "concept": "coaster-anatomy"
+ },
+ {
+  "term": "Lightning Lane Multi Pass",
+  "definition": "Disney's paid line-skipping product, renamed from Genie+ on July 24, 2024, with pre-booking windows.",
+  "land": "ai-future",
+  "concept": "personalization"
+ },
+ {
+  "term": "LIM",
+  "definition": "Linear induction motor: track coils that push a plain metal fin on the train by inducing currents in it.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch"
+ },
+ {
+  "term": "LIM launch",
+  "definition": "A launch using linear induction motors along the track, first used on Flight of Fear in 1996.",
+  "land": "history",
+  "concept": "launch-era"
+ },
+ {
+  "term": "Little's law",
+  "definition": "The average number of people in a queue equals the arrival rate multiplied by the average time each spends there.",
+  "land": "operations-business",
+  "concept": "littles-law"
+ },
+ {
+  "term": "Localisation",
+  "definition": "Adapting a ride or story for a new country by changing its meaning, characters and symbols, not just its language.",
+  "land": "human-factors",
+  "concept": "localisation"
+ },
+ {
+  "term": "Location-based entertainment",
+  "definition": "Any ticketed experience guests travel to, from theme parks to VR arenas, immersive art venues and pop-ups.",
+  "land": "ai-future",
+  "concept": "location-based-entertainment"
+ },
+ {
+  "term": "Loop layout",
+  "definition": "A park plan where lands are arranged around a ring path, often circling a lagoon.",
+  "land": "masterplanning",
+  "concept": "loop-and-linear-layouts"
+ },
+ {
+  "term": "LSM",
+  "definition": "Linear synchronous motor: track coils that push permanent magnets on the train to launch or brake it.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch"
+ },
+ {
+  "term": "Major modification",
+  "definition": "A change to a ride significant enough that the design standard applies to it as if it were new.",
+  "land": "safety-standards",
+  "concept": "astm-f2291"
+ },
+ {
+  "term": "Maquette",
+  "definition": "A small study model used to test a form before building it at full size.",
+  "land": "design-process",
+  "concept": "models-and-maquettes"
+ },
+ {
+  "term": "Master planner",
+  "definition": "A planning role that lays out lands, capacities, circulation and phasing for a whole park or resort.",
+  "land": "careers",
+  "concept": "planning-and-ops-roles"
+ },
+ {
+  "term": "Mean radiant temperature",
+  "definition": "The combined heat a person feels from surrounding surfaces and sun; shade lowers it even when air temperature does not change.",
+  "land": "sensory-environment",
+  "concept": "shade-and-microclimate"
+ },
+ {
+  "term": "Mean time between failures (MTBF)",
+  "definition": "The average running time between stoppages of a ride.",
+  "land": "operations-business",
+  "concept": "downtime-and-availability"
+ },
+ {
+  "term": "Means of egress",
+  "definition": "The code term for the protected route out of a building or area, sized by occupancy under rules like NFPA 101.",
+  "land": "masterplanning",
+  "concept": "emergency-access"
+ },
+ {
+  "term": "Media server",
+  "definition": "A computer built to play or render very large video streams to many projectors in perfect sync.",
+  "land": "show-technology",
+  "concept": "media-servers-and-real-time-engines"
+ },
+ {
+  "term": "Microclimate",
+  "definition": "The local weather of a small space, shaped by shade, wind, water and surfaces, which can differ from the regional forecast.",
+  "land": "sensory-environment",
+  "concept": "shade-and-microclimate"
+ },
+ {
+  "term": "Midway",
+  "definition": "The amusement strip of a fair, named after the Midway Plaisance of the 1893 Chicago exposition.",
+  "land": "history",
+  "concept": "pleasure-gardens-and-worlds-fairs"
+ },
+ {
+  "term": "Misdirection",
+  "definition": "Steering the audience's attention toward one thing so a change elsewhere goes unnoticed.",
+  "land": "show-technology",
+  "concept": "misdirection"
+ },
+ {
+  "term": "Mist screen",
+  "definition": "A thin curtain of water droplets used as a see-through projection surface in nighttime shows.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains"
+ },
+ {
+  "term": "Mood board",
+  "definition": "A collage of images, colours and samples that fixes the feel of a project in one glance.",
+  "land": "design-process",
+  "concept": "mood-boards"
+ },
+ {
+  "term": "Multibody dynamics",
+  "definition": "Simulation that solves the equations of motion for linked bodies such as a train, its bogies, restraints and track.",
+  "land": "ai-future",
+  "concept": "simulation-and-surrogates"
+ },
+ {
+  "term": "Narrative transportation",
+  "definition": "The state of being carried into a story so fully that attention, imagery and emotion all focus on it.",
+  "land": "human-factors",
+  "concept": "narrative-transportation"
+ },
+ {
+  "term": "Near-field loudspeaker",
+  "definition": "A small speaker placed low and close to guests so sound stays local instead of carrying across a land.",
+  "land": "sensory-environment",
+  "concept": "audio-zoning"
+ },
+ {
+  "term": "Node",
+  "definition": "A junction or gathering point where paths meet and guests make a navigation decision.",
+  "land": "human-factors",
+  "concept": "landmarks-and-nodes"
+ },
+ {
+  "term": "Non-destructive testing",
+  "definition": "Methods such as ultrasonic or magnetic particle inspection that find cracks and thinning without damaging the part.",
+  "land": "safety-standards",
+  "concept": "inspections"
+ },
+ {
+  "term": "Non-destructive testing (NDT)",
+  "definition": "Checking metal parts for hidden cracks with methods such as ultrasound or magnetic particles that do not damage them.",
+  "land": "operations-business",
+  "concept": "preventive-maintenance"
+ },
+ {
+  "term": "Nudge",
+  "definition": "A design that predictably changes behaviour while leaving every option open, such as a default or an ordering.",
+  "land": "human-factors",
+  "concept": "choice-architecture"
+ },
+ {
+  "term": "Obsolescence",
+  "definition": "The point at which a part or controller is no longer made and must be reverse-engineered or redesigned.",
+  "land": "operations-business",
+  "concept": "spare-parts-and-obsolescence"
+ },
+ {
+  "term": "Occupied time",
+  "definition": "Waiting time filled with something to look at or do, which feels shorter than empty time.",
+  "land": "human-factors",
+  "concept": "occupied-time"
+ },
+ {
+  "term": "Omnimover",
+  "definition": "A continuous chain of swivelling ride vehicles that lets designers point every rider at each scene.",
+  "land": "history",
+  "concept": "haunted-mansion"
+ },
+ {
+  "term": "Onboard audio",
+  "definition": "Speakers mounted in the ride vehicle so each rider hears a soundtrack that follows the ride.",
+  "land": "show-technology",
+  "concept": "onboard-and-spatial-audio"
+ },
+ {
+  "term": "Onstage",
+  "definition": "Any part of the park a guest can see, hear or smell, which must belong to the story.",
+  "land": "masterplanning",
+  "concept": "onstage-backstage"
+ },
+ {
+  "term": "Onstage / backstage",
+  "definition": "Disney's theatre metaphor for public areas versus hidden operational areas.",
+  "land": "story-experience",
+  "concept": "theatre-staging"
+ },
+ {
+  "term": "Operational capacity",
+  "definition": "The hourly rider count a ride actually achieves after empty seats, slow loads and stoppages.",
+  "land": "operations-business",
+  "concept": "throughput-math"
+ },
+ {
+  "term": "Otolith organs",
+  "definition": "The utricle and saccule, inner-ear sensors for linear acceleration and head tilt.",
+  "land": "human-factors",
+  "concept": "otolith-organs"
+ },
+ {
+  "term": "Overlay",
+  "definition": "A temporary change of props, lighting and audio that gives a ride a seasonal story without altering the hardware.",
+  "land": "operations-business",
+  "concept": "retheming-and-overlays"
+ },
+ {
+  "term": "Parade dump",
+  "definition": "The surge of guests arriving at nearby rides the moment a parade or show ends.",
+  "land": "operations-business",
+  "concept": "entertainment-scheduling"
+ },
+ {
+  "term": "Park reservation",
+  "definition": "A dated booking required to enter a park, adopted widely after the 2020 reopenings.",
+  "land": "history",
+  "concept": "reservation-era"
+ },
+ {
+  "term": "Patina",
+  "definition": "The look of age added with glazes or chemicals so a new surface reads as decades old.",
+  "land": "design-process",
+  "concept": "scenic-painting"
+ },
+ {
+  "term": "Patron containment",
+  "definition": "The design requirement, in standards such as ASTM F2291, that a restraint and seat keep the rider safely in the vehicle through all ride forces.",
+  "land": "human-factors",
+  "concept": "restraint-fit"
+ },
+ {
+  "term": "Peak-end rule",
+  "definition": "We judge an experience by its most intense moment and its ending rather than its average.",
+  "land": "human-factors",
+  "concept": "peak-end-rule"
+ },
+ {
+  "term": "Pedestrian level of service",
+  "definition": "Fruin's A-to-F grading of walkways, stairs and queues by how much space each person has.",
+  "land": "human-factors",
+  "concept": "personal-space-and-density"
+ },
+ {
+  "term": "Pedestrian space",
+  "definition": "The area available per walking person, in square metres, the basic measure behind level of service.",
+  "land": "masterplanning",
+  "concept": "level-of-service"
+ },
+ {
+  "term": "Pepper's ghost",
+  "definition": "An illusion in which a lit figure reflects in an angled sheet of glass so it appears as a transparent ghost on stage.",
+  "land": "show-technology",
+  "concept": "peppers-ghost"
+ },
+ {
+  "term": "Per-capita spending",
+  "definition": "Revenue divided by attendance; the average amount each guest visit brings in.",
+  "land": "operations-business",
+  "concept": "per-capita-spending"
+ },
+ {
+  "term": "Percentile design",
+  "definition": "Choosing the slice of a population, such as the 5th to 95th percentile, that a design must fit.",
+  "land": "human-factors",
+  "concept": "percentile-design"
+ },
+ {
+  "term": "Performance Level",
+  "definition": "The ISO 13849 rating from a to e that expresses the reliability required of a safety-related control function.",
+  "land": "safety-standards",
+  "concept": "safety-integrity-levels"
+ },
+ {
+  "term": "Permissive",
+  "definition": "A control-system condition, such as all restraints locked, that must be true before dispatch is allowed.",
+  "land": "safety-standards",
+  "concept": "dispatch-procedures"
+ },
+ {
+  "term": "Photo Validation",
+  "definition": "Universal Orlando's name for its opt-out face-matching entry and attraction check system.",
+  "land": "ai-future",
+  "concept": "data-privacy"
+ },
+ {
+  "term": "Pinch point",
+  "definition": "A narrow spot where paths, queues or exits collide and the crowd slows or stalls.",
+  "land": "masterplanning",
+  "concept": "pinch-points"
+ },
+ {
+  "term": "Place illusion",
+  "definition": "Slater's term for the sense of being in a place, produced by consistent sensory input that responds to your movement.",
+  "land": "human-factors",
+  "concept": "presence"
+ },
+ {
+  "term": "Plausibility illusion",
+  "definition": "Slater's term for the sense that events are really happening, produced by a world that reacts to you and behaves consistently.",
+  "land": "human-factors",
+  "concept": "presence"
+ },
+ {
+  "term": "Pleasure garden",
+  "definition": "A paid public garden of the 17th to 19th centuries offering music, lights, food and early rides.",
+  "land": "history",
+  "concept": "pleasure-gardens-and-worlds-fairs"
+ },
+ {
+  "term": "Plussing",
+  "definition": "Walt Disney's verb for improving something that already works by adding one more detail.",
+  "land": "story-experience",
+  "concept": "plussing"
+ },
+ {
+  "term": "Posted wait",
+  "definition": "The queue time a park displays in its app or at the entrance, which third-party forecasters log and which often differs from the real wait.",
+  "land": "ai-future",
+  "concept": "wait-time-prediction"
+ },
+ {
+  "term": "Postural instability theory",
+  "definition": "The view that motion sickness follows prolonged failure to keep the body stable, not sensory mismatch.",
+  "land": "human-factors",
+  "concept": "postural-instability-theory"
+ },
+ {
+  "term": "Pre-show",
+  "definition": "A short, timed performance between the queue and the ride that sets up story and rules for a group.",
+  "land": "story-experience",
+  "concept": "pre-show"
+ },
+ {
+  "term": "Predictive maintenance",
+  "definition": "Replacing or servicing a part when its sensor data shows wear beginning, rather than after failure or on a fixed calendar.",
+  "land": "ai-future",
+  "concept": "predictive-maintenance"
+ },
+ {
+  "term": "Preventive maintenance",
+  "definition": "Inspecting and replacing parts on a schedule set by hours or cycles, before they fail.",
+  "land": "operations-business",
+  "concept": "preventive-maintenance"
+ },
+ {
+  "term": "Previs",
+  "definition": "Short for previsualization: a rough animated version of a ride or scene made to test timing and views.",
+  "land": "design-process",
+  "concept": "previs"
+ },
+ {
+  "term": "Process portfolio",
+  "definition": "A portfolio that shows sketches, options and decisions for each project, not only finished renders.",
+  "land": "careers",
+  "concept": "portfolio-building"
+ },
+ {
+  "term": "Project planner/scheduler",
+  "definition": "A production role that builds and maintains the project schedule across design, fabrication and installation.",
+  "land": "careers",
+  "concept": "project-and-production-roles"
+ },
+ {
+  "term": "Projection mapping",
+  "definition": "Projecting video that has been warped and masked to fit a three-dimensional surface such as a face or a castle.",
+  "land": "show-technology",
+  "concept": "projection-mapping"
+ },
+ {
+  "term": "Proprioception",
+  "definition": "The body's sense of where its limbs are and how hard its muscles are working.",
+  "land": "human-factors",
+  "concept": "proprioception-and-haptics"
+ },
+ {
+  "term": "Prospect-refuge",
+  "definition": "The idea that people prefer places where they can see out (prospect) while feeling sheltered (refuge).",
+  "land": "sensory-environment",
+  "concept": "prospect-refuge"
+ },
+ {
+  "term": "Protective frame",
+  "definition": "A felt sense of safety, from trust in the ride or distance from the danger, that lets fear become fun.",
+  "land": "human-factors",
+  "concept": "protective-frame"
+ },
+ {
+  "term": "Proxemics",
+  "definition": "Edward T. Hall's study of the personal-space distances people keep from one another.",
+  "land": "human-factors",
+  "concept": "personal-space-and-density"
+ },
+ {
+  "term": "Proximate pyrotechnics",
+  "definition": "Flames, flashes and sparks fired close to an audience, governed in the US by NFPA 1126.",
+  "land": "show-technology",
+  "concept": "pyrotechnics"
+ },
+ {
+  "term": "Proximity switch",
+  "definition": "An inductive sensor that detects a metal flag passing without contact, used to count cars.",
+  "land": "ride-engineering",
+  "concept": "sensors-and-switches"
+ },
+ {
+  "term": "Quiet room",
+  "definition": "A low-stimulation space with dim lighting and soft seating where an overloaded guest can recover inside the park.",
+  "land": "human-factors",
+  "concept": "sensory-guides-and-quiet-rooms"
+ },
+ {
+  "term": "Reach envelope",
+  "definition": "The volume a rider's outstretched limbs could occupy, swept along the ride path, which must stay clear of structure.",
+  "land": "safety-standards",
+  "concept": "reach-envelope"
+ },
+ {
+  "term": "Real-time engine",
+  "definition": "Game-engine software that renders ride media frame by frame during the ride so it can react to riders and timing.",
+  "land": "ai-future",
+  "concept": "real-time-engines"
+ },
+ {
+  "term": "Redundancy",
+  "definition": "A second independent means of performing a critical safety function in case the first fails.",
+  "land": "safety-standards",
+  "concept": "redundancy-and-fail-safe"
+ },
+ {
+  "term": "Refurbishment",
+  "definition": "A planned closure in which a ride's trains, structure, controls or scenes are renewed.",
+  "land": "operations-business",
+  "concept": "ride-lifecycle"
+ },
+ {
+  "term": "Reinforcement learning",
+  "definition": "Training a controller by trial and reward in simulation until it reliably performs a task, such as walking in character without falling.",
+  "land": "ai-future",
+  "concept": "rl-for-figures"
+ },
+ {
+  "term": "Remembering self",
+  "definition": "The part of us that tells the story of an experience afterwards, as opposed to the part that lives it.",
+  "land": "human-factors",
+  "concept": "experiencing-vs-remembering-self"
+ },
+ {
+  "term": "Reminiscence bump",
+  "definition": "The tendency to recall more memories from roughly ages 10 to 30 than from other periods.",
+  "land": "human-factors",
+  "concept": "reminiscence-bump"
+ },
+ {
+  "term": "Reneging",
+  "definition": "Leaving a queue after joining it, before being served.",
+  "land": "human-factors",
+  "concept": "balking-and-reneging"
+ },
+ {
+  "term": "Restraint verification",
+  "definition": "Checking that each rider's bar or belt is closed and locked before dispatch; today manual, with camera-based patents filed.",
+  "land": "ai-future",
+  "concept": "vision-safety-monitoring"
+ },
+ {
+  "term": "Return pass",
+  "definition": "A ticket handed out when a ride breaks down that lets the guest come back later without queueing.",
+  "land": "operations-business",
+  "concept": "guest-recovery"
+ },
+ {
+  "term": "Reveal",
+  "definition": "The planned moment a hidden view suddenly opens up as a payoff.",
+  "land": "story-experience",
+  "concept": "reveal-and-concealment"
+ },
+ {
+  "term": "Reversal theory",
+  "definition": "Apter's idea that the same arousal is felt as anxiety or excitement depending on the frame you are in.",
+  "land": "human-factors",
+  "concept": "fear-vs-fun"
+ },
+ {
+  "term": "Ride Engineering Competition",
+  "definition": "A US university competition in which teams design and build a working model attraction to a shared prompt over six months.",
+  "land": "careers",
+  "concept": "competitions"
+ },
+ {
+  "term": "Ride systems engineer",
+  "definition": "An engineer who designs the vehicle, track and drive systems and proves they stay inside force and clearance limits.",
+  "land": "careers",
+  "concept": "engineering-roles"
+ },
+ {
+  "term": "Rider switch",
+  "definition": "A procedure letting adults in a group take turns on a ride while one waits with a child who cannot ride.",
+  "land": "human-factors",
+  "concept": "rider-switch"
+ },
+ {
+  "term": "Risk assessment",
+  "definition": "The structured process of finding hazards, estimating how bad and how likely they are, and reducing them until acceptable.",
+  "land": "safety-standards",
+  "concept": "risk-assessment"
+ },
+ {
+  "term": "Rolling resistance",
+  "definition": "Energy lost as a tyre squashes and recovers on the rail, a small fraction of the wheel load.",
+  "land": "ride-engineering",
+  "concept": "friction-and-drag"
+ },
+ {
+  "term": "Rope drop",
+  "definition": "The morning rush when gates open and guests race to the most popular rides.",
+  "land": "masterplanning",
+  "concept": "guest-flow-patterns"
+ },
+ {
+  "term": "S-N curve",
+  "definition": "A plot of stress range against cycles to failure used to predict fatigue life.",
+  "land": "ride-engineering",
+  "concept": "fatigue"
+ },
+ {
+  "term": "Safety Integrity Level",
+  "definition": "An IEC 61508 rating from 1 to 4 that caps how often a safety function may fail dangerously.",
+  "land": "safety-standards",
+  "concept": "safety-integrity-levels"
+ },
+ {
+  "term": "Safety PLC",
+  "definition": "A programmable controller with redundant, self-checking hardware rated for safety-critical functions.",
+  "land": "safety-standards",
+  "concept": "ride-control-systems"
+ },
+ {
+  "term": "SATE",
+  "definition": "TEA's signature conference on experience design, held regionally each year.",
+  "land": "careers",
+  "concept": "conferences"
+ },
+ {
+  "term": "Scent chip",
+  "definition": "A replaceable cartridge soaked with fragrance that a scent machine blows air across to release the smell.",
+  "land": "sensory-environment",
+  "concept": "smellitzers"
+ },
+ {
+  "term": "Schematic design",
+  "definition": "The phase that turns a concept into rough plans, elevations and sketches that fix size and layout.",
+  "land": "design-process",
+  "concept": "schematic-design"
+ },
+ {
+  "term": "Scope 1 and 2 emissions",
+  "definition": "Greenhouse gases from a company's own operations and from the electricity it buys; the basis of park climate targets.",
+  "land": "ai-future",
+  "concept": "sustainability"
+ },
+ {
+  "term": "Scope of theming",
+  "definition": "The list of guest-facing elements a theming contractor must build, drawn to separate them from base building.",
+  "land": "design-process",
+  "concept": "schematic-design"
+ },
+ {
+  "term": "Scrim",
+  "definition": "A loosely woven cloth that looks solid when lit from the front and transparent when the scene behind it is lit.",
+  "land": "show-technology",
+  "concept": "scrims-and-transparency"
+ },
+ {
+  "term": "Seasonal overlay",
+  "definition": "A temporary re-dressing of an attraction or land for a holiday, installed and removed on a yearly cycle.",
+  "land": "sensory-environment",
+  "concept": "seasonal-overlays"
+ },
+ {
+  "term": "Seat buck",
+  "definition": "A rough full-size mock-up of a ride seat used to test fit, reach and restraints with real people.",
+  "land": "design-process",
+  "concept": "mockups-and-prototypes"
+ },
+ {
+  "term": "Semicircular canals",
+  "definition": "Three fluid-filled rings in each inner ear that detect head rotation.",
+  "land": "human-factors",
+  "concept": "semicircular-canals"
+ },
+ {
+  "term": "Sensation seeking",
+  "definition": "A personality trait describing how strongly someone craves intense, novel and risky experiences.",
+  "land": "human-factors",
+  "concept": "sensation-seeking"
+ },
+ {
+  "term": "Sensory conflict theory",
+  "definition": "The view that motion sickness comes from a mismatch between what the eyes, inner ear and body expect and report.",
+  "land": "human-factors",
+  "concept": "sensory-conflict-theory"
+ },
+ {
+  "term": "Sensory guide",
+  "definition": "A published rating of each attraction on sound, light, smell, touch and motion so guests can plan around sensory needs.",
+  "land": "human-factors",
+  "concept": "sensory-guides-and-quiet-rooms"
+ },
+ {
+  "term": "Service bulletin",
+  "definition": "A notice from a manufacturer or regulator telling all owners of a ride type about a fault or required check.",
+  "land": "safety-standards",
+  "concept": "incident-reporting"
+ },
+ {
+  "term": "Service proven",
+  "definition": "A pre-existing ride design exempted from a new design standard because its safe operating history is documented.",
+  "land": "safety-standards",
+  "concept": "astm-f2291"
+ },
+ {
+  "term": "Servicescape",
+  "definition": "Bitner's term for the built environment of a service, covering ambient conditions, layout and signs, and how it shapes behaviour.",
+  "land": "sensory-environment",
+  "concept": "servicescape"
+ },
+ {
+  "term": "Set dressing",
+  "definition": "The objects, clutter and wear placed in a scene to make it look inhabited.",
+  "land": "story-experience",
+  "concept": "set-dressing-and-props"
+ },
+ {
+  "term": "Shotcrete",
+  "definition": "Concrete sprayed through a hose onto lath, then hand carved into rock texture.",
+  "land": "design-process",
+  "concept": "rockwork"
+ },
+ {
+  "term": "Shoulder season",
+  "definition": "The quieter weeks on either side of a park's peak, often filled with ticketed events.",
+  "land": "operations-business",
+  "concept": "seasonality-and-events"
+ },
+ {
+  "term": "Show action equipment",
+  "definition": "Mechanised scenery such as moving walls, drops or boulders that is neither a vehicle nor a character figure.",
+  "land": "show-technology",
+  "concept": "show-action-equipment"
+ },
+ {
+  "term": "Show control",
+  "definition": "The system that cues lights, audio, video, figures and effects so they run together on a timeline or from triggers.",
+  "land": "show-technology",
+  "concept": "show-control-systems"
+ },
+ {
+  "term": "Show control programmer",
+  "definition": "A show technology role that writes the cue logic linking ride position to lights, audio, media, effects and figures.",
+  "land": "careers",
+  "concept": "show-tech-roles"
+ },
+ {
+  "term": "Show producer",
+  "definition": "The hybrid creative-and-management role that owns an attraction's creative content through design and installation.",
+  "land": "careers",
+  "concept": "project-and-production-roles"
+ },
+ {
+  "term": "Show set designer",
+  "definition": "A creative role that turns concept art into dimensioned plans, elevations and models of scenes that can be built.",
+  "land": "careers",
+  "concept": "creative-roles"
+ },
+ {
+  "term": "Show writer",
+  "definition": "The writer responsible for an attraction's story bible, scripts, signage copy and character voice.",
+  "land": "careers",
+  "concept": "storytelling-for-designers"
+ },
+ {
+  "term": "Shuttle",
+  "definition": "A coaster layout that does not form a circuit; the train reverses and rides the same track backward.",
+  "land": "ride-systems",
+  "concept": "shuttle-coasters"
+ },
+ {
+  "term": "Side-friction coaster",
+  "definition": "An early coaster whose cars are guided by side wheels against boards rather than held down on the rail.",
+  "land": "history",
+  "concept": "early-coasters"
+ },
+ {
+  "term": "Sightline",
+  "definition": "The straight line from a guest's eye to whatever is in view, which designers check for out-of-story objects.",
+  "land": "story-experience",
+  "concept": "sightlines"
+ },
+ {
+  "term": "Sim-to-real",
+  "definition": "Moving a controller trained in simulation onto physical hardware, usually helped by randomizing the simulator's physics.",
+  "land": "ai-future",
+  "concept": "rl-for-figures"
+ },
+ {
+  "term": "Size constancy",
+  "definition": "The brain's habit of judging an object's size from assumed distance, which forced perspective exploits.",
+  "land": "human-factors",
+  "concept": "size-constancy"
+ },
+ {
+  "term": "Smellitzer",
+  "definition": "Disney's nickname for a fan-driven scent dispenser that pushes a chosen aroma into a scene or street on a schedule.",
+  "land": "sensory-environment",
+  "concept": "smellitzers"
+ },
+ {
+  "term": "Social force model",
+  "definition": "Helbing and Molnar's 1995 way of writing pedestrian motion as physics: a pull toward a goal plus pushes away from people and walls.",
+  "land": "ai-future",
+  "concept": "crowd-modeling"
+ },
+ {
+  "term": "Social proof",
+  "definition": "The tendency to copy what other people are doing when unsure, such as joining a line because it is long.",
+  "land": "human-factors",
+  "concept": "herding-and-social-proof"
+ },
+ {
+  "term": "Sound masking",
+  "definition": "Adding deliberate sound so unwanted mechanical noise becomes less noticeable.",
+  "land": "show-technology",
+  "concept": "audio-triggers-and-masking"
+ },
+ {
+  "term": "Spiel",
+  "definition": "Theme-park slang for any spoken script, recorded or delivered live by an operator.",
+  "land": "story-experience",
+  "concept": "show-scripts"
+ },
+ {
+  "term": "Spillwater",
+  "definition": "A water-filled trough at the end of a track section that slows a boat on a flume or water coaster.",
+  "land": "ride-systems",
+  "concept": "water-coaster"
+ },
+ {
+  "term": "Splashdown",
+  "definition": "The landing of a water-ride boat into a pool that stops it and throws up a wave.",
+  "land": "ride-systems",
+  "concept": "log-flume"
+ },
+ {
+  "term": "Squinching",
+  "definition": "Pre-distorting a 3D image so it looks correct from a moving ride vehicle's viewpoint rather than from a fixed seat.",
+  "land": "show-technology",
+  "concept": "stereoscopic-3d"
+ },
+ {
+  "term": "Standard practice",
+  "definition": "An ASTM document that sets out an agreed way of doing something, such as designing or inspecting a ride.",
+  "land": "safety-standards",
+  "concept": "astm-f24"
+ },
+ {
+  "term": "Stewart platform",
+  "definition": "A six-legged hexapod that moves a platform in all six degrees of freedom.",
+  "land": "ride-systems",
+  "concept": "stewart-platform"
+ },
+ {
+  "term": "Story bible",
+  "definition": "The shared reference document holding a fictional world's characters, history and rules.",
+  "land": "story-experience",
+  "concept": "story-bible"
+ },
+ {
+  "term": "Story world",
+  "definition": "Joe Rohde's term for a place built to be explored rather than a plot to be retold.",
+  "land": "story-experience",
+  "concept": "ip-adaptation"
+ },
+ {
+  "term": "Straddle-beam monorail",
+  "definition": "A monorail whose car wraps over the top of a single beam on rubber tyres.",
+  "land": "ride-systems",
+  "concept": "monorail-and-people-movers"
+ },
+ {
+  "term": "Strata coaster",
+  "definition": "A full-circuit coaster 400 ft or taller, begun by Top Thrill Dragster in 2003.",
+  "land": "history",
+  "concept": "strata-coasters"
+ },
+ {
+  "term": "Stuntronics",
+  "definition": "Disney Research's untethered stunt-double figure that flips in free flight and lands on its mark using onboard sensing.",
+  "land": "ai-future",
+  "concept": "stuntronics"
+ },
+ {
+  "term": "Sunk cost effect",
+  "definition": "Continuing to invest time or money because of what has already been spent rather than what lies ahead.",
+  "land": "human-factors",
+  "concept": "sunk-cost-and-commitment"
+ },
+ {
+  "term": "Superelevation",
+  "definition": "The railway term for banking: raising the outer rail of a curve so the force comes through the seat.",
+  "land": "ride-engineering",
+  "concept": "banking"
+ },
+ {
+  "term": "Surrogate model",
+  "definition": "A fast stand-in, often a neural network trained on simulation output, that answers an engineering question in microseconds instead of minutes.",
+  "land": "ai-future",
+  "concept": "simulation-and-surrogates"
+ },
+ {
+  "term": "Swiss cheese model",
+  "definition": "James Reason's picture of layered defences with holes; harm only passes when the holes line up.",
+  "land": "safety-standards",
+  "concept": "lessons-from-incidents"
+ },
+ {
+  "term": "Switch track",
+  "definition": "A movable section of track that sends a train onto a different route mid-ride.",
+  "land": "ride-systems",
+  "concept": "multi-launch-coasters"
+ },
+ {
+  "term": "Switchback railway",
+  "definition": "An 1880s gravity ride where a car coasted one way, was pushed to a second track, and coasted back.",
+  "land": "history",
+  "concept": "early-coasters"
+ },
+ {
+  "term": "Systems thinking",
+  "definition": "The habit of tracing how one design change moves throughput, cost, pacing and safety before committing to it.",
+  "land": "careers",
+  "concept": "systems-thinking"
+ },
+ {
+  "term": "T-shaped skills",
+  "definition": "Deep ability in one craft plus working knowledge of the neighbouring disciplines, the profile themed entertainment teams hire for.",
+  "land": "careers",
+  "concept": "skills"
+ },
+ {
+  "term": "Tactile design",
+  "definition": "Deliberately choosing surfaces guests will touch so texture and temperature support the story and survive wear.",
+  "land": "sensory-environment",
+  "concept": "tactile-design"
+ },
+ {
+  "term": "TEA",
+  "definition": "The Themed Entertainment Association, the trade body for the companies and people who design and build experiences.",
+  "land": "careers",
+  "concept": "professional-bodies"
+ },
+ {
+  "term": "TEA NextGen",
+  "definition": "TEA's programme for students and early-career professionals, including a six-month mentorship and discounted event entry.",
+  "land": "careers",
+  "concept": "programs-and-community"
+ },
+ {
+  "term": "Technical rehearsal",
+  "definition": "A preview run with real guests, where the ride may close at any time, used to train staff and find faults.",
+  "land": "design-process",
+  "concept": "soft-opening"
+ },
+ {
+  "term": "Testing and adjusting",
+  "definition": "The weeks after install when ride, show and operations are run and tuned before guests ride.",
+  "land": "design-process",
+  "concept": "testing-and-commissioning"
+ },
+ {
+  "term": "Thea Award",
+  "definition": "The Themed Entertainment Association's peer award for outstanding projects, given since 1994.",
+  "land": "history",
+  "concept": "landmark-attractions"
+ },
+ {
+  "term": "Thea Awards",
+  "definition": "TEA's annual awards for outstanding achievement in themed entertainment, first presented in 1994.",
+  "land": "careers",
+  "concept": "professional-bodies"
+ },
+ {
+  "term": "Theoretical hourly ride capacity (THRC)",
+  "definition": "The riders a ride could serve per hour if every seat were filled and every dispatch left on time.",
+  "land": "operations-business",
+  "concept": "throughput-math"
+ },
+ {
+  "term": "Three-act structure",
+  "definition": "Setup, confrontation and resolution, mapped onto queue, ride and exit.",
+  "land": "story-experience",
+  "concept": "three-act-ride"
+ },
+ {
+  "term": "Threshold",
+  "definition": "A gate, tunnel or arch that signals the move from one story world into another.",
+  "land": "story-experience",
+  "concept": "thresholds-and-portals"
+ },
+ {
+  "term": "Thrill Design Competition",
+  "definition": "Toronto Metropolitan University's invitational student design contest held around IAAPA Expo since 2014.",
+  "land": "careers",
+  "concept": "competitions"
+ },
+ {
+  "term": "Thrill rating",
+  "definition": "A park's published scale, from gentle to aggressive, telling guests how intense a ride is.",
+  "land": "ride-systems",
+  "concept": "ride-classification"
+ },
+ {
+  "term": "Tilt coordination",
+  "definition": "Leaning a simulator seat slowly so gravity imitates a sustained acceleration.",
+  "land": "ride-systems",
+  "concept": "motion-cueing"
+ },
+ {
+  "term": "Timecode",
+  "definition": "A running clock in hours, minutes, seconds and frames that every show device follows to stay in sync.",
+  "land": "show-technology",
+  "concept": "ride-show-synchronization"
+ },
+ {
+  "term": "Timed card",
+  "definition": "A card handed to a guest entering a queue and collected at the merge to measure the real wait.",
+  "land": "operations-business",
+  "concept": "wait-time-estimation"
+ },
+ {
+  "term": "Trackless ride",
+  "definition": "A dark ride whose vehicles follow a programmed path across a floor using wire or positioning systems, not a track.",
+  "land": "history",
+  "concept": "mystic-manor"
+ },
+ {
+  "term": "Trackless vehicle",
+  "definition": "A battery-powered ride vehicle guided by floor markers or a buried wire instead of a rail.",
+  "land": "ride-systems",
+  "concept": "trackless-ride"
+ },
+ {
+  "term": "Transfer seat",
+  "definition": "A ride seat positioned and shaped so a guest can slide across to it from a wheelchair.",
+  "land": "human-factors",
+  "concept": "accessible-vehicles"
+ },
+ {
+  "term": "Transfer track",
+  "definition": "A sliding or rotating track section that moves trains onto a storage or maintenance siding.",
+  "land": "ride-engineering",
+  "concept": "drive-tires-and-transfer-tracks"
+ },
+ {
+  "term": "Transition",
+  "definition": "The designed seam between two lands where music, paving and planting change over.",
+  "land": "masterplanning",
+  "concept": "land-transitions"
+ },
+ {
+  "term": "Transition curve",
+  "definition": "A length of track where curvature and bank ramp gradually between a straight and a curve.",
+  "land": "ride-engineering",
+  "concept": "spline-transitions"
+ },
+ {
+  "term": "Trim brake",
+  "definition": "A brake that slows a train to manage speed or forces but cannot stop it.",
+  "land": "ride-engineering",
+  "concept": "brake-types"
+ },
+ {
+  "term": "Trolley park",
+  "definition": "A picnic and amusement ground built by a streetcar company at the end of its line to sell weekend fares.",
+  "land": "history",
+  "concept": "trolley-parks"
+ },
+ {
+  "term": "Tubular steel track",
+  "definition": "Track made from steel tubes that wheels grip on three sides, first used permanently on the Matterhorn in 1959.",
+  "land": "history",
+  "concept": "tubular-steel-breakthrough"
+ },
+ {
+  "term": "Uncanny valley",
+  "definition": "Mori's observation that almost-human figures provoke unease rather than the affection given to clearly stylised ones.",
+  "land": "human-factors",
+  "concept": "uncanny-valley"
+ },
+ {
+  "term": "Underfriction wheel",
+  "definition": "A wheel that runs under the rail so a car cannot lift off, patented by John Miller in 1919.",
+  "land": "history",
+  "concept": "early-coasters"
+ },
+ {
+  "term": "Universal design",
+  "definition": "Designing a space so the widest range of people can use it without special routes or exceptions.",
+  "land": "human-factors",
+  "concept": "accessibility"
+ },
+ {
+  "term": "Untethered figure",
+  "definition": "A figure that carries its own power and computing so it can move without hoses or cables to the floor.",
+  "land": "show-technology",
+  "concept": "untethered-figures"
+ },
+ {
+  "term": "Upstop wheel",
+  "definition": "A wheel running under the rail that stops the train lifting off in inversions and over hills.",
+  "land": "ride-engineering",
+  "concept": "wheels-and-bogies"
+ },
+ {
+  "term": "Utilidor",
+  "definition": "A utility corridor; at Magic Kingdom, the ground-level service tunnels the park was built on top of.",
+  "land": "masterplanning",
+  "concept": "utilidors"
+ },
+ {
+  "term": "Utilisation",
+  "definition": "Demand divided by capacity; as it nears 100 percent, queues grow very quickly.",
+  "land": "operations-business",
+  "concept": "queueing-theory"
+ },
+ {
+  "term": "Valley",
+  "definition": "A spot where a slow train runs out of momentum and rolls back to the low point, stranding riders.",
+  "land": "ride-engineering",
+  "concept": "speed-profile"
+ },
+ {
+  "term": "Value engineering",
+  "definition": "Reviewing a design to keep its function while cutting cost; in practice often just a budget cut.",
+  "land": "design-process",
+  "concept": "scope-and-value-engineering"
+ },
+ {
+  "term": "Vection",
+  "definition": "The illusion of moving yourself when only the visual scene is moving.",
+  "land": "human-factors",
+  "concept": "vection"
+ },
+ {
+  "term": "Vestibular system",
+  "definition": "The inner-ear sensors for rotation, linear acceleration and gravity.",
+  "land": "human-factors",
+  "concept": "vestibular-system"
+ },
+ {
+  "term": "Visual intrusion",
+  "definition": "Anything a guest can see that does not belong to the story, such as a plain show building or a crane.",
+  "land": "story-experience",
+  "concept": "sightlines"
+ },
+ {
+  "term": "Visually induced motion sickness",
+  "definition": "Queasiness caused by moving images alone, such as in a dome or simulator theatre.",
+  "land": "human-factors",
+  "concept": "vection"
+ },
+ {
+  "term": "VR coaster",
+  "definition": "A roller coaster ridden with a headset whose film is synced to train speed and position; first at Europa-Park in 2015.",
+  "land": "ai-future",
+  "concept": "vr-ar-in-parks"
+ },
+ {
+  "term": "Walkthrough",
+  "definition": "An attraction with no vehicle, where guests move through story rooms at their own pace.",
+  "land": "story-experience",
+  "concept": "story-rooms-and-walkthroughs"
+ },
+ {
+  "term": "Washout",
+  "definition": "Drifting a motion platform back to centre slower than riders can feel, so it is ready for the next cue.",
+  "land": "ride-systems",
+  "concept": "motion-cueing"
+ },
+ {
+  "term": "WED Enterprises",
+  "definition": "Walt Disney's private design company of 1952, renamed Walt Disney Imagineering in 1986.",
+  "land": "history",
+  "concept": "walt-and-the-imagineers"
+ },
+ {
+  "term": "Weenie",
+  "definition": "Walt Disney's word for a tall visual magnet, such as a castle, that pulls guests through a space and anchors their sense of direction.",
+  "land": "human-factors",
+  "concept": "landmarks-and-nodes"
+ },
+ {
+  "term": "Yerkes-Dodson law",
+  "definition": "The inverted-U relationship between arousal and performance or enjoyment: too little bores, too much overwhelms.",
+  "land": "human-factors",
+  "concept": "optimal-arousal"
+ }
+]

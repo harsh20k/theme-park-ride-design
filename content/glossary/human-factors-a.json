@@ -1,0 +1,152 @@
+[
+ {
+  "term": "Peak-end rule",
+  "definition": "We judge an experience by its most intense moment and its ending rather than its average.",
+  "land": "human-factors",
+  "concept": "peak-end-rule"
+ },
+ {
+  "term": "Duration neglect",
+  "definition": "How long an experience lasts has little effect on how good or bad it feels in memory.",
+  "land": "human-factors",
+  "concept": "duration-neglect"
+ },
+ {
+  "term": "Remembering self",
+  "definition": "The part of us that tells the story of an experience afterwards, as opposed to the part that lives it.",
+  "land": "human-factors",
+  "concept": "experiencing-vs-remembering-self"
+ },
+ {
+  "term": "Reminiscence bump",
+  "definition": "The tendency to recall more memories from roughly ages 10 to 30 than from other periods.",
+  "land": "human-factors",
+  "concept": "reminiscence-bump"
+ },
+ {
+  "term": "Reversal theory",
+  "definition": "Apter's idea that the same arousal is felt as anxiety or excitement depending on the frame you are in.",
+  "land": "human-factors",
+  "concept": "fear-vs-fun"
+ },
+ {
+  "term": "Protective frame",
+  "definition": "A felt sense of safety, from trust in the ride or distance from the danger, that lets fear become fun.",
+  "land": "human-factors",
+  "concept": "protective-frame"
+ },
+ {
+  "term": "Excitation transfer",
+  "definition": "Leftover bodily arousal from one event spilling over and intensifying the feeling of the next.",
+  "land": "human-factors",
+  "concept": "excitation-transfer"
+ },
+ {
+  "term": "Yerkes-Dodson law",
+  "definition": "The inverted-U relationship between arousal and performance or enjoyment: too little bores, too much overwhelms.",
+  "land": "human-factors",
+  "concept": "optimal-arousal"
+ },
+ {
+  "term": "Sensation seeking",
+  "definition": "A personality trait describing how strongly someone craves intense, novel and risky experiences.",
+  "land": "human-factors",
+  "concept": "sensation-seeking"
+ },
+ {
+  "term": "Awe",
+  "definition": "An emotion triggered by vastness that forces you to update how you see the world.",
+  "land": "human-factors",
+  "concept": "awe"
+ },
+ {
+  "term": "Emotional contagion",
+  "definition": "The automatic spread of feelings through a group via mimicry of faces, voices and posture.",
+  "land": "human-factors",
+  "concept": "emotional-contagion"
+ },
+ {
+  "term": "Vestibular system",
+  "definition": "The inner-ear sensors for rotation, linear acceleration and gravity.",
+  "land": "human-factors",
+  "concept": "vestibular-system"
+ },
+ {
+  "term": "Semicircular canals",
+  "definition": "Three fluid-filled rings in each inner ear that detect head rotation.",
+  "land": "human-factors",
+  "concept": "semicircular-canals"
+ },
+ {
+  "term": "Otolith organs",
+  "definition": "The utricle and saccule, inner-ear sensors for linear acceleration and head tilt.",
+  "land": "human-factors",
+  "concept": "otolith-organs"
+ },
+ {
+  "term": "Sensory conflict theory",
+  "definition": "The view that motion sickness comes from a mismatch between what the eyes, inner ear and body expect and report.",
+  "land": "human-factors",
+  "concept": "sensory-conflict-theory"
+ },
+ {
+  "term": "Postural instability theory",
+  "definition": "The view that motion sickness follows prolonged failure to keep the body stable, not sensory mismatch.",
+  "land": "human-factors",
+  "concept": "postural-instability-theory"
+ },
+ {
+  "term": "Vection",
+  "definition": "The illusion of moving yourself when only the visual scene is moving.",
+  "land": "human-factors",
+  "concept": "vection"
+ },
+ {
+  "term": "Visually induced motion sickness",
+  "definition": "Queasiness caused by moving images alone, such as in a dome or simulator theatre.",
+  "land": "human-factors",
+  "concept": "vection"
+ },
+ {
+  "term": "Proprioception",
+  "definition": "The body's sense of where its limbs are and how hard its muscles are working.",
+  "land": "human-factors",
+  "concept": "proprioception-and-haptics"
+ },
+ {
+  "term": "Dark adaptation",
+  "definition": "The eyes' slow gain in sensitivity after entering darkness, taking several minutes to approach full.",
+  "land": "human-factors",
+  "concept": "dark-adaptation"
+ },
+ {
+  "term": "Size constancy",
+  "definition": "The brain's habit of judging an object's size from assumed distance, which forced perspective exploits.",
+  "land": "human-factors",
+  "concept": "size-constancy"
+ },
+ {
+  "term": "Crossmodal correspondence",
+  "definition": "A reliable pairing between features of different senses, such as high pitch with brightness.",
+  "land": "human-factors",
+  "concept": "cross-modal-effects"
+ },
+ {
+  "term": "Occupied time",
+  "definition": "Waiting time filled with something to look at or do, which feels shorter than empty time.",
+  "land": "human-factors",
+  "concept": "occupied-time"
+ },
+ {
+  "term": "Balking",
+  "definition": "Deciding not to join a queue because it looks too long.",
+  "land": "human-factors",
+  "concept": "balking-and-reneging"
+ },
+ {
+  "term": "Reneging",
+  "definition": "Leaving a queue after joining it, before being served.",
+  "land": "human-factors",
+  "concept": "balking-and-reneging"
+ }
+]

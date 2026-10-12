@@ -1,0 +1,1022 @@
+[
+ {
+  "id": "wikipedia-roller-coaster",
+  "title": "Roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Broad taxonomy of coaster types, height classes (hyper, giga, strata) and a short history.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "rcdb",
+  "title": "Roller Coaster DataBase (RCDB)",
+  "url": "https://rcdb.com/",
+  "type": "tool",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The reference census of every roller coaster, with type, model, manufacturer and status; use it to check examples.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-wooden-roller-coaster",
+  "title": "Wooden roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Wooden_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "How laminated wood track with steel running strips is built, and who still builds it (GCI, Gravity Group).",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "great-coasters-international",
+  "title": "Great Coasters International",
+  "url": "https://www.greatcoasters.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Current wooden-coaster builder; also sells Titan Track steel sections and Millennium Flyer trains.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "the-gravity-group",
+  "title": "The Gravity Group",
+  "url": "https://www.thegravitygroup.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Wooden-coaster designer behind The Voyage; its Timberliner trains are built to be gentle on wooden structure.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-steel-roller-coaster",
+  "title": "Steel roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Steel_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Why tubular steel track (Arrow, Matterhorn 1959) opened the door to loops, speed and smoothness.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-matterhorn-bobsleds",
+  "title": "Matterhorn Bobsleds (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Matterhorn_Bobsleds",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 1959 Disneyland ride usually credited as the first tubular-steel coaster.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-hybrid-roller-coaster",
+  "title": "Hybrid roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Hybrid_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Defines hybrids as one material for track and the other for structure; covers RMC I-Box conversions.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "rmc-ibox-hybrid-coasters",
+  "title": "Rocky Mountain Construction: I-Box roller coasters",
+  "url": "https://rockymtnconstruction.com/hybrid-coasters/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page for the patented all-steel I-Box track that sits on wood, steel lattice or columns.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-new-texas-giant",
+  "title": "New Texas Giant (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/New_Texas_Giant",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 2011 conversion that was RMC's first I-Box installation and gave the word 'hybrid' its modern meaning.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-roller-coasters",
+  "title": "Intamin roller coaster product range",
+  "url": "https://www.intamin.com/products/roller-coaster/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "One manufacturer's full catalogue, from family and mine-train coasters to giga, wing, spinning and vertical-launch models.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-launched-roller-coaster",
+  "title": "Launched roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Launched_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Overview of every launch family: LIM/LSM, hydraulic, pneumatic, flywheel, weight drop and friction tyre.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "coaster101-launch-systems",
+  "title": "Coasters-101: Launch Systems (Coaster101)",
+  "url": "https://www.coaster101.com/2013/10/08/coasters-101-launch-systems/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Plain-language engineering explainer of LIM, LSM, hydraulic, pneumatic, catapult and flywheel launches.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "google-patents-us-10377400",
+  "title": "US 10,377,400: Systems and methods for braking or launching a ride vehicle (Universal City Studios)",
+  "url": "https://patents.google.com/patent/US10377400B2/en",
+  "type": "patent",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "Shows the real engineering problem in linear-motor launches: holding a tiny air gap between motor and vehicle fin through curves.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-lsm-launch-coaster",
+  "title": "Intamin LSM Launch Coaster",
+  "url": "https://www.intamin.com/product/lsm-launch-coaster/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page listing single, multi and swing launch options, forward and backward launches and 200 km/h-plus speeds.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-flight-of-fear",
+  "title": "Flight of Fear (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Flight_of_Fear",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 1996 Premier Rides coasters that were the first to launch with linear induction motors.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "premier-rides-products",
+  "title": "Premier Rides product list",
+  "url": "https://premier-rides.com/products/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Catalogue of launch and Sky Rocket II coasters from the company that pioneered LIM launches.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-accelerator-coaster",
+  "title": "Accelerator Coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Accelerator_Coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "How Intamin's hydraulic launch stores energy in nitrogen accumulators and pulls the train with a catch car.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-xcelerator",
+  "title": "Xcelerator (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Xcelerator",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Intamin's first hydraulically launched coaster (2002): 0 to 82 mph in 2.3 seconds.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "s-s-air-launch-coaster",
+  "title": "S&S Worldwide Air Launch Coaster",
+  "url": "https://www.s-s.com/ride-pages/air-launch-coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page for the compressed-air launch, plus the Space Shot and Turbo Drop tower variations.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-hypersonic-xlc",
+  "title": "Hypersonic XLC (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Hypersonic_XLC",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 2001 prototype that was the first compressed-air launched coaster; closed in 2007.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-shuttle-loop",
+  "title": "Shuttle Loop (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Shuttle_Loop",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Schwarzkopf's 1977 shuttle coaster launched first by a 40-tonne dropped weight, then by a 6-tonne flywheel.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-shuttle-roller-coaster",
+  "title": "Shuttle roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Shuttle_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Covers Boomerangs, Shuttle Loops and Impulse coasters: any coaster that reverses and reuses its track.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "vekoma-family-boomerang",
+  "title": "Vekoma Family Boomerang",
+  "url": "https://www.vekoma.com/sitdown-family-coasters/family-boomerang",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer stats for the most-copied shuttle layout: 196 m of track used twice, 720 riders per hour.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "mack-rides-stryker",
+  "title": "Mack Rides Stryker coaster system",
+  "url": "https://mack-rides.com/products/stryker/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "The platform behind Voltron Nevera: LSM multi-launch, switch tracks and turntable-ready layouts.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "gerstlauer-infinity-coaster",
+  "title": "Gerstlauer Infinity Coaster",
+  "url": "https://www.gerstlauer-rides.de/produkte/achterbahnen/infinity-coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Shows how one modern platform mixes chain lifts, single, pendulum and multi-launches, switches and turntables.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-inverted-roller-coaster",
+  "title": "Inverted roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Inverted_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Batman: The Ride (1992) and why rigid under-track seating differs from older swinging suspended coasters.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-wing-coaster",
+  "title": "Wing Coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Wing_Coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "B&M's outboard seating, first on Raptor at Gardaland (2011), with the list of installations.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-flying-roller-coaster",
+  "title": "Flying roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Flying_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Prone-position coasters from Skytrak (1997) through Vekoma's Flying Dutchman and B&M's Air (2002).",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-dive-coaster",
+  "title": "Dive Coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Dive_Coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Oblivion (1998), the holding brake, wide short trains and the 87 to 96 degree drops that define the model.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-4th-dimension-roller-coaster",
+  "title": "Fourth-dimension roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/4th_Dimension_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "X at Magic Mountain (2002), Arrow's rack-and-pinion seat rotation, and the free-spinning S&S Free Spin.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "s-s-4d-free-spin-coaster",
+  "title": "S&S Worldwide 4D Free Spin Coaster",
+  "url": "https://www.s-s.com/ride-pages/4d-free-spin-coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page for the compact free-spinning 4D model with magnet-controlled flips.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-spinning-roller-coaster",
+  "title": "Spinning roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Spinning_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "From the 1908 Virginia Reel to Maurer, Gerstlauer and Mack Xtreme Spinning coasters.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "zamperla-roller-coasters",
+  "title": "Zamperla roller coaster range",
+  "url": "https://www.zamperla.com/products/roller-coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Family, junior, spinning, launch and powered coaster models from the largest family-ride maker.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "vekoma-sitdown-family-coasters",
+  "title": "Vekoma sitdown family coasters",
+  "url": "https://www.vekoma.com/sitdown-family-coasters",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Catalogue of family coasters and family launch coasters with low height requirements.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "vekoma-suspended-family-coasters",
+  "title": "Vekoma suspended family coasters",
+  "url": "https://www.vekoma.com/suspended-family-coasters",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Suspended family coasters, including a dark-ride variant and a suspended water coaster.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-powered-roller-coaster",
+  "title": "Powered roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Powered_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Coasters driven along the whole course by onboard motors, so they can do long or hilly themed layouts.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "zamperla-powered-coaster",
+  "title": "Zamperla Powered Coaster",
+  "url": "https://www.zamperla.com/product/powered-coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Real numbers for a small powered coaster: 10 kW, 28 km/h, around 700 riders per hour.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-mine-train-roller-coaster",
+  "title": "Mine train roller coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Mine_train_roller_coaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Arrow's 1966 Run-A-Way Mine Train and the multi-lift, low-drop layout that defines the genre.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-dark-ride",
+  "title": "Dark ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Dark_ride",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "History and types of dark rides, from Old Mill boats and Pretzel cars to trackless and screen-based systems.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-pretzel-amusement-ride-company",
+  "title": "Pretzel Amusement Ride Company (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Pretzel_Amusement_Ride_Company",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 1928 company whose single-rail cars defined the classic carnival dark ride; over 1,400 built.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-omnimover",
+  "title": "Omnimover (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Omnimover",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Continuous chain of swivelling vehicles that lets designers aim every rider's gaze.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "google-patents-us-3554130",
+  "title": "US 3,554,130: Amusement ride system (WED Enterprises, Omnimover)",
+  "url": "https://patents.google.com/patent/US3554130A/en",
+  "type": "patent",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "The original Omnimover patent: swivel and tilt rails, auto-opening safety bars and friction drive.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-adventure-thru-inner-space",
+  "title": "Adventure Thru Inner Space (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Adventure_Thru_Inner_Space",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "First Omnimover attraction, Disneyland, 5 August 1967.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-poohs-hunny-hunt",
+  "title": "Pooh's Hunny Hunt (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Pooh%27s_Hunny_Hunt",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Tokyo Disneyland's 2000 debut of a sensor-guided trackless system with randomised, choreographed vehicles.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "etf-mystic-mover",
+  "title": "ETF Ride Systems Mystic Mover",
+  "url": "https://www.etfridesystems.com/product/mystic-mover/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Spec sheet for a wire-guided trackless dark-ride vehicle: 0.8 m/s, 360 degree spin, 14-hour battery.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "blooloop-oceaneering-revolution-2013",
+  "title": "Oceaneering showcases REVOLUTION Tru-Trackless ride system at IAAPA (Blooloop)",
+  "url": "https://blooloop.com/theme-park/news/oceaneering-showcases-revolution-tru-trackless-ride-system-at-iaapa/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Trade coverage of a free-roaming motion-base trackless vehicle and its show-control integration.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "falcons-oes-ride-systems",
+  "title": "Falcon's Attractions: OES Ride Systems (Evolution and Revolution)",
+  "url": "https://falconsattractions.com/rides-and-attractions/oes-ride-systems/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Current home of the former Oceaneering dark-ride vehicles: tracked Evolution and Tru-Trackless Revolution.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-enhanced-motion-vehicle",
+  "title": "Enhanced motion vehicle (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Enhanced_motion_vehicle",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "How a motion base on a moving chassis fakes big motion at under 14 mph.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "google-patents-us-5623878",
+  "title": "US 5,623,878: Dynamic ride vehicle (Walt Disney Co.)",
+  "url": "https://patents.google.com/patent/US5623878A/en",
+  "type": "patent",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "The EMV patent: a passenger body moved in pitch, roll and heave relative to a steerable chassis.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-indiana-jones-adventure",
+  "title": "Indiana Jones Adventure (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Indiana_Jones_Adventure",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "First EMV attraction (1995): hydraulic rams, four-wheel steering and randomised show versions.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-robocoaster",
+  "title": "RoboCoaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/RoboCoaster",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Company history: KUKA partnership in 2001, Legoland G1 arms, and the track-mounted G2 used by Universal.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "google-patents-us-6776722",
+  "title": "US 6,776,722: Ride apparatus (KUKA Roboter / Robocoaster)",
+  "url": "https://patents.google.com/patent/US6776722B2/en",
+  "type": "patent",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "The patent for a passenger seat on a six-axis anthropomorphic robot arm.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "coaster101-robocoasters-101",
+  "title": "Robocoasters 101 (Coaster101)",
+  "url": "https://www.coaster101.com/2014/02/27/robocoasters-101/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Explains the G1, G2 and G3 robot-arm ride generations and how Forbidden Journey hides the mechanism.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-forbidden-journey",
+  "title": "Harry Potter and the Forbidden Journey (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Forbidden_Journey",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 2010 KUKA-arm dark ride that mixes sets, animatronics and curved screens on turntables.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "sally-dark-rides",
+  "title": "Sally Dark Rides",
+  "url": "https://www.sallydarkrides.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Specialist builder of interactive shooting dark rides; notes that scoring drives repeat ridership.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-buzz-lightyear-space-ranger-spin",
+  "title": "Buzz Lightyear's Space Ranger Spin (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Buzz_Lightyear%27s_Space_Ranger_Spin",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Omnimover with a joystick spin and scored laser targets; the template for Disney interactive dark rides.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-pirates-of-the-caribbean-attraction",
+  "title": "Pirates of the Caribbean attraction (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean_(attraction)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 1967 boat dark ride built on the Small World flume system, with Arrow-built boats and two drops.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-slow-boat-ride",
+  "title": "Intamin Slow Boat Ride / Tow Boat Ride",
+  "url": "https://www.intamin.com/product/slow-tow-boat-ride/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer page: boats moved by current or underwater cable, 8 to 20 riders, continuous loading.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-peter-pans-flight",
+  "title": "Peter Pan's Flight (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Peter_Pan%27s_Flight",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The classic suspended dark ride: galleons hanging from a ceiling rail since 1955.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-amazing-adventures-of-spider-man",
+  "title": "The Amazing Adventures of Spider-Man (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/The_Amazing_Adventures_of_Spider-Man",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "The 1999 benchmark for screen-based dark rides: motion-base SCOOP vehicles and 3D projection on 13 screens.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "google-patents-us-6095926",
+  "title": "US 6,095,926: Amusement ride vehicle (Universal Studios)",
+  "url": "https://patents.google.com/patent/US6095926A/en",
+  "type": "patent",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "Universal's 1998 patent for a six-actuator motion base on a tracked chassis with a yaw-spinning cabin.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-motion-simulator",
+  "title": "Motion simulator (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Motion_simulator",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Six degrees of freedom, washout filters and the theme-park uses of motion platforms.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-stewart-platform",
+  "title": "Stewart platform (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Stewart_platform",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Gough's 1954 tyre rig, Stewart's 1965 paper, and the six-jack hexapod used under most motion bases.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "stewart-1965-six-dof-platform",
+  "title": "A Platform with Six Degrees of Freedom (Stewart, 1965)",
+  "url": "https://doi.org/10.1243/PIME_PROC_1965_180_029_02",
+  "type": "paper",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "The paper that gave the hexapod motion base its common name.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "nahon-reid-1990-motion-drive-algorithms",
+  "title": "Simulator motion-drive algorithms: a designer's perspective (Nahon and Reid, 1990)",
+  "url": "https://doi.org/10.2514/3.20557",
+  "type": "paper",
+  "land": "ride-systems",
+  "level": "advanced",
+  "why_it_matters": "Classic review of washout filter design for motion simulators.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-star-tours",
+  "title": "Star Tours (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Star_Tours",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Disneyland's 1987 simulator theatre: four 40-seat hydraulic cabins built from flight-simulator technology.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-flying-theater",
+  "title": "Flying theater (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Flying_theater",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Suspended versus platform flying theatres, with Soarin' (2001) and Brogent's installations.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-soarin",
+  "title": "Soarin' (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Soarin%27",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The cantilever-lift flying theatre: 87 riders swung into an 80-foot dome, born from an Erector Set model.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "brogent-i-ride",
+  "title": "Brogent i-Ride flying theatre",
+  "url": "https://www.brogent.com/en/product-i-ride.html",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page: 6-DOF electric motion base pushing suspended seats toward a dome screen.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "dynamic-grp-ride-systems",
+  "title": "Dynamic Entertainment (formerly Dynamic Structures / Dynamic Attractions)",
+  "url": "https://dynamic-grp.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Builder of the original Flying Theater and robotic-arm ride systems for Disney and Universal.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-avatar-flight-of-passage",
+  "title": "Avatar Flight of Passage (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Avatar_Flight_of_Passage",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "2017 hybrid of link-chair motion seats, 3D dome media and animatronics.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "simworx-products",
+  "title": "Simworx attractions catalogue",
+  "url": "https://www.simworx.co.uk/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "4D cinemas, flying theatres, immersive tunnels, AGV dark rides and Robocoaster from one supplier.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "simworx-4d-cinema",
+  "title": "Simworx 4D Cinema",
+  "url": "https://www.simworx.co.uk/products/4d-cinema/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "What a 4D theatre package includes: 1 to 3 DOF seats, leg ticklers, water, air blasts, fog and snow.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-4d-film",
+  "title": "4D film (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/4D_film",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Origins of synchronized in-theatre effects, from The Sensorium (1984) to Captain EO and Muppet*Vision 3D.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-log-flume",
+  "title": "Log flume ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Log_flume_(ride)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Arrow's El Aserradero (1963) and how troughs, lifts and splashdowns work.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-flume-ride",
+  "title": "Intamin Flume Ride",
+  "url": "https://www.intamin.com/product/flume-ride/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Modern flume options: vertical lifts, turntables, swing splash and diagonal drop elements.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-river-rapids-ride",
+  "title": "River rapids ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/River_rapids_ride",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Thunder River (1980), the pumped recirculating channel, and how rapids and wave sections are made.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-rapids-ride",
+  "title": "Intamin Rapids Ride",
+  "url": "https://www.intamin.com/product/rapids-ride/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer page: 8 to 12-seat rafts, rotating-platform loading and in-channel drops up to 3.5 m.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-shoot-the-chute",
+  "title": "Shoot the Chute (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Shoot_the_Chute",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "From 1884 greased slides and Boyton's Coney Island chute to modern giant splash boats.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-water-coaster",
+  "title": "Water coaster (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Water_coaster_(roller_coaster)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Defines the boat-on-track hybrid and lists Journey to Atlantis, Poseidon and Divertical.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-water-coaster",
+  "title": "Intamin Water Coaster",
+  "url": "https://www.intamin.com/product/water-coaster/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "Manufacturer page: coaster track plus spillwater runouts, vertical lifts and 10-seat boats.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "mack-rides-powersplash",
+  "title": "Mack Rides Power Splash",
+  "url": "https://mack-rides.com/products/powersplash/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "LSM-launched shuttle boat with a rising-water splash zone; the newest water-coaster idea.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-carousel",
+  "title": "Carousel (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Carousel",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Frederick Savage's 1880 galloping mechanism and why UK and US carousels turn opposite ways.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-ferris-wheel",
+  "title": "Ferris wheel (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Ferris_wheel",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Ferris's 1893 Chicago wheel through the London Eye, High Roller and Ain Dubai.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-giant-wheel",
+  "title": "Intamin Giant Wheel",
+  "url": "https://www.intamin.com/product/giant-wheel/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Continuous-loading observation wheel with 8 or 15-seat gondolas, as at ICON Park Orlando.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-drop-tower",
+  "title": "Drop tower (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Drop_tower",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Intamin's magnetic-brake free-fall towers versus S&S pneumatic Space Shot and Turbo Drop.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "intamin-giant-drop",
+  "title": "Intamin Giant Drop",
+  "url": "https://www.intamin.com/product/giant-drop/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer page: failsafe magnetic braking and 5 m/s lift on building-mounted or freestanding towers.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-frisbee-ride",
+  "title": "Frisbee ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Frisbee_(ride)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Spinning gondola on a pendulum arm; HUSS, Zamperla Discovery and Mondial Revolution variants.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "huss-giant-frisbee",
+  "title": "HUSS Giant Frisbee 40/50",
+  "url": "https://www.hussrides.com/en/thrill-rides/giant-frisbee-40-50/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer stats: 40 or 50 outward-facing seats, 43 m swing height, 100 km/h.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-swing-ride",
+  "title": "Swing ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Swing_ride",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Chair-o-planes (Zierer, 1972), tilting Wave Swingers, and Funtime's tower-top Star Flyer.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-funtime-star-flyer",
+  "title": "Funtime and the Star Flyer (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Star_Flyer_(ride)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The Austrian maker of Star Flyer swing towers, Sling Shot and Skyfall drop towers.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-top-spin-ride",
+  "title": "Top Spin ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Top_Spin_(ride)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "HUSS's 1990 two-arm flipping gondola and the many look-alikes that followed.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "huss-top-spin-classic",
+  "title": "HUSS Top Spin Classic",
+  "url": "https://www.hussrides.com/en/thrill-rides/top-spin-classic/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Manufacturer stats: 40 riders, 1,200 per hour, programmable ride cycles and effects.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "huss-rides",
+  "title": "HUSS Park Attractions product range",
+  "url": "https://www.hussrides.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Catalogue of classic flat rides: Frisbee, Top Spin, Condor, Enterprise and Break Dance.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-scrambler-ride",
+  "title": "Scrambler ride (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Scrambler_(ride)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Eli Bridge's 1950s counter-rotating cluster ride and its two-axis motion.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "zamperla-flat-rides",
+  "title": "Zamperla flat rides",
+  "url": "https://www.zamperla.com/products/flat",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Catalogue of modern family and thrill flat rides, including the Air Race family.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-monorail",
+  "title": "Monorail (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Monorail",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Straddle-beam (ALWEG) versus suspended monorails, and Disneyland's 1959 daily-operating line.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-disneyland-railroad",
+  "title": "Disneyland Railroad (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Disneyland_Railroad",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Three-foot gauge heritage railway that is both transport loop and attraction since 1955.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "chance-rides",
+  "title": "Chance Rides",
+  "url": "https://www.chancerides.com/",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Maker of the C.P. Huntington park train, carousels, giant wheels and trams.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-skyway-disney",
+  "title": "Skyway (Disney) (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Skyway_(Disney)",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "Von Roll detachable gondola lift that linked Fantasyland and Tomorrowland from 1956 to 1994.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-doppelmayr-garaventa",
+  "title": "Doppelmayr Garaventa Group (Wikipedia)",
+  "url": "https://en.wikipedia.org/wiki/Doppelmayr_Garaventa_Group",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "intermediate",
+  "why_it_matters": "The dominant ropeway builder: gondolas, 3S tricable systems and Cable Liner people movers.",
+  "verified_on": "2026-10-12"
+ }
+]

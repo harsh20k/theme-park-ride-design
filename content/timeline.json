@@ -1,0 +1,1703 @@
+[
+ {
+  "date": "1583",
+  "precision": "year",
+  "title": "Bakken begins near Copenhagen",
+  "description": "A spring at Dyrehavsbakken draws crowds and entertainers; it is recognised as the oldest operating amusement park.",
+  "land": "history",
+  "concept": "tivoli-and-european-roots",
+  "source": "wikipedia-dyrehavsbakken"
+ },
+ {
+  "date": "1817-07-08",
+  "precision": "day",
+  "title": "Promenades Aeriennes opens in Paris",
+  "description": "Wheeled cars locked to a track with guide rails: the first recognisable roller coaster, inspired by Russian ice slides.",
+  "land": "history",
+  "concept": "early-coasters",
+  "source": "wikipedia-russian-mountains"
+ },
+ {
+  "date": "1827",
+  "precision": "year",
+  "title": "Mauch Chunk Switchback Railway built",
+  "description": "A Pennsylvania coal-hauling gravity railway that later carried tourists for thrills, a model for LaMarcus Thompson.",
+  "land": "history",
+  "concept": "early-coasters",
+  "source": "wikipedia-mauch-chunk-switchback"
+ },
+ {
+  "date": "1843-08-15",
+  "precision": "day",
+  "title": "Tivoli Gardens opens in Copenhagen",
+  "description": "Georg Carstensen's pleasure garden mixes rides, music and lights; Walt Disney later cites it as a model.",
+  "land": "history",
+  "concept": "tivoli-and-european-roots",
+  "source": "wikipedia-tivoli-gardens"
+ },
+ {
+  "date": "1846",
+  "precision": "year",
+  "title": "Mauch Chunk Switchback adds an uphill ratchet",
+  "description": "The cable-hauled Up Route gets a ratchet so a loose car cannot run back downhill, the ancestor of the anti-rollback device.",
+  "land": "ride-engineering",
+  "concept": "anti-rollback",
+  "source": "wikipedia-mauch-chunk-switchback"
+ },
+ {
+  "date": "1862-12-24",
+  "precision": "day",
+  "title": "Pepper's ghost premieres at the Royal Polytechnic",
+  "description": "John Henry Pepper stages Henry Dircks's angled-glass ghost illusion in London; the pair patent it in 1863.",
+  "land": "show-technology",
+  "concept": "peppers-ghost",
+  "source": "wikipedia-peppers-ghost"
+ },
+ {
+  "date": "1884-06-16",
+  "precision": "day",
+  "title": "Thompson's Switchback Railway opens at Coney Island",
+  "description": "A five-cent gravity ride at just over 6 mph, usually dated as America's first purpose-built roller coaster.",
+  "land": "history",
+  "concept": "early-coasters",
+  "source": "wikipedia-switchback-railway"
+ },
+ {
+  "date": "1893-05-01",
+  "precision": "day",
+  "title": "World's Columbian Exposition opens in Chicago",
+  "description": "The Midway Plaisance and the 264 ft Ferris Wheel show that amusements can anchor a fair.",
+  "land": "history",
+  "concept": "pleasure-gardens-and-worlds-fairs",
+  "source": "wikipedia-worlds-columbian-exposition"
+ },
+ {
+  "date": "1895",
+  "precision": "year",
+  "title": "Sea Lion Park opens at Coney Island",
+  "description": "Paul Boyton's enclosed park with a single admission gate sets the amusement-park pattern.",
+  "land": "history",
+  "concept": "coney-island",
+  "source": "wikipedia-coney-island"
+ },
+ {
+  "date": "1896",
+  "precision": "year",
+  "title": "Blackpool Pleasure Beach founded",
+  "description": "William George Bean and John Outhwaite start Britain's defining seaside amusement park.",
+  "land": "history",
+  "concept": "european-parks",
+  "source": "wikipedia-blackpool-pleasure-beach"
+ },
+ {
+  "date": "1897",
+  "precision": "year",
+  "title": "Steeplechase Park opens at Coney Island",
+  "description": "George Tilyou builds a park around his mechanical racing horses, inspired by the Chicago midway.",
+  "land": "history",
+  "concept": "coney-island",
+  "source": "wikipedia-steeplechase-park"
+ },
+ {
+  "date": "1897",
+  "precision": "year",
+  "title": "Wiener Riesenrad built at the Prater",
+  "description": "Vienna's 64.75 m Ferris wheel becomes a permanent landmark of the European fairground.",
+  "land": "history",
+  "concept": "tivoli-and-european-roots",
+  "source": "wikipedia-wiener-riesenrad"
+ },
+ {
+  "date": "1898",
+  "precision": "year",
+  "title": "Kennywood opens as a trolley park",
+  "description": "The Monongahela Street Railway opens a picnic ground at the end of its Pittsburgh line.",
+  "land": "history",
+  "concept": "trolley-parks",
+  "source": "wikipedia-kennywood"
+ },
+ {
+  "date": "1902",
+  "precision": "year",
+  "title": "Leap-The-Dips opens at Lakemont Park",
+  "description": "A side-friction figure-eight coaster that is now the oldest standing roller coaster in the world.",
+  "land": "history",
+  "concept": "early-coasters",
+  "source": "wikipedia-leap-the-dips"
+ },
+ {
+  "date": "1903-05-16",
+  "precision": "day",
+  "title": "Luna Park opens at Coney Island",
+  "description": "Thompson and Dundy light 200,000 bulbs over a fantasy city built around A Trip to the Moon.",
+  "land": "history",
+  "concept": "coney-island",
+  "source": "wikipedia-luna-park-1903"
+ },
+ {
+  "date": "1908",
+  "precision": "year",
+  "title": "Yerkes and Dodson publish the inverted-U arousal law",
+  "description": "Their mouse-learning study becomes the basis of the idea that there is an optimal level of arousal.",
+  "land": "human-factors",
+  "concept": "optimal-arousal",
+  "source": "yerkes-dodson-1908"
+ },
+ {
+  "date": "1909",
+  "precision": "year",
+  "title": "Erlang publishes the first queueing-theory paper",
+  "description": "Agner Erlang models random telephone calls at the Copenhagen exchange, founding the mathematics later applied to ride queues.",
+  "land": "operations-business",
+  "concept": "queueing-theory",
+  "source": "wikipedia-queueing-theory"
+ },
+ {
+  "date": "1919",
+  "precision": "year",
+  "title": "John Miller's underfriction wheels",
+  "description": "Wheels under the rail let coasters take steeper drops and sharper curves, opening the 1920s golden age.",
+  "land": "history",
+  "concept": "early-coasters",
+  "source": "wikipedia-history-of-the-roller-coaster"
+ },
+ {
+  "date": "1919-10-28",
+  "precision": "day",
+  "title": "John Miller's under-rail roller patent granted",
+  "description": "US 1,319,888 describes rollers travelling under the rail to stop wheels jumping off the track, the basis of upstop wheels.",
+  "land": "ride-engineering",
+  "concept": "wheels-and-bogies",
+  "source": "google-patents-us-1319888"
+ },
+ {
+  "date": "1923-05-08",
+  "precision": "day",
+  "title": "Liseberg opens in Gothenburg",
+  "description": "A city-owned park that becomes one of Scandinavia's most visited attractions.",
+  "land": "history",
+  "concept": "european-parks",
+  "source": "wikipedia-liseberg"
+ },
+ {
+  "date": "1927-06-26",
+  "precision": "day",
+  "title": "Coney Island Cyclone opens",
+  "description": "Vernon Keenan's wooden coaster survives the Depression and is landmarked in 1988.",
+  "land": "history",
+  "concept": "coney-island",
+  "source": "wikipedia-coney-island-cyclone"
+ },
+ {
+  "date": "1941-07-17",
+  "precision": "day",
+  "title": "Knott's Ghost Town opens",
+  "description": "Walter Knott's replica western town turns a berry stand into a themed destination.",
+  "land": "history",
+  "concept": "origins",
+  "source": "wikipedia-knotts-berry-farm"
+ },
+ {
+  "date": "1952",
+  "precision": "year",
+  "title": "Walt Disney founds the company that becomes Walt Disney Imagineering",
+  "description": "WDI describes itself as founded in 1952, combining design firm, development company, storytelling studio and innovation lab.",
+  "land": "careers",
+  "concept": "roles",
+  "source": "wdi-site-home"
+ },
+ {
+  "date": "1952",
+  "precision": "year",
+  "title": "Efteling's Fairytale Forest opens",
+  "description": "Anton Pieck's illustrated fairy tales become walk-through scenes; 222,941 visitors in year one.",
+  "land": "history",
+  "concept": "european-parks",
+  "source": "efteling-official-history"
+ },
+ {
+  "date": "1952-12-16",
+  "precision": "day",
+  "title": "Walt Disney founds the company that becomes Imagineering",
+  "description": "Set up to design Disneyland; renamed WED Enterprises in 1953 and Walt Disney Imagineering in 1986.",
+  "land": "design-process",
+  "concept": "pipeline-overview",
+  "source": "wikipedia-walt-disney-imagineering"
+ },
+ {
+  "date": "1952-12-16",
+  "precision": "day",
+  "title": "Walt Disney forms the company that becomes WED Enterprises",
+  "description": "A private design unit, renamed WED in 1953 and Walt Disney Imagineering in 1986.",
+  "land": "history",
+  "concept": "walt-and-the-imagineers",
+  "source": "wikipedia-walt-disney-imagineering"
+ },
+ {
+  "date": "1953",
+  "precision": "year",
+  "title": "Harrison Price's site study picks Anaheim",
+  "description": "Walt and Roy Disney hire the Stanford Research Institute; economist Harrison \"Buzz\" Price compares ten Southern California sites and recommends a 160-acre orange grove in Anaheim.",
+  "land": "masterplanning",
+  "concept": "site-selection",
+  "source": "d23-harrison-price"
+ },
+ {
+  "date": "1953",
+  "precision": "year",
+  "title": "Buzz Price's Disneyland site study",
+  "description": "Economist Harrison Price recommends Anaheim for Disneyland on access, climate and projected profit, the model for park feasibility studies.",
+  "land": "operations-business",
+  "concept": "roi-and-attendance-modeling",
+  "source": "wikipedia-harrison-buzz-price"
+ },
+ {
+  "date": "1955-07-17",
+  "precision": "day",
+  "title": "Disneyland opens",
+  "description": "A $17 million park with five lands and twenty attractions; the press preview is remembered as Black Sunday.",
+  "land": "history",
+  "concept": "disneyland-1955",
+  "source": "wikipedia-disneyland"
+ },
+ {
+  "date": "1955-07-17",
+  "precision": "day",
+  "title": "Disneyland opens with the first hub-and-spoke park plan",
+  "description": "A single entrance, Main Street, a central plaza and lands radiating from it set the template for most later theme parks.",
+  "land": "masterplanning",
+  "concept": "hub-and-spoke",
+  "source": "wikipedia-disneyland"
+ },
+ {
+  "date": "1955-07-17",
+  "precision": "day",
+  "title": "Disneyland opens",
+  "description": "Main Street's forced perspective, the castle weenie, the berm and the Jungle Cruise spiel set the vocabulary of spatial storytelling.",
+  "land": "story-experience",
+  "concept": "spatial-storytelling",
+  "source": "wikipedia-jungle-cruise"
+ },
+ {
+  "date": "1957",
+  "precision": "year",
+  "title": "Freeman Tilden publishes Interpreting Our Heritage",
+  "description": "The principles of heritage interpretation that themed design later borrows from museums and national parks.",
+  "land": "story-experience",
+  "concept": "exhibit-interpretation",
+  "source": "tilden-interpreting-our-heritage"
+ },
+ {
+  "date": "1959-06-14",
+  "precision": "day",
+  "title": "Matterhorn Bobsleds opens",
+  "description": "Arrow Development builds the first permanent tubular-steel roller coaster.",
+  "land": "history",
+  "concept": "tubular-steel-breakthrough",
+  "source": "wikipedia-matterhorn-bobsleds"
+ },
+ {
+  "date": "1959-06-14",
+  "precision": "day",
+  "title": "Matterhorn Bobsleds opens with tubular steel track",
+  "description": "Arrow Development builds the first permanently installed tubular-steel track coaster at Disneyland.",
+  "land": "ride-engineering",
+  "concept": "track-types",
+  "source": "wikipedia-matterhorn-bobsleds"
+ },
+ {
+  "date": "1959-06-14",
+  "precision": "day",
+  "title": "Matterhorn Bobsleds opens at Disneyland",
+  "description": "First permanent tubular-steel roller coaster, built by Arrow Development.",
+  "land": "ride-systems",
+  "concept": "steel-coasters",
+  "source": "wikipedia-matterhorn-bobsleds"
+ },
+ {
+  "date": "1960",
+  "precision": "year",
+  "title": "Kevin Lynch publishes The Image of the City",
+  "description": "Names paths, edges, districts, nodes and landmarks as the elements of a legible place; later a staple of park wayfinding.",
+  "land": "human-factors",
+  "concept": "landmarks-and-nodes",
+  "source": "lynch-image-of-the-city"
+ },
+ {
+  "date": "1960",
+  "precision": "year",
+  "title": "Kevin Lynch publishes The Image of the City",
+  "description": "Paths, edges, districts, nodes and landmarks become the standard vocabulary for legible places, later borrowed by park planners.",
+  "land": "masterplanning",
+  "concept": "urban-planning-parallels",
+  "source": "openlibrary-lynch-image-of-the-city"
+ },
+ {
+  "date": "1960-06-19",
+  "precision": "day",
+  "title": "Freedomland U.S.A. opens in the Bronx",
+  "description": "C. V. Wood's map-shaped park opens; it is bankrupt after the 1964 season.",
+  "land": "history",
+  "concept": "defunct-parks",
+  "source": "wikipedia-freedomland"
+ },
+ {
+  "date": "1961",
+  "precision": "year",
+  "title": "Little proves L = \u03bbW",
+  "description": "John Little's Operations Research paper proves the queueing relationship behind every wait-time estimate.",
+  "land": "operations-business",
+  "concept": "littles-law",
+  "source": "little-1961-queuing-formula"
+ },
+ {
+  "date": "1961-08-05",
+  "precision": "day",
+  "title": "Six Flags Over Texas opens",
+  "description": "Angus Wynne's park starts the regional theme park chain model.",
+  "land": "history",
+  "concept": "industry-evolution",
+  "source": "wikipedia-six-flags-over-texas"
+ },
+ {
+  "date": "1963-06-23",
+  "precision": "day",
+  "title": "Enchanted Tiki Room opens",
+  "description": "The first attraction to use Audio-Animatronics figures.",
+  "land": "history",
+  "concept": "walt-and-the-imagineers",
+  "source": "wikipedia-enchanted-tiki-room"
+ },
+ {
+  "date": "1963-06-23",
+  "precision": "day",
+  "title": "Enchanted Tiki Room opens at Disneyland",
+  "description": "First Audio-Animatronics show: roughly 150 birds, flowers and tikis driven from recorded tape.",
+  "land": "show-technology",
+  "concept": "audio-animatronics-history",
+  "source": "wikipedia-enchanted-tiki-room"
+ },
+ {
+  "date": "1964-04-22",
+  "precision": "day",
+  "title": "New York World's Fair opens with four Disney shows",
+  "description": "it's a small world, Mr. Lincoln, Carousel of Progress and the Ford Magic Skyway are funded by sponsors.",
+  "land": "history",
+  "concept": "worlds-fair-1964",
+  "source": "wikipedia-1964-worlds-fair"
+ },
+ {
+  "date": "1964-07-15",
+  "precision": "day",
+  "title": "Universal Studio Tour opens in Hollywood",
+  "description": "The modern tram tour of a working studio, the seed of Universal's parks.",
+  "land": "history",
+  "concept": "universal-creative",
+  "source": "wikipedia-universal-studios-hollywood"
+ },
+ {
+  "date": "1964-09-20",
+  "precision": "day",
+  "title": "Steeplechase Park closes",
+  "description": "Coney Island's last great park closes after decades of decline.",
+  "land": "history",
+  "concept": "coney-island",
+  "source": "wikipedia-steeplechase-park"
+ },
+ {
+  "date": "1966-12-15",
+  "precision": "day",
+  "title": "Walt Disney dies",
+  "description": "Roy O. Disney postpones retirement to finish the Florida project.",
+  "land": "history",
+  "concept": "walt-and-the-imagineers",
+  "source": "wikipedia-walt-disney"
+ },
+ {
+  "date": "1967",
+  "precision": "year",
+  "title": "Omnimover debuts in Adventure Thru Inner Space",
+  "description": "A continuous chain of swivelling vehicles that aim riders' eyes; patented 1968.",
+  "land": "history",
+  "concept": "haunted-mansion",
+  "source": "wikipedia-omnimover"
+ },
+ {
+  "date": "1967-03-18",
+  "precision": "day",
+  "title": "Pirates of the Caribbean opens",
+  "description": "Planned as a wax museum, it becomes a boat ride; the last attraction Walt worked on.",
+  "land": "history",
+  "concept": "pirates-of-the-caribbean",
+  "source": "wikipedia-pirates-of-the-caribbean-attraction"
+ },
+ {
+  "date": "1967-05-12",
+  "precision": "day",
+  "title": "Reedy Creek Improvement District created",
+  "description": "Florida's governor signs the act giving Disney's Florida resort its own utility, building-code and fire powers.",
+  "land": "masterplanning",
+  "concept": "utilities-and-central-plant",
+  "source": "wikipedia-reedy-creek"
+ },
+ {
+  "date": "1967-08-05",
+  "precision": "day",
+  "title": "Adventure Thru Inner Space opens",
+  "description": "First attraction to use Disney's Omnimover continuous-chain vehicle system.",
+  "land": "ride-systems",
+  "concept": "omnimover",
+  "source": "wikipedia-adventure-thru-inner-space"
+ },
+ {
+  "date": "1969-08-09",
+  "precision": "day",
+  "title": "Haunted Mansion opens at Disneyland",
+  "description": "Six years after its facade was finished, the Mansion opens with Doom Buggies and a Pepper's ghost ballroom.",
+  "land": "history",
+  "concept": "haunted-mansion",
+  "source": "wikipedia-the-haunted-mansion"
+ },
+ {
+  "date": "1969-08-09",
+  "precision": "day",
+  "title": "The Haunted Mansion opens at Disneyland",
+  "description": "Its ballroom becomes the most famous Pepper's ghost scene, and filmed faces projected onto busts foreshadow projection mapping.",
+  "land": "show-technology",
+  "concept": "illusions",
+  "source": "wikipedia-the-haunted-mansion"
+ },
+ {
+  "date": "1969-08-09",
+  "precision": "day",
+  "title": "The Haunted Mansion opens at Disneyland",
+  "description": "Its stretching room becomes the archetypal pre-show and its ballroom the most famous Pepper's ghost.",
+  "land": "story-experience",
+  "concept": "pre-show",
+  "source": "wikipedia-haunted-mansion"
+ },
+ {
+  "date": "1970",
+  "precision": "year",
+  "title": "Masahiro Mori describes the uncanny valley",
+  "description": "Essay in the Japanese journal Energy sketches the dip in affinity for almost-human figures.",
+  "land": "human-factors",
+  "concept": "uncanny-valley",
+  "source": "mori-uncanny-valley-ieee-spectrum"
+ },
+ {
+  "date": "1971",
+  "precision": "year",
+  "title": "John Fruin publishes Pedestrian Planning and Design",
+  "description": "Introduces pedestrian level of service grades based on space per person.",
+  "land": "human-factors",
+  "concept": "crowd-behavior",
+  "source": "fruin-pedestrian-planning-1971"
+ },
+ {
+  "date": "1971",
+  "precision": "year",
+  "title": "Fruin publishes Pedestrian Planning and Design",
+  "description": "John J. Fruin introduces the pedestrian level-of-service scale used to size walkways and queues.",
+  "land": "masterplanning",
+  "concept": "level-of-service",
+  "source": "openlibrary-fruin-pedestrian-planning"
+ },
+ {
+  "date": "1971-10-01",
+  "precision": "day",
+  "title": "Walt Disney World opens",
+  "description": "Magic Kingdom and two hotels open on land bought in secret through dummy companies.",
+  "land": "history",
+  "concept": "walt-disney-world-and-epcot",
+  "source": "wikipedia-walt-disney-world"
+ },
+ {
+  "date": "1971-10-01",
+  "precision": "day",
+  "title": "Magic Kingdom opens above its utilidors",
+  "description": "Service corridors built at ground level, with the park raised on lagoon fill, keep cast and deliveries out of sight.",
+  "land": "masterplanning",
+  "concept": "utilidors",
+  "source": "wikipedia-disney-utilidor-system"
+ },
+ {
+  "date": "1973",
+  "precision": "year",
+  "title": "Kotler names 'atmospherics'",
+  "description": "Philip Kotler's Journal of Retailing paper argues the sensory design of a space is a marketing tool in its own right.",
+  "land": "sensory-environment",
+  "concept": "atmospherics",
+  "source": "kotler-1973-atmospherics"
+ },
+ {
+  "date": "1975",
+  "precision": "year",
+  "title": "Reason and Brand publish Motion Sickness",
+  "description": "The monograph sets out sensory conflict theory, still the default explanation for simulator and ride sickness.",
+  "land": "human-factors",
+  "concept": "sensory-conflict-theory",
+  "source": "reason-brand-1975-motion-sickness"
+ },
+ {
+  "date": "1975",
+  "precision": "year",
+  "title": "Appleton publishes The Experience of Landscape",
+  "description": "Prospect-refuge theory: people prefer places where they can see out while feeling sheltered.",
+  "land": "sensory-environment",
+  "concept": "prospect-refuge",
+  "source": "openlibrary-appleton-experience-of-landscape"
+ },
+ {
+  "date": "1975-01-15",
+  "precision": "day",
+  "title": "Space Mountain opens at Magic Kingdom",
+  "description": "An indoor coaster in the dark, built with Arrow Development; Disneyland's version follows in 1977.",
+  "land": "history",
+  "concept": "space-mountain",
+  "source": "wikipedia-space-mountain"
+ },
+ {
+  "date": "1975-05-21",
+  "precision": "day",
+  "title": "Corkscrew opens at Knott's Berry Farm",
+  "description": "Arrow's first modern inverting coaster turns riders upside down twice.",
+  "land": "history",
+  "concept": "loop-revival",
+  "source": "wikipedia-corkscrew-silverwood"
+ },
+ {
+  "date": "1975-07-12",
+  "precision": "day",
+  "title": "Europa-Park opens in Rust",
+  "description": "The Mack family opens a park to show off its rides; it grows to 18 European-themed areas.",
+  "land": "history",
+  "concept": "european-parks",
+  "source": "wikipedia-europa-park"
+ },
+ {
+  "date": "1976-05-08",
+  "precision": "day",
+  "title": "The Great American Revolution opens",
+  "description": "Schwarzkopf and Stengel bring back the vertical loop with a clothoid shape.",
+  "land": "history",
+  "concept": "loop-revival",
+  "source": "wikipedia-great-american-revolution"
+ },
+ {
+  "date": "1976-05-08",
+  "precision": "day",
+  "title": "Great American Revolution opens with a clothoid loop",
+  "description": "Werner Stengel's teardrop loop at Six Flags Magic Mountain makes the first modern vertical loop survivable at 4.9 g.",
+  "land": "ride-engineering",
+  "concept": "clothoid-loop",
+  "source": "wikipedia-new-revolution"
+ },
+ {
+  "date": "1977",
+  "precision": "year",
+  "title": "King Kobra opens at Kings Dominion",
+  "description": "First Schwarzkopf Shuttle Loop, launched by a dropped weight; flywheel launches followed in 1978.",
+  "land": "ride-systems",
+  "concept": "flywheel-and-catapult-launch",
+  "source": "wikipedia-shuttle-loop"
+ },
+ {
+  "date": "1978",
+  "precision": "year",
+  "title": "ASTM Committee F24 formed",
+  "description": "ASTM International creates Committee F24 on Amusement Rides and Devices, the home of F2291, F770, F1193 and F2974.",
+  "land": "safety-standards",
+  "concept": "astm-f24",
+  "source": "astm-f24-committee"
+ },
+ {
+  "date": "1980-04-04",
+  "precision": "day",
+  "title": "Alton Towers opens as a theme park",
+  "description": "A pay-one-price park with the Corkscrew coaster on a stately-home estate.",
+  "land": "history",
+  "concept": "merlin-magic-making",
+  "source": "wikipedia-alton-towers"
+ },
+ {
+  "date": "1982-10-01",
+  "precision": "day",
+  "title": "EPCOT Center opens",
+  "description": "Walt's city of tomorrow becomes a park of Future World pavilions and World Showcase.",
+  "land": "history",
+  "concept": "walt-disney-world-and-epcot",
+  "source": "wikipedia-epcot"
+ },
+ {
+  "date": "1983-04-15",
+  "precision": "day",
+  "title": "Tokyo Disneyland opens",
+  "description": "The first Disney park abroad, owned by Oriental Land Company under licence.",
+  "land": "history",
+  "concept": "disney-global-parks",
+  "source": "wikipedia-tokyo-disneyland"
+ },
+ {
+  "date": "1984",
+  "precision": "year",
+  "title": "Hillier and Hanson publish The Social Logic of Space",
+  "description": "The founding text of space syntax, which predicts movement from the shape of a path network.",
+  "land": "masterplanning",
+  "concept": "space-syntax",
+  "source": "openlibrary-hillier-social-logic-of-space"
+ },
+ {
+  "date": "1984-04-27",
+  "precision": "day",
+  "title": "Ulrich's window-view study appears in Science",
+  "description": "Surgical patients with a view of trees recovered faster than matched patients facing a brick wall.",
+  "land": "sensory-environment",
+  "concept": "biophilia",
+  "source": "ulrich-1984-view-through-window"
+ },
+ {
+  "date": "1985",
+  "precision": "year",
+  "title": "Maister's The Psychology of Waiting Lines appears",
+  "description": "Eight propositions about perceived waits, published in the collection The Service Encounter.",
+  "land": "human-factors",
+  "concept": "waiting",
+  "source": "maister-psychology-of-waiting-lines"
+ },
+ {
+  "date": "1986",
+  "precision": "year",
+  "title": "USITT publishes DMX512",
+  "description": "A single serial standard for lighting control replaces proprietary dimmer protocols; later ANSI E1.11.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols",
+  "source": "wikipedia-dmx512"
+ },
+ {
+  "date": "1986-07-29",
+  "precision": "day",
+  "title": "'Scent-Emitting Systems' patent granted",
+  "description": "Robert E. McCarthy's US 4,603,030, filed 20 September 1984, describes the programmable multi-scent dispenser known in Disney parks as the Smellitzer.",
+  "land": "sensory-environment",
+  "concept": "smellitzers",
+  "source": "google-patents-us-4603030"
+ },
+ {
+  "date": "1987",
+  "precision": "year",
+  "title": "NAARSO founded",
+  "description": "The National Association of Amusement Ride Safety Officials begins its inspector certification and safety seminars.",
+  "land": "careers",
+  "concept": "professional-bodies",
+  "source": "naarso"
+ },
+ {
+  "date": "1987-12",
+  "precision": "month",
+  "title": "Larson's queue-fairness paper in Operations Research",
+  "description": "Social justice and the psychology of queueing, including the case for serpentine single lines.",
+  "land": "human-factors",
+  "concept": "queue-fairness",
+  "source": "larson-1987-queue-social-justice"
+ },
+ {
+  "date": "1989-05-06",
+  "precision": "day",
+  "title": "Magnum XL-200 opens at Cedar Point",
+  "description": "The first coaster over 200 ft starts the coaster wars.",
+  "land": "history",
+  "concept": "hyper-and-giga-era",
+  "source": "wikipedia-magnum-xl-200"
+ },
+ {
+  "date": "1990-06-07",
+  "precision": "day",
+  "title": "Universal Studios Florida opens",
+  "description": "Jaws, Kongfrontation and Earthquake break down on opening; Universal issues return vouchers.",
+  "land": "history",
+  "concept": "ip-wars",
+  "source": "wikipedia-universal-studios-florida"
+ },
+ {
+  "date": "1990-06-07",
+  "precision": "day",
+  "title": "Universal Studios Florida opens around a lagoon",
+  "description": "Themed areas arranged around a central lagoon establish the loop layout as the main alternative to the hub.",
+  "land": "masterplanning",
+  "concept": "loop-and-linear-layouts",
+  "source": "wikipedia-universal-studios-florida"
+ },
+ {
+  "date": "1991",
+  "precision": "year",
+  "title": "Marty Sklar starts the Imaginations Design Competition",
+  "description": "Walt Disney Imagineering's student competition launches; many participants later become interns.",
+  "land": "careers",
+  "concept": "competitions",
+  "source": "wdi-internships-imaginations"
+ },
+ {
+  "date": "1991-09",
+  "precision": "month",
+  "title": "Riccio and Stoffregen propose postural instability theory",
+  "description": "An ecological alternative to sensory conflict as the cause of motion sickness.",
+  "land": "human-factors",
+  "concept": "postural-instability-theory",
+  "source": "riccio-stoffregen-1991-postural-instability"
+ },
+ {
+  "date": "1992-04",
+  "precision": "month",
+  "title": "Bitner publishes 'Servicescapes'",
+  "description": "Journal of Marketing paper linking ambient conditions, layout and signage to customer and employee behaviour.",
+  "land": "sensory-environment",
+  "concept": "servicescape",
+  "source": "bitner-1992-servicescapes"
+ },
+ {
+  "date": "1992-04-12",
+  "precision": "day",
+  "title": "Euro Disney opens",
+  "description": "Attendance misses targets and debt reaches about $3 billion before a 1994 rescue.",
+  "land": "history",
+  "concept": "disney-global-parks",
+  "source": "wikipedia-disneyland-paris"
+ },
+ {
+  "date": "1992-04-12",
+  "precision": "day",
+  "title": "Euro Disney opens near Paris",
+  "description": "Opens with largely American menus and no alcohol in the park; attendance misses forecasts.",
+  "land": "human-factors",
+  "concept": "cultural-differences",
+  "source": "wikipedia-disneyland-paris"
+ },
+ {
+  "date": "1992-05-09",
+  "precision": "day",
+  "title": "Batman: The Ride opens",
+  "description": "B&M's first inverted coaster, later cloned worldwide.",
+  "land": "history",
+  "concept": "coaster-manufacturers",
+  "source": "wikipedia-batman-the-ride"
+ },
+ {
+  "date": "1992-05-09",
+  "precision": "day",
+  "title": "Batman: The Ride opens at Six Flags Great America",
+  "description": "First inverted roller coaster, by Bolliger & Mabillard.",
+  "land": "ride-systems",
+  "concept": "inverted-coasters",
+  "source": "wikipedia-inverted-roller-coaster"
+ },
+ {
+  "date": "1992-05-13",
+  "precision": "day",
+  "title": "Fantasmic! opens at Disneyland",
+  "description": "Animation projected onto three mist screens, with fire and pyrotechnics, sets the template for water-screen spectaculars.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains",
+  "source": "wikipedia-fantasmic"
+ },
+ {
+  "date": "1993",
+  "precision": "year",
+  "title": "Kahneman and colleagues publish the cold-water peak-end study",
+  "description": "When More Pain Is Preferred to Less establishes the peak-end rule.",
+  "land": "human-factors",
+  "concept": "peak-end-rule",
+  "source": "kahneman-peak-end-1993"
+ },
+ {
+  "date": "1993-06-12",
+  "precision": "day",
+  "title": "Euro Disney begins serving wine and beer with meals",
+  "description": "Reverses the no-alcohol policy in response to European expectations.",
+  "land": "human-factors",
+  "concept": "cultural-differences",
+  "source": "wikipedia-disneyland-paris"
+ },
+ {
+  "date": "1994",
+  "precision": "year",
+  "title": "First Thea Awards presented",
+  "description": "TEA holds the first Thea Awards at the Biltmore Hotel in Los Angeles; Harrison 'Buzz' Price receives the first Lifetime Achievement Award.",
+  "land": "careers",
+  "concept": "professional-bodies",
+  "source": "tea-thea-awards-history"
+ },
+ {
+  "date": "1994",
+  "precision": "year",
+  "title": "TEA creates the Thea Awards",
+  "description": "The Themed Entertainment Association starts peer awards for outstanding projects.",
+  "land": "history",
+  "concept": "landmark-attractions",
+  "source": "tea-thea-awards"
+ },
+ {
+  "date": "1994-03-22",
+  "precision": "day",
+  "title": "Marvel and MCA sign the Universal theme-park licence",
+  "description": "The agreement that still restricts which Marvel characters Disney may use in its U.S. parks.",
+  "land": "operations-business",
+  "concept": "ip-licensing-economics",
+  "source": "wikipedia-marvel-super-hero-island"
+ },
+ {
+  "date": "1994-07-22",
+  "precision": "day",
+  "title": "Tower of Terror opens",
+  "description": "Otis-built cabs are pulled down faster than gravity at Disney-MGM Studios.",
+  "land": "history",
+  "concept": "tower-of-terror",
+  "source": "wikipedia-tower-of-terror"
+ },
+ {
+  "date": "1995",
+  "precision": "year",
+  "title": "Social force model published",
+  "description": "Helbing and Molnar's pedestrian model in Physical Review E becomes the basis of agent-based crowd simulation.",
+  "land": "ai-future",
+  "concept": "crowd-modeling",
+  "source": "helbing-social-force-1995"
+ },
+ {
+  "date": "1995-03-03",
+  "precision": "day",
+  "title": "Indiana Jones Adventure opens",
+  "description": "The Enhanced Motion Vehicle debuts behind a half-mile themed queue.",
+  "land": "history",
+  "concept": "indiana-jones-adventure",
+  "source": "wikipedia-indiana-jones-adventure"
+ },
+ {
+  "date": "1995-03-04",
+  "precision": "day",
+  "title": "Indiana Jones Adventure opens at Disneyland",
+  "description": "Debut of the Enhanced Motion Vehicle, a motion base on a steerable chassis.",
+  "land": "ride-systems",
+  "concept": "enhanced-motion-vehicle",
+  "source": "wikipedia-indiana-jones-adventure"
+ },
+ {
+  "date": "1996-06-18",
+  "precision": "day",
+  "title": "Flight of Fear opens",
+  "description": "Premier Rides' twin coasters are the first launched by linear induction motors.",
+  "land": "history",
+  "concept": "launch-era",
+  "source": "wikipedia-flight-of-fear"
+ },
+ {
+  "date": "1996-06-18",
+  "precision": "day",
+  "title": "Flight of Fear launches with linear induction motors",
+  "description": "Premier Rides' 44 LIM units push the train to 54 mph in about four seconds, the first LIM-launched coaster.",
+  "land": "ride-engineering",
+  "concept": "lift-systems",
+  "source": "wikipedia-flight-of-fear"
+ },
+ {
+  "date": "1996-06-18",
+  "precision": "day",
+  "title": "Flight of Fear opens at Kings Island and Kings Dominion",
+  "description": "First roller coasters launched by linear induction motors, by Premier Rides.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch",
+  "source": "wikipedia-flight-of-fear"
+ },
+ {
+  "date": "1997-03-15",
+  "precision": "day",
+  "title": "Superman: The Escape opens",
+  "description": "An LSM shuttle reaches 100 mph and 415 ft, the first coaster over 400 ft.",
+  "land": "history",
+  "concept": "launch-era",
+  "source": "wikipedia-superman-escape-from-krypton"
+ },
+ {
+  "date": "1998-04-22",
+  "precision": "day",
+  "title": "Disney's Animal Kingdom opens",
+  "description": "Joe Rohde's park around the 145 ft Tree of Life.",
+  "land": "history",
+  "concept": "legendary-imagineers",
+  "source": "wikipedia-disneys-animal-kingdom"
+ },
+ {
+  "date": "1998-12-14",
+  "precision": "day",
+  "title": "Merlin Entertainments founded",
+  "description": "Nick Varney's management buyout of Vardon Attractions.",
+  "land": "history",
+  "concept": "merlin-magic-making",
+  "source": "wikipedia-merlin-entertainments"
+ },
+ {
+  "date": "1999",
+  "precision": "year",
+  "title": "Carnegie Mellon Entertainment Technology Center founded",
+  "description": "Randy Pausch and Don Marinelli create the project-based master's programme that feeds interactive and immersive entertainment careers.",
+  "land": "careers",
+  "concept": "university-programs",
+  "source": "cmu-etc-about"
+ },
+ {
+  "date": "1999",
+  "precision": "year",
+  "title": "Disney introduces FastPass",
+  "description": "The first large-scale free virtual queue in a theme park, launched late in 1999.",
+  "land": "human-factors",
+  "concept": "virtual-queues",
+  "source": "wikipedia-disney-virtual-queues"
+ },
+ {
+  "date": "1999",
+  "precision": "year",
+  "title": "Disney introduces FastPass",
+  "description": "Free timed-return tickets let guests skip the standby line, the first mass-market virtual queue.",
+  "land": "operations-business",
+  "concept": "capacity-vs-demand",
+  "source": "wikipedia-lightning-lane"
+ },
+ {
+  "date": "1999-05-28",
+  "precision": "day",
+  "title": "Islands of Adventure opens with Spider-Man",
+  "description": "Motion bases on a track plus 3D screens define the media dark ride; Thea Award in 2000.",
+  "land": "history",
+  "concept": "spider-man-and-transformers",
+  "source": "wikipedia-amazing-adventures-of-spider-man"
+ },
+ {
+  "date": "2000-03-01",
+  "precision": "day",
+  "title": "Don Carson publishes 'Environmental Storytelling'",
+  "description": "An ex-Imagineer carries theme-park storytelling techniques into game level design.",
+  "land": "story-experience",
+  "concept": "environmental-storytelling",
+  "source": "carson-environmental-storytelling-2000"
+ },
+ {
+  "date": "2000-05-13",
+  "precision": "day",
+  "title": "Millennium Force opens",
+  "description": "The first giga coaster, 310 ft, with a cable lift.",
+  "land": "history",
+  "concept": "hyper-and-giga-era",
+  "source": "wikipedia-millennium-force"
+ },
+ {
+  "date": "2000-05-13",
+  "precision": "day",
+  "title": "Millennium Force opens with cable lift and magnetic brakes",
+  "description": "Intamin's catch-car cable lift climbs 310 ft at 15 mph and eddy-current brakes stop the train from 65 mph in about six seconds.",
+  "land": "ride-engineering",
+  "concept": "brake-types",
+  "source": "wikipedia-millennium-force"
+ },
+ {
+  "date": "2000-09-04",
+  "precision": "day",
+  "title": "Pooh's Hunny Hunt opens",
+  "description": "Tokyo Disneyland's trackless dark ride, the system later used in Mystic Manor.",
+  "land": "history",
+  "concept": "mystic-manor",
+  "source": "wikipedia-pooh-hunny-hunt"
+ },
+ {
+  "date": "2000-09-04",
+  "precision": "day",
+  "title": "Pooh's Hunny Hunt opens at Tokyo Disneyland",
+  "description": "First full attraction on a sensor-guided trackless ride system.",
+  "land": "ride-systems",
+  "concept": "trackless-ride",
+  "source": "wikipedia-poohs-hunny-hunt"
+ },
+ {
+  "date": "2001-03-24",
+  "precision": "day",
+  "title": "Hypersonic XLC opens",
+  "description": "S&S's first compressed-air launch coaster.",
+  "land": "history",
+  "concept": "launch-era",
+  "source": "wikipedia-hypersonic-xlc"
+ },
+ {
+  "date": "2001-09-04",
+  "precision": "day",
+  "title": "Tokyo DisneySea opens",
+  "description": "Seven ports of call; 10 million guests in 307 days.",
+  "land": "history",
+  "concept": "disney-global-parks",
+  "source": "wikipedia-tokyo-disneysea"
+ },
+ {
+  "date": "2001-10-03",
+  "precision": "day",
+  "title": "Haunted Mansion Holiday debuts at Disneyland",
+  "description": "The Nightmare Before Christmas overlay opens, becoming the model for annual seasonal re-dressing of a dark ride.",
+  "land": "sensory-environment",
+  "concept": "seasonal-overlays",
+  "source": "wikipedia-haunted-mansion-holiday"
+ },
+ {
+  "date": "2001-12-03",
+  "precision": "day",
+  "title": "Arrow Dynamics files for bankruptcy",
+  "description": "S&S buys the assets in 2002, ending the company that built the Matterhorn.",
+  "land": "history",
+  "concept": "arrow-dynamics",
+  "source": "wikipedia-arrow-dynamics"
+ },
+ {
+  "date": "2002-06-22",
+  "precision": "day",
+  "title": "Xcelerator opens",
+  "description": "Intamin's first hydraulic launch: 0 to 82 mph in 2.3 seconds.",
+  "land": "history",
+  "concept": "launch-era",
+  "source": "wikipedia-xcelerator"
+ },
+ {
+  "date": "2002-06-22",
+  "precision": "day",
+  "title": "Xcelerator opens as the first hydraulic launch coaster",
+  "description": "Knott's Berry Farm's Intamin coaster reaches 82 mph in 2.3 seconds using nitrogen accumulators and a winch-driven catch car.",
+  "land": "ride-engineering",
+  "concept": "energy-and-motion",
+  "source": "wikipedia-xcelerator"
+ },
+ {
+  "date": "2003",
+  "precision": "year",
+  "title": "John Hench's Designing Disney is published",
+  "description": "Hench sets down forced perspective, colour and the 'art of the show' in his own words.",
+  "land": "story-experience",
+  "concept": "themed-storytelling",
+  "source": "hench-designing-disney"
+ },
+ {
+  "date": "2003-05-04",
+  "precision": "day",
+  "title": "Top Thrill Dragster opens",
+  "description": "The first strata coaster, 420 ft and 120 mph.",
+  "land": "history",
+  "concept": "strata-coasters",
+  "source": "wikipedia-top-thrill-dragster"
+ },
+ {
+  "date": "2003-09-05",
+  "precision": "day",
+  "title": "Big Thunder Mountain Railroad derailment at Disneyland",
+  "description": "A guide wheel comes off a train and the locomotive is forced onto the first car; one guest dies. Maintenance omissions are later acknowledged.",
+  "land": "safety-standards",
+  "concept": "mechanical-failure-cases",
+  "source": "tpi-big-thunder-2003"
+ },
+ {
+  "date": "2005-05-21",
+  "precision": "day",
+  "title": "Kingda Ka opens",
+  "description": "456 ft and 128 mph: the tallest coaster until its 2024 closure.",
+  "land": "history",
+  "concept": "strata-coasters",
+  "source": "wikipedia-kingda-ka"
+ },
+ {
+  "date": "2005-08-21",
+  "precision": "day",
+  "title": "Six Flags New Orleans operates for the last time",
+  "description": "Hurricane Katrina floods the park eight days later; it never reopens.",
+  "land": "history",
+  "concept": "defunct-parks",
+  "source": "wikipedia-six-flags-new-orleans"
+ },
+ {
+  "date": "2005-09-12",
+  "precision": "day",
+  "title": "Hong Kong Disneyland opens",
+  "description": "A 52/48 government-Disney joint venture designed with feng shui input.",
+  "land": "history",
+  "concept": "asian-expansion",
+  "source": "wikipedia-hong-kong-disneyland"
+ },
+ {
+  "date": "2005-09-12",
+  "precision": "day",
+  "title": "Hong Kong Disneyland opens",
+  "description": "Designed with feng shui advice, including a bend in the entrance walkway.",
+  "land": "human-factors",
+  "concept": "cultural-differences",
+  "source": "wikipedia-hong-kong-disneyland"
+ },
+ {
+  "date": "2006-04-07",
+  "precision": "day",
+  "title": "Expedition Everest opens after six years of planning and construction",
+  "description": "Construction began March 2003; the mountain, coaster and yeti are three independent structures coordinated with 4D scheduling.",
+  "land": "design-process",
+  "concept": "site-construction",
+  "source": "wikipedia-expedition-everest"
+ },
+ {
+  "date": "2006-04-07",
+  "precision": "day",
+  "title": "Expedition Everest opens",
+  "description": "A $100 million Vekoma coaster with switch tracks and a 25 ft Yeti.",
+  "land": "history",
+  "concept": "expedition-everest",
+  "source": "wikipedia-expedition-everest"
+ },
+ {
+  "date": "2007",
+  "precision": "year",
+  "title": "The Season Pass podcast launches",
+  "description": "Doug Barnes starts the show as fan commentary; it grows into an industry forum for attraction creators.",
+  "land": "careers",
+  "concept": "podcasts-and-channels",
+  "source": "blooloop-season-pass-origin"
+ },
+ {
+  "date": "2008-04-15",
+  "precision": "day",
+  "title": "Hard Rock Park opens",
+  "description": "The Myrtle Beach park files for bankruptcy in September of the same year.",
+  "land": "history",
+  "concept": "defunct-parks",
+  "source": "wikipedia-hard-rock-park"
+ },
+ {
+  "date": "2010-06-11",
+  "precision": "day",
+  "title": "World of Color opens at Disney California Adventure",
+  "description": "More than 1,200 fountains and a 380-foot combined mist screen.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains",
+  "source": "wikipedia-world-of-color"
+ },
+ {
+  "date": "2010-06-18",
+  "precision": "day",
+  "title": "Wizarding World of Harry Potter opens",
+  "description": "Forbidden Journey's KUKA arms debut; Islands of Adventure attendance rises 36%.",
+  "land": "history",
+  "concept": "forbidden-journey",
+  "source": "wikipedia-forbidden-journey"
+ },
+ {
+  "date": "2010-06-18",
+  "precision": "day",
+  "title": "Harry Potter and the Forbidden Journey opens",
+  "description": "KUKA robot arms on a track carry riders through sets and projection domes.",
+  "land": "ride-systems",
+  "concept": "robot-arm-ride",
+  "source": "wikipedia-forbidden-journey"
+ },
+ {
+  "date": "2010-06-18",
+  "precision": "day",
+  "title": "Harry Potter and the Forbidden Journey opens",
+  "description": "Universal's Hogwarts queue becomes the benchmark for queue storytelling.",
+  "land": "story-experience",
+  "concept": "queue-storytelling",
+  "source": "wikipedia-forbidden-journey"
+ },
+ {
+  "date": "2010-09-15",
+  "precision": "day",
+  "title": "2010 ADA Standards for Accessible Design issued",
+  "description": "US standards include sections 234 and 1002 on amusement rides: wheelchair spaces, transfer seats and devices.",
+  "land": "human-factors",
+  "concept": "accessibility",
+  "source": "ada-2010-standards"
+ },
+ {
+  "date": "2010-11-04",
+  "precision": "day",
+  "title": "Formula Rossa opens",
+  "description": "A 240 km/h hydraulic launch at Ferrari World, the fastest coaster until 2025.",
+  "land": "history",
+  "concept": "launch-era",
+  "source": "wikipedia-formula-rossa"
+ },
+ {
+  "date": "2010-11-04",
+  "precision": "day",
+  "title": "Ferrari World Abu Dhabi opens",
+  "description": "A mostly indoor park under one roof shows how hot-climate sites move the whole park inside.",
+  "land": "masterplanning",
+  "concept": "indoor-parks",
+  "source": "wikipedia-ferrari-world"
+ },
+ {
+  "date": "2011-03",
+  "precision": "month",
+  "title": "Haunted Mansion interactive queue previews at Magic Kingdom",
+  "description": "Touch-responsive crypts and instruments turn waiting into play.",
+  "land": "human-factors",
+  "concept": "interactive-queues",
+  "source": "laughingplace-haunted-mansion-queue-2011"
+ },
+ {
+  "date": "2011-04-22",
+  "precision": "day",
+  "title": "New Texas Giant reopens",
+  "description": "The first RMC I-Box conversion of a wooden coaster.",
+  "land": "history",
+  "concept": "rmc-hybrid-era",
+  "source": "wikipedia-new-texas-giant"
+ },
+ {
+  "date": "2011-12-03",
+  "precision": "day",
+  "title": "Transformers: The Ride opens in Singapore",
+  "description": "Oceaneering vehicles with six-axis motion bases; Hollywood and Orlando follow.",
+  "land": "history",
+  "concept": "spider-man-and-transformers",
+  "source": "wikipedia-transformers-the-ride"
+ },
+ {
+  "date": "2012-01-09",
+  "precision": "day",
+  "title": "Disneyland refreshes the Main Street, U.S.A. music loop",
+  "description": "First change in about twenty years; over a dozen period-style arrangements join the existing loop.",
+  "land": "sensory-environment",
+  "concept": "area-music",
+  "source": "laughingplace-2012-main-street-loop"
+ },
+ {
+  "date": "2012-06-05",
+  "precision": "day",
+  "title": "Press tour of Imagineering's DISH projection cave",
+  "description": "Imagineers show how Cars Land and Carthay Circle were walked through at full scale before construction.",
+  "land": "design-process",
+  "concept": "vr-design-review",
+  "source": "mouseplanet-dish-visit"
+ },
+ {
+  "date": "2013-03-15",
+  "precision": "day",
+  "title": "Outlaw Run opens with inverting Topper Track",
+  "description": "Rocky Mountain Construction's steel-topped wooden track carries multiple inversions on a wooden coaster for the first time.",
+  "land": "ride-engineering",
+  "concept": "track-types",
+  "source": "wikipedia-outlaw-run"
+ },
+ {
+  "date": "2013-05-17",
+  "precision": "day",
+  "title": "Mystic Manor opens",
+  "description": "Hong Kong Disneyland's trackless manor avoids ghosts for cultural reasons; TEA award in November.",
+  "land": "history",
+  "concept": "mystic-manor",
+  "source": "wikipedia-mystic-manor"
+ },
+ {
+  "date": "2014",
+  "precision": "year",
+  "title": "WDI's Shanghai castle BIM workflow wins an AIA TAP award",
+  "description": "Architects on Revit, engineers on AutoCAD, with scripted daily data exchange between Glendale and Shanghai.",
+  "land": "design-process",
+  "concept": "engineering-handoff",
+  "source": "designworld-disney-bim-shanghai-castle"
+ },
+ {
+  "date": "2014-03-29",
+  "precision": "day",
+  "title": "Chimelong Ocean Kingdom grand opening",
+  "description": "The Zhuhai park grows to 12.6 million guests by 2024.",
+  "land": "history",
+  "concept": "asian-expansion",
+  "source": "wikipedia-chimelong-ocean-kingdom"
+ },
+ {
+  "date": "2015",
+  "precision": "year",
+  "title": "ISO 17842-1 first edition published",
+  "description": "ISO/TC 254 publishes the first international ride design standard, later withdrawn in favour of the 2023 edition.",
+  "land": "safety-standards",
+  "concept": "iso-17842",
+  "source": "iso-17842-1-2023"
+ },
+ {
+  "date": "2015-05-09",
+  "precision": "day",
+  "title": "The Hatbox Ghost returns with a projected face",
+  "description": "The illusion that failed in 1969 under ambient light is rebuilt using projection mapping on the figure.",
+  "land": "show-technology",
+  "concept": "projection-mapping",
+  "source": "wikipedia-hatbox-ghost"
+ },
+ {
+  "date": "2015-06-02",
+  "precision": "day",
+  "title": "The Smiler collision at Alton Towers",
+  "description": "A loaded train is released into a stalled empty train after engineers override the block system; several riders are seriously injured.",
+  "land": "safety-standards",
+  "concept": "human-factors-incidents",
+  "source": "towersstreet-smiler-fine-2016"
+ },
+ {
+  "date": "2015-09",
+  "precision": "month",
+  "title": "Alpenexpress VR-Ride unveiled at Europa-Park",
+  "description": "First VR coaster: headsets synced to a 1984 mine train; VR Coaster GmbH founded the same year.",
+  "land": "ai-future",
+  "concept": "vr-ar-in-parks",
+  "source": "blooloop-alpenexpress-vr-2015"
+ },
+ {
+  "date": "2016-02-28",
+  "precision": "day",
+  "title": "Disney moves one-day tickets to date-based tiers",
+  "description": "Value, Regular and Peak pricing arrives at Disneyland and Walt Disney World.",
+  "land": "operations-business",
+  "concept": "pricing",
+  "source": "mouseplanet-seasonal-pricing-2016"
+ },
+ {
+  "date": "2016-06-16",
+  "precision": "day",
+  "title": "Shanghai Disneyland opens",
+  "description": "No Main Street, a Mickey Avenue, and the largest Disney castle.",
+  "land": "history",
+  "concept": "asian-expansion",
+  "source": "wikipedia-shanghai-disneyland"
+ },
+ {
+  "date": "2016-10-25",
+  "precision": "day",
+  "title": "Thunder River Rapids tragedy at Dreamworld",
+  "description": "A pump failure strands a raft on the conveyor and the following raft collides with it; four people die.",
+  "land": "safety-standards",
+  "concept": "design-oversight-cases",
+  "source": "qld-coroner-dreamworld-2020"
+ },
+ {
+  "date": "2017-02-15",
+  "precision": "day",
+  "title": "Defunctland premieres",
+  "description": "Kevin Perjurer's documentary series on closed attractions starts on YouTube.",
+  "land": "history",
+  "concept": "defunct-parks",
+  "source": "wikipedia-defunctland"
+ },
+ {
+  "date": "2017-05-27",
+  "precision": "day",
+  "title": "Pandora and Flight of Passage open",
+  "description": "A link-chair flying simulator with 10K 60 fps stereo media.",
+  "land": "history",
+  "concept": "flight-of-passage",
+  "source": "wikipedia-flight-of-passage"
+ },
+ {
+  "date": "2017-05-27",
+  "precision": "day",
+  "title": "Pandora \u2013 The World of Avatar opens",
+  "description": "A land designed to transform at night, with bioluminescent plants driven by LEDs, fibre optics and blacklight.",
+  "land": "sensory-environment",
+  "concept": "night-vs-day",
+  "source": "wikipedia-pandora-world-of-avatar"
+ },
+ {
+  "date": "2017-07-01",
+  "precision": "day",
+  "title": "Symbolica opens at Efteling",
+  "description": "A EUR 35 million ETF trackless ride with three selectable routes.",
+  "land": "history",
+  "concept": "symbolica",
+  "source": "wikipedia-symbolica"
+ },
+ {
+  "date": "2017-07-26",
+  "precision": "day",
+  "title": "Fire Ball failure at the Ohio State Fair",
+  "description": "A gondola arm separates in motion; one rider dies. The manufacturer attributes it to hidden internal corrosion and halts similar rides worldwide.",
+  "land": "safety-standards",
+  "concept": "mechanical-failure-cases",
+  "source": "wosu-fire-ball-corrosion-2017"
+ },
+ {
+  "date": "2017-12-16",
+  "precision": "day",
+  "title": "The Void opens Star Wars: Secrets of the Empire",
+  "description": "Free-walk hyper-reality VR with physical sets launches at Disney Springs; the company closes in 2020.",
+  "land": "ai-future",
+  "concept": "location-based-entertainment",
+  "source": "techcrunch-void-secrets-of-the-empire-2017"
+ },
+ {
+  "date": "2018-02",
+  "precision": "month",
+  "title": "1,218 drones fly at the Pyeongchang Winter Olympics opening",
+  "description": "Intel Shooting Star drones set a world record for simultaneous drones, moving drone shows into the mainstream.",
+  "land": "show-technology",
+  "concept": "nighttime-spectaculars",
+  "source": "wikipedia-drone-show"
+ },
+ {
+  "date": "2018-04",
+  "precision": "month",
+  "title": "Sesame Place becomes the first theme park Certified Autism Center",
+  "description": "IBCCES certification with staff training, a sensory guide and quiet rooms.",
+  "land": "human-factors",
+  "concept": "neurodiversity",
+  "source": "phillymag-sesame-place-autism-2018"
+ },
+ {
+  "date": "2018-05-05",
+  "precision": "day",
+  "title": "Steel Vengeance opens",
+  "description": "Mean Streak becomes the first hyper-hybrid, with four inversions.",
+  "land": "history",
+  "concept": "rmc-hybrid-era",
+  "source": "wikipedia-steel-vengeance"
+ },
+ {
+  "date": "2018-06",
+  "precision": "month",
+  "title": "Stuntronics revealed",
+  "description": "Disney shows a humanoid stunt-double robot that flips untethered and lands on its mark, following Stickman in May.",
+  "land": "ai-future",
+  "concept": "stuntronics",
+  "source": "blooloop-stuntronics-2018"
+ },
+ {
+  "date": "2018-07-25",
+  "precision": "day",
+  "title": "Warner Bros. World Abu Dhabi opens",
+  "description": "A fully enclosed, air-conditioned park with six themed areas, later recognised as the world's largest indoor theme park.",
+  "land": "masterplanning",
+  "concept": "indoor-parks",
+  "source": "wikipedia-warner-bros-world-abu-dhabi"
+ },
+ {
+  "date": "2019-06-13",
+  "precision": "day",
+  "title": "Hagrid's Magical Creatures Motorbike Adventure opens",
+  "description": "Site cleared January 2018, first train installed December 2018, ride testing from February 2019.",
+  "land": "design-process",
+  "concept": "phase-timeline",
+  "source": "wikipedia-hagrids-motorbike-adventure"
+ },
+ {
+  "date": "2019-08",
+  "precision": "month",
+  "title": "Imagineering in a Box launches on Khan Academy",
+  "description": "Walt Disney Imagineering releases a free 32-video course on world-building and attraction design.",
+  "land": "story-experience",
+  "concept": "story-driven-design",
+  "source": "attractions-magazine-imagineering-in-a-box"
+ },
+ {
+  "date": "2019-12-05",
+  "precision": "day",
+  "title": "Rise of the Resistance opens, 14 weeks after its land",
+  "description": "Disney had announced in March 2019 that the ride would follow as phase two of Galaxy's Edge.",
+  "land": "design-process",
+  "concept": "testing-and-commissioning",
+  "source": "wikipedia-rise-of-the-resistance"
+ },
+ {
+  "date": "2019-12-05",
+  "precision": "day",
+  "title": "Rise of the Resistance opens",
+  "description": "An 18-minute multi-system ride launched with boarding-group virtual queues.",
+  "land": "history",
+  "concept": "rise-of-the-resistance",
+  "source": "wikipedia-rise-of-the-resistance"
+ },
+ {
+  "date": "2019-12-05",
+  "precision": "day",
+  "title": "Star Wars: Rise of the Resistance opens",
+  "description": "A queue, two pre-shows and four ride systems chained into one continuous story.",
+  "land": "story-experience",
+  "concept": "pacing-and-structure",
+  "source": "wikipedia-rise-of-the-resistance"
+ },
+ {
+  "date": "2020-02-24",
+  "precision": "day",
+  "title": "Queensland coroner delivers Dreamworld findings",
+  "description": "Coroner James McDougall finds no engineering risk assessment was ever done and calls the park's safety systems frighteningly unsophisticated.",
+  "land": "safety-standards",
+  "concept": "safety-culture",
+  "source": "qld-coroner-dreamworld-2020"
+ },
+ {
+  "date": "2020-03",
+  "precision": "month",
+  "title": "Imagineering in a Box released",
+  "description": "Disney Imagineering, Khan Academy and Pixar publish the free three-lesson theme park design course with 32 videos.",
+  "land": "careers",
+  "concept": "imagineering-in-a-box",
+  "source": "attractions-management-imagineering-in-a-box"
+ },
+ {
+  "date": "2020-03-15",
+  "precision": "day",
+  "title": "Walt Disney World closes for the pandemic",
+  "description": "The resort stays shut until July 11, 2020; Disneyland closes March 14 and reopens April 30, 2021.",
+  "land": "history",
+  "concept": "reservation-era",
+  "source": "wikipedia-walt-disney-world"
+ },
+ {
+  "date": "2020-07-11",
+  "precision": "day",
+  "title": "Magic Kingdom reopens with reservations",
+  "description": "Phased reopening begins; park entry now requires a dated reservation.",
+  "land": "history",
+  "concept": "reservation-era",
+  "source": "wikipedia-walt-disney-world"
+ },
+ {
+  "date": "2021-03",
+  "precision": "month",
+  "title": "Walt Disney World tests facial recognition entry",
+  "description": "Opt-in trial at Magic Kingdom links faces to random numbers with 30-day deletion; later withdrawn after feedback.",
+  "land": "ai-future",
+  "concept": "data-privacy",
+  "source": "orlando-weekly-disney-facial-recognition-2021"
+ },
+ {
+  "date": "2021-03-18",
+  "precision": "day",
+  "title": "Super Nintendo World opens in Osaka",
+  "description": "The Power-Up Band wristband turns a land into a playable game.",
+  "land": "history",
+  "concept": "ip-wars",
+  "source": "wikipedia-super-nintendo-world"
+ },
+ {
+  "date": "2021-04-30",
+  "precision": "day",
+  "title": "Disneyland reopens",
+  "description": "After more than a year closed, the original park reopens.",
+  "land": "history",
+  "concept": "reservation-era",
+  "source": "wikipedia-disneyland"
+ },
+ {
+  "date": "2021-06-08",
+  "precision": "day",
+  "title": "Disney granted patent for automated rockwork rebar design",
+  "description": "US11030356B2 turns a 3D rock mesh into numbered rebar chips for assembly.",
+  "land": "design-process",
+  "concept": "rockwork",
+  "source": "google-patents-us-11030356"
+ },
+ {
+  "date": "2021-08-18",
+  "precision": "day",
+  "title": "Disney Genie announced",
+  "description": "Free planner that builds and keeps updating itineraries from guest preferences; paid Genie+ launches alongside.",
+  "land": "ai-future",
+  "concept": "personalization",
+  "source": "d23-disney-genie-2021"
+ },
+ {
+  "date": "2021-09-20",
+  "precision": "day",
+  "title": "Universal Beijing Resort opens",
+  "description": "A joint venture 70% owned by a Beijing state enterprise.",
+  "land": "history",
+  "concept": "asian-expansion",
+  "source": "wikipedia-universal-beijing-resort"
+ },
+ {
+  "date": "2021-10-19",
+  "precision": "day",
+  "title": "Disney Genie+ and Lightning Lane launch",
+  "description": "Paid line-skipping replaces the free FastPass system at Walt Disney World.",
+  "land": "operations-business",
+  "concept": "pricing",
+  "source": "wikipedia-lightning-lane"
+ },
+ {
+  "date": "2023",
+  "precision": "year",
+  "title": "UCF launches BS in Theme Park and Attraction Management",
+  "description": "Rosen College's degree starts in Fall 2023, having grown from a 2001 track and a 2020 certificate.",
+  "land": "careers",
+  "concept": "university-programs",
+  "source": "ucf-theme-park-degree-launch"
+ },
+ {
+  "date": "2023-09",
+  "precision": "month",
+  "title": "ISO 17842-1:2023 second edition published",
+  "description": "The revised international design standard replaces the 2015 edition.",
+  "land": "safety-standards",
+  "concept": "iso-17842",
+  "source": "iso-17842-1-2023"
+ },
+ {
+  "date": "2024-04-05",
+  "precision": "day",
+  "title": "BD-X droids roam Galaxy's Edge daily",
+  "description": "RL-trained bipedal droids become a daily offering at Disneyland through June 2, 2024.",
+  "land": "ai-future",
+  "concept": "free-roaming-robots",
+  "source": "laughingplace-bdx-droids-2024"
+ },
+ {
+  "date": "2024-07-24",
+  "precision": "day",
+  "title": "Lightning Lane Multi Pass replaces Genie+",
+  "description": "Disney renames its paid pass and adds advance booking windows of seven days for resort guests and three for others.",
+  "land": "operations-business",
+  "concept": "pricing",
+  "source": "touringplans-lightning-lane-multi-pass-2024"
+ },
+ {
+  "date": "2024-11-10",
+  "precision": "day",
+  "title": "Kingda Ka closes",
+  "description": "The tallest coaster closes; its tower is imploded on February 28, 2025.",
+  "land": "history",
+  "concept": "strata-coasters",
+  "source": "wikipedia-kingda-ka"
+ },
+ {
+  "date": "2025-05-22",
+  "precision": "day",
+  "title": "Universal Epic Universe opens",
+  "description": "Announced 1 August 2019; construction paused July 2020 to March 2021 during the pandemic.",
+  "land": "design-process",
+  "concept": "phase-timeline",
+  "source": "wikipedia-epic-universe"
+ },
+ {
+  "date": "2025-05-22",
+  "precision": "day",
+  "title": "Universal Epic Universe opens",
+  "description": "Five worlds around Celestial Park, including Super Nintendo World and Ministry of Magic.",
+  "land": "history",
+  "concept": "ip-wars",
+  "source": "wikipedia-epic-universe"
+ },
+ {
+  "date": "2025-05-22",
+  "precision": "day",
+  "title": "Universal Epic Universe opens",
+  "description": "A new hub-and-spoke park: Celestial Park at the centre, four portal worlds, about 110 acres inside a 750-acre site held for expansion.",
+  "land": "masterplanning",
+  "concept": "expansion-and-phasing",
+  "source": "wikipedia-universal-epic-universe"
+ },
+ {
+  "date": "2026-03-29",
+  "precision": "day",
+  "title": "Robotic Olaf debuts at Disneyland Paris",
+  "description": "A free-walking Olaf trained with reinforcement learning opens in World of Frozen.",
+  "land": "ai-future",
+  "concept": "free-roaming-robots",
+  "source": "attractions-magazine-robotic-olaf-2026"
+ }
+]

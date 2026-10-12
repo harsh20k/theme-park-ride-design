@@ -1,0 +1,15 @@
+[
+  {"id": "story-experience", "title": "Story & Experience Design", "tagline": "How a place tells a story you walk through.", "color": "#C2410C", "icon": "book-open"},
+  {"id": "human-factors", "title": "Human Factors & Guest Psychology", "tagline": "What guests feel, remember, fear, and need.", "color": "#BE185D", "icon": "brain"},
+  {"id": "masterplanning", "title": "Masterplanning & Park Layout", "tagline": "Shaping land so crowds flow and stories connect.", "color": "#047857", "icon": "map"},
+  {"id": "ride-systems", "title": "Ride Systems & Types", "tagline": "The machines that move people through stories.", "color": "#1D4ED8", "icon": "train"},
+  {"id": "ride-engineering", "title": "Ride Engineering & Physics", "tagline": "Forces, geometry, and structures behind every drop.", "color": "#4338CA", "icon": "function"},
+  {"id": "safety-standards", "title": "Safety & Standards", "tagline": "The rules, systems, and lessons that keep rides safe.", "color": "#B91C1C", "icon": "shield"},
+  {"id": "show-technology", "title": "Show Technology", "tagline": "Animatronics, projection, light, sound, and illusion.", "color": "#7E22CE", "icon": "sparkles"},
+  {"id": "sensory-environment", "title": "Sensory & Environmental Design", "tagline": "Sound, scent, color, climate, and texture of a place.", "color": "#0F766E", "icon": "leaf"},
+  {"id": "design-process", "title": "Design Process & Craft", "tagline": "From blue sky to opening day.", "color": "#A16207", "icon": "pencil-ruler"},
+  {"id": "operations-business", "title": "Operations & Business", "tagline": "Throughput, maintenance, staffing, and money.", "color": "#374151", "icon": "bar-chart"},
+  {"id": "history", "title": "History & Landmark Attractions", "tagline": "The parks, rides, and people that changed the craft.", "color": "#92400E", "icon": "landmark"},
+  {"id": "ai-future", "title": "AI & Future Tech", "tagline": "Simulation, robotics, personalization, and what is next.", "color": "#0E7490", "icon": "cpu"},
+  {"id": "careers", "title": "Careers & Learning Path", "tagline": "Roles, skills, programs, and how to get in.", "color": "#4D7C0F", "icon": "graduation-cap"}
+]

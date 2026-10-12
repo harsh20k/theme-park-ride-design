@@ -6,4 +6,5 @@ An exploration of theme park and ride design — a field where creative storytel
 
 - How theme parks and rides are designed, from story and concept to engineering and safety
 - What makes great attractions work
-- How designers are using AI tools to speed up concepts, visuals, and planning
+- How designers use concepts, visuals, and planning
+- How Real teams like Disney's Imagineers, Merlin magic makers create such wonderful experiences

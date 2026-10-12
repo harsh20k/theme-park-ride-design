@@ -1,0 +1,4145 @@
+[
+ {
+  "id": "how-rides-work",
+  "title": "How do rides actually work?",
+  "kind": "track",
+  "audience": "Curious beginner",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "coaster-anatomy",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "energy-conversion",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "lift-systems",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "g-force-basics",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "airtime-and-negative-g",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "block-system",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "brake-types",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "anti-rollback",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "restraint-mechanisms",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "launched-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "lsm-lim-launch",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "classic-dark-ride",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "omnimover",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "trackless-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "motion-base",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-control-systems",
+    "land": "safety-standards",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "why-it-feels-that-way",
+  "title": "Why rides feel the way they do",
+  "kind": "track",
+  "audience": "Designer / animator",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "fear-vs-fun",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "safe-danger-paradox",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "anticipation-and-dread",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "arousal-and-relief",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vestibular-system",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "motion-sickness",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sensory-conflict-theory",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "peak-end-rule",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "finale-design",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "lifelong-ride-memories",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "photo-moments",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "awe",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "nostalgia",
+    "land": "human-factors",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "story-you-walk-through",
+  "title": "Story you walk through",
+  "kind": "track",
+  "audience": "Designer",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "themed-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "story-bible",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "environmental-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "weenies",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "forced-perspective",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "sightlines",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "the-berm",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "thresholds-and-portals",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "queue-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "pre-show",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "ride-beat-sheet",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "tension-and-release",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "finale-design",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "level-design-parallels",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "cinematic-grammar",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "breaking-immersion",
+    "land": "human-factors",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "psychology-of-waiting",
+  "title": "The psychology of waiting",
+  "kind": "track",
+  "audience": "Developer / ops",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "waiting",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "perceived-vs-actual-wait",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "occupied-time",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "explained-waits",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "queue-fairness",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "balking-and-reneging",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "interactive-queues",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "virtual-queues",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "paid-priority-access",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "throughput-math",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "dispatch-interval",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "queueing-theory",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "littles-law",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wait-time-estimation",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wait-time-prediction",
+    "land": "ai-future",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "plan-a-park",
+  "title": "Plan a park from the ground up",
+  "kind": "track",
+  "audience": "Planner",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "site-selection",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "regional-vs-destination",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "capacity-planning",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "design-day",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "attraction-mix",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "hub-and-spoke",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "entry-sequence",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "central-icon",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "land-design",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "land-transitions",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "guest-flow-patterns",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pinch-points",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "level-of-service",
+    "land": "masterplanning",
+    "level": "advanced"
+   },
+   {
+    "concept": "onstage-backstage",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "utilidors",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "rest-areas",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "food-and-retail-placement",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "expansion-and-phasing",
+    "land": "masterplanning",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "engineer-a-coaster",
+  "title": "Engineer a coaster",
+  "kind": "track",
+  "audience": "Engineer / technical",
+  "level": "advanced",
+  "steps": [
+   {
+    "concept": "g-force-basics",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "positive-g",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "lateral-g",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "g-tolerance-and-duration",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "jerk-and-onset-rate",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "acceleration-envelopes",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "heartline",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "clothoid-loop",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "banking",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "spline-transitions",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "airtime-hills",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "friction-and-drag",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "speed-profile",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "block-system",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sensors-and-switches",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wheels-and-bogies",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "fatigue",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "dynamic-loads",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "restraint-locking",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "astm-f2291",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "risk-assessment",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "safety-integrity-levels",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "testing-and-commissioning",
+    "land": "design-process",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "make-it-safe",
+  "title": "Make it safe",
+  "kind": "track",
+  "audience": "Engineer / operator",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "standards-and-regulation",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "astm-f24",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "astm-f2291",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "en-13814",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "iso-17842",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "regulatory-landscape",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "risk-assessment",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-control-systems",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "redundancy-and-fail-safe",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "reach-envelope",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "patron-accommodation",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "restraint-design-rules",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "inspections",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "operator-training",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "dispatch-procedures",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "incident-overview",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "human-factors-incidents",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "safety-culture",
+    "land": "safety-standards",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "show-and-illusion",
+  "title": "Show tech and illusion",
+  "kind": "track",
+  "audience": "Animator / technical artist",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "animatronics",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "audio-animatronics-history",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "figure-actuation",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "figure-programming",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "peppers-ghost",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "scrims-and-transparency",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "projection-mapping",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "domes-and-wraparound-screens",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "screens-vs-sets-debate",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "theatrical-lighting",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "onboard-and-spatial-audio",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-control-systems",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-show-synchronization",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "media-servers-and-real-time-engines",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "real-time-engines",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "untethered-figures",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "free-roaming-robots",
+    "land": "ai-future",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "blue-sky-to-opening",
+  "title": "From blue sky to opening day",
+  "kind": "track",
+  "audience": "Designer / producer",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "blue-sky",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "concept-art",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "design-intent",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "feasibility-and-early-costing",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "schematic-design",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "models-and-maquettes",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "previs",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-layout-design",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "engineering-handoff",
+    "land": "design-process",
+    "level": "advanced"
+   },
+   {
+    "concept": "mockups-and-prototypes",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rockwork",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "scenic-painting",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "show-install",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "testing-and-commissioning",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "soft-opening",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "post-opening-plussing",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "capital-budgets",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "roi-and-attendance-modeling",
+    "land": "operations-business",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "design-for-everyone",
+  "title": "Design for every body and mind",
+  "kind": "track",
+  "audience": "Designer / ops",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "inclusion",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "accessibility",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "accessible-vehicles",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "disability-access-services",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "neurodiversity",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "sensory-guides-and-quiet-rooms",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "anthropometrics",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "percentile-design",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "restraint-fit",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "height-and-health-requirements",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "age-differences",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "group-dynamics",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "rider-switch",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "cultural-differences",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "localisation",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "multilingual-design",
+    "land": "human-factors",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "places-that-feel-right",
+  "title": "Places that feel right",
+  "kind": "track",
+  "audience": "Designer / architect",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "environmental-psychology",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "prospect-refuge",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "biophilia",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "servicescape",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "atmospherics",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "area-music",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "audio-zoning",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "smellitzers",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "scent-and-memory",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "lighting-mood",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "color-psychology",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "color-scripts",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "go-away-green",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "materials-and-texture",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "faux-finishes-and-aging",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "shade-and-microclimate",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "night-vs-day",
+    "land": "sensory-environment",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "history-in-20-stops",
+  "title": "History in 20 stops",
+  "kind": "track",
+  "audience": "Everyone",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "pleasure-gardens-and-worlds-fairs",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "coney-island",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "early-coasters",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "trolley-parks",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "tivoli-and-european-roots",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "disneyland-1955",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "walt-and-the-imagineers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "tubular-steel-breakthrough",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "worlds-fair-1964",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "pirates-of-the-caribbean",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "haunted-mansion",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "walt-disney-world-and-epcot",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "space-mountain",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "loop-revival",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "hyper-and-giga-era",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "indiana-jones-adventure",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "spider-man-and-transformers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "forbidden-journey",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "rise-of-the-resistance",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "reservation-era",
+    "land": "history",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "ai-and-whats-next",
+  "title": "AI and what comes next",
+  "kind": "track",
+  "audience": "Developer",
+  "level": "intermediate",
+  "steps": [
+   {
+    "concept": "crowd-modeling",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wait-time-prediction",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "digital-twins",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "simulation-and-surrogates",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "generative-concepting",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "procedural-layout",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "predictive-maintenance",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "personalization",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "free-roaming-robots",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rl-for-figures",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "stuntronics",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "real-time-engines",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "personalized-dark-rides",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "data-privacy",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "craft-vs-automation",
+    "land": "ai-future",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "get-into-the-industry",
+  "title": "Get into the industry",
+  "kind": "track",
+  "audience": "Student / career changer",
+  "level": "beginner",
+  "steps": [
+   {
+    "concept": "roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "creative-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "engineering-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "show-tech-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "planning-and-ops-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "portfolio-building",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "software-toolkit",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "storytelling-for-designers",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "university-programs",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "competitions",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "conferences",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "professional-bodies",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "entry-paths",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "imagineering-in-a-box",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "reading-list",
+    "land": "careers",
+    "level": "beginner"
+   }
+  ]
+ },
+ {
+  "id": "land-story-experience",
+  "title": "Story & Experience Design: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "themed-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "spatial-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "pacing-and-structure",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "scripts-and-performance",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "borrowed-crafts",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "story-driven-design",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "story-bible",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "environmental-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "set-dressing-and-props",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "plussing",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "theme-vs-decoration",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "weenies",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "forced-perspective",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "the-berm",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "thresholds-and-portals",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "queue-storytelling",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "pre-show",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "show-scripts",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "cast-role-play",
+    "land": "story-experience",
+    "level": "beginner"
+   },
+   {
+    "concept": "three-act-ride",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ip-adaptation",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "architecture-as-character",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sightlines",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "reveal-and-concealment",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "scale-and-intimacy",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "load-as-story",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-beat-sheet",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "tension-and-release",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "finale-design",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "kinetics-in-scenes",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "story-rooms-and-walkthroughs",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "cinematic-grammar",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "level-design-parallels",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "theatre-staging",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "exhibit-interpretation",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "interactive-narrative",
+    "land": "story-experience",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-human-factors",
+  "title": "Human Factors & Guest Psychology: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "emotion-and-thrill",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "memory",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "waiting",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "inclusion",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "perception",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "behavior-and-decision",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "comfort-and-body",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "flow-and-immersion",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "fear-vs-fun",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "safe-danger-paradox",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "anticipation-and-dread",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "thrill-and-arousal",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "awe",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "nostalgia",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "surprise-and-delight",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "peak-end-rule",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "photo-moments",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "souvenirs-and-memory-cues",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "lifelong-ride-memories",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "optical-illusions",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "scent-and-memory",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "dark-adaptation",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "perceived-vs-actual-wait",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "occupied-time",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "queue-fairness",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "explained-waits",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "virtual-queues",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "queue-boredom",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "interactive-queues",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "wayfinding",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "desire-lines",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "decision-fatigue",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "group-dynamics",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "rider-switch",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "age-differences",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "play-and-exploration",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "ergonomics",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "height-and-health-requirements",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "thermal-comfort",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "walking-fatigue",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "hunger-and-hydration",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "accessibility",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "disability-access-services",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "neurodiversity",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "sensory-guides-and-quiet-rooms",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "multilingual-design",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "family-facilities",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "suspension-of-disbelief",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "breaking-immersion",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "visual-intrusion",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "uncanny-valley",
+    "land": "human-factors",
+    "level": "beginner"
+   },
+   {
+    "concept": "protective-frame",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "arousal-and-relief",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "excitation-transfer",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "optimal-arousal",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "emotional-contagion",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sensation-seeking",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "experiencing-vs-remembering-self",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "duration-neglect",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "reminiscence-bump",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "narrative-memory",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vestibular-system",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "proprioception-and-haptics",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "motion-sickness",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sensory-conflict-theory",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vection",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "size-constancy",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "depth-cues",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "multisensory-integration",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "visual-attention",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "peripheral-vision-and-speed",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "time-perception",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "balking-and-reneging",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "paid-priority-access",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "switchback-design",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "landmarks-and-nodes",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "signage-hierarchy",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "crowd-behavior",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "herding-and-social-proof",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "turn-bias",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "personal-space-and-density",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "choice-architecture",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sunk-cost-and-commitment",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "lowest-common-denominator",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "risk-perception-and-trust",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rider-compliance",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "anthropometrics",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "percentile-design",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "restraint-fit",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "medical-exclusions",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "noise-exposure",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "accessible-vehicles",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "cultural-differences",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "localisation",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "economic-inclusion",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "presence",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "operational-intrusion",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "flow-theory",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "agency-vs-spectacle",
+    "land": "human-factors",
+    "level": "intermediate"
+   },
+   {
+    "concept": "semicircular-canals",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "otolith-organs",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "postural-instability-theory",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "perceptual-thresholds",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "cross-modal-effects",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "seat-width-and-hip-breadth",
+    "land": "human-factors",
+    "level": "advanced"
+   },
+   {
+    "concept": "narrative-transportation",
+    "land": "human-factors",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-masterplanning",
+  "title": "Masterplanning & Park Layout: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "park-structure",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "park-types",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "guest-flow-and-capacity",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "backstage-and-infrastructure",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "planning-theory",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "hub-and-spoke",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "loop-and-linear-layouts",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "land-design",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "entry-sequence",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "central-icon",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "rest-areas",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "onstage-backstage",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "utilidors",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "regional-vs-destination",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "water-parks",
+    "land": "masterplanning",
+    "level": "beginner"
+   },
+   {
+    "concept": "land-transitions",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "site-selection",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "capacity-planning",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "design-day",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "attraction-mix",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "guest-flow-patterns",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pinch-points",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "food-and-retail-placement",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "parade-and-show-crowds",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "service-roads",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "parking-and-transit",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "emergency-access",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "resort-integration",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "indoor-parks",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "expansion-and-phasing",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "urban-planning-parallels",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "landscape-architecture",
+    "land": "masterplanning",
+    "level": "intermediate"
+   },
+   {
+    "concept": "level-of-service",
+    "land": "masterplanning",
+    "level": "advanced"
+   },
+   {
+    "concept": "utilities-and-central-plant",
+    "land": "masterplanning",
+    "level": "advanced"
+   },
+   {
+    "concept": "space-syntax",
+    "land": "masterplanning",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-ride-systems",
+  "title": "Ride Systems & Types: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "roller-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "dark-rides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "water-rides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "flat-rides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "transport-and-other",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "simulators-and-motion-bases",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "coaster-anatomy",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "wooden-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "steel-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "launched-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "inverted-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "wing-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "flying-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "dive-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "family-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "shuttle-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "powered-coasters",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "classic-dark-ride",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "omnimover",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "interactive-dark-ride",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "boat-dark-ride",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "flying-theatre",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "motion-simulator-theatre",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "log-flume",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "river-rapids",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "shoot-the-chutes",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "slow-boat-ride",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "carousel",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "observation-wheel",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "drop-tower",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "pendulum-rides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "swing-rides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "spinning-flats",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "monorail-and-people-movers",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "park-trains",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "gondolas-and-skyrides",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "4d-theatres",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "ride-classification",
+    "land": "ride-systems",
+    "level": "beginner"
+   },
+   {
+    "concept": "hybrid-coasters",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "lsm-lim-launch",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "hydraulic-launch",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pneumatic-launch",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "spinning-and-4d-coasters",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "multi-launch-coasters",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "trackless-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "enhanced-motion-vehicle",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "robot-arm-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "suspended-dark-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "media-dark-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "motion-base",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "dome-and-screen-hybrids",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "water-coaster",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "inverting-flats",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "flywheel-and-catapult-launch",
+    "land": "ride-systems",
+    "level": "advanced"
+   },
+   {
+    "concept": "stewart-platform",
+    "land": "ride-systems",
+    "level": "advanced"
+   },
+   {
+    "concept": "motion-cueing",
+    "land": "ride-systems",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-ride-engineering",
+  "title": "Ride Engineering & Physics: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "energy-and-motion",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "forces-and-tolerance",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "track-geometry",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "braking-and-control-hardware",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vehicle-and-restraint-engineering",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "structures-and-materials",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "rider-biomechanics",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "g-force-basics",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "positive-g",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "airtime-and-negative-g",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "track-elements",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "energy-conversion",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "lift-systems",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "anti-rollback",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "wheels-and-bogies",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "restraint-mechanisms",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "rough-rides",
+    "land": "ride-engineering",
+    "level": "beginner"
+   },
+   {
+    "concept": "lateral-g",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "g-tolerance-and-duration",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "greyout-and-redout",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "clothoid-loop",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "heartline",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "banking",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "airtime-hills",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "track-types",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "friction-and-drag",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "train-mass-and-weather",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "speed-profile",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "water-ride-hydraulics",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "block-system",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "brake-types",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sensors-and-switches",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "drive-tires-and-transfer-tracks",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "supports-and-foundations",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wood-vs-steel",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "corrosion-and-weathering",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "thermal-expansion",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "seat-and-containment",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rider-position",
+    "land": "ride-engineering",
+    "level": "intermediate"
+   },
+   {
+    "concept": "jerk-and-onset-rate",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "acceleration-envelopes",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "spline-transitions",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "fatigue",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "dynamic-loads",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "restraint-locking",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "vehicle-suspension",
+    "land": "ride-engineering",
+    "level": "advanced"
+   },
+   {
+    "concept": "head-and-neck-loads",
+    "land": "ride-engineering",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-safety-standards",
+  "title": "Safety & Standards: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "standards-and-regulation",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "operations-safety",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "lessons-from-incidents",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "design-safety",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "operator-training",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "dispatch-procedures",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "weather-policies",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "incident-overview",
+    "land": "safety-standards",
+    "level": "beginner"
+   },
+   {
+    "concept": "astm-f24",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "astm-f770",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "en-13814",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "iso-17842",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "regulatory-landscape",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "national-inspection-schemes",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "risk-assessment",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-control-systems",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "redundancy-and-fail-safe",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "reach-envelope",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "emergency-stop-and-evacuation",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "patron-accommodation",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "inspections",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "maintenance-programs",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "incident-reporting",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "human-factors-incidents",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "mechanical-failure-cases",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "safety-culture",
+    "land": "safety-standards",
+    "level": "intermediate"
+   },
+   {
+    "concept": "astm-f2291",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "astm-f1193",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "astm-f2974",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "safety-integrity-levels",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "restraint-design-rules",
+    "land": "safety-standards",
+    "level": "advanced"
+   },
+   {
+    "concept": "design-oversight-cases",
+    "land": "safety-standards",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-show-technology",
+  "title": "Show Technology: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "animatronics",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "illusions",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "special-effects",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "projection-and-screens",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "lighting-and-audio",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-integration",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "audio-animatronics-history",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "projection-mapping",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "screens-vs-sets-debate",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "peppers-ghost",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "mirrors-and-infinity-rooms",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "practical-vs-digital-effects",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "blacklight-and-uv-paint",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "theatrical-lighting",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "fire-water-and-fog",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "wind-heat-and-scent-effects",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "nighttime-spectaculars",
+    "land": "show-technology",
+    "level": "beginner"
+   },
+   {
+    "concept": "figure-actuation",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "figure-programming",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "skin-hair-and-costume",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "domes-and-wraparound-screens",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "stereoscopic-3d",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "scrims-and-transparency",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "misdirection",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "onboard-and-spatial-audio",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "audio-triggers-and-masking",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sound-design-pipeline",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pyrotechnics",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "water-screens-and-fountains",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-control-systems",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-action-equipment",
+    "land": "show-technology",
+    "level": "intermediate"
+   },
+   {
+    "concept": "untethered-figures",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "figure-reliability",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "projector-blending",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "lighting-control-protocols",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "ride-show-synchronization",
+    "land": "show-technology",
+    "level": "advanced"
+   },
+   {
+    "concept": "media-servers-and-real-time-engines",
+    "land": "show-technology",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-sensory-environment",
+  "title": "Sensory & Environmental Design: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "sound-design",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "scent-design",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "light-and-color",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "materials-and-form",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "landscape-and-climate",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "environmental-psychology",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "area-music",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "smellitzers",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "lighting-mood",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "color-psychology",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "night-vs-day",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "go-away-green",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "materials-and-texture",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "tactile-design",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "planting-design",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "water-features",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "seasonal-overlays",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "biophilia",
+    "land": "sensory-environment",
+    "level": "beginner"
+   },
+   {
+    "concept": "audio-zoning",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ambient-effects-loops",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "scent-storytelling",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "color-scripts",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "faux-finishes-and-aging",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ground-plane-storytelling",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "shade-and-microclimate",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rain-and-weather-design",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "prospect-refuge",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "servicescape",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "atmospherics",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "crowding-and-enclosure",
+    "land": "sensory-environment",
+    "level": "intermediate"
+   },
+   {
+    "concept": "visual-complexity",
+    "land": "sensory-environment",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-design-process",
+  "title": "Design Process & Craft: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "concept-phase",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "pipeline-overview",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "design-development",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "fabrication",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "art-direction-and-teams",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "installation-and-opening",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "blue-sky",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "concept-art",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "mood-boards",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "models-and-maquettes",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "rockwork",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "scenic-painting",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "signage-and-graphics",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "art-direction",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "cross-discipline-collaboration",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "soft-opening",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "post-opening-plussing",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "phase-timeline",
+    "land": "design-process",
+    "level": "beginner"
+   },
+   {
+    "concept": "design-intent",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "feasibility-and-early-costing",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "schematic-design",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "previs",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vr-design-review",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ride-layout-design",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "mockups-and-prototypes",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "themed-facades",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "figure-fabrication",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-producer",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "design-reviews-and-gates",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "site-construction",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "show-install",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "testing-and-commissioning",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "scope-and-value-engineering",
+    "land": "design-process",
+    "level": "intermediate"
+   },
+   {
+    "concept": "engineering-handoff",
+    "land": "design-process",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-operations-business",
+  "title": "Operations & Business: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "park-operations",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "throughput-and-queueing",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "maintenance-and-lifecycle",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "business-and-finance",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "data-and-technology",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "throughput-math",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "ride-operations-staffing",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "service-culture",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "guest-recovery",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "opening-and-closing-procedures",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "ride-lifecycle",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "retheming-and-overlays",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "retirement-and-relocation",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "seasonality-and-events",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "industry-structure",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "wait-time-data-and-apps",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
+    "concept": "dispatch-interval",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "load-unload-design",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "queueing-theory",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "littles-law",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wait-time-estimation",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "downtime-and-availability",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "capacity-vs-demand",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "crowd-management",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "entertainment-scheduling",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "preventive-maintenance",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "capital-budgets",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pricing",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "per-capita-spending",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "length-of-stay",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ip-licensing-economics",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wearables-and-identity",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "crowd-analytics",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "guest-research",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "spare-parts-and-obsolescence",
+    "land": "operations-business",
+    "level": "advanced"
+   },
+   {
+    "concept": "roi-and-attendance-modeling",
+    "land": "operations-business",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-history",
+  "title": "History & Landmark Attractions: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "origins",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "disneyland-revolution",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "landmark-attractions",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "coaster-milestones",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "key-people-and-firms",
+    "land": "history",
+    "level": "intermediate"
+   },
+   {
+    "concept": "industry-evolution",
+    "land": "history",
+    "level": "intermediate"
+   },
+   {
+    "concept": "pleasure-gardens-and-worlds-fairs",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "coney-island",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "early-coasters",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "trolley-parks",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "tivoli-and-european-roots",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "disneyland-1955",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "walt-and-the-imagineers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "worlds-fair-1964",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "walt-disney-world-and-epcot",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "pirates-of-the-caribbean",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "haunted-mansion",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "space-mountain",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "matterhorn-bobsleds",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "indiana-jones-adventure",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "tower-of-terror",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "spider-man-and-transformers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "forbidden-journey",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "rise-of-the-resistance",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "flight-of-passage",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "expedition-everest",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "mystic-manor",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "tubular-steel-breakthrough",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "loop-revival",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "hyper-and-giga-era",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "strata-coasters",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "launch-era",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "rmc-hybrid-era",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "arrow-dynamics",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "coaster-manufacturers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "legendary-imagineers",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "universal-creative",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "merlin-magic-making",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "ip-wars",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "european-parks",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "defunct-parks",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "reservation-era",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "disney-global-parks",
+    "land": "history",
+    "level": "intermediate"
+   },
+   {
+    "concept": "symbolica",
+    "land": "history",
+    "level": "intermediate"
+   },
+   {
+    "concept": "schwarzkopf-and-stengel",
+    "land": "history",
+    "level": "intermediate"
+   },
+   {
+    "concept": "asian-expansion",
+    "land": "history",
+    "level": "intermediate"
+   }
+  ]
+ },
+ {
+  "id": "land-ai-future",
+  "title": "AI & Future Tech: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "ai-in-design",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "ai-in-operations",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "robotics-and-characters",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "immersive-media",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "futures-and-ethics",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "vr-ar-in-parks",
+    "land": "ai-future",
+    "level": "beginner"
+   },
+   {
+    "concept": "craft-vs-automation",
+    "land": "ai-future",
+    "level": "beginner"
+   },
+   {
+    "concept": "location-based-entertainment",
+    "land": "ai-future",
+    "level": "beginner"
+   },
+   {
+    "concept": "generative-concepting",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "digital-twins",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "crowd-modeling",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "wait-time-prediction",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "predictive-maintenance",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "personalization",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "free-roaming-robots",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "stuntronics",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "real-time-engines",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "data-privacy",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "sustainability",
+    "land": "ai-future",
+    "level": "intermediate"
+   },
+   {
+    "concept": "procedural-layout",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "simulation-and-surrogates",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "vision-safety-monitoring",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "rl-for-figures",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "personalized-dark-rides",
+    "land": "ai-future",
+    "level": "advanced"
+   },
+   {
+    "concept": "haptics-and-next-gen-motion",
+    "land": "ai-future",
+    "level": "advanced"
+   }
+  ]
+ },
+ {
+  "id": "land-careers",
+  "title": "Careers & Learning Path: beginner to advanced",
+  "kind": "land",
+  "audience": "Anyone",
+  "level": "mixed",
+  "steps": [
+   {
+    "concept": "roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "skills",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "programs-and-community",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "learning-resources",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "creative-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "engineering-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "show-tech-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "planning-and-ops-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "project-and-production-roles",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "portfolio-building",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "software-toolkit",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "storytelling-for-designers",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "university-programs",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "competitions",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "conferences",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "professional-bodies",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "entry-paths",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "imagineering-in-a-box",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "reading-list",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "podcasts-and-channels",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "design-challenges",
+    "land": "careers",
+    "level": "beginner"
+   },
+   {
+    "concept": "systems-thinking",
+    "land": "careers",
+    "level": "intermediate"
+   }
+  ]
+ }
+]

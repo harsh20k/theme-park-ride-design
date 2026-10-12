@@ -1,0 +1,452 @@
+[
+ {
+  "id": "astm-f24-committee",
+  "title": "ASTM Committee F24 on Amusement Rides and Devices",
+  "url": "https://www.astm.org/get-involved/technical-committees/committee-f24",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "The committee page: formed 1978, about 29 standards in Volume 15.07, who sits on it and how it meets.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "astm-f2291-design",
+  "title": "ASTM F2291 Standard Practice for Design of Amusement Rides and Devices",
+  "url": "https://www.astm.org/f2291-26.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "Scope and exclusions of the core North American ride design practice, with its full revision history.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "astm-f770-operations",
+  "title": "ASTM F770 Standard Practice for Ownership, Operation, Maintenance, and Inspection of Amusement Rides and Devices",
+  "url": "https://www.astm.org/f0770-24.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "The owner/operator practice behind daily inspection, maintenance records and operator training.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "astm-f1193-manufacturing",
+  "title": "ASTM F1193 Standard Practice for Quality, Manufacture, and Construction of Amusement Rides and Devices",
+  "url": "https://www.astm.org/f1193-24.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "Minimum requirements for a manufacturer's quality assurance programme and for building rides and major modifications.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "astm-f2974-auditing",
+  "title": "ASTM F2974 Standard Practice for Auditing Amusement Rides and Devices",
+  "url": "https://www.astm.org/f2974-24.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "Defines audit scope, auditor qualifications and how conformance to the F24 standards is checked.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "astm-f2137-dynamics",
+  "title": "ASTM F2137 Standard Practice for Measuring the Dynamic Characteristics of Amusement Rides and Devices",
+  "url": "https://www.astm.org/f2137-19.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "How ride accelerations are measured so that F2291 limits can be verified.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iso-17842-1-2023",
+  "title": "ISO 17842-1:2023 Safety of amusement rides and amusement devices, Part 1: Design and manufacture",
+  "url": "https://committee.iso.org/standard/73000.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Edition and lifecycle page for the international ride design standard that replaced the 2015 edition.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iso-13849-1-2023",
+  "title": "ISO 13849-1:2023 Safety of machinery, Safety-related parts of control systems, Part 1: General principles for design",
+  "url": "https://committee.iso.org/standard/73481.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "The Performance Level framework used to rate safety-related control functions on rides.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iso-12100-risk-assessment",
+  "title": "ISO 12100:2010 Safety of machinery, General principles for design, Risk assessment and risk reduction",
+  "url": "https://committee.iso.org/standard/51528.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "The general machinery risk-assessment loop that ride standards and inquests refer back to.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iso-13850-emergency-stop",
+  "title": "ISO 13850:2015 Safety of machinery, Emergency stop function, Principles for design",
+  "url": "https://committee.iso.org/standard/59970.html",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Baseline rules for emergency stop controls: appearance, reach, latching and stop categories.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iec-61508-1-2010",
+  "title": "IEC 61508-1:2010 Functional safety of electrical/electronic/programmable electronic safety-related systems, Part 1",
+  "url": "https://webstore.iec.ch/en/publication/5515",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "The source of Safety Integrity Levels and the rigour expected of safety-rated controllers.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "genorma-en-13814-1",
+  "title": "EN 13814-1:2019+A1:2024 Safety of amusement rides and amusement devices, Part 1: Design and manufacture",
+  "url": "https://genorma.com/en/standards/en-13814-1-2019-a1-2024",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Scope, publication dates and CEN/TC 152 ownership of the current European ride design standard.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "sis-en-13814-2005",
+  "title": "SS-EN 13814:2005 Fairground and amusement park machinery and structures, Safety (original single-part edition)",
+  "url": "https://www.sis.se/produkter/byggnadsmaterial-och-byggnader/byggnader/ovrigt/ssen138142005/",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Catalogue record of the first EN 13814 edition, later replaced by the three-part 2019 series.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iaapa-safety-page",
+  "title": "IAAPA: Safety and Security Starts with You",
+  "url": "https://www.iaapa.org/safety",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Industry association overview of ride safety, including how ASTM, CEN and ISO standards fit together.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "iaapa-ride-safety-report-2023",
+  "title": "IAAPA: 2023 North America Fixed-Site Amusement Ride Safety Report",
+  "url": "https://www.iaapa.org/research/north-america-fixed-site-amusement-ride-safety-report-2023-update",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "The annual aggregate injury report for fixed-site parks, compiled with the National Safety Council (summary page; full report for members).",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "ridesdatabase-saferparks-regulations",
+  "title": "Saferparks: Safety Regulations for U.S. Amusement Rides",
+  "url": "https://ridesdatabase.org/saferparks/regulations/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Explains the US patchwork: CPSC covers mobile rides only, fixed-site parks are left to state and local law.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "ridesdatabase-saferparks-data",
+  "title": "Saferparks: Accident data from state and federal regulators",
+  "url": "https://ridesdatabase.org/saferparks/data/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Public-records accident data 2000 to 2017, with a candid note on why it cannot compare states or years.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "ridesdatabase-bulletins",
+  "title": "RidesDatabase: Amusement ride safety bulletins (Saferparks and CARES)",
+  "url": "https://ridesdatabase.org/",
+  "type": "tool",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Searchable archive of manufacturer and regulator safety bulletins on specific rides and components.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "aims-certifications",
+  "title": "AIMS International certification programs",
+  "url": "https://www.aimsintl.org/certifications/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Industry certifications for ride inspectors, maintenance technicians and operations technicians.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "hse-fairgrounds-guidance",
+  "title": "HSE: Fairgrounds and fairground rides, guidance index",
+  "url": "https://www.hse.gov.uk/entertainment/fairgrounds/index.htm",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "The UK regulator's entry point for organisers, controllers, operators and the public.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "hse-hsg175",
+  "title": "HSE HSG175: Fairgrounds and amusement parks, Guidance on safe practice (third edition, 2017)",
+  "url": "https://www.hse.gov.uk/pubns/books/hsg175.htm",
+  "type": "book",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Free UK guidance book covering design review, pre-use and annual inspection, the DOC, daily checks and operator duties.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "hse-organisational-culture",
+  "title": "HSE: Organisational culture, overview",
+  "url": "https://www.hse.gov.uk/humanfactors/topics/culture.htm",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Plain definition of safety culture and the signs of a poor one, from the UK regulator's human-factors team.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "hse-riddor",
+  "title": "HSE: RIDDOR, Reporting of Injuries, Diseases and Dangerous Occurrences Regulations",
+  "url": "https://www.hse.gov.uk/riddor/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "What must be reported to the UK regulator after an injury or dangerous occurrence, including on rides.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "adips-system-for-safety",
+  "title": "ADIPS: The system for safety of amusement devices",
+  "url": "https://adips.co.uk/the-system-for-safety-of-amusement-devices/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Step-by-step lifecycle from design review to annual inspection under the UK scheme.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "adips-and-the-law",
+  "title": "ADIPS: ADIPS and the law",
+  "url": "https://adips.co.uk/adips-and-the-law/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "How the Health and Safety at Work Act 1974 assigns duties to designers, organisers, controllers and attendants.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "tuv-sud-kasper-2011-ride-certification",
+  "title": "TÜV SÜD: Amusement ride certification scheme and operation authorization (Stefan Kasper, EMSD symposium 2011)",
+  "url": "https://www.emsd.gov.hk/minisites/symposium/2011/session/ppt/M2_PPT_Stefan%20Kasper.pdf",
+  "type": "talk",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "A certification body's own account of German-style ride approval, with history back to Oktoberfest testing in 1929.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "ada-2010-standards",
+  "title": "2010 ADA Standards for Accessible Design",
+  "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/",
+  "type": "standard",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "US legal accessibility requirements, including sections 234 and 1002 on amusement rides.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "asnt-what-is-ndt",
+  "title": "ASNT: What is nondestructive testing?",
+  "url": "https://www.asnt.org/what-is-nondestructive-testing",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Overview of NDT methods and careers from the professional society for NDT technicians.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "nws-lightning-safety",
+  "title": "National Weather Service: Lightning safety tips and resources",
+  "url": "https://www.weather.gov/safety/lightning",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "The official US guidance that park lightning policies are built on.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "coaster101-brakes-blocks-sensors",
+  "title": "Coaster101: Brakes, Blocks, and Sensors",
+  "url": "https://www.coaster101.com/2011/11/23/coasters-101-brakes-blocks-and-sensors/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Clear explainer of block systems, brakes and the sensors a ride control system relies on.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "coaster101-inspection-101",
+  "title": "Coaster101: Roller Coaster Inspection 101",
+  "url": "https://www.coaster101.com/2024/01/31/coasters-101-daily-inspections/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "What a daily coaster inspection involves, from lockout to test cycles.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "coaster101-gravity-max-safety",
+  "title": "Coaster101: Gravity Max's safety system works as designed",
+  "url": "https://www.coaster101.com/2019/02/13/good-to-know-gravity-maxs-safety-system-works-as-designed/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "A short case of a fail-safe hold on a tilt coaster when a fault was detected.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "qld-coroner-dreamworld-2020",
+  "title": "Coroners Court of Queensland: Findings of the inquest into the deaths at Dreamworld, 25 October 2016 (delivered 24 February 2020)",
+  "url": "https://www.courts.qld.gov.au/__data/assets/pdf_file/0004/641830/10545784-final-dreamworld-draft-6-for-upload.pdf",
+  "type": "paper",
+  "land": "safety-standards",
+  "level": "advanced",
+  "why_it_matters": "The primary official account of the Thunder River Rapids tragedy: mechanism, missing safeguards, culture and recommendations.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "towersstreet-smiler-fine-2016",
+  "title": "TowersStreet: Merlin fined £5 million for Smiler incident",
+  "url": "https://towersstreet.com/news/2016/merlin-fined-5-million-for-smiler-incident/",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Contemporary report of the 2016 sentencing, with the HSE's statement on the missing safe system of work.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-the-smiler",
+  "title": "Wikipedia: The Smiler",
+  "url": "https://en.wikipedia.org/wiki/The_Smiler",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Secondary summary of the ride and the June 2015 incident, with references.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-thunder-river-rapids",
+  "title": "Wikipedia: Thunder River Rapids Ride",
+  "url": "https://en.wikipedia.org/wiki/Thunder_River_Rapids_Ride",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Secondary summary of the ride, the 2016 accident, the coroner's report and the later prosecution.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wosu-fire-ball-corrosion-2017",
+  "title": "WOSU Public Media: Fire Ball manufacturer blames Ohio State Fair accident on excessive corrosion",
+  "url": "https://www.wosu.org/news/2017-08-07/fire-ball-manufacturer-blames-ohio-state-fair-accident-on-excessive-corrosion",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Public-radio report on KMG's metallurgical finding and the worldwide shutdown of similar rides.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "tpi-big-thunder-2003",
+  "title": "Theme Park Insider: Disney takes blame for Thunder Mountain death",
+  "url": "https://www.themeparkinsider.com/news/response.cfm?ID=1389",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Reports Disneyland's acknowledgement of maintenance omissions behind the 2003 derailment and summarises the state findings.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "tpi-big-thunder-2004-dosh",
+  "title": "Theme Park Insider: State blames cast member, ride system for Big Thunder Mountain accident",
+  "url": "https://www.themeparkinsider.com/news/response.cfm?ID=1822",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "California DOSH findings on the 2004 station collision: operator sequence error plus a control system that allowed it.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-disneyland-incidents",
+  "title": "Wikipedia: List of incidents at Disneyland Resort",
+  "url": "https://en.wikipedia.org/wiki/List_of_incidents_at_Disneyland_Resort",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Secondary, referenced list including the 2003 and 2004 Big Thunder Mountain Railroad incidents.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-safety-integrity-level",
+  "title": "Wikipedia: Safety integrity level",
+  "url": "https://en.wikipedia.org/wiki/Safety_integrity_level",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "Accessible explanation of SIL bands and how they are allocated.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-swiss-cheese-model",
+  "title": "Wikipedia: Swiss cheese model",
+  "url": "https://en.wikipedia.org/wiki/Swiss_cheese_model",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Overview of Reason's layered-defence model used throughout incident analysis.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "reason-bmj-2000-human-error",
+  "title": "James Reason, Human error: models and management (BMJ, 2000)",
+  "url": "https://doi.org/10.1136/bmj.320.7237.768",
+  "type": "paper",
+  "land": "safety-standards",
+  "level": "intermediate",
+  "why_it_matters": "The short classic that frames person versus system approaches and the Swiss cheese model.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-plc-safety-plcs",
+  "title": "Wikipedia: Programmable logic controller (Safety PLCs)",
+  "url": "https://en.wikipedia.org/wiki/Programmable_logic_controller",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Background on PLCs and what makes a safety PLC different.",
+  "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-us-amusement-park-accidents",
+  "title": "Wikipedia: United States amusement park accidents",
+  "url": "https://en.wikipedia.org/wiki/Amusement_park_accidents",
+  "type": "article",
+  "land": "safety-standards",
+  "level": "beginner",
+  "why_it_matters": "Secondary overview of US ride accident statistics and reporting, with CPSC references.",
+  "verified_on": "2026-10-12"
+ }
+]

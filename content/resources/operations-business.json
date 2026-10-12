@@ -1,0 +1,352 @@
+[
+  {
+    "id": "little-1961-queuing-formula",
+    "title": "A Proof for the Queuing Formula: L = λW",
+    "url": "https://doi.org/10.1287/opre.9.3.383",
+    "type": "paper",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "John Little's 1961 Operations Research paper that proved the relationship behind every wait-time estimate.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-littles-law",
+    "title": "Little's law (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Little%27s_law",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Plain statement of L = λW, its history and the conditions under which it holds.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-queueing-theory",
+    "title": "Queueing theory (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Queueing_theory",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Erlang's origins, Kendall notation and why queues explode as utilisation nears 100%.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "maister-psychology-of-waiting-lines",
+    "title": "The Psychology of Waiting Lines",
+    "url": "https://davidmaister.com/articles/the-psychology-of-waiting-lines/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Maister's 1985 eight propositions; the operations-side playbook for making waits feel shorter.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "disney-lightning-lane-official",
+    "title": "Disney Genie and Lightning Lane (Walt Disney World official page)",
+    "url": "https://disneyworld.disney.go.com/guest-services/lightning-lane/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Official description of Lightning Lane Multi Pass, Single Pass and Premier Pass as they are sold today.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "disney-virtual-queue-official",
+    "title": "Virtual Queues (Walt Disney World official page)",
+    "url": "https://disneyworld.disney.go.com/guest-services/virtual-queue/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "How Disney's boarding-group virtual queue works from the guest side.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "disney-magicband-official",
+    "title": "Disney Bands: MagicBand and MagicBand+ (Walt Disney World official page)",
+    "url": "https://disneyworld.disney.go.com/plan/my-disney-experience/bands-cards/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "The current official page for the wearable that ties identity, entry and payment together.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-lightning-lane",
+    "title": "Lightning Lane (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Lightning_Lane",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Dated history from FastPass (1999) through FastPass+, MaxPass, Genie+ and Lightning Lane Multi Pass (2024).",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "touringplans-lightning-lane-multi-pass-2024",
+    "title": "Goodbye Genie+, Hello Lightning Lane Multi Pass: Disney Changes Explained",
+    "url": "https://touringplans.com/blog/goodbye-genie-hello-lightning-lane-multi-pass-disney-changes/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Touring Plans' explainer of the July 24, 2024 switch, including the 7-day and 3-day booking windows.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "universal-express-pass-official",
+    "title": "Universal Express Pass (Universal Orlando official page)",
+    "url": "https://www.universalorlando.com/web/en/us/tickets-packages/express-passes",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Universal's paid skip-the-line product family: Express, Express Unlimited and Express Now.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "aecom-tea-theme-index",
+    "title": "TEA/AECOM Theme Index and Museum Index",
+    "url": "https://aecom.com/theme-index/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "The industry's standard annual attendance report; archive of editions back to 2012.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "disney-investor-relations",
+    "title": "The Walt Disney Company Investor Relations",
+    "url": "https://investors.thewaltdisneycompany.com/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Entry point to quarterly results and annual reports for the Experiences segment.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "sec-edgar-disney-10k-filings",
+    "title": "Walt Disney Co 10-K filings (SEC EDGAR)",
+    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001744489&type=10-K&dateb=&owner=include&count=40",
+    "type": "article",
+    "land": "operations-business",
+    "level": "advanced",
+    "why_it_matters": "Primary annual filings (2019 onward) where attendance drivers, guest spending and capital expenditure are discussed.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "six-flags-investor-relations",
+    "title": "Six Flags Entertainment Corporation Investor Relations",
+    "url": "https://investors.sixflags.com/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Regional-park operator filings that report attendance and per-capita spending as headline metrics.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "iaapa-research",
+    "title": "IAAPA Research: Benchmark Reports, Outlooks and Economic Impact Studies",
+    "url": "https://www.iaapa.org/research",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "The trade association's benchmarking and outlook reports used by operators to compare performance.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "price-walts-revolution-by-the-numbers",
+    "title": "Walt's Revolution! By the Numbers",
+    "url": "https://openlibrary.org/works/OL8913509W",
+    "type": "book",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Buzz Price's 2004 memoir of the feasibility studies behind Disneyland and Walt Disney World.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-harrison-buzz-price",
+    "title": "Harrison Price (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Harrison_Price",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Who Buzz Price was: the 1953 Disneyland site study and the founding of Economics Research Associates in 1958.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "milman-2001-future-of-theme-park-industry",
+    "title": "The Future of the Theme Park and Attraction Industry: A Management Perspective",
+    "url": "https://doi.org/10.1177/004728750104000204",
+    "type": "paper",
+    "land": "operations-business",
+    "level": "advanced",
+    "why_it_matters": "Ady Milman's Journal of Travel Research survey of park managers on what drives the business.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "popsci-touring-plans-wait-time-science-2017",
+    "title": "These data scientists are disrupting Disney World's long wait times",
+    "url": "https://www.popsci.com/touring-plan-app-disney-lines/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "How Len Testa's team forecasts waits from school calendars, economic data and crowd-sourced timings.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "inverse-wait-time-trackers-2022",
+    "title": "The amateur data scientists tracking Disney World's lines",
+    "url": "https://www.inverse.com/input/culture/disney-world-line-wait-system-tracker-websites-apps",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Profiles Thrill Data, Touring Plans and other trackers and how posted waits differ from real ones.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "blogmickey-wsj-ride-downtime-2022",
+    "title": "Disney says ride reliability remains strong despite reported increase in downtime",
+    "url": "https://blogmickey.com/2022/11/disney-says-ride-reliability-remains-strong-at-theme-parks-despite-significant-increase-in-reported-downtime/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Summarises the Wall Street Journal's Thrill Data-based downtime analysis and Disney's response.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "touringplans-home",
+    "title": "Touring Plans: crowd calendar, wait-time predictions and the Lines app",
+    "url": "https://touringplans.com/",
+    "type": "tool",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "The best-known third-party wait-time forecasting service.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "queue-times",
+    "title": "Queue-Times.com: live wait times for 146 parks",
+    "url": "https://queue-times.com/",
+    "type": "tool",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Free aggregator of posted wait times with a public API; handy for prototypes and analysis.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "disneyblog-capacity-analysis-methodology",
+    "title": "Capacity Analysis Methodology (DisneyBlog data tools)",
+    "url": "https://disneyblog.com/data/capacity/methodology",
+    "type": "tool",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "A fan-built but transparent capacity calculator that applies the riders-per-dispatch times dispatches-per-hour formula.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "sas-theme-park-wait-time-simulation-2024",
+    "title": "Simulating theme park wait times within SAS Viya",
+    "url": "https://blogs.sas.com/content/sgf/2024/12/20/simulating-theme-park-wait-times-within-sas-viya-creating-a-live-solution-for-hospitality-operations/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "A worked example of building a synthetic park and simulating queues five minutes at a time.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "mouseplanet-seasonal-pricing-2016",
+    "title": "Disney Parks adopt seasonal pricing for one-day tickets",
+    "url": "https://mouseplanet.com/disney-parks-adopt-seasonal-pricing-for-one-day-tickets-ticket-prices-go-up-and-down/5185/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Contemporary report of the February 28, 2016 move to Value, Regular and Peak ticket tiers, with prices.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "hersheypark-skyrush-winter-maintenance",
+    "title": "Behind the Scenes of Winter Maintenance on Skyrush at Hersheypark",
+    "url": "https://stories.hersheypa.com/behind-the-scenes-of-winter-maintenance-on-skyrush-at-hersheypark/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "A park's own account of off-season teardown, NDT and manufacturer-scheduled part replacement.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-phoenix-roller-coaster",
+    "title": "Phoenix (roller coaster) (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Phoenix_(roller_coaster)",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "The classic relocation story: a 1947 wooden coaster moved from Texas to Knoebels in 1985.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-tianas-bayou-adventure",
+    "title": "Tiana's Bayou Adventure (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tiana%27s_Bayou_Adventure",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Dated record of a full retheme: Splash Mountain closures in 2023 and reopenings in 2024.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-marvel-super-hero-island",
+    "title": "Marvel Super Hero Island (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Marvel_Super_Hero_Island",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Explains the 1994 Marvel–MCA theme park licence and the limits it still places on Disney parks.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "wikipedia-super-nintendo-world",
+    "title": "Super Nintendo World (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Super_Nintendo_World",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "Timeline of the 2015 Universal–Nintendo partnership and its three openings.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "blooloop-eca-global-attraction-landscape",
+    "title": "ECA-blooloop Global Attraction Landscape Report v1.0",
+    "url": "https://blooloop.com/theme-park/in-depth/eca-blooloop-global-attraction-landscape-report-v1-0",
+    "type": "article",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Profiles 15 leading operators and 10 emerging players, with attention to IP partnerships.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "blooloop-supplier-directory",
+    "title": "blooloop supplier directory",
+    "url": "https://blooloop.com/directory/",
+    "type": "tool",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "A categorised map of the supply side: ride makers, consultants, show producers, ticketing vendors.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "ptc-roller-coaster-car-winter-maintenance",
+    "title": "Roller Coaster Car Winter Maintenance (Philadelphia Toboggan Coasters)",
+    "url": "https://www.philadelphiatoboggancoastersinc.com/services/roller-coaster-car-winter-maintenance/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "A manufacturer's own off-season overhaul programme: cars shipped to the factory, stripped, tested and rebuilt.",
+    "verified_on": "2026-10-12"
+  },
+  {
+    "id": "queue-times-api",
+    "title": "Queue-Times.com Real Time API",
+    "url": "https://queue-times.com/en-US/pages/api",
+    "type": "tool",
+    "land": "operations-business",
+    "level": "intermediate",
+    "why_it_matters": "Free JSON endpoints for live wait times at 80+ parks, refreshed every five minutes; the easiest way to prototype a wait-time app.",
+    "verified_on": "2026-10-12"
+  }
+]

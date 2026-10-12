@@ -1,0 +1,152 @@
+[
+ {
+  "term": "ASTM F24",
+  "definition": "The ASTM International committee, formed in 1978, that writes the main North American amusement ride standards.",
+  "land": "safety-standards",
+  "concept": "astm-f24"
+ },
+ {
+  "term": "Standard practice",
+  "definition": "An ASTM document that sets out an agreed way of doing something, such as designing or inspecting a ride.",
+  "land": "safety-standards",
+  "concept": "astm-f24"
+ },
+ {
+  "term": "Service proven",
+  "definition": "A pre-existing ride design exempted from a new design standard because its safe operating history is documented.",
+  "land": "safety-standards",
+  "concept": "astm-f2291"
+ },
+ {
+  "term": "Major modification",
+  "definition": "A change to a ride significant enough that the design standard applies to it as if it were new.",
+  "land": "safety-standards",
+  "concept": "astm-f2291"
+ },
+ {
+  "term": "EN 13814",
+  "definition": "The European standard for fairground and amusement park rides, split since 2019 into design, operation and inspection parts.",
+  "land": "safety-standards",
+  "concept": "en-13814"
+ },
+ {
+  "term": "ISO 17842",
+  "definition": "The international ride safety standard from ISO/TC 254, closely aligned with EN 13814.",
+  "land": "safety-standards",
+  "concept": "iso-17842"
+ },
+ {
+  "term": "Declaration of Operational Compliance",
+  "definition": "The UK ADIPS certificate issued after pre-use or annual inspection confirming a ride may be operated.",
+  "land": "safety-standards",
+  "concept": "national-inspection-schemes"
+ },
+ {
+  "term": "Inspection body",
+  "definition": "An organisation registered under a scheme such as ADIPS to review designs and inspect rides independently.",
+  "land": "safety-standards",
+  "concept": "national-inspection-schemes"
+ },
+ {
+  "term": "Fixed-site ride",
+  "definition": "A permanent ride at a park, which in the United States falls outside federal CPSC jurisdiction.",
+  "land": "safety-standards",
+  "concept": "regulatory-landscape"
+ },
+ {
+  "term": "Risk assessment",
+  "definition": "The structured process of finding hazards, estimating how bad and how likely they are, and reducing them until acceptable.",
+  "land": "safety-standards",
+  "concept": "risk-assessment"
+ },
+ {
+  "term": "FMEA",
+  "definition": "Failure Mode and Effects Analysis, a component-by-component list of how things can fail and what would happen.",
+  "land": "safety-standards",
+  "concept": "risk-assessment"
+ },
+ {
+  "term": "Safety PLC",
+  "definition": "A programmable controller with redundant, self-checking hardware rated for safety-critical functions.",
+  "land": "safety-standards",
+  "concept": "ride-control-systems"
+ },
+ {
+  "term": "Permissive",
+  "definition": "A control-system condition, such as all restraints locked, that must be true before dispatch is allowed.",
+  "land": "safety-standards",
+  "concept": "dispatch-procedures"
+ },
+ {
+  "term": "Block system",
+  "definition": "Control logic that divides a track into sections and never lets two trains occupy the same one.",
+  "land": "safety-standards",
+  "concept": "ride-control-systems"
+ },
+ {
+  "term": "Fail-safe",
+  "definition": "A design whose default state on loss of power or signal is a safe one, such as a spring-applied brake.",
+  "land": "safety-standards",
+  "concept": "redundancy-and-fail-safe"
+ },
+ {
+  "term": "Redundancy",
+  "definition": "A second independent means of performing a critical safety function in case the first fails.",
+  "land": "safety-standards",
+  "concept": "redundancy-and-fail-safe"
+ },
+ {
+  "term": "Safety Integrity Level",
+  "definition": "An IEC 61508 rating from 1 to 4 that caps how often a safety function may fail dangerously.",
+  "land": "safety-standards",
+  "concept": "safety-integrity-levels"
+ },
+ {
+  "term": "Performance Level",
+  "definition": "The ISO 13849 rating from a to e that expresses the reliability required of a safety-related control function.",
+  "land": "safety-standards",
+  "concept": "safety-integrity-levels"
+ },
+ {
+  "term": "Reach envelope",
+  "definition": "The volume a rider's outstretched limbs could occupy, swept along the ride path, which must stay clear of structure.",
+  "land": "safety-standards",
+  "concept": "reach-envelope"
+ },
+ {
+  "term": "Emergency stop",
+  "definition": "A latching red control that brings a ride to a defined safe stop and must be deliberately reset.",
+  "land": "safety-standards",
+  "concept": "emergency-stop-and-evacuation"
+ },
+ {
+  "term": "Containment class",
+  "definition": "A category assigned from a seat's accelerations that dictates the type and redundancy of restraint required.",
+  "land": "safety-standards",
+  "concept": "restraint-design-rules"
+ },
+ {
+  "term": "Non-destructive testing",
+  "definition": "Methods such as ultrasonic or magnetic particle inspection that find cracks and thinning without damaging the part.",
+  "land": "safety-standards",
+  "concept": "inspections"
+ },
+ {
+  "term": "Service bulletin",
+  "definition": "A notice from a manufacturer or regulator telling all owners of a ride type about a fault or required check.",
+  "land": "safety-standards",
+  "concept": "incident-reporting"
+ },
+ {
+  "term": "Just culture",
+  "definition": "A workplace where honest errors can be reported without punishment while reckless acts are still addressed.",
+  "land": "safety-standards",
+  "concept": "safety-culture"
+ },
+ {
+  "term": "Swiss cheese model",
+  "definition": "James Reason's picture of layered defences with holes; harm only passes when the holes line up.",
+  "land": "safety-standards",
+  "concept": "lessons-from-incidents"
+ }
+]

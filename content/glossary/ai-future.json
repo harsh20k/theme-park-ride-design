@@ -1,0 +1,152 @@
+[
+  {
+    "term": "Agent-based simulation",
+    "definition": "A crowd model in which each simulated guest follows its own simple rules, so group behavior emerges from many individuals.",
+    "land": "ai-future",
+    "concept": "crowd-modeling"
+  },
+  {
+    "term": "Social force model",
+    "definition": "Helbing and Molnar's 1995 way of writing pedestrian motion as physics: a pull toward a goal plus pushes away from people and walls.",
+    "land": "ai-future",
+    "concept": "crowd-modeling"
+  },
+  {
+    "term": "Digital twin",
+    "definition": "A living model of one specific attraction that is kept in step with the real thing by sensor or design data.",
+    "land": "ai-future",
+    "concept": "digital-twins"
+  },
+  {
+    "term": "Surrogate model",
+    "definition": "A fast stand-in, often a neural network trained on simulation output, that answers an engineering question in microseconds instead of minutes.",
+    "land": "ai-future",
+    "concept": "simulation-and-surrogates"
+  },
+  {
+    "term": "Multibody dynamics",
+    "definition": "Simulation that solves the equations of motion for linked bodies such as a train, its bogies, restraints and track.",
+    "land": "ai-future",
+    "concept": "simulation-and-surrogates"
+  },
+  {
+    "term": "Framed curve",
+    "definition": "A 3-D curve paired with a moving frame, used to describe a coaster track's position and roll together for optimization.",
+    "land": "ai-future",
+    "concept": "procedural-layout"
+  },
+  {
+    "term": "Generative concepting",
+    "definition": "Using image or text models, ideally trained on a studio's own archive, to turn a sketch or brief into many candidate concepts.",
+    "land": "ai-future",
+    "concept": "generative-concepting"
+  },
+  {
+    "term": "Posted wait",
+    "definition": "The queue time a park displays in its app or at the entrance, which third-party forecasters log and which often differs from the real wait.",
+    "land": "ai-future",
+    "concept": "wait-time-prediction"
+  },
+  {
+    "term": "Predictive maintenance",
+    "definition": "Replacing or servicing a part when its sensor data shows wear beginning, rather than after failure or on a fixed calendar.",
+    "land": "ai-future",
+    "concept": "predictive-maintenance"
+  },
+  {
+    "term": "Condition monitoring",
+    "definition": "Continuous measurement of vibration, temperature or pressure on ride components to detect changes from normal.",
+    "land": "ai-future",
+    "concept": "predictive-maintenance"
+  },
+  {
+    "term": "Dynamic itinerary",
+    "definition": "A park plan that an app rewrites through the day as waits, bookings and a guest's choices change.",
+    "land": "ai-future",
+    "concept": "personalization"
+  },
+  {
+    "term": "Lightning Lane Multi Pass",
+    "definition": "Disney's paid line-skipping product, renamed from Genie+ on July 24, 2024, with pre-booking windows.",
+    "land": "ai-future",
+    "concept": "personalization"
+  },
+  {
+    "term": "Restraint verification",
+    "definition": "Checking that each rider's bar or belt is closed and locked before dispatch; today manual, with camera-based patents filed.",
+    "land": "ai-future",
+    "concept": "vision-safety-monitoring"
+  },
+  {
+    "term": "Reinforcement learning",
+    "definition": "Training a controller by trial and reward in simulation until it reliably performs a task, such as walking in character without falling.",
+    "land": "ai-future",
+    "concept": "rl-for-figures"
+  },
+  {
+    "term": "Sim-to-real",
+    "definition": "Moving a controller trained in simulation onto physical hardware, usually helped by randomizing the simulator's physics.",
+    "land": "ai-future",
+    "concept": "rl-for-figures"
+  },
+  {
+    "term": "BDX droid",
+    "definition": "Disney's small bipedal robot character, revealed in 2023 and roaming daily at Disneyland's Galaxy's Edge from April 2024.",
+    "land": "ai-future",
+    "concept": "free-roaming-robots"
+  },
+  {
+    "term": "Stuntronics",
+    "definition": "Disney Research's untethered stunt-double figure that flips in free flight and lands on its mark using onboard sensing.",
+    "land": "ai-future",
+    "concept": "stuntronics"
+  },
+  {
+    "term": "VR coaster",
+    "definition": "A roller coaster ridden with a headset whose film is synced to train speed and position; first at Europa-Park in 2015.",
+    "land": "ai-future",
+    "concept": "vr-ar-in-parks"
+  },
+  {
+    "term": "Augmented reality visor",
+    "definition": "A see-through head-mounted display that overlays characters and targets onto real sets, as on Mario Kart: Bowser's Challenge.",
+    "land": "ai-future",
+    "concept": "vr-ar-in-parks"
+  },
+  {
+    "term": "Real-time engine",
+    "definition": "Game-engine software that renders ride media frame by frame during the ride so it can react to riders and timing.",
+    "land": "ai-future",
+    "concept": "real-time-engines"
+  },
+  {
+    "term": "Erratic ride",
+    "definition": "Alterface's term for a trackless dark ride that routes vehicles through rooms in a different order each trip.",
+    "land": "ai-future",
+    "concept": "personalized-dark-rides"
+  },
+  {
+    "term": "Haptics",
+    "definition": "Technology that produces touch or force sensations, from seat vibration to pneumatic vests, timed to media events.",
+    "land": "ai-future",
+    "concept": "haptics-and-next-gen-motion"
+  },
+  {
+    "term": "Photo Validation",
+    "definition": "Universal Orlando's name for its opt-out face-matching entry and attraction check system.",
+    "land": "ai-future",
+    "concept": "data-privacy"
+  },
+  {
+    "term": "Location-based entertainment",
+    "definition": "Any ticketed experience guests travel to, from theme parks to VR arenas, immersive art venues and pop-ups.",
+    "land": "ai-future",
+    "concept": "location-based-entertainment"
+  },
+  {
+    "term": "Scope 1 and 2 emissions",
+    "definition": "Greenhouse gases from a company's own operations and from the electricity it buys; the basis of park climate targets.",
+    "land": "ai-future",
+    "concept": "sustainability"
+  }
+]
