@@ -1,21 +1,24 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
-import { conceptIndex } from '@/content/api'
-import { books } from './books'
+import { conceptIndex, landById } from '@/content/api'
+import { booksByLand, type Book } from './books'
+import { LOGO_URL } from './covers'
 import { useShelf } from './store'
 
 /**
- * The shelf page: a header, one invisible row per book (real links, so the
- * shelf is keyboard and screen-reader accessible), and the left rail of dashes.
- * The 3D books in <Books3D/> follow these rows.
+ * A topic's shelf: the header, one invisible row per book (real links, so the
+ * shelf is keyboard and screen-reader accessible) grouped under section
+ * labels, and the left rail of dashes. The 3D books in <Books3D/> follow these rows.
  */
-export default function Shelf({ hidden }: { hidden?: boolean }) {
+export default function Shelf({ landId, hidden }: { landId: string; hidden?: boolean }) {
   const setHovered = useShelf((s) => s.setHovered)
   const setEntry = useShelf((s) => s.setEntry)
   const registerRow = useShelf((s) => s.registerRow)
   const hovered = useShelf((s) => s.hovered)
   const [current, setCurrent] = useState(0)
   const topics = useMemo(() => topicCounts(), [])
+  const list = useMemo(() => booksByLand.get(landId) ?? [], [landId])
+  const land = landById.get(landId)
 
   // Which row is nearest the viewport centre (for the rail).
   useEffect(() => {
@@ -25,7 +28,7 @@ export default function Shelf({ hidden }: { hidden?: boolean }) {
       const mid = window.innerHeight / 2
       let best = 0
       let bestD = Infinity
-      books.forEach((b, i) => {
+      list.forEach((b, i) => {
         const r = rows.get(b.id)?.getBoundingClientRect()
         if (!r) return
         const d = Math.abs(r.top + r.height / 2 - mid)
@@ -43,54 +46,57 @@ export default function Shelf({ hidden }: { hidden?: boolean }) {
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
     }
-  }, [hidden])
+  }, [hidden, list])
 
-  const jump = useCallback((i: number) => {
-    const el = useShelf.getState().rows.get(books[i].id)
-    if (!el) return
-    const r = el.getBoundingClientRect()
-    window.scrollTo({ top: window.scrollY + r.top + r.height / 2 - window.innerHeight / 2, behavior: 'smooth' })
-  }, [])
+  const jump = useCallback(
+    (i: number) => {
+      const el = useShelf.getState().rows.get(list[i].id)
+      if (!el) return
+      const r = el.getBoundingClientRect()
+      window.scrollTo({ top: window.scrollY + r.top + r.height / 2 - window.innerHeight / 2, behavior: 'smooth' })
+    },
+    [list],
+  )
 
   return (
     <>
-      <header className={`PressHeader ${hidden ? 'is-hidden' : ''}`}>
-        <Link to="/" className="PressHeader__logo" aria-label="Theme Park Press home">
-          <PressMark />
-        </Link>
-        <div className="PressHeader__text">
-          <h1 className="PressHeader__name">Theme Park Press</h1>
-          <p className="PressHeader__tagline">Ideas for designing joy</p>
-        </div>
-      </header>
+      <PressHeaderBar hidden={hidden} crumb={land ? { title: land.title, tagline: land.tagline, count: list.length } : undefined} />
 
-      {!hidden && <Rail current={current} onJump={jump} hidden={false} />}
+      {!hidden && <Rail items={list} current={current} onJump={jump} hidden={false} />}
 
       <div className={`PressList__container ${hidden ? 'is-hidden' : ''}`}>
-        <ol className="PressList" aria-label="Books">
-          {books.map((b) => {
+        <ol className="PressList" aria-label={`Books in ${land?.title ?? landId}`}>
+          {list.map((b) => {
             const n = topics.get(b.id) ?? 1
+            const isSection = b.entry.abstraction === 'super-concept'
             return (
-              <li key={b.id} className="PressBook">
-                <Link
-                  to={`/book/${b.id}`}
-                  className="PressBook__link"
-                  ref={(el) => registerRow(b.id, el)}
-                  onMouseEnter={() => setHovered(b.id)}
-                  onMouseLeave={() => setHovered(null)}
-                  onFocus={() => setHovered(b.id)}
-                  onBlur={() => setHovered(null)}
-                  onClick={() => setEntry(b.id)}
-                >
-                  <span className="PressBook__text">
-                    <span className="PressBook__title">{b.title}</span>
-                    <span className="PressBook__author">{b.author}</span>
-                  </span>
-                  <span className={`PressBook__badge ${hovered === b.id ? 'is-visible' : ''}`} aria-hidden="true">
-                    <span className="PressBook__badgeCount">{n}</span> {n === 1 ? 'topic' : 'topics'}
-                  </span>
-                </Link>
-              </li>
+              <Fragment key={b.id}>
+                {isSection && (
+                  <li className="PressGroup" aria-hidden="true">
+                    <span className="PressGroup__label">{b.title}</span>
+                  </li>
+                )}
+                <li className="PressBook">
+                  <Link
+                    to={`/book/${b.id}`}
+                    className="PressBook__link"
+                    ref={(el) => registerRow(b.id, el)}
+                    onMouseEnter={() => setHovered(b.id)}
+                    onMouseLeave={() => setHovered(null)}
+                    onFocus={() => setHovered(b.id)}
+                    onBlur={() => setHovered(null)}
+                    onClick={() => setEntry(b.id)}
+                  >
+                    <span className="PressBook__text">
+                      <span className="PressBook__title">{b.title}</span>
+                      <span className="PressBook__author">{b.author}</span>
+                    </span>
+                    <span className={`PressBook__badge ${hovered === b.id ? 'is-visible' : ''}`} aria-hidden="true">
+                      <span className="PressBook__badgeCount">{n}</span> {n === 1 ? 'topic' : 'topics'}
+                    </span>
+                  </Link>
+                </li>
+              </Fragment>
             )
           })}
         </ol>
@@ -118,24 +124,72 @@ function topicCounts(): Map<string, number> {
   return memo
 }
 
-export function Rail({ current, onJump, hidden, back }: { current: number; onJump: (i: number) => void; hidden: boolean; back?: boolean }) {
+/** Shared header: press mark (home), name, tagline / topic crumb, and the search trigger. */
+export function PressHeaderBar({ hidden, crumb }: { hidden?: boolean; crumb?: { title: string; tagline: string; count: number } }) {
+  const setSearchOpen = useShelf((s) => s.setSearchOpen)
+  return (
+    <header className={`PressHeader ${hidden ? 'is-hidden' : ''}`}>
+      <Link to="/" className="PressHeader__logo" aria-label="Theme Park Press home">
+        <PressMark />
+      </Link>
+      <div className="PressHeader__text">
+        <h1 className="PressHeader__name">
+          {crumb ? (
+            <>
+              <Link to="/" className="PressHeader__home">
+                Theme Park Press
+              </Link>
+              <span className="PressHeader__sep"> / </span>
+              {crumb.title}
+            </>
+          ) : (
+            'Theme Park Press'
+          )}
+        </h1>
+        <p className="PressHeader__tagline">{crumb ? `${crumb.tagline}  ·  ${crumb.count} books` : 'Ideas for designing joy'}</p>
+      </div>
+      <button className={`PressSearchButton ${hidden ? 'is-hidden' : ''}`} onClick={() => setSearchOpen(true)} aria-label="Search the library">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
+          <circle cx="6.8" cy="6.8" r="4.6" />
+          <path d="M10.3 10.3 14 14" />
+        </svg>
+        <span>Search</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </header>
+  )
+}
+
+export function Rail({
+  items,
+  current,
+  onJump,
+  hidden,
+  back,
+}: {
+  items: Book[]
+  current: number
+  onJump: (i: number) => void
+  hidden: boolean
+  back?: string
+}) {
   const navigate = useNavigate()
   const [help, setHelp] = useState(false)
   return (
     <nav className="PressRail" aria-label="Shelf navigation">
       {back && (
-        <button className="PressRail__back" onClick={() => navigate('/')} aria-label="Back to the shelf">
+        <button className="PressRail__back" onClick={() => navigate(back)} aria-label="Back to the shelf">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
             <path d="M17 10H3M9 4l-6 6 6 6" />
           </svg>
         </button>
       )}
       <ol className={`PressRail__list ${hidden && !back ? 'is-hidden' : ''}`}>
-        {books.map((b, i) => (
+        {items.map((b, i) => (
           <li key={b.id}>
             <button
               className={`PressRail__dash ${i === current ? 'is-active' : ''}`}
-              onClick={() => (back ? navigate('/') : onJump(i))}
+              onClick={() => (back ? navigate(back) : onJump(i))}
               aria-label={b.title}
               title={b.title}
             />
@@ -147,7 +201,7 @@ export function Rail({ current, onJump, hidden, back }: { current: number; onJum
       </button>
       {help && (
         <div className="PressRail__helpBox" role="dialog">
-          Scroll to browse the shelf. Hover a book to lift it. Click to open it; keep scrolling to read the next book. Drag the standing book to turn it. <kbd>Esc</kbd> puts it back.
+          Scroll to browse the shelf. Hover a book to lift it. Click to open it; keep scrolling to read the next book. Drag the standing book to turn it. <kbd>Esc</kbd> puts it back. <kbd>⌘K</kbd> searches everything.
         </div>
       )}
     </nav>
@@ -155,10 +209,5 @@ export function Rail({ current, onJump, hidden, back }: { current: number; onJum
 }
 
 export function PressMark() {
-  return (
-    <svg width="28" height="36" viewBox="0 0 28 36" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <ellipse cx="14" cy="18" rx="12.5" ry="16.5" />
-      <path d="M7 27 14 9l7 18M9.5 21h9" />
-    </svg>
-  )
+  return <img className="PressMark" src={LOGO_URL} alt="" width="28" height="38" draggable={false} />
 }

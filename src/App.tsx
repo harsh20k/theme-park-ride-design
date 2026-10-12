@@ -1,57 +1,86 @@
 import { useEffect } from 'react'
-import { Route, Routes, useParams } from 'react-router'
+import { Navigate, Route, Routes, useParams } from 'react-router'
 import Books3D from './press/Books3D'
+import Library from './press/Library'
+import Search from './press/Search'
 import Shelf from './press/Shelf'
 import BookDetails from './press/BookDetails'
+import { bookById } from './press/books'
+import { landById } from './content/api'
 import { useShelf } from './press/store'
 
 export default function App() {
   return (
     <>
       <Books3D />
+      <Search />
       <Routes>
-        <Route path="/" element={<ShelfPage />} />
+        <Route path="/" element={<LibraryPage />} />
+        <Route path="/topic/:land" element={<TopicPage />} />
         <Route path="/book/:id" element={<BookPage />} />
-        <Route path="*" element={<ShelfPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   )
 }
 
-function ShelfPage() {
-  const setActive = useShelf((s) => s.setActive)
-  const setEntry = useShelf((s) => s.setEntry)
+function LibraryPage() {
+  const setMode = useShelf((s) => s.setMode)
   useEffect(() => {
-    // Coming back from a book: land on its row so the book lies back down in place.
-    const last = useShelf.getState().active
-    setActive(null)
-    setEntry(null)
+    const st = useShelf.getState()
+    st.setActive(null)
+    st.setEntry(null)
+    setMode('library', null)
     document.body.classList.remove('is-activeProduct')
-    if (last) {
+    document.body.classList.add('is-library')
+    return () => document.body.classList.remove('is-library')
+  }, [setMode])
+  return <Library />
+}
+
+function TopicPage() {
+  const { land = '' } = useParams()
+  const setMode = useShelf((s) => s.setMode)
+  const known = landById.has(land)
+  useEffect(() => {
+    if (!known) return
+    const st = useShelf.getState()
+    // Coming back from a book: land on its row so the book lies back down in place.
+    const last = st.active
+    st.setActive(null)
+    st.setEntry(null)
+    setMode('topic', land)
+    document.body.classList.remove('is-activeProduct')
+    if (last && bookById.get(last)?.land === land) {
       requestAnimationFrame(() => {
         const el = useShelf.getState().rows.get(last)
         if (!el) return
         const r = el.getBoundingClientRect()
         window.scrollTo({ top: window.scrollY + r.top + r.height / 2 - window.innerHeight / 2 })
       })
-    }
-  }, [setActive, setEntry])
-  return <Shelf />
+    } else window.scrollTo({ top: 0 })
+  }, [land, known, setMode])
+  if (!known) return <Navigate to="/" replace />
+  return <Shelf landId={land} />
 }
 
 function BookPage() {
   const { id = '' } = useParams()
-  const setActive = useShelf((s) => s.setActive)
-  const setEntry = useShelf((s) => s.setEntry)
+  const setMode = useShelf((s) => s.setMode)
+  const book = bookById.get(id)
   useEffect(() => {
-    setActive(id)
-    if (!useShelf.getState().entry) setEntry(id)
+    if (!book) return
+    const st = useShelf.getState()
+    st.setActive(id)
+    if (!st.entry || bookById.get(st.entry)?.land !== book.land) st.setEntry(id)
+    setMode('book', book.land)
     document.body.classList.add('is-activeProduct')
-  }, [id, setActive, setEntry])
+  }, [id, book, setMode])
   useEffect(() => () => document.body.classList.remove('is-activeProduct'), [])
+  if (!book) return <Navigate to="/" replace />
   return (
     <>
-      <Shelf hidden />
+      <Shelf landId={book.land} hidden />
       <BookDetails id={id} />
     </>
   )

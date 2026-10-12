@@ -2,6 +2,7 @@ import { Suspense, lazy, useMemo } from 'react'
 import type { VisualBlock } from '@content/schema'
 import { mediaUrl } from '@/press/Markdown'
 import FormulaVisual from './FormulaVisual'
+import Markdown from '@/press/Markdown'
 import './visuals.css'
 
 const MermaidVisual = lazy(() => import('./MermaidVisual'))
@@ -17,7 +18,7 @@ export default function Visual({ block, index }: { block: VisualBlock; index: nu
           <VisualBody block={block} />
         </Suspense>
       </div>
-      {(block.title || block.alt) && <figcaption className="visual__caption">{label}</figcaption>}
+      {(block.title || block.alt) && block.title !== 'formula-card' && <figcaption className="visual__caption">{label}</figcaption>}
     </figure>
   )
 }
@@ -31,6 +32,7 @@ function VisualBody({ block }: { block: VisualBlock }) {
     case 'svg':
       return <SvgVisual source={block.source} alt={block.alt} />
     case 'formula':
+      if (block.title === 'formula-card') return <Markdown className="visual__formulaCard">{block.source}</Markdown>
       return <FormulaVisual source={block.source} alt={block.alt} />
     case 'image':
       return <img className="visual__img" src={mediaUrl(block.source)} alt={block.alt ?? ''} loading="lazy" />

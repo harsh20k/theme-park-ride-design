@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useMemo, useState } from 'react'
 import * as THREE from 'three'
 import type { Book } from './books'
+import { COVER_IMAGES } from './covers'
 import { drawCover, drawPages, drawSpine, tallCanvas, type CoverArt } from './theme'
 
 /**
@@ -50,6 +51,28 @@ function tex(canvas: HTMLCanvasElement, srgb = true) {
 }
 
 const PHYS = { roughness: 0.9, clearcoat: 0.35, clearcoatRoughness: 0.38, envMapIntensity: 0.65, transparent: true }
+
+/** A photographed cover (3:4 studio shot of the whole book) cropped to the board's W:L face. */
+function imageCoverMaterial(url: string, aspect: number): THREE.MeshPhysicalMaterial {
+  const mat = new THREE.MeshPhysicalMaterial({ color: '#ffffff', metalness: 0, roughness: 0.62, clearcoat: 0.45, clearcoatRoughness: 0.35, envMapIntensity: 0.5, transparent: true })
+  new THREE.TextureLoader().load(url, (t) => {
+    t.colorSpace = THREE.SRGBColorSpace
+    t.anisotropy = 8
+    // The photo has dark margins and shows the book's own spine on the left; crop to the front board, then to the face aspect.
+    const u0 = 0.17
+    const v0 = 0.07
+    let uw = 0.7
+    let vh = 0.86
+    const photoAspect = (uw * 3) / (vh * 4)
+    if (photoAspect > aspect) uw = (aspect * vh * 4) / 3
+    else vh = (uw * 3) / (4 * aspect)
+    t.repeat.set(uw, vh)
+    t.offset.set(u0 + (0.7 - uw) / 2, v0 + (0.86 - vh) / 2)
+    mat.map = t
+    mat.needsUpdate = true
+  })
+  return mat
+}
 
 function coverMaterial(art: CoverArt, rotate: boolean): THREE.MeshPhysicalMaterial {
   const c = rotate ? tallCanvas(art.color) : art.color
@@ -106,7 +129,8 @@ export function useBookMaterials(book: Book, dims: BookDims, wanted: boolean): B
       if (!alive) return
       const aspect = dims.W / dims.L
       const coverArt = drawCover(book.title, book.author, book.theme, book.seed, aspect)
-      const cover = coverMaterial(coverArt, false)
+      const image = COVER_IMAGES[book.id]
+      const cover = image ? imageCoverMaterial(image, aspect) : coverMaterial(coverArt, false)
       // Back board: same cloth/marble, no text — reuse the pre-text art.
       const back = coverMaterial(coverArt.plain, false)
       const spine = coverMaterial(drawSpine(book.title, book.author, book.theme, book.seed, dims.L / dims.T), true)

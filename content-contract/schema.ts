@@ -250,6 +250,7 @@ export const ResourceType = z.enum([
   'tool',
   'standard',
   'talk',
+  'patent',
   'other',
 ])
 export type ResourceType = z.infer<typeof ResourceType>
@@ -265,6 +266,11 @@ export const Resource = z.object({
   lands: z.array(Slug).default([]),
   concepts: z.array(Slug).default([]),
   tags: z.array(z.string()).default([]),
+  /** Corpus fields (content/resources.json). */
+  why_it_matters: z.string().optional(),
+  land: Slug.optional(),
+  level: z.string().optional(),
+  verified_on: z.string().optional(),
 })
 export type Resource = z.infer<typeof Resource>
 
@@ -297,19 +303,36 @@ export const GlossaryFile = z.union([
 // timeline.json
 // ---------------------------------------------------------------------------
 
-export const TimelineEvent = z.object({
-  /** Year (may be approximate / negative for BCE). */
-  year: z.number().int(),
-  /** Optional month/day for ordering within a year. */
-  date: z.string().optional(),
-  title: z.string().min(1),
-  description: z.string().default(''),
-  era: z.string().optional(),
-  land: Slug.optional(),
-  concepts: z.array(Slug).default([]),
-  /** Optional media path for a small picture. */
-  image: z.string().optional(),
-})
+export const TimelineEvent = z.preprocess(
+  (raw) => {
+    // Corpus shape: { date: "1959-06-14", precision, concept, source } → contract shape.
+    if (raw && typeof raw === 'object') {
+      const o = { ...(raw as Record<string, unknown>) }
+      if (o.year === undefined && typeof o.date === 'string') {
+        const y = parseInt(o.date.slice(0, 4), 10)
+        if (!Number.isNaN(y)) o.year = y
+      }
+      if (o.concepts === undefined && typeof o.concept === 'string') o.concepts = [o.concept]
+      return o
+    }
+    return raw
+  },
+  z.object({
+    /** Year (may be approximate / negative for BCE). */
+    year: z.number().int(),
+    /** Optional ISO date for ordering within a year. */
+    date: z.string().optional(),
+    precision: z.string().optional(),
+    title: z.string().min(1),
+    description: z.string().default(''),
+    era: z.string().optional(),
+    land: Slug.optional(),
+    concepts: z.array(Slug).default([]),
+    source: z.string().optional(),
+    /** Optional media path for a small picture. */
+    image: z.string().optional(),
+  }),
+)
 export type TimelineEvent = z.infer<typeof TimelineEvent>
 
 export const TimelineFile = z.union([

@@ -98,3 +98,34 @@ Key choices, trade-offs and cuts. Newest at the bottom of each section.
   spring-back, no mouse-parallax.
 - **Hover badge** on the shelf shows "N topics" = the concept plus everything
   under it in the hierarchy.
+
+## Draft 3 — library of topic shelves, universal search, press mark and photo covers
+
+- **Three views instead of one list.** `/` is the library: one horizontal shelf
+  per topic (land) in `lands.json` order, with the topic's *section* books
+  (super-concepts) standing on a CSS plank (lit top face + dark front edge; the
+  canvas draws the books above it). `/topic/<land>` is the old lying-flat shelf
+  scoped to one topic, with italic section labels between groups.
+  `/book/<id>` is the reading flow, now scoped to the topic's shelf (it ends
+  with "That is the whole <topic> shelf"). 543 books in one list was unusable.
+- **Books on the library shelf stand at yaw 58°** (spine toward the viewer, a
+  slice of cover showing) and scale down on crowded shelves so every section
+  fits on the plank. Hovering a shelf lifts its books and reveals the section names.
+- **Book order within a topic is tree order** (section, then its concepts and
+  sub-concepts), from `shelvesForLand()`.
+- **Standing pose tilts back now** (pitch −7°, roll −2°): the cover faces
+  slightly upward to the right instead of downward, as requested.
+- **Universal search** (`⌘K`, `Ctrl+K`, `/`): Fuse.js over every book (title,
+  summary, land), every topic and glossary terms that point at a concept; Enter
+  jumps to the book or topic from anywhere.
+- **Press mark and three covers generated with fal.ai** through its MCP server
+  (`google/nano-banana-pro` via `submit_jobs`), prompted in the house style
+  (cloth, gold foil, serif capitals). The logo was keyed to a transparent
+  cream PNG locally. Covers are cropped to the front board and used as the
+  cover texture for `peak-end-rule`, `clothoid-loop` and `peppers-ghost`
+  (`src/press/covers.ts`); spines stay procedural. This is a taste test —
+  generating 543 covers is a separate decision (cost ≈ $0.15 each).
+- **Contract loosened for the real corpus**: inline `<svg>` and
+  `> **Formula**` blockquote cards count as visuals; `type: patent` resources;
+  corpus timeline shape (`date`/`concept`) maps to `year`/`concepts`;
+  super-concepts may name their land as `parent`.

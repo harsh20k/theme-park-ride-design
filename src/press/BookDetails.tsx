@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router'
 import type { Concept } from '@content/schema'
 import { conceptIdFromHref } from '@content/markdown'
 import { conceptById, content, loadConcept, localGraph } from '@/content/api'
-import { books, bookById, type Book } from './books'
+import { booksByLand, bookById, type Book } from './books'
+import { landById } from '@/content/api'
 import { useShelf } from './store'
 import Markdown from './Markdown'
 import Visual from '@/ui/visuals/Visual'
@@ -19,8 +20,11 @@ import { Rail } from './Shelf'
 export default function BookDetails({ id }: { id: string }) {
   const navigate = useNavigate()
   const entry = useShelf((s) => s.entry) ?? id
-  const entryIndex = Math.max(0, books.findIndex((b) => b.id === entry))
-  const flow = useMemo(() => books.slice(entryIndex), [entryIndex])
+  const landId = bookById.get(id)?.land ?? ''
+  const shelf = useMemo(() => booksByLand.get(landId) ?? [], [landId])
+  const entryIndex = Math.max(0, shelf.findIndex((b) => b.id === entry))
+  const flow = useMemo(() => shelf.slice(entryIndex), [shelf, entryIndex])
+  const landTitle = landById.get(landId)?.title ?? landId
   const [current, setCurrent] = useState(id)
   const currentRef = useRef(id)
 
@@ -78,13 +82,13 @@ export default function BookDetails({ id }: { id: string }) {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') navigate('/')
+      if (e.key === 'Escape' && !useShelf.getState().searchOpen) navigate(`/topic/${landId}`)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [navigate])
+  }, [navigate, landId])
 
-  const currentIndex = books.findIndex((b) => b.id === current)
+  const currentIndex = shelf.findIndex((b) => b.id === current)
 
   if (!bookById.get(id)) {
     return (
@@ -93,7 +97,7 @@ export default function BookDetails({ id }: { id: string }) {
           <div className="PressDetails__right">
             <div className="PressDetails__title">No book called “{id}”.</div>
             <Link to="/" className="Link">
-              Back to the shelf
+              Back to the library
             </Link>
           </div>
         </div>
@@ -103,16 +107,22 @@ export default function BookDetails({ id }: { id: string }) {
 
   return (
     <main className="PressDetails">
-      <Rail current={currentIndex} onJump={() => undefined} hidden={false} back />
+      <Rail items={shelf} current={currentIndex} onJump={() => undefined} hidden={false} back={`/topic/${landId}`} />
       {flow.map((b, i) => (
         <BookSection key={b.id} book={b} first={i === 0} />
       ))}
       <footer className="PressDetails__end">
         <div className="PressDetails__endInner">
-          <p>That is the whole shelf.</p>
-          <Link to="/" className="Link">
-            Back to the beginning
-          </Link>
+          <p>That is the whole {landTitle} shelf.</p>
+          <p>
+            <Link to={`/topic/${landId}`} className="Link">
+              Back to this shelf
+            </Link>
+            <span className="PressDetails__endSep"> · </span>
+            <Link to="/" className="Link">
+              All topics
+            </Link>
+          </p>
         </div>
       </footer>
     </main>

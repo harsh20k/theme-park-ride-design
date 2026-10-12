@@ -35,6 +35,10 @@ export interface ParsedLink {
 const FENCE_RE = /^(`{3,}|~{3,})[ \t]*([\w-]+)?[^\n]*\n([\s\S]*?)\n\1[ \t]*$/gm
 const MATH_RE = /\$\$\s*([\s\S]*?)\s*\$\$/g
 const IMAGE_RE = /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)/g
+/** Inline SVG written straight into the markdown (research spec allows this). */
+const INLINE_SVG_RE = /<svg[\s>][\s\S]*?<\/svg>/gi
+/** Formula card: a `> **Formula**` blockquote, optionally followed by a "where" bullet list. */
+const FORMULA_CARD_RE = /^>\s*\*\*Formula[^\n]*(?:\n>[^\n]*)*(?:\n[ \t]*\n?(?:[ \t]*[-*][^\n]*\n?)+)?/gm
 const LINK_RE = /(?<!!)\[([^\]]+)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g
 const EXPLORE_RE = /^(?:#{1,6}\s*|\*\*)\s*explore\s+further\s*:?\s*(?:\*\*)?\s*$/im
 /** Optional title/alt comment on the first line of a fence: `%% title: Foo | alt: Bar` or `<!-- alt: … -->`. */
@@ -102,6 +106,15 @@ export function parseBody(raw: string): ParsedBody {
       length: m[0].length,
       block: { kind: 'image', source: m[2], alt: m[1] || undefined, title: m[3] || undefined },
     })
+  }
+  for (const m of body.matchAll(INLINE_SVG_RE)) {
+    if (found.some((f) => m.index >= f.index && m.index < f.index + f.length)) continue
+    found.push({ index: m.index, length: m[0].length, block: { kind: 'svg', source: m[0] } })
+  }
+  for (const m of body.matchAll(FORMULA_CARD_RE)) {
+    if (found.some((f) => m.index >= f.index && m.index < f.index + f.length)) continue
+    // Keep the card as markdown: the formula visual renders the blockquote + "where" list.
+    found.push({ index: m.index, length: m[0].length, block: { kind: 'formula', source: m[0].trim(), title: 'formula-card' } })
   }
   found.sort((a, b) => a.index - b.index)
 

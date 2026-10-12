@@ -2,15 +2,18 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
-import { books, type Book } from './books'
+import { books, libraryIndex, type Book } from './books'
 import { useShelf } from './store'
 import BookModel, { useBookMaterials, type BookDims } from './BookModel'
 
 /**
  * Fixed, full-height, 70vw-wide canvas (as on press.stripe.com).
  *
- * Shelf: books lie on their backs, spine toward the camera, following the
- * invisible DOM rows as the document scrolls. Hover lifts a book.
+ * Library: each topic's section books stand on their shelf plank, spines
+ * toward the viewer and turned a little so the covers show.
+ *
+ * Topic shelf: the topic's books lie on their backs, spine toward the camera,
+ * following the invisible DOM rows as the document scrolls. Hover lifts a book.
  *
  * Reading flow: each book stands up and tracks its sticky anchor in the
  * left column — pinned while its text scrolls, then rising and shrinking as
@@ -20,7 +23,10 @@ import BookModel, { useBookMaterials, type BookDims } from './BookModel'
 const FOV = 14
 const CAM_Z = 40
 const CAM_Y = 0.95
-const STAND = { yaw: THREE.MathUtils.degToRad(26), pitch: THREE.MathUtils.degToRad(7), roll: THREE.MathUtils.degToRad(-3.5) }
+/** Standing pose in the reading flow: turned to the right, tilted slightly back so the cover faces a little upward. */
+const STAND = { yaw: THREE.MathUtils.degToRad(26), pitch: THREE.MathUtils.degToRad(-7), roll: THREE.MathUtils.degToRad(-2) }
+/** Pose on the library shelf: spine toward the viewer, turned so a slice of the front cover shows. */
+const SHELF_YAW = THREE.MathUtils.degToRad(58)
 
 const FLAT_Q = new THREE.Quaternion().setFromEuler(new THREE.Euler(-Math.PI / 2, Math.PI / 2, 0, 'YXZ'))
 
@@ -73,28 +79,67 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
   const tmpV = useMemo(() => new THREE.Vector3(), [])
   const tmpQ = useMemo(() => new THREE.Quaternion(), [])
   const tmpE = useMemo(() => new THREE.Euler(0, 0, 0, 'YXZ'), [])
+  const lib = useMemo(() => libraryIndex.get(book.id), [book.id])
 
   useFrame(({ clock }, dt) => {
     const g = group.current
     if (!g) return
-    const { hovered, active, rows, anchors, dragYaw } = useShelf.getState()
-    const { pxPerUnit, winW, winH, L, visH } = metrics
+    const { mode, land, hovered, hoveredShelf, active, rows, shelves, anchors, dragYaw } = useShelf.getState()
+    const { pxPerUnit, winW, winH, L, T, W, visH } = metrics
     const d = Math.min(dt, 1 / 30)
     const k = 1 - Math.exp(-d * 6)
+
+    // Books that take no part in the current view are simply hidden.
+    const participates = mode === 'library' ? !!lib : land === book.land
+    if (!participates) {
+      opacity.current = 0
+      g.visible = false
+      return
+    }
 
     let targetQ: THREE.Quaternion = FLAT_Q
     let targetScale = 1
     let targetOpacity = 1
     let lerpK = Math.min(1, k * 1.6)
 
-    const anchor = active ? anchors.get(book.id) : undefined
+    const anchor = mode === 'book' && active ? anchors.get(book.id) : undefined
     if (!wanted) {
       // Generate art once the book is within ~1.5 screens of the viewport.
-      const el = anchor ?? rows.get(book.id)
+      const el = anchor ?? (mode === 'library' ? shelves.get(book.land) : rows.get(book.id))
       const r = el?.getBoundingClientRect()
       if (r && r.height && r.bottom > -winH * 1.5 && r.top < winH * 2.5) setWanted(true)
     }
-    if (active && anchor) {
+
+    if (mode === 'library' && lib) {
+      // Standing on the topic's plank.
+      const plank = shelves.get(book.land)
+      const r = plank?.getBoundingClientRect()
+      if (r && r.height) {
+        let s = ((r.height * 0.86) / pxPerUnit) / L
+        const footUnit = T * Math.sin(SHELF_YAW) + W * Math.cos(SHELF_YAW)
+        // Crowded shelves (many sections) scale down so every book fits on the plank.
+        const plankW = (r.width * 0.92) / pxPerUnit
+        s = Math.min(s, plankW / (footUnit * 1.06 * lib.n))
+        const foot = footUnit * s
+        const gap = foot * 1.06
+        const total = gap * lib.n
+        const cxPx = r.left + r.width / 2
+        const x = (cxPx - winW / 2) / pxPerUnit - total / 2 + gap * (lib.i + 0.5)
+        const bottomPx = r.bottom - 19 // the plank's top face
+        const y = (winH / 2 - bottomPx) / pxPerUnit + (L * s) / 2
+        const hover = hoveredShelf === book.land
+        const sway = hover ? Math.sin(clock.elapsedTime * 1.6 + lib.i * 0.9) * 0.015 : 0
+        tmpV.set(x, y + (hover ? 0.05 : 0), hover ? 0.9 : 0.3)
+        tmpE.set(0, SHELF_YAW + sway, 0)
+        tmpQ.setFromEuler(tmpE)
+        targetQ = tmpQ
+        targetScale = s
+        lerpK = k * 1.4
+      } else {
+        targetOpacity = 0
+        tmpV.copy(pos)
+      }
+    } else if (mode === 'book' && active && anchor) {
       // Standing in the reading flow, tracking the sticky anchor.
       const r = anchor.getBoundingClientRect()
       const cx = r.left + r.width / 2
@@ -110,7 +155,7 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       tmpQ.setFromEuler(tmpE)
       targetQ = tmpQ
       lerpK = k * 1.3
-    } else if (active) {
+    } else if (mode === 'book' && active) {
       // Not part of the flow: drift aside and fade.
       const row = rows.get(book.id)
       const r = row?.getBoundingClientRect()
@@ -126,6 +171,7 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
         const isHover = hovered === book.id
         tmpV.set(isHover ? -0.18 : 0, y, isHover ? 0.9 : 0)
       } else {
+        targetOpacity = 0
         tmpV.copy(pos)
       }
     }

@@ -725,3 +725,384 @@ body {
 .PressDetails__endInner p {
   margin-bottom: 12px;
 }
+
+/* ---------- draft 3: library of shelves, topic pages, search, press mark ---------- */
+.PressMark {
+  display: block;
+  width: 28px;
+  height: auto;
+  opacity: 0.95;
+}
+.PressHeader__home {
+  color: inherit;
+  text-decoration: none;
+}
+.PressHeader__home:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.PressHeader__sep {
+  opacity: 0.45;
+}
+.PressSearchButton {
+  position: fixed;
+  top: calc(13px + 1vw);
+  right: calc(14px + 1vw);
+  z-index: 6;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px 7px 11px;
+  border: 1px solid var(--color);
+  border-radius: 999px;
+  font-family: var(--fontHeadline);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color);
+  background: transparent;
+  opacity: 0.85;
+  transition: opacity 0.2s, background 0.15s, color 0.15s;
+}
+.PressSearchButton:hover {
+  opacity: 1;
+  background: var(--color);
+  color: var(--backgroundColor);
+}
+.PressSearchButton kbd {
+  font-style: normal;
+  font-size: 11px;
+  opacity: 0.7;
+  padding-left: 2px;
+}
+.PressSearchButton.is-hidden {
+  opacity: 0.7;
+}
+@media (max-width: 599px) {
+  .PressSearchButton span,
+  .PressSearchButton kbd {
+    display: none;
+  }
+}
+
+/* library of shelves */
+.Library {
+  position: relative;
+  z-index: 2;
+  padding: 0 calc(42.5px + 1.75vw) calc(var(--vh) * 12);
+}
+body.is-library .PressHeader {
+  margin-bottom: calc(12 * var(--vh));
+}
+.Library__intro {
+  max-width: 34em;
+  margin: 0 0 calc(6 * var(--vh)) calc(10px + 1.75vw);
+  font-family: var(--fontDisplay);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.45;
+  opacity: 0.8;
+}
+.Library__shelves {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.Library__shelf {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(200px, 24vw) 1fr;
+  gap: 2vw;
+  align-items: end;
+  height: 25vh;
+  min-height: 170px;
+}
+.Library__label {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 6px;
+  padding: 10px 0;
+  color: var(--color);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  padding-left: 14px;
+  margin-left: -16px;
+  transition: border-color 0.25s;
+}
+.Library__shelf.is-hovered .Library__label,
+.Library__label:focus-visible {
+  border-left-color: var(--shelfColor, var(--color));
+}
+.Library__title {
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+  font-size: calc(17px + 0.6vw);
+  line-height: 1.25;
+}
+.Library__tagline {
+  font-family: var(--fontHeadline);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.35;
+  opacity: 0.8;
+}
+.Library__count {
+  font-size: 13px;
+  letter-spacing: 0.32px;
+  opacity: 0.6;
+}
+.Library__count b {
+  font-weight: 700;
+  font-family: var(--fontDisplay);
+  font-size: 14px;
+}
+.Library__plank {
+  position: relative;
+  display: block;
+  height: 100%;
+  min-height: 120px;
+  cursor: pointer;
+  outline: none;
+}
+.Library__plank:focus-visible {
+  outline: 1px dashed var(--color);
+  outline-offset: 6px;
+}
+/* a plank seen from slightly above: a lit top face in front of a dark front edge */
+.Library__plankTop,
+.Library__plankFront {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  display: block;
+  pointer-events: none;
+}
+.Library__plankTop {
+  bottom: 14px;
+  height: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.08));
+  transform: skewX(-38deg);
+  transform-origin: 0 100%;
+  border-radius: 1px;
+}
+.Library__plankFront {
+  bottom: 0;
+  height: 14px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6));
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.Library__shelf.is-hovered .Library__plankTop {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.12));
+}
+.Library__sections {
+  position: absolute;
+  left: 2%;
+  right: 2%;
+  bottom: -22px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 12px;
+  font-style: italic;
+  font-family: var(--fontHeadline);
+  letter-spacing: 0.32px;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.25s, transform 0.25s;
+}
+.Library__shelf.is-hovered .Library__sections {
+  opacity: 0.7;
+  transform: translateY(0);
+}
+@media (max-width: 899px) {
+  .Library__shelf {
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: auto;
+    padding-top: 10px;
+  }
+  .Library__plank {
+    height: 18vh;
+    min-height: 110px;
+  }
+  .Library__sections {
+    display: none;
+  }
+}
+
+/* section labels between rows on a topic shelf */
+.PressGroup {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 6px;
+}
+.PressGroup__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--fontHeadline);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 0.32px;
+  transform: translateX(-24vw);
+}
+.PressGroup__label::before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: var(--color);
+}
+@media (max-width: 899px) {
+  .PressGroup__label {
+    transform: none;
+  }
+}
+
+/* universal search */
+.Search {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: min(14vh, 140px);
+  background: rgba(10, 8, 8, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: searchIn 0.18s ease both;
+}
+@keyframes searchIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Search__box {
+  width: min(680px, 92vw);
+  background: var(--backgroundColor);
+  color: var(--color);
+  border: 1px solid var(--color);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+}
+.Search__input {
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  border-bottom: 1px solid var(--color);
+  background: transparent;
+  color: var(--color);
+  font-family: var(--fontDisplay);
+  font-size: 22px;
+  font-weight: 500;
+  outline: none;
+}
+.Search__input::placeholder {
+  color: var(--color);
+  opacity: 0.45;
+  font-style: italic;
+}
+.Search__results {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  max-height: min(52vh, 520px);
+  overflow-y: auto;
+}
+.Search__hit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-family: var(--fontText);
+  font-size: 16px;
+}
+.Search__hit.is-selected {
+  background: var(--color);
+  color: var(--backgroundColor);
+}
+.Search__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+.Search__hitText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.Search__hitTitle {
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+}
+.Search__hitSub {
+  font-size: 14px;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Search__hitKind {
+  font-size: 12px;
+  font-style: italic;
+  font-family: var(--fontHeadline);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.Search__empty {
+  padding: 14px 20px;
+  font-style: italic;
+  opacity: 0.7;
+}
+.Search__hint {
+  padding: 10px 20px 12px;
+  border-top: 1px solid var(--color);
+  font-size: 12px;
+  opacity: 0.6;
+}
+.Search__hint kbd {
+  font-style: normal;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-size: 11px;
+}
+body.is-searching {
+  overflow: hidden;
+}
+
+/* formula cards written as markdown blockquotes */
+.visual__formulaCard blockquote {
+  margin: 0 0 10px;
+  padding: 12px 16px;
+  border-left: 2px solid var(--color);
+  font-family: var(--fontDisplay);
+  font-size: 1.15em;
+}
+.visual__formulaCard ul {
+  margin: 0;
+  padding-left: 1.2em;
+  font-size: 15px;
+  opacity: 0.85;
+}
+.PressDetails__endSep {
+  opacity: 0.5;
+}

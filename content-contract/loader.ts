@@ -186,6 +186,10 @@ export function loadContent(opts: LoadOptions = {}): LoadResult {
     }
   }
   concepts.sort((a, b) => a.land.localeCompare(b.land) || a.title.localeCompare(b.title))
+  // lands.json order is the shelf order unless a land sets `order` explicitly.
+  lands.forEach((l, i) => {
+    if (l.order == null) l.order = i
+  })
   lands.sort((a, b) => (a.order ?? 999) - (b.order ?? 999) || a.title.localeCompare(b.title))
 
   // Media: real overrides sample by path.
@@ -301,6 +305,8 @@ function readConcepts(dir: string, origin: Origin, diagnostics: Diagnostic[]): C
       continue
     }
     const f = parsed.data
+    // The corpus writes `parent: <land-id>` on super-concepts; the contract treats that as no parent.
+    if (f.abstraction === 'super-concept' && f.parent === f.land) f.parent = null
     if (seen.has(f.id)) {
       diagnostics.push({ severity: 'error', code: 'duplicate-id', file, message: `duplicate concept id "${f.id}" (also in ${seen.get(f.id)})` })
       continue
