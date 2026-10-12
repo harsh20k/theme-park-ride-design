@@ -1,38 +1,42 @@
 import { useEffect, useRef, useState } from 'react'
 import vegaEmbed, { type VisualizationSpec } from 'vega-embed'
 
-const PAPER_FONT = 'Nunito, Avenir Next, Segoe UI, system-ui, sans-serif'
-const PALETTE = ['#c2566a', '#3f78b9', '#5f9b55', '#d9962b', '#7657b5', '#2f8f86', '#d6782a', '#8a7f6a']
+const FONT = 'Newsreader, Georgia, serif'
 
-/** Vega-Lite chart with a paper theme: cream background, ink strokes, hand-cut palette. */
-const paperConfig = {
-  background: 'transparent',
-  font: PAPER_FONT,
-  padding: 8,
-  autosize: { type: 'fit', contains: 'padding' },
-  axis: {
-    labelFont: PAPER_FONT,
-    titleFont: PAPER_FONT,
-    labelColor: '#6c5a50',
-    titleColor: '#3b2f2a',
-    gridColor: '#e2d2b4',
-    gridDash: [2, 4],
-    domainColor: '#8a6d4a',
-    tickColor: '#8a6d4a',
-    labelFontSize: 12,
-    titleFontSize: 13,
-    titleFontWeight: 700,
-  },
-  legend: { labelFont: PAPER_FONT, titleFont: PAPER_FONT, labelColor: '#3b2f2a', titleColor: '#3b2f2a', symbolStrokeWidth: 1.5 },
-  title: { font: PAPER_FONT, color: '#3b2f2a', fontSize: 15, anchor: 'start' },
-  view: { stroke: null },
-  range: { category: PALETTE, ordinal: PALETTE },
-  bar: { stroke: '#3b2f2a', strokeWidth: 1.2, cornerRadiusEnd: 3 },
-  line: { strokeWidth: 3, strokeCap: 'round', strokeJoin: 'round' },
-  area: { opacity: 0.55, line: true },
-  point: { filled: true, size: 70, stroke: '#3b2f2a', strokeWidth: 1 },
-  mark: { color: PALETTE[0] },
-} as Record<string, unknown>
+/** Vega-Lite on the press page: transparent background, ink strokes in the page's --color. */
+function paperConfig(color: string): Record<string, unknown> {
+  const dim = 'rgba(255,255,255,0.18)'
+  return {
+    background: 'transparent',
+    font: FONT,
+    padding: 8,
+    autosize: { type: 'fit', contains: 'padding' },
+    axis: {
+      labelFont: FONT,
+      titleFont: FONT,
+      labelColor: color,
+      titleColor: color,
+      gridColor: dim,
+      gridDash: [2, 4],
+      domainColor: color,
+      tickColor: color,
+      labelFontSize: 12,
+      titleFontSize: 13,
+      titleFontWeight: 600,
+    },
+    legend: { labelFont: FONT, titleFont: FONT, labelColor: color, titleColor: color, symbolStrokeWidth: 1.5 },
+    title: { font: FONT, color, fontSize: 15, anchor: 'start', fontWeight: 600 },
+    view: { stroke: null },
+    range: { category: [color, '#d9b46a', '#8fb3c9', '#c98fa6', '#9fc49a', '#c9a98f'], ordinal: [dim, color] },
+    bar: { fill: color, fillOpacity: 0.85, stroke: color, strokeWidth: 1, cornerRadiusEnd: 2 },
+    line: { stroke: color, strokeWidth: 2.5, strokeCap: 'round', strokeJoin: 'round' },
+    area: { fill: color, fillOpacity: 0.25, line: { stroke: color } },
+    point: { filled: true, fill: color, size: 60 },
+    rule: { stroke: color },
+    text: { fill: color, font: FONT },
+    mark: { color },
+  }
+}
 
 export default function ChartVisual({ source, alt }: { source: string; alt?: string }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -49,11 +53,11 @@ export default function ChartVisual({ source, alt }: { source: string; alt?: str
       setError(`chart spec is not valid JSON: ${(e as Error).message}`)
       return
     }
-    const specWithSize = { width: 'container', ...spec, config: { ...paperConfig, ...(spec as { config?: object }).config } } as unknown as VisualizationSpec
+    const color = getComputedStyle(el).getPropertyValue('--color').trim() || '#f1e6d2'
+    const specWithSize = { width: 'container', ...spec, config: { ...paperConfig(color), ...(spec as { config?: object }).config } } as unknown as VisualizationSpec
     vegaEmbed(el, specWithSize, { actions: false, renderer: 'svg', ast: true })
       .then((r) => {
         result = r
-        // Mark the SVG for screen readers.
         const svg = el.querySelector('svg')
         if (svg) {
           svg.setAttribute('role', 'img')

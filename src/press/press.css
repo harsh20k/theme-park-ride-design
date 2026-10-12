@@ -1,0 +1,641 @@
+/* Theme Park Press — a 1:1 study of press.stripe.com's shelf + book pages. */
+:root {
+  --bodyMargin: calc(10px + 1vw);
+  --backgroundColor: #201819;
+  --color: #fff;
+  --vh: 1vh;
+  --fontDisplay: 'Newsreader', 'Ivar Display', Georgia, serif;
+  --fontHeadline: 'Newsreader', 'Ivar Headline', Georgia, serif;
+  --fontText: 'Newsreader', 'Ivar Text', Georgia, serif;
+  --rowHeight: 32.2vh;
+}
+@media (min-width: 900px) {
+  :root {
+    --rowHeight: 26.45vh;
+  }
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--fontText);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--color);
+  background: var(--backgroundColor);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  transition: background 0.5s;
+  font-optical-sizing: auto;
+}
+::selection {
+  background: var(--color);
+  color: var(--backgroundColor);
+}
+h1,
+h2,
+h3,
+p,
+figure,
+blockquote,
+ol,
+ul {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+a {
+  color: var(--color);
+}
+a,
+button {
+  letter-spacing: 0.32px;
+}
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: block;
+  font-size: 17px;
+  font-family: var(--fontHeadline);
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 1px solid var(--color);
+  outline-offset: 3px;
+}
+kbd {
+  font: inherit;
+  font-style: italic;
+}
+
+/* ---------- canvas ---------- */
+.PressCanvas__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.PressCanvas {
+  position: relative !important;
+  width: 70vw !important;
+  max-width: 2200px;
+  height: 100vh !important;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.PressCanvas.is-initialized {
+  opacity: 1;
+}
+
+/* ---------- header ---------- */
+.PressHeader {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0 calc(42.5px + 1.75vw);
+  margin-top: calc(9px + 1vw);
+  margin-bottom: calc(29 * var(--vh));
+  letter-spacing: 0.32px;
+  line-height: 1.4;
+  z-index: 3;
+  transition: opacity 0.5s;
+}
+@media (max-width: 599px) {
+  .PressHeader {
+    margin-bottom: calc(14 * var(--vh));
+  }
+}
+.PressHeader.is-hidden .PressHeader__text {
+  opacity: 0;
+  pointer-events: none;
+}
+.PressHeader.is-hidden {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.PressHeader__logo {
+  position: fixed;
+  top: calc(13px + 1vw);
+  left: calc(10px + 1vw);
+  color: var(--color);
+  display: block;
+  z-index: 4;
+}
+.PressHeader__text {
+  margin-left: calc(10px + 1.75vw);
+  transition: opacity 0.4s;
+}
+.PressHeader__name {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-family: var(--fontHeadline);
+  font-weight: 600;
+  white-space: pre;
+}
+.PressHeader__tagline {
+  font-family: var(--fontHeadline);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.3;
+  white-space: pre;
+}
+
+/* ---------- shelf rows ---------- */
+.PressList__container {
+  position: relative;
+  width: 100%;
+}
+.PressList__container.is-hidden {
+  display: none;
+}
+.PressList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+.PressBook {
+  width: 100%;
+  height: var(--rowHeight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PressBook__link {
+  display: block;
+  width: 52vw;
+  height: 13.5vh;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.PressBook__text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+  opacity: 0;
+}
+.PressBook__link:focus-visible .PressBook__text {
+  opacity: 1;
+  outline: 1px dashed var(--color);
+}
+
+/* ---------- rail ---------- */
+.PressRail {
+  position: fixed;
+  left: var(--bodyMargin);
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 5;
+  pointer-events: none;
+}
+.PressRail > * {
+  pointer-events: auto;
+}
+.PressRail__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-height: 60vh;
+  overflow: hidden;
+}
+.PressRail__list.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.PressRail__dash {
+  width: 20px;
+  height: 4px;
+  display: block;
+  position: relative;
+}
+.PressRail__dash::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 2px;
+  background: var(--color);
+  opacity: 0.25;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.PressRail__dash:hover::before {
+  opacity: 0.6;
+}
+.PressRail__dash.is-active::before {
+  opacity: 1;
+}
+.PressRail__back {
+  position: absolute;
+  top: calc(50vh - 60vh / 2 - 30px);
+  left: 0;
+  color: var(--color);
+}
+.PressRail__help {
+  position: absolute;
+  bottom: calc(14px + 1vw);
+  left: 2px;
+  font-family: var(--fontDisplay);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color);
+  opacity: 0.85;
+}
+.PressRail__helpBox {
+  position: absolute;
+  bottom: calc(50px + 1vw);
+  left: 0;
+  width: 260px;
+  padding: 14px 16px;
+  border: 1px solid var(--color);
+  background: var(--backgroundColor);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---------- details ---------- */
+.PressDetails {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 6vw calc(var(--vh) * 10) 14vw;
+  line-height: 1.5;
+  font-size: 17px;
+  color: var(--color);
+  background: transparent; /* the body carries the book's colour; the fixed canvas sits above the page */
+  animation: detailsFadeIn 0.5s linear 0.3s both;
+}
+.PressDetails__right,
+.PressPraiseList {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 900px) {
+  .PressDetails {
+    padding: 0 8vw calc(var(--vh) * 25);
+  }
+}
+@keyframes detailsFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.PressDetails__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+  animation: detailsRise 1s ease 0.5s both;
+}
+@keyframes detailsRise {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (min-width: 900px) {
+  .PressDetails__info {
+    flex-direction: row;
+  }
+}
+.PressDetails__left {
+  cursor: grab;
+  display: flex;
+  padding-top: calc(var(--vh) * 35);
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(var(--vh) * 65);
+}
+@media (min-width: 900px) {
+  .PressDetails__left {
+    flex-basis: 58%;
+    height: auto;
+    min-height: 100vh;
+  }
+  .PressDetails__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 42%;
+    padding-top: calc(var(--vh) * 20);
+  }
+}
+.PressDetails__title {
+  font-size: calc(19px + 0.75vw);
+  line-height: 1.4;
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+  font-optical-sizing: auto;
+}
+@media (min-width: 1600px) {
+  .PressDetails__title {
+    font-size: 1.75em;
+    line-height: 1.4em;
+    letter-spacing: 0.32px;
+  }
+}
+.PressDetails__author {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: var(--fontDisplay);
+  margin-top: 6px;
+}
+.PressDetails__hr {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--color);
+  margin: 20px 0;
+}
+.PressDetails__summary {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+.PressDetails__summary p {
+  margin-bottom: 1em;
+}
+.PressDetails__summary p:last-child {
+  margin-bottom: 0;
+}
+.Link {
+  color: var(--color);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.Link:hover {
+  opacity: 0.7;
+}
+.Link--missing {
+  text-decoration-style: dotted;
+  opacity: 0.7;
+  cursor: default;
+}
+
+.PressDetails__figures {
+  width: 100%;
+  margin: 10px 0 20px;
+}
+
+/* link rows (Stripe's "Preorder" group) */
+.PressDetails__buyOptions {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+.PressDetails__buyGroupLabel {
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 500;
+  font-family: var(--fontDisplay);
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.PressDetails__buyGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.PressDetails__buy {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color);
+  padding: 0 0 0 16px;
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  color: var(--color);
+  z-index: 3;
+  cursor: pointer;
+  transition: background 0.1s;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+.PressDetails__buy::before,
+.PressDetails__buy::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: -1px;
+  transition: transform 0.2s ease-out;
+  background: var(--color);
+}
+.PressDetails__buy::after {
+  top: auto;
+  bottom: -1px;
+}
+.PressDetails__buyLabel {
+  position: relative;
+  top: 1px;
+  transition: 0.3s ease-out;
+  padding: 10px 0;
+}
+.PressDetails__buyNote {
+  font-family: var(--fontText);
+  font-weight: 500;
+  opacity: 0.7;
+}
+.PressDetails__buyHoverLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  transform: scaleX(0);
+  background: var(--color);
+  transition: transform 0.3s ease-out;
+  transform-origin: 0;
+}
+.PressDetails__buyIcon {
+  background: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  padding: 18px 10px 16px 11px;
+  border-left: 0.5px solid var(--color);
+  margin-left: 17px;
+  transition: transform 0.1s, background 0.1s;
+  overflow: hidden;
+  color: var(--color);
+}
+.PressDetails__buyIconPair {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  display: block;
+}
+.PressDetails__buyIconSvg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 0.4s;
+}
+.PressDetails__buy:hover .PressDetails__buyIcon {
+  background: var(--color);
+  color: var(--backgroundColor);
+  transform: translateX(1px);
+}
+.PressDetails__buy:hover .PressDetails__buyLabel {
+  transform: translateX(4px);
+}
+.PressDetails__buy:hover::before {
+  transform: translateY(1px);
+}
+.PressDetails__buy:hover::after {
+  transform: translateY(-1px);
+}
+.PressDetails__buy:hover .PressDetails__buyHoverLeft {
+  transform: scaleX(1);
+}
+
+/* author / sources */
+.PressAuthor__label,
+.PressPraiseList__label {
+  margin: 80px 0 10px;
+  font-size: 1.2em;
+  font-family: var(--fontHeadline);
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.PressAuthor__label::before,
+.PressPraiseList__label::before {
+  position: relative;
+  content: '';
+  width: 60px;
+  border-bottom: 1px solid;
+  height: 1px;
+  margin-right: 16px;
+}
+.PressAuthor__bio {
+  margin-top: 30px;
+}
+.PressAuthor__bio p {
+  margin-bottom: 0.6em;
+}
+.PressAuthor__meta {
+  opacity: 0.7;
+}
+
+/* praise grid → related ideas */
+.PressPraiseList {
+  padding: 0;
+  margin: auto;
+  max-width: 1280px;
+}
+@media (min-width: 900px) {
+  .PressPraiseList {
+    padding: 40px 0;
+  }
+  .PressPraiseList__carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+  }
+}
+.PressPraiseList__label {
+  margin: 80px 0 20px;
+  grid-column: 1/4;
+}
+.PressPraise {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  text-decoration: none;
+  color: var(--color);
+}
+.PressPraise__quote {
+  margin-bottom: 24px;
+}
+.PressPraise__quote::before {
+  content: '\201C';
+  font-family: var(--fontText);
+  font-size: 80px;
+  display: block;
+  margin-bottom: 0;
+  line-height: 0.22;
+}
+.PressPraise__quote::after {
+  width: 40px;
+  background: var(--color);
+  opacity: 0.4;
+  height: 1px;
+  content: '';
+  display: block;
+  margin-top: 24px;
+}
+.PressPraise__role {
+  opacity: 0.7;
+  padding-right: 40px;
+}
+.PressPraise:hover .PressPraise__name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .PressDetails,
+  .PressDetails__info {
+    animation: none;
+  }
+}

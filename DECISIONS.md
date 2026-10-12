@@ -1,73 +1,69 @@
-# DECISIONS — The Papercraft Park Library
+# DECISIONS — Theme Park Press
 
 Key choices, trade-offs and cuts. Newest at the bottom of each section.
 
-## Stage 1 — content contract, sample content, loader, check
+## Content contract, sample content, loader, check (kept from the first build)
 
 - **Contract lives in `content-contract/` as plain TypeScript + Zod**, shared by the
   Node loader, the `content:check` CLI, the Vite plugin and the browser (types only).
   The site never reads `/content` directly — only through this contract.
 - **Permissive where the research spec is silent, strict where it's explicit.**
   Ids/abstraction/relation types/graph shape are enums; everything else has
-  defaults. `lands.json`, `resources.json`, `glossary.json`, `timeline.json` and
-  `learning-path.json` accept either a bare array or a `{ lands: [...] }`-style
-  wrapper, so either style from the research process validates.
+  defaults. JSON files accept either a bare array or a `{ lands: [...] }`-style wrapper.
 - **Visuals are parsed from the card body, not trusted from frontmatter.** Fences
   ```` ```mermaid ````, ```` ```chart|vega-lite ````, ```` ```svg ````,
   ```` ```formula|latex|math ````, `$$…$$` and `![alt](media/…)` all count.
   An optional first line (`%% title: … | alt: …`) carries title/alt for a11y.
-  Frontmatter `visuals` is cross-checked and mismatches are warnings.
 - **Inline links resolve by last path segment** (`../human-factors/motion-sickness.md`
-  → `motion-sickness`), so authors can write relative Markdown links that also
-  work on GitHub. Broken ones are errors in `content:check` and render as dotted
-  "no card yet" spans in the site rather than dead links.
-- **Graph is always derived from the merged concepts** (nodes) ∪ `graph.json`
-  edges ∪ frontmatter relations ∪ parent/child edges. This keeps the graph
-  consistent when real and sample lands are mixed. `graph.json` is still
-  validated and reported on its own.
+  → `motion-sickness`). Broken ones are errors in `content:check` and render as
+  dotted "no card yet" spans rather than dead links.
+- **Graph is always derived from the merged concepts** ∪ `graph.json` edges ∪
+  frontmatter relations ∪ parent/child edges, so mixed real/sample lands stay consistent.
 - **Per-land merge rule:** a land uses real cards if its folder has ≥1 valid real
   card; otherwise sample cards. Other files merge per file. `CONTENT_SOURCE`
-  forces `sample` or `real`; `CONTENT_DIR` points at a different real folder
-  (used in the worktree, where `/content` is untracked).
-- **`content:check` reports each source separately** (real, sample, merged) so
-  research-side problems are visible even while the site falls back to sample.
-- **Sources may be plain strings.** Real cards use resource ids
-  (`sources: [kahneman-peak-end-1993]`); the card UI resolves those against
-  `resources.json` when it can.
-- **Learning-path `level` accepts any string** (real tracks use values outside
-  beginner/intermediate/advanced); steps accept extra `land`/`level` fields.
-- **Sample slugs reuse `tools/hierarchy.txt` slugs** so a real land replaces a
-  sample land cleanly and cross-land links keep resolving.
-- Cut: no `media/index.json` requirement — media is indexed from disk; an index
-  only adds alt text / credits if present.
+  forces `sample` or `real`; `CONTENT_DIR` points at a different real folder.
+- **`content:check` reports each source separately** (real, sample, merged).
+- **Sources may be plain strings** (resource ids); the page resolves them against
+  `resources.json`.
+- **Learning-path `level` accepts any string**; steps accept extra `land`/`level`.
+- **Sample slugs reuse `tools/hierarchy.txt` slugs** so real lands replace sample
+  lands cleanly.
 
-## Stage 2 — art direction test
+## Pivot: from papercraft park to a Stripe Press–style shelf (proof of concept)
 
-- **Procedural buildings, no glTF yet.** One `Building` component with 13
-  silhouettes keyed by `BuildingKind`; lands.json may omit `building`/`landmark`
-  and `landTheme.ts` supplies a bespoke look for known land ids and a generic
-  rotation for unknown ones (so any number of lands works). glTF models can
-  replace a kind later without touching the scene.
-- **Paper look is a shader, not textures**: `PaperMaterial` extends
-  `MeshStandardMaterial` with procedural grain, fibre streaks, crease normal
-  noise, silhouette edge-darkening (fakes card thickness) and a vertex "boil"
-  stepped at 12 fps. Zero texture downloads; respects `prefers-reduced-motion`
-  (boil off, no camera lag).
-- **Stop-motion = 12 fps for props, 60 fps for camera/input**: `useSteppedFrame`
-  fires only when the 1/12 s step changes. Vehicle wheels, flags, trees and sign
-  bob use it; the chase camera and physics do not.
-- **Arcade physics on Rapier**: vehicle is a dynamic body whose velocity is set
-  directly (snappy, predictable) but can still shove dynamic paper props.
-  Click-to-travel steers the same body toward a ground point.
-- **Concept cards are HTML overlays** (`role=dialog`, Esc closes, focus moves to
-  close button), never text in the 3D scene. Reading rooms are also HTML — the
-  3D room is dressing; shelves are the real UI.
-- **Mermaid/Vega-Lite re-themed** via `theme: base` variables and a Vega config
-  (cream background, ink strokes, hand-cut palette) instead of post-processing SVG.
-- **Rapier's inlined WASM (~850 kB gz) is the biggest first-load cost.** Kept for
-  now; polish stage will try `@dimforge/rapier3d` (non-compat) or lazy-init
-  physics after the loading scene.
-- **Stage 2 shows one land only** (`STAGE2_LAND` in `App.tsx`); the layout code
-  already rings all lands around a hub.
-- Cut: drei `Text` (troika) for signs — it fetches a font from a CDN. Signs are
-  `Html` paper cards instead; no network fonts anywhere.
+- **The 3D papercraft park was scrapped after review.** The user asked for a 1:1
+  study of press.stripe.com instead: a shelf of 3D books, click a book to open it.
+  Everything under `src/three`, the reading room, HUD, toys and library-mode
+  stubs were removed; the content pipeline was kept untouched.
+- **Reference measured, not guessed.** Screenshots and the site's component
+  stylesheets were pulled (`scripts/grab-ref.ts`, `scripts/fetch-ref-css.ts`):
+  background `#201819`, Ivar serif family, header padding `calc(42.5px + 1.75vw)`,
+  fixed 70vw three.js canvas, one book row per `26.45vh`, 58/42 detail split,
+  60px rules, bordered link rows, italic section labels, 3-column praise grid.
+  `press.css` ports those values with our own class names.
+- **Font: Newsreader (Google Fonts) stands in for Ivar**, which is proprietary.
+  Same optical-size serif feel; swap in a licensed Ivar later by changing three
+  CSS variables.
+- **Books are three.js boxes with canvas textures**, like the original (which
+  uses three.js r151). No image downloads: covers are drawn procedurally per
+  concept in three looks picked by seed — combed marble, book cloth with a foil
+  rosette, book cloth with foil lines — tinted from the land colour. Spines reuse
+  the same art without the motif so titles stay legible.
+- **DOM rows drive the 3D layout.** One invisible `<a>` per book (real links →
+  keyboard + screen-reader friendly, and the hover hit-area) and the canvas reads
+  their bounding boxes each frame, so scroll sync is exact and free. Canvas has
+  `pointer-events: none`.
+- **Detail page = body tint + fixed canvas above the page.** Stripe sets
+  `--backgroundColor`/`--color` on the body per book; the canvas (z-index 1) sits
+  above the transparent page so the standing book overlaps the left column and
+  the text column keeps its own stacking context above the canvas.
+- **Content mapping:** book = concept card; author line = land; prose = card
+  text with inline links; "Explore further" = the bordered link rows (Stripe's
+  "Preorder" group); "Sources" = the "Author" section; "Related ideas" = the praise
+  grid (parent, children, typed relations).
+- Cut for the POC: drag-to-rotate the standing book (Stripe's `cursor: grab`) —
+  replaced by a small mouse-parallax tilt; mobile layout only roughly handled;
+  podcast/film rows in the rail; cookie banner.
+- **Rapier, drei and post-processing are no longer used** (still in package.json
+  until the direction is confirmed; removing them cuts ~1 MB gz from installs,
+  not from the bundle, since they're not imported).

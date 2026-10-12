@@ -1,19 +1,18 @@
 import { Suspense, lazy, useMemo } from 'react'
 import type { VisualBlock } from '@content/schema'
-import { mediaUrl } from '../Markdown'
+import { mediaUrl } from '@/press/Markdown'
 import FormulaVisual from './FormulaVisual'
 import './visuals.css'
 
 const MermaidVisual = lazy(() => import('./MermaidVisual'))
 const ChartVisual = lazy(() => import('./ChartVisual'))
 
-/** Renders one visual block from a concept card in the papercraft theme. */
+/** Renders one visual block from a concept card. */
 export default function Visual({ block, index }: { block: VisualBlock; index: number }) {
   const label = block.title ?? block.alt ?? `${block.kind} visual ${index + 1}`
   return (
     <figure className={`visual visual--${block.kind}`} aria-label={block.alt ?? block.title}>
-      <div className="visual__frame paper">
-        <span className="tape" aria-hidden="true" />
+      <div className="visual__frame">
         <Suspense fallback={<div className="visual__loading">drawing…</div>}>
           <VisualBody block={block} />
         </Suspense>
