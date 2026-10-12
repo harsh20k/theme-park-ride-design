@@ -1,0 +1,19 @@
+{
+  "_placeholder": "SAMPLE CONTENT — placeholder timeline following the content contract.",
+  "events": [
+    { "year": 1661, "title": "Vauxhall Pleasure Gardens open in London", "description": "Lit walks, music and spectacle for a paying public — an early ancestor of the theme park.", "era": "Pleasure gardens", "land": "history", "concepts": ["origins"] },
+    { "year": 1784, "title": "Russian Mountains, St Petersburg", "description": "Wheeled carts on wooden tracks turn winter ice slides into a year-round gravity ride.", "era": "Pleasure gardens", "land": "history", "concepts": ["origins", "early-coasters"] },
+    { "year": 1817, "title": "Promenades Aériennes, Paris", "description": "Tracked cars with wheels locked to the rails — a recognisable coaster.", "era": "Pleasure gardens", "land": "history", "concepts": ["early-coasters"] },
+    { "year": 1843, "title": "Tivoli Gardens open in Copenhagen", "description": "A garden of rides, lights and music that still operates today.", "era": "Pleasure gardens", "land": "history", "concepts": ["origins"] },
+    { "year": 1862, "title": "Pepper's Ghost debuts in London", "description": "John Henry Pepper popularises Henry Dircks' glass-reflection illusion at the Royal Polytechnic.", "era": "Victorian showmanship", "land": "show-technology", "concepts": ["peppers-ghost", "illusions"] },
+    { "year": 1884, "title": "Switchback Railway, Coney Island", "description": "LaMarcus Thompson's gravity ride charges a nickel and pays for itself in weeks.", "era": "Amusement parks", "land": "history", "concepts": ["early-coasters"] },
+    { "year": 1955, "title": "Disneyland opens in Anaheim", "description": "A single-entrance, hub-and-spoke park built around themed lands and a central castle.", "era": "Theme parks", "land": "masterplanning", "concepts": ["hub-and-spoke", "park-structure", "weenies", "the-berm"] },
+    { "year": 1959, "title": "Matterhorn Bobsleds — first tubular steel coaster", "description": "Steel tube track makes smooth, precise curves possible.", "era": "Theme parks", "land": "ride-systems", "concepts": ["roller-coasters"] },
+    { "year": 1975, "title": "Great American Revolution — modern vertical loop", "description": "Werner Stengel's clothoid loop keeps g-forces survivable and makes the loop a staple.", "era": "Steel coaster boom", "land": "ride-engineering", "concepts": ["clothoid-loop", "g-force-basics"] },
+    { "year": 1978, "title": "ASTM Committee F24 formed", "description": "Industry, operators and regulators begin writing shared amusement ride standards.", "era": "Standards", "land": "safety-standards", "concepts": ["design-safety", "risk-assessment"] },
+    { "year": 1993, "title": "The peak-end rule is described", "description": "Kahneman and colleagues show people remember peaks and endings, not durations.", "era": "Psychology", "land": "human-factors", "concepts": ["peak-end-rule", "memory"] },
+    { "year": 1996, "title": "Flight of Fear — first LIM-launched coaster", "description": "Linear induction motors launch a train from a standstill inside a building.", "era": "Launch era", "land": "ride-systems", "concepts": ["launched-coasters", "lsm-lim-launch"] },
+    { "year": 1999, "title": "Virtual queueing goes mainstream", "description": "Paper return tickets let guests wait somewhere else — changing how waits feel.", "era": "Operations", "land": "operations-business", "concepts": ["perceived-vs-actual-wait", "throughput-math"] },
+    { "year": 2019, "title": "Machine-learned wait-time predictions in park apps", "description": "Operators publish forecasts, not just posted waits, using historical and live data.", "era": "AI", "land": "ai-future", "concepts": ["wait-time-prediction", "ai-in-operations"] }
+  ]
+}

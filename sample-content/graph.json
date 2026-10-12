@@ -1,0 +1,896 @@
+{
+  "_placeholder": "SAMPLE CONTENT — generated from sample concept frontmatter by scripts/build-sample-graph.ts",
+  "nodes": [
+    {
+      "id": "ai-in-operations",
+      "title": "AI in Operations",
+      "land": "ai-future",
+      "abstraction": "super-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "wait-time-prediction",
+      "title": "Wait-Time Prediction",
+      "land": "ai-future",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "creative-roles",
+      "title": "Creative Roles",
+      "land": "careers",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "roles",
+      "title": "Roles",
+      "land": "careers",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "pipeline-overview",
+      "title": "Concept-to-Opening Pipeline",
+      "land": "design-process",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "phase-timeline",
+      "title": "Phase Timeline",
+      "land": "design-process",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "scope-and-value-engineering",
+      "title": "Scope & Value Engineering",
+      "land": "design-process",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "early-coasters",
+      "title": "Early Coasters",
+      "land": "history",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "origins",
+      "title": "Origins",
+      "land": "history",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "memory",
+      "title": "Memory",
+      "land": "human-factors",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "motion-sickness",
+      "title": "Motion Sickness",
+      "land": "human-factors",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "occupied-time",
+      "title": "Occupied Time",
+      "land": "human-factors",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "peak-end-rule",
+      "title": "Peak-End Rule",
+      "land": "human-factors",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "perceived-vs-actual-wait",
+      "title": "Perceived vs Actual Wait",
+      "land": "human-factors",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "perception",
+      "title": "Perception",
+      "land": "human-factors",
+      "abstraction": "super-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "sensory-conflict-theory",
+      "title": "Sensory Conflict Theory",
+      "land": "human-factors",
+      "abstraction": "sub-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "waiting",
+      "title": "Waiting",
+      "land": "human-factors",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "hub-and-spoke",
+      "title": "Hub-and-Spoke",
+      "land": "masterplanning",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "park-structure",
+      "title": "Park Structure",
+      "land": "masterplanning",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "dispatch-interval",
+      "title": "Dispatch Interval",
+      "land": "operations-business",
+      "abstraction": "sub-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "throughput-and-queueing",
+      "title": "Throughput & Queueing",
+      "land": "operations-business",
+      "abstraction": "super-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "throughput-math",
+      "title": "Throughput Math",
+      "land": "operations-business",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "airtime-and-negative-g",
+      "title": "Airtime & Negative G",
+      "land": "ride-engineering",
+      "abstraction": "sub-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "clothoid-loop",
+      "title": "Clothoid Loop",
+      "land": "ride-engineering",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "forces-and-tolerance",
+      "title": "Forces & Human Tolerance",
+      "land": "ride-engineering",
+      "abstraction": "super-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "g-force-basics",
+      "title": "G-Force Basics",
+      "land": "ride-engineering",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "track-geometry",
+      "title": "Track Geometry",
+      "land": "ride-engineering",
+      "abstraction": "super-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "launched-coasters",
+      "title": "Launched Coasters",
+      "land": "ride-systems",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "lsm-lim-launch",
+      "title": "LSM & LIM Launch",
+      "land": "ride-systems",
+      "abstraction": "sub-concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "roller-coasters",
+      "title": "Roller Coasters",
+      "land": "ride-systems",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "design-safety",
+      "title": "Design Safety",
+      "land": "safety-standards",
+      "abstraction": "super-concept",
+      "level": "advanced"
+    },
+    {
+      "id": "ride-control-systems",
+      "title": "Ride Control Systems",
+      "land": "safety-standards",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "risk-assessment",
+      "title": "Risk Assessment & FMEA",
+      "land": "safety-standards",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "go-away-green",
+      "title": "Go-Away Green & Camouflage Palettes",
+      "land": "sensory-environment",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "light-and-color",
+      "title": "Light & Color",
+      "land": "sensory-environment",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "illusions",
+      "title": "Illusions",
+      "land": "show-technology",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "misdirection",
+      "title": "Misdirection & Magic Principles",
+      "land": "show-technology",
+      "abstraction": "concept",
+      "level": "intermediate"
+    },
+    {
+      "id": "peppers-ghost",
+      "title": "Pepper's Ghost",
+      "land": "show-technology",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "forced-perspective",
+      "title": "Forced Perspective",
+      "land": "story-experience",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "spatial-storytelling",
+      "title": "Spatial Storytelling",
+      "land": "story-experience",
+      "abstraction": "super-concept",
+      "level": "beginner"
+    },
+    {
+      "id": "the-berm",
+      "title": "The Berm",
+      "land": "story-experience",
+      "abstraction": "concept",
+      "level": "beginner"
+    },
+    {
+      "id": "weenies",
+      "title": "Weenies",
+      "land": "story-experience",
+      "abstraction": "concept",
+      "level": "beginner"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ai-in-operations",
+      "target": "wait-time-prediction",
+      "type": "parent"
+    },
+    {
+      "source": "ai-in-operations",
+      "target": "throughput-and-queueing",
+      "type": "applies-to"
+    },
+    {
+      "source": "wait-time-prediction",
+      "target": "perceived-vs-actual-wait",
+      "type": "applies-to"
+    },
+    {
+      "source": "wait-time-prediction",
+      "target": "ai-in-operations",
+      "type": "part-of"
+    },
+    {
+      "source": "wait-time-prediction",
+      "target": "dispatch-interval",
+      "type": "applies-to"
+    },
+    {
+      "source": "roles",
+      "target": "creative-roles",
+      "type": "parent"
+    },
+    {
+      "source": "creative-roles",
+      "target": "roles",
+      "type": "example-of"
+    },
+    {
+      "source": "creative-roles",
+      "target": "spatial-storytelling",
+      "type": "applies-to"
+    },
+    {
+      "source": "creative-roles",
+      "target": "pipeline-overview",
+      "type": "enables"
+    },
+    {
+      "source": "roles",
+      "target": "pipeline-overview",
+      "type": "applies-to"
+    },
+    {
+      "source": "pipeline-overview",
+      "target": "phase-timeline",
+      "type": "parent"
+    },
+    {
+      "source": "pipeline-overview",
+      "target": "scope-and-value-engineering",
+      "type": "parent"
+    },
+    {
+      "source": "pipeline-overview",
+      "target": "roles",
+      "type": "applies-to"
+    },
+    {
+      "source": "phase-timeline",
+      "target": "pipeline-overview",
+      "type": "part-of"
+    },
+    {
+      "source": "phase-timeline",
+      "target": "scope-and-value-engineering",
+      "type": "limits"
+    },
+    {
+      "source": "scope-and-value-engineering",
+      "target": "phase-timeline",
+      "type": "limits"
+    },
+    {
+      "source": "scope-and-value-engineering",
+      "target": "risk-assessment",
+      "type": "applies-to"
+    },
+    {
+      "source": "origins",
+      "target": "early-coasters",
+      "type": "parent"
+    },
+    {
+      "source": "early-coasters",
+      "target": "launched-coasters",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "early-coasters",
+      "target": "roller-coasters",
+      "type": "example-of"
+    },
+    {
+      "source": "early-coasters",
+      "target": "track-geometry",
+      "type": "applies-to"
+    },
+    {
+      "source": "origins",
+      "target": "roller-coasters",
+      "type": "applies-to"
+    },
+    {
+      "source": "memory",
+      "target": "peak-end-rule",
+      "type": "parent"
+    },
+    {
+      "source": "memory",
+      "target": "waiting",
+      "type": "applies-to"
+    },
+    {
+      "source": "memory",
+      "target": "spatial-storytelling",
+      "type": "applies-to"
+    },
+    {
+      "source": "perception",
+      "target": "motion-sickness",
+      "type": "parent"
+    },
+    {
+      "source": "motion-sickness",
+      "target": "sensory-conflict-theory",
+      "type": "parent"
+    },
+    {
+      "source": "motion-sickness",
+      "target": "launched-coasters",
+      "type": "limits"
+    },
+    {
+      "source": "motion-sickness",
+      "target": "g-force-basics",
+      "type": "applies-to"
+    },
+    {
+      "source": "waiting",
+      "target": "occupied-time",
+      "type": "parent"
+    },
+    {
+      "source": "occupied-time",
+      "target": "perceived-vs-actual-wait",
+      "type": "part-of"
+    },
+    {
+      "source": "occupied-time",
+      "target": "misdirection",
+      "type": "enables"
+    },
+    {
+      "source": "peak-end-rule",
+      "target": "spatial-storytelling",
+      "type": "applies-to"
+    },
+    {
+      "source": "peak-end-rule",
+      "target": "perceived-vs-actual-wait",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "waiting",
+      "target": "perceived-vs-actual-wait",
+      "type": "parent"
+    },
+    {
+      "source": "perceived-vs-actual-wait",
+      "target": "throughput-math",
+      "type": "applies-to"
+    },
+    {
+      "source": "perceived-vs-actual-wait",
+      "target": "dispatch-interval",
+      "type": "limits"
+    },
+    {
+      "source": "perception",
+      "target": "illusions",
+      "type": "applies-to"
+    },
+    {
+      "source": "perception",
+      "target": "light-and-color",
+      "type": "applies-to"
+    },
+    {
+      "source": "sensory-conflict-theory",
+      "target": "perception",
+      "type": "example-of"
+    },
+    {
+      "source": "sensory-conflict-theory",
+      "target": "motion-sickness",
+      "type": "causes"
+    },
+    {
+      "source": "waiting",
+      "target": "throughput-and-queueing",
+      "type": "applies-to"
+    },
+    {
+      "source": "waiting",
+      "target": "wait-time-prediction",
+      "type": "applies-to"
+    },
+    {
+      "source": "park-structure",
+      "target": "hub-and-spoke",
+      "type": "parent"
+    },
+    {
+      "source": "hub-and-spoke",
+      "target": "park-structure",
+      "type": "example-of"
+    },
+    {
+      "source": "hub-and-spoke",
+      "target": "weenies",
+      "type": "enables"
+    },
+    {
+      "source": "hub-and-spoke",
+      "target": "throughput-and-queueing",
+      "type": "applies-to"
+    },
+    {
+      "source": "park-structure",
+      "target": "weenies",
+      "type": "enables"
+    },
+    {
+      "source": "park-structure",
+      "target": "throughput-and-queueing",
+      "type": "applies-to"
+    },
+    {
+      "source": "throughput-math",
+      "target": "dispatch-interval",
+      "type": "parent"
+    },
+    {
+      "source": "dispatch-interval",
+      "target": "throughput-math",
+      "type": "part-of"
+    },
+    {
+      "source": "dispatch-interval",
+      "target": "ride-control-systems",
+      "type": "applies-to"
+    },
+    {
+      "source": "dispatch-interval",
+      "target": "perceived-vs-actual-wait",
+      "type": "causes"
+    },
+    {
+      "source": "throughput-and-queueing",
+      "target": "throughput-math",
+      "type": "parent"
+    },
+    {
+      "source": "throughput-and-queueing",
+      "target": "waiting",
+      "type": "applies-to"
+    },
+    {
+      "source": "throughput-math",
+      "target": "perceived-vs-actual-wait",
+      "type": "applies-to"
+    },
+    {
+      "source": "throughput-math",
+      "target": "wait-time-prediction",
+      "type": "enables"
+    },
+    {
+      "source": "g-force-basics",
+      "target": "airtime-and-negative-g",
+      "type": "parent"
+    },
+    {
+      "source": "airtime-and-negative-g",
+      "target": "g-force-basics",
+      "type": "example-of"
+    },
+    {
+      "source": "airtime-and-negative-g",
+      "target": "track-geometry",
+      "type": "applies-to"
+    },
+    {
+      "source": "airtime-and-negative-g",
+      "target": "peak-end-rule",
+      "type": "applies-to"
+    },
+    {
+      "source": "track-geometry",
+      "target": "clothoid-loop",
+      "type": "parent"
+    },
+    {
+      "source": "clothoid-loop",
+      "target": "early-coasters",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "clothoid-loop",
+      "target": "g-force-basics",
+      "type": "applies-to"
+    },
+    {
+      "source": "clothoid-loop",
+      "target": "track-geometry",
+      "type": "example-of"
+    },
+    {
+      "source": "forces-and-tolerance",
+      "target": "g-force-basics",
+      "type": "parent"
+    },
+    {
+      "source": "forces-and-tolerance",
+      "target": "track-geometry",
+      "type": "limits"
+    },
+    {
+      "source": "forces-and-tolerance",
+      "target": "motion-sickness",
+      "type": "applies-to"
+    },
+    {
+      "source": "forces-and-tolerance",
+      "target": "design-safety",
+      "type": "applies-to"
+    },
+    {
+      "source": "g-force-basics",
+      "target": "clothoid-loop",
+      "type": "applies-to"
+    },
+    {
+      "source": "g-force-basics",
+      "target": "track-geometry",
+      "type": "limits"
+    },
+    {
+      "source": "g-force-basics",
+      "target": "motion-sickness",
+      "type": "causes"
+    },
+    {
+      "source": "track-geometry",
+      "target": "g-force-basics",
+      "type": "applies-to"
+    },
+    {
+      "source": "track-geometry",
+      "target": "airtime-and-negative-g",
+      "type": "causes"
+    },
+    {
+      "source": "track-geometry",
+      "target": "roller-coasters",
+      "type": "applies-to"
+    },
+    {
+      "source": "roller-coasters",
+      "target": "launched-coasters",
+      "type": "parent"
+    },
+    {
+      "source": "launched-coasters",
+      "target": "lsm-lim-launch",
+      "type": "parent"
+    },
+    {
+      "source": "launched-coasters",
+      "target": "early-coasters",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "launched-coasters",
+      "target": "g-force-basics",
+      "type": "applies-to"
+    },
+    {
+      "source": "launched-coasters",
+      "target": "dispatch-interval",
+      "type": "limits"
+    },
+    {
+      "source": "lsm-lim-launch",
+      "target": "launched-coasters",
+      "type": "part-of"
+    },
+    {
+      "source": "lsm-lim-launch",
+      "target": "g-force-basics",
+      "type": "enables"
+    },
+    {
+      "source": "lsm-lim-launch",
+      "target": "ride-control-systems",
+      "type": "applies-to"
+    },
+    {
+      "source": "roller-coasters",
+      "target": "g-force-basics",
+      "type": "applies-to"
+    },
+    {
+      "source": "roller-coasters",
+      "target": "early-coasters",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "design-safety",
+      "target": "risk-assessment",
+      "type": "parent"
+    },
+    {
+      "source": "design-safety",
+      "target": "ride-control-systems",
+      "type": "parent"
+    },
+    {
+      "source": "design-safety",
+      "target": "forces-and-tolerance",
+      "type": "applies-to"
+    },
+    {
+      "source": "design-safety",
+      "target": "pipeline-overview",
+      "type": "applies-to"
+    },
+    {
+      "source": "ride-control-systems",
+      "target": "dispatch-interval",
+      "type": "enables"
+    },
+    {
+      "source": "ride-control-systems",
+      "target": "throughput-math",
+      "type": "limits"
+    },
+    {
+      "source": "ride-control-systems",
+      "target": "design-safety",
+      "type": "part-of"
+    },
+    {
+      "source": "risk-assessment",
+      "target": "ride-control-systems",
+      "type": "enables"
+    },
+    {
+      "source": "risk-assessment",
+      "target": "clothoid-loop",
+      "type": "applies-to"
+    },
+    {
+      "source": "risk-assessment",
+      "target": "design-safety",
+      "type": "part-of"
+    },
+    {
+      "source": "light-and-color",
+      "target": "go-away-green",
+      "type": "parent"
+    },
+    {
+      "source": "go-away-green",
+      "target": "light-and-color",
+      "type": "example-of"
+    },
+    {
+      "source": "go-away-green",
+      "target": "the-berm",
+      "type": "enables"
+    },
+    {
+      "source": "go-away-green",
+      "target": "forced-perspective",
+      "type": "applies-to"
+    },
+    {
+      "source": "light-and-color",
+      "target": "peppers-ghost",
+      "type": "applies-to"
+    },
+    {
+      "source": "illusions",
+      "target": "peppers-ghost",
+      "type": "parent"
+    },
+    {
+      "source": "illusions",
+      "target": "misdirection",
+      "type": "parent"
+    },
+    {
+      "source": "illusions",
+      "target": "spatial-storytelling",
+      "type": "applies-to"
+    },
+    {
+      "source": "misdirection",
+      "target": "occupied-time",
+      "type": "applies-to"
+    },
+    {
+      "source": "misdirection",
+      "target": "peppers-ghost",
+      "type": "enables"
+    },
+    {
+      "source": "peppers-ghost",
+      "target": "illusions",
+      "type": "example-of"
+    },
+    {
+      "source": "peppers-ghost",
+      "target": "misdirection",
+      "type": "enables"
+    },
+    {
+      "source": "peppers-ghost",
+      "target": "light-and-color",
+      "type": "applies-to"
+    },
+    {
+      "source": "spatial-storytelling",
+      "target": "forced-perspective",
+      "type": "parent"
+    },
+    {
+      "source": "forced-perspective",
+      "target": "the-berm",
+      "type": "contrasts-with"
+    },
+    {
+      "source": "forced-perspective",
+      "target": "go-away-green",
+      "type": "applies-to"
+    },
+    {
+      "source": "spatial-storytelling",
+      "target": "weenies",
+      "type": "parent"
+    },
+    {
+      "source": "spatial-storytelling",
+      "target": "the-berm",
+      "type": "parent"
+    },
+    {
+      "source": "spatial-storytelling",
+      "target": "park-structure",
+      "type": "applies-to"
+    },
+    {
+      "source": "spatial-storytelling",
+      "target": "misdirection",
+      "type": "enables"
+    },
+    {
+      "source": "the-berm",
+      "target": "go-away-green",
+      "type": "enables"
+    },
+    {
+      "source": "the-berm",
+      "target": "park-structure",
+      "type": "part-of"
+    },
+    {
+      "source": "weenies",
+      "target": "hub-and-spoke",
+      "type": "enables"
+    },
+    {
+      "source": "weenies",
+      "target": "park-structure",
+      "type": "applies-to"
+    }
+  ]
+}

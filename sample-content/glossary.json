@@ -1,0 +1,28 @@
+{
+  "_placeholder": "SAMPLE CONTENT — placeholder glossary following the content contract.",
+  "glossary": [
+    { "term": "Weenie", "definition": "A tall, eye-catching landmark placed to pull guests through a space — Walt Disney's nickname for it, after the sausages used to lead a dog.", "concept": "weenies", "land": "story-experience", "aliases": ["visual magnet", "landmark"] },
+    { "term": "Forced perspective", "definition": "Making things look bigger, taller or further away by shrinking the parts that are higher up or further back.", "concept": "forced-perspective", "land": "story-experience" },
+    { "term": "Berm", "definition": "A raised earth bank, usually planted, that hides the outside world from the park.", "concept": "the-berm", "land": "story-experience" },
+    { "term": "Peak-end rule", "definition": "People judge an experience mostly by its most intense moment and its ending, not by its average or length.", "concept": "peak-end-rule", "land": "human-factors" },
+    { "term": "Sensory conflict", "definition": "A mismatch between what the eyes report and what the inner ear feels; the leading explanation for motion sickness.", "concept": "sensory-conflict-theory", "land": "human-factors", "aliases": ["sensory mismatch"] },
+    { "term": "Occupied time", "definition": "Waiting time filled with something to do or look at; it feels shorter than empty time.", "concept": "occupied-time", "land": "human-factors" },
+    { "term": "Hub-and-spoke", "definition": "A park layout where lands radiate from a central plaza so guests can always return to the middle and pick another direction.", "concept": "hub-and-spoke", "land": "masterplanning" },
+    { "term": "LSM", "definition": "Linear synchronous motor — magnets on the train and powered coils in the track push the train forward without a chain.", "concept": "lsm-lim-launch", "land": "ride-systems", "aliases": ["linear synchronous motor"] },
+    { "term": "LIM", "definition": "Linear induction motor — a launch system that induces current in a metal fin on the train to push it along.", "concept": "lsm-lim-launch", "land": "ride-systems", "aliases": ["linear induction motor"] },
+    { "term": "G-force", "definition": "How hard you are being pushed into (or lifted out of) your seat, measured in multiples of normal gravity.", "concept": "g-force-basics", "land": "ride-engineering", "aliases": ["g", "g-load"] },
+    { "term": "Airtime", "definition": "The floating feeling when a coaster crests a hill fast enough that the seat falls away beneath you (negative or near-zero g).", "concept": "airtime-and-negative-g", "land": "ride-engineering", "aliases": ["negative g", "ejector airtime", "floater airtime"] },
+    { "term": "Clothoid loop", "definition": "A teardrop-shaped vertical loop whose curve tightens gradually, keeping g-forces comfortable all the way round.", "concept": "clothoid-loop", "land": "ride-engineering", "aliases": ["Euler spiral loop", "teardrop loop"] },
+    { "term": "FMEA", "definition": "Failure Mode and Effects Analysis — a table of everything that could go wrong, how bad it would be, and how it is prevented.", "concept": "risk-assessment", "land": "safety-standards" },
+    { "term": "Block zone", "definition": "A section of track that only one train may occupy at a time, enforced by the ride control system.", "concept": "ride-control-systems", "land": "safety-standards", "aliases": ["block section"] },
+    { "term": "Pepper's ghost", "definition": "A Victorian stage trick: a lit figure reflects in a sheet of angled glass so a transparent 'ghost' appears in the scene.", "concept": "peppers-ghost", "land": "show-technology" },
+    { "term": "Go-away green", "definition": "A family of dull greens and greys used to paint things guests are not meant to notice.", "concept": "go-away-green", "land": "sensory-environment", "aliases": ["no-see-um green", "blending paint"] },
+    { "term": "Blue sky", "definition": "The earliest, no-limits idea phase of attraction design before budgets and feasibility narrow things down.", "concept": "pipeline-overview", "land": "design-process" },
+    { "term": "Value engineering", "definition": "Trimming scope or cost while trying to keep the parts of an experience that matter most.", "concept": "scope-and-value-engineering", "land": "design-process", "aliases": ["VE"] },
+    { "term": "Throughput", "definition": "How many guests an attraction can serve per hour, also called hourly capacity or THRC.", "concept": "throughput-math", "land": "operations-business", "aliases": ["hourly capacity", "THRC", "pph"] },
+    { "term": "Dispatch interval", "definition": "The time between one vehicle leaving the station and the next one leaving.", "concept": "dispatch-interval", "land": "operations-business", "aliases": ["cycle time", "headway"] },
+    { "term": "Switchback railway", "definition": "The 1884 Coney Island gravity ride that is usually called the first American roller coaster.", "concept": "early-coasters", "land": "history" },
+    { "term": "Digital twin", "definition": "A live computer model of a ride or park, fed by sensors, used to predict and test changes.", "land": "ai-future" },
+    { "term": "Show producer", "definition": "The person who leads an attraction project across creative, engineering and construction teams.", "concept": "creative-roles", "land": "careers" }
+  ]
+}

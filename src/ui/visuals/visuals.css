@@ -1,0 +1,63 @@
+.visual {
+  margin: 0 0 1.1rem;
+}
+.visual__frame {
+  padding: 14px 16px 10px;
+  overflow: hidden;
+  transform: rotate(-0.35deg);
+}
+.visual:nth-child(even) .visual__frame {
+  transform: rotate(0.3deg);
+}
+.visual__caption {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin: 0.45rem 0.3rem 0;
+  font-style: italic;
+}
+.visual__loading,
+.visual__error {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+.visual__error {
+  color: #a33;
+}
+.visual__mermaid svg,
+.visual__svg svg,
+.visual__chart svg,
+.visual__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.visual__svg svg {
+  width: 100%;
+}
+.visual__chart {
+  width: 100%;
+}
+/* hand-drawn feel for inline SVG + mermaid strokes */
+.visual__mermaid svg *,
+.visual__svg svg * {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.visual__mermaid svg .node rect,
+.visual__mermaid svg .node polygon,
+.visual__mermaid svg .node circle,
+.visual__mermaid svg .node path {
+  filter: drop-shadow(1px 2px 0 rgba(90, 60, 30, 0.22));
+}
+.visual__formula {
+  padding: 0.4rem 0.2rem;
+  overflow-x: auto;
+  font-size: 1.05rem;
+}
+.visual__formula .katex-display {
+  margin: 0.5rem 0;
+}

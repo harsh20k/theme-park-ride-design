@@ -1,0 +1,60 @@
+{
+  "_placeholder": "SAMPLE CONTENT — placeholder learning paths following the content contract.",
+  "paths": [
+    {
+      "id": "first-visit",
+      "title": "First Visit: how a park works on you",
+      "description": "A short loop through the ideas that shape a day in a park — space, waiting, memory.",
+      "level": "beginner",
+      "duration": "30 minutes",
+      "steps": [
+        { "concept": "spatial-storytelling", "note": "Start with how space tells a story." },
+        { "concept": "weenies", "note": "Why you walk towards the castle." },
+        { "concept": "hub-and-spoke", "note": "The map that makes a day feel easy." },
+        { "concept": "perceived-vs-actual-wait", "note": "Why 20 minutes can feel like 5 — or 40." },
+        { "concept": "occupied-time" },
+        { "concept": "peak-end-rule", "note": "What you'll actually remember." }
+      ]
+    },
+    {
+      "id": "coaster-physics",
+      "title": "Coaster Physics: from launch to loop",
+      "description": "Enough physics to read a coaster layout like an engineer.",
+      "level": "intermediate",
+      "duration": "45 minutes",
+      "steps": [
+        "roller-coasters",
+        "launched-coasters",
+        "lsm-lim-launch",
+        "g-force-basics",
+        "airtime-and-negative-g",
+        "track-geometry",
+        "clothoid-loop",
+        { "concept": "motion-sickness", "note": "Why the body sets the limits." },
+        "risk-assessment"
+      ]
+    },
+    {
+      "id": "run-the-park",
+      "title": "Run the Park: capacity, queues and control",
+      "description": "The operations side — numbers, dispatch and the systems that keep it safe.",
+      "level": "intermediate",
+      "duration": "30 minutes",
+      "steps": [
+        "throughput-and-queueing",
+        "throughput-math",
+        "dispatch-interval",
+        "ride-control-systems",
+        "wait-time-prediction"
+      ]
+    },
+    {
+      "id": "make-magic",
+      "title": "Make Magic: illusions, light and craft",
+      "description": "The show-tech tricks and the process that gets them built.",
+      "level": "beginner",
+      "duration": "30 minutes",
+      "steps": ["illusions", "peppers-ghost", "misdirection", "light-and-color", "go-away-green", "forced-perspective", "pipeline-overview", "creative-roles"]
+    }
+  ]
+}

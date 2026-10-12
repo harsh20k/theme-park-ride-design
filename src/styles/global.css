@@ -1,0 +1,207 @@
+/* Papercraft Park — global paper theme */
+:root {
+  --paper: #f6ecd9;
+  --paper-2: #efe1c6;
+  --paper-3: #e6d4b4;
+  --card: #fbf5e9;
+  --ink: #3b2f2a;
+  --ink-soft: #6c5a50;
+  --ink-faint: #9b8a7c;
+  --line: #d9c7a6;
+  --accent: #c2566a;
+  --accent-2: #d9962b;
+  --sky: #cfe6ef;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 6px 14px rgba(60, 40, 20, 0.14), 0 1px 2px rgba(60, 40, 20, 0.18);
+  --shadow-lift: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 14px 30px rgba(60, 40, 20, 0.2), 0 2px 4px rgba(60, 40, 20, 0.2);
+  --radius: 14px;
+  --font-display: 'Fredoka', 'Nunito', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Nunito', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --is-a: #7657b5;
+  --part-of: #3f78b9;
+  --causes: #c2566a;
+  --enables: #2f8f86;
+  --limits: #d6782a;
+  --contrasts-with: #8a7f6a;
+  --applies-to: #5f9b55;
+  --example-of: #d9962b;
+  --parent: #b5a48e;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  background-image: radial-gradient(rgba(120, 90, 50, 0.07) 0.6px, transparent 0.6px), radial-gradient(rgba(255, 255, 255, 0.45) 0.7px, transparent 0.7px);
+  background-size: 7px 7px, 11px 11px;
+  background-position: 0 0, 3px 5px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent-2);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- paper primitives ---------- */
+.paper {
+  background: var(--card);
+  background-image: radial-gradient(rgba(120, 90, 50, 0.06) 0.6px, transparent 0.6px);
+  background-size: 6px 6px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(120, 90, 50, 0.12);
+  position: relative;
+}
+
+.paper--cut {
+  /* slightly imperfect hand-cut edge */
+  clip-path: polygon(0.6% 0.8%, 99.5% 0%, 99.8% 99.2%, 0.2% 100%);
+  border-radius: 10px;
+}
+
+.paper-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55em 1em;
+  border: 1.5px solid rgba(80, 55, 30, 0.35);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 0 rgba(80, 55, 30, 0.25), 0 4px 10px rgba(60, 40, 20, 0.12);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  transform: rotate(-0.3deg);
+}
+.paper-btn:hover {
+  transform: translateY(-1px) rotate(0.2deg);
+  box-shadow: 0 3px 0 rgba(80, 55, 30, 0.25), 0 8px 16px rgba(60, 40, 20, 0.16);
+}
+.paper-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(80, 55, 30, 0.25);
+}
+.paper-btn--accent {
+  background: var(--accent);
+  color: #fff;
+  border-color: rgba(60, 20, 30, 0.4);
+}
+.paper-btn--accent kbd {
+  color: var(--ink);
+}
+.paper-btn--small {
+  padding: 0.35em 0.75em;
+  font-size: 0.85rem;
+}
+
+.tape {
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  background: rgba(255, 240, 200, 0.75);
+  border: 1px dashed rgba(120, 90, 50, 0.25);
+  transform: rotate(-6deg);
+  top: -9px;
+  left: 24px;
+  pointer-events: none;
+}
+.tape--right {
+  left: auto;
+  right: 24px;
+  transform: rotate(5deg);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  background: var(--paper-3);
+  color: var(--ink-soft);
+}
+.badge--sample {
+  background: #ffe9a8;
+  color: #7a5200;
+  border: 1px dashed #c99b2a;
+}
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  padding: 0.1em 0.45em;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--card);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------- scrollbars ---------- */
+.scroll {
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
