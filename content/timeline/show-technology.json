@@ -1,0 +1,74 @@
+[
+ {
+  "date": "1862-12-24",
+  "precision": "day",
+  "title": "Pepper's ghost premieres at the Royal Polytechnic",
+  "description": "John Henry Pepper stages Henry Dircks's angled-glass ghost illusion in London; the pair patent it in 1863.",
+  "land": "show-technology",
+  "concept": "peppers-ghost",
+  "source": "wikipedia-peppers-ghost"
+ },
+ {
+  "date": "1963-06-23",
+  "precision": "day",
+  "title": "Enchanted Tiki Room opens at Disneyland",
+  "description": "First Audio-Animatronics show: roughly 150 birds, flowers and tikis driven from recorded tape.",
+  "land": "show-technology",
+  "concept": "audio-animatronics-history",
+  "source": "wikipedia-enchanted-tiki-room"
+ },
+ {
+  "date": "1969-08-09",
+  "precision": "day",
+  "title": "The Haunted Mansion opens at Disneyland",
+  "description": "Its ballroom becomes the most famous Pepper's ghost scene, and filmed faces projected onto busts foreshadow projection mapping.",
+  "land": "show-technology",
+  "concept": "illusions",
+  "source": "wikipedia-the-haunted-mansion"
+ },
+ {
+  "date": "1986",
+  "precision": "year",
+  "title": "USITT publishes DMX512",
+  "description": "A single serial standard for lighting control replaces proprietary dimmer protocols; later ANSI E1.11.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols",
+  "source": "wikipedia-dmx512"
+ },
+ {
+  "date": "1992-05-13",
+  "precision": "day",
+  "title": "Fantasmic! opens at Disneyland",
+  "description": "Animation projected onto three mist screens, with fire and pyrotechnics, sets the template for water-screen spectaculars.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains",
+  "source": "wikipedia-fantasmic"
+ },
+ {
+  "date": "2010-06-11",
+  "precision": "day",
+  "title": "World of Color opens at Disney California Adventure",
+  "description": "More than 1,200 fountains and a 380-foot combined mist screen.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains",
+  "source": "wikipedia-world-of-color"
+ },
+ {
+  "date": "2015-05-09",
+  "precision": "day",
+  "title": "The Hatbox Ghost returns with a projected face",
+  "description": "The illusion that failed in 1969 under ambient light is rebuilt using projection mapping on the figure.",
+  "land": "show-technology",
+  "concept": "projection-mapping",
+  "source": "wikipedia-hatbox-ghost"
+ },
+ {
+  "date": "2018-02",
+  "precision": "month",
+  "title": "1,218 drones fly at the Pyeongchang Winter Olympics opening",
+  "description": "Intel Shooting Star drones set a world record for simultaneous drones, moving drone shows into the mainstream.",
+  "land": "show-technology",
+  "concept": "nighttime-spectaculars",
+  "source": "wikipedia-drone-show"
+ }
+]

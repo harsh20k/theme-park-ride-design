@@ -1,0 +1,152 @@
+[
+ {
+  "term": "Block",
+  "definition": "A section of track that only one train may occupy at a time, guarded by a brake or lift at its exit.",
+  "land": "ride-systems",
+  "concept": "block-system"
+ },
+ {
+  "term": "Lift hill",
+  "definition": "The chain or cable slope that gives a coaster train its stored energy before the first drop.",
+  "land": "ride-systems",
+  "concept": "coaster-anatomy"
+ },
+ {
+  "term": "Brake run",
+  "definition": "A stretch of track with brakes that slows or stops a train, usually before the station.",
+  "land": "ride-systems",
+  "concept": "coaster-anatomy"
+ },
+ {
+  "term": "Upstop wheel",
+  "definition": "The wheel that runs under the rail so a train cannot lift off the track.",
+  "land": "ride-systems",
+  "concept": "coaster-anatomy"
+ },
+ {
+  "term": "I-Box track",
+  "definition": "Rocky Mountain Construction's flat-topped steel rail used to convert wooden coasters into hybrids.",
+  "land": "ride-systems",
+  "concept": "hybrid-coasters"
+ },
+ {
+  "term": "LSM",
+  "definition": "Linear synchronous motor: track coils that push permanent magnets on the train to launch or brake it.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch"
+ },
+ {
+  "term": "LIM",
+  "definition": "Linear induction motor: track coils that push a plain metal fin on the train by inducing currents in it.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch"
+ },
+ {
+  "term": "Catch car",
+  "definition": "A sled running between the rails that hooks a train and tows it during a hydraulic or pneumatic launch.",
+  "land": "ride-systems",
+  "concept": "hydraulic-launch"
+ },
+ {
+  "term": "Accumulator",
+  "definition": "A pressure tank where hydraulic fluid compresses nitrogen gas to store launch energy.",
+  "land": "ride-systems",
+  "concept": "hydraulic-launch"
+ },
+ {
+  "term": "Holding brake",
+  "definition": "The brake at the lip of a dive coaster's drop that pauses the train face-down before release.",
+  "land": "ride-systems",
+  "concept": "dive-coasters"
+ },
+ {
+  "term": "Shuttle",
+  "definition": "A coaster layout that does not form a circuit; the train reverses and rides the same track backward.",
+  "land": "ride-systems",
+  "concept": "shuttle-coasters"
+ },
+ {
+  "term": "Switch track",
+  "definition": "A movable section of track that sends a train onto a different route mid-ride.",
+  "land": "ride-systems",
+  "concept": "multi-launch-coasters"
+ },
+ {
+  "term": "Omnimover",
+  "definition": "A continuous chain of swivelling pod vehicles that loads from a moving belt and never stops.",
+  "land": "ride-systems",
+  "concept": "omnimover"
+ },
+ {
+  "term": "Trackless vehicle",
+  "definition": "A battery-powered ride vehicle guided by floor markers or a buried wire instead of a rail.",
+  "land": "ride-systems",
+  "concept": "trackless-ride"
+ },
+ {
+  "term": "Enhanced Motion Vehicle",
+  "definition": "A Disney ride vehicle with a motion base mounted on a slow, steerable chassis.",
+  "land": "ride-systems",
+  "concept": "enhanced-motion-vehicle"
+ },
+ {
+  "term": "Degrees of freedom",
+  "definition": "The number of independent ways a platform can move, up to six: surge, sway, heave, roll, pitch and yaw.",
+  "land": "ride-systems",
+  "concept": "motion-base"
+ },
+ {
+  "term": "Stewart platform",
+  "definition": "A six-legged hexapod that moves a platform in all six degrees of freedom.",
+  "land": "ride-systems",
+  "concept": "stewart-platform"
+ },
+ {
+  "term": "Washout",
+  "definition": "Drifting a motion platform back to centre slower than riders can feel, so it is ready for the next cue.",
+  "land": "ride-systems",
+  "concept": "motion-cueing"
+ },
+ {
+  "term": "Tilt coordination",
+  "definition": "Leaning a simulator seat slowly so gravity imitates a sustained acceleration.",
+  "land": "ride-systems",
+  "concept": "motion-cueing"
+ },
+ {
+  "term": "Flying theatre",
+  "definition": "A simulator whose seats are lifted into a dome screen with riders' feet hanging free.",
+  "land": "ride-systems",
+  "concept": "flying-theatre"
+ },
+ {
+  "term": "Spillwater",
+  "definition": "A water-filled trough at the end of a track section that slows a boat on a flume or water coaster.",
+  "land": "ride-systems",
+  "concept": "water-coaster"
+ },
+ {
+  "term": "Splashdown",
+  "definition": "The landing of a water-ride boat into a pool that stops it and throws up a wave.",
+  "land": "ride-systems",
+  "concept": "log-flume"
+ },
+ {
+  "term": "Eddy-current brake",
+  "definition": "A contactless brake in which fins pass magnets and the induced currents slow the vehicle.",
+  "land": "ride-systems",
+  "concept": "drop-tower"
+ },
+ {
+  "term": "Straddle-beam monorail",
+  "definition": "A monorail whose car wraps over the top of a single beam on rubber tyres.",
+  "land": "ride-systems",
+  "concept": "monorail-and-people-movers"
+ },
+ {
+  "term": "Thrill rating",
+  "definition": "A park's published scale, from gentle to aggressive, telling guests how intense a ride is.",
+  "land": "ride-systems",
+  "concept": "ride-classification"
+ }
+]

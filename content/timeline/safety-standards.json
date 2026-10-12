@@ -1,0 +1,74 @@
+[
+ {
+  "date": "1978",
+  "precision": "year",
+  "title": "ASTM Committee F24 formed",
+  "description": "ASTM International creates Committee F24 on Amusement Rides and Devices, the home of F2291, F770, F1193 and F2974.",
+  "land": "safety-standards",
+  "concept": "astm-f24",
+  "source": "astm-f24-committee"
+ },
+ {
+  "date": "2003-09-05",
+  "precision": "day",
+  "title": "Big Thunder Mountain Railroad derailment at Disneyland",
+  "description": "A guide wheel comes off a train and the locomotive is forced onto the first car; one guest dies. Maintenance omissions are later acknowledged.",
+  "land": "safety-standards",
+  "concept": "mechanical-failure-cases",
+  "source": "tpi-big-thunder-2003"
+ },
+ {
+  "date": "2015",
+  "precision": "year",
+  "title": "ISO 17842-1 first edition published",
+  "description": "ISO/TC 254 publishes the first international ride design standard, later withdrawn in favour of the 2023 edition.",
+  "land": "safety-standards",
+  "concept": "iso-17842",
+  "source": "iso-17842-1-2023"
+ },
+ {
+  "date": "2015-06-02",
+  "precision": "day",
+  "title": "The Smiler collision at Alton Towers",
+  "description": "A loaded train is released into a stalled empty train after engineers override the block system; several riders are seriously injured.",
+  "land": "safety-standards",
+  "concept": "human-factors-incidents",
+  "source": "towersstreet-smiler-fine-2016"
+ },
+ {
+  "date": "2016-10-25",
+  "precision": "day",
+  "title": "Thunder River Rapids tragedy at Dreamworld",
+  "description": "A pump failure strands a raft on the conveyor and the following raft collides with it; four people die.",
+  "land": "safety-standards",
+  "concept": "design-oversight-cases",
+  "source": "qld-coroner-dreamworld-2020"
+ },
+ {
+  "date": "2017-07-26",
+  "precision": "day",
+  "title": "Fire Ball failure at the Ohio State Fair",
+  "description": "A gondola arm separates in motion; one rider dies. The manufacturer attributes it to hidden internal corrosion and halts similar rides worldwide.",
+  "land": "safety-standards",
+  "concept": "mechanical-failure-cases",
+  "source": "wosu-fire-ball-corrosion-2017"
+ },
+ {
+  "date": "2020-02-24",
+  "precision": "day",
+  "title": "Queensland coroner delivers Dreamworld findings",
+  "description": "Coroner James McDougall finds no engineering risk assessment was ever done and calls the park's safety systems frighteningly unsophisticated.",
+  "land": "safety-standards",
+  "concept": "safety-culture",
+  "source": "qld-coroner-dreamworld-2020"
+ },
+ {
+  "date": "2023-09",
+  "precision": "month",
+  "title": "ISO 17842-1:2023 second edition published",
+  "description": "The revised international design standard replaces the 2015 edition.",
+  "land": "safety-standards",
+  "concept": "iso-17842",
+  "source": "iso-17842-1-2023"
+ }
+]

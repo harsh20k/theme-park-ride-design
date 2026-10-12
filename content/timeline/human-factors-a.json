@@ -1,0 +1,74 @@
+[
+ {
+  "date": "1908",
+  "precision": "year",
+  "title": "Yerkes and Dodson publish the inverted-U arousal law",
+  "description": "Their mouse-learning study becomes the basis of the idea that there is an optimal level of arousal.",
+  "land": "human-factors",
+  "concept": "optimal-arousal",
+  "source": "yerkes-dodson-1908"
+ },
+ {
+  "date": "1975",
+  "precision": "year",
+  "title": "Reason and Brand publish Motion Sickness",
+  "description": "The monograph sets out sensory conflict theory, still the default explanation for simulator and ride sickness.",
+  "land": "human-factors",
+  "concept": "sensory-conflict-theory",
+  "source": "reason-brand-1975-motion-sickness"
+ },
+ {
+  "date": "1985",
+  "precision": "year",
+  "title": "Maister's The Psychology of Waiting Lines appears",
+  "description": "Eight propositions about perceived waits, published in the collection The Service Encounter.",
+  "land": "human-factors",
+  "concept": "waiting",
+  "source": "maister-psychology-of-waiting-lines"
+ },
+ {
+  "date": "1987-12",
+  "precision": "month",
+  "title": "Larson's queue-fairness paper in Operations Research",
+  "description": "Social justice and the psychology of queueing, including the case for serpentine single lines.",
+  "land": "human-factors",
+  "concept": "queue-fairness",
+  "source": "larson-1987-queue-social-justice"
+ },
+ {
+  "date": "1991-09",
+  "precision": "month",
+  "title": "Riccio and Stoffregen propose postural instability theory",
+  "description": "An ecological alternative to sensory conflict as the cause of motion sickness.",
+  "land": "human-factors",
+  "concept": "postural-instability-theory",
+  "source": "riccio-stoffregen-1991-postural-instability"
+ },
+ {
+  "date": "1993",
+  "precision": "year",
+  "title": "Kahneman and colleagues publish the cold-water peak-end study",
+  "description": "When More Pain Is Preferred to Less establishes the peak-end rule.",
+  "land": "human-factors",
+  "concept": "peak-end-rule",
+  "source": "kahneman-peak-end-1993"
+ },
+ {
+  "date": "1999",
+  "precision": "year",
+  "title": "Disney introduces FastPass",
+  "description": "The first large-scale free virtual queue in a theme park, launched late in 1999.",
+  "land": "human-factors",
+  "concept": "virtual-queues",
+  "source": "wikipedia-disney-virtual-queues"
+ },
+ {
+  "date": "2011-03",
+  "precision": "month",
+  "title": "Haunted Mansion interactive queue previews at Magic Kingdom",
+  "description": "Touch-responsive crypts and instruments turn waiting into play.",
+  "land": "human-factors",
+  "concept": "interactive-queues",
+  "source": "laughingplace-haunted-mansion-queue-2011"
+ }
+]

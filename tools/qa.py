@@ -30,12 +30,16 @@ def load_json_dir(sub, land=None):
     return out
 
 def body_parts(body):
-    """Return (visual_kinds_found, prose_text, explore_ids)."""
+    """Return (visual_kinds_found, word_count, explore_ids, prose_text)."""
     kinds = set()
+    explore = []
+    m = re.search(r"^##\s*Explore further\s*$(.*)\Z", body, re.M | re.S)
     text = body
-    # strip fenced blocks, noting their kind
-    def fence(m):
-        lang = (m.group(1) or "").strip().lower()
+    if m:
+        explore = re.findall(r"^\s*[-*]\s*`([^`]+)`", m.group(1), re.M)
+        text = body[:m.start()]
+    def fence(mm):
+        lang = (mm.group(1) or "").strip().lower()
         if lang == "mermaid": kinds.add("mermaid")
         elif lang in ("vega-lite", "vegalite", "json vega-lite"): kinds.add("chart")
         return "\n"
@@ -48,16 +52,8 @@ def body_parts(body):
     text = re.sub(r"^\*(Photo|Image|Diagram|Illustration)[^\n]*$", "", text, flags=re.M)
     if re.search(r"^>\s*\*\*Formula", text, re.M):
         kinds.add("formula")
-        text = re.sub(r"^>.*$", "", text, flags=re.M)
-        # drop the 'where' bullets right after the formula
-        text = re.sub(r"(?:^\s*[-*]\s+\$?[^\n]*\$?[^\n]*$\n?)+", lambda m: "" if "$" in m.group(0) or "where" in m.group(0).lower() or len(m.group(0)) < 400 else m.group(0), text, flags=re.M)
-    explore = []
-    m = re.search(r"^##\s*Explore further\s*$(.*)\Z", text, re.M | re.S)
-    if m:
-        explore = re.findall(r"^\s*[-*]\s*`([^`]+)`", m.group(1), re.M)
-        text = text[:m.start()]
-    if "image" in kinds and len(explore) == 0 and "## Explore further" not in body:
-        pass
+        # remove the formula blockquote plus the contiguous 'where' bullet list that follows it
+        text = re.sub(r"(^>.*\n)+(\s*\n)?(^\s*[-*]\s.*\n?)*", "\n", text, flags=re.M)
     prose = re.sub(r"<[^>]+>", " ", text)
     prose = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", prose)
     prose = re.sub(r"^#+.*$", "", prose, flags=re.M)
@@ -99,7 +95,8 @@ def check(land=None, build=False):
         if fm.get("land") != n["land"]: errors.append(f"{p}: land mismatch")
         if fm.get("level") not in LEVELS: errors.append(f"{p}: bad level")
         if fm.get("abstraction") != n["abstraction"]: errors.append(f"{p}: abstraction {fm.get('abstraction')} != {n['abstraction']}")
-        if (fm.get("parent") or None) != n["parent"]: errors.append(f"{p}: parent {fm.get('parent')} != {n['parent']}")
+        want_parent = None if n["depth"] == 1 else n["parent"]
+        if (fm.get("parent") or None) not in (want_parent, n["parent"]): errors.append(f"{p}: parent {fm.get('parent')} != {want_parent}")
         if sorted(fm.get("children") or []) != sorted(n["children"]): errors.append(f"{p}: children {fm.get('children')} != {n['children']}")
         rels = fm.get("relations") or []
         if len(rels) < 3: errors.append(f"{p}: only {len(rels)} relations (need >= 3)")
@@ -181,6 +178,8 @@ def build_outputs(cards, resources):
     for src, r in resources:
         if src == "__error__": continue
         u = r["url"].rstrip("/")
+        if r["id"] in {m["id"] for m in merged}:
+            continue
         if u in by_url:
             if r["id"] != by_url[u]: remap[r["id"]] = by_url[u]
             continue
@@ -198,7 +197,14 @@ def build_outputs(cards, resources):
     (ROOT / "content" / "media" / "credits.json").write_text(json.dumps(cr, indent=1))
     print(f"graph: {len(nodes)} nodes, {len(edges)} edges, orphans={orphans}")
     print(f"resources: {len(merged)} unique ({len(resources)} raw); glossary {len(gl2)}; timeline {len(tl)}; credits {len(cr)}")
-    if remap: print("resource id remaps needed in cards:", remap)
+    if remap:
+        changed = 0
+        for f in (ROOT / "content" / "concepts").rglob("*.md"):
+            t = f.read_text(); t2 = t
+            for old, new in remap.items():
+                t2 = re.sub(rf"(?<![\w-]){re.escape(old)}(?![\w-])", new, t2)
+            if t2 != t: f.write_text(t2); changed += 1
+        print(f"resource id remaps applied: {len(remap)} ids in {changed} cards")
     top = deg.most_common(15)
     print("most connected:", top)
 

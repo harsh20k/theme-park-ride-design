@@ -1,0 +1,152 @@
+[
+  {
+    "term": "G-force",
+    "definition": "The push a seat or restraint gives a rider compared with sitting still, expressed as a multiple of gravity.",
+    "land": "ride-engineering",
+    "concept": "g-force-basics"
+  },
+  {
+    "term": "Airtime",
+    "definition": "The floating feeling near zero g when the track drops away faster than gravity pulls the rider.",
+    "land": "ride-engineering",
+    "concept": "airtime-and-negative-g"
+  },
+  {
+    "term": "Lateral g",
+    "definition": "Sideways force on a rider in a turn, reduced by banking the track.",
+    "land": "ride-engineering",
+    "concept": "lateral-g"
+  },
+  {
+    "term": "Jerk",
+    "definition": "The rate at which acceleration changes; sudden jerk makes muscles overshoot and heads whip.",
+    "land": "ride-engineering",
+    "concept": "jerk-and-onset-rate"
+  },
+  {
+    "term": "Greyout",
+    "definition": "Dimming, colourless vision caused by sustained positive g draining blood from the head.",
+    "land": "ride-engineering",
+    "concept": "greyout-and-redout"
+  },
+  {
+    "term": "Acceleration envelope",
+    "definition": "A closed region of allowed combined accelerations, by duration, that a ride must stay inside.",
+    "land": "ride-engineering",
+    "concept": "acceleration-envelopes"
+  },
+  {
+    "term": "Clothoid",
+    "definition": "A spiral whose curvature grows in proportion to distance along it, used for loops and transitions.",
+    "land": "ride-engineering",
+    "concept": "clothoid-loop"
+  },
+  {
+    "term": "Heartline",
+    "definition": "The roll axis chosen to pass through the average rider's chest so that rolls feel nearly force-free.",
+    "land": "ride-engineering",
+    "concept": "heartline"
+  },
+  {
+    "term": "Superelevation",
+    "definition": "The railway term for banking: raising the outer rail of a curve so the force comes through the seat.",
+    "land": "ride-engineering",
+    "concept": "banking"
+  },
+  {
+    "term": "Transition curve",
+    "definition": "A length of track where curvature and bank ramp gradually between a straight and a curve.",
+    "land": "ride-engineering",
+    "concept": "spline-transitions"
+  },
+  {
+    "term": "I-Box track",
+    "definition": "Rocky Mountain Construction's steel track of paired I-beams that bolts to wooden supports.",
+    "land": "ride-engineering",
+    "concept": "track-types"
+  },
+  {
+    "term": "Rolling resistance",
+    "definition": "Energy lost as a tyre squashes and recovers on the rail, a small fraction of the wheel load.",
+    "land": "ride-engineering",
+    "concept": "friction-and-drag"
+  },
+  {
+    "term": "Chain dog",
+    "definition": "A pivoting hook under the train that catches the lift chain.",
+    "land": "ride-engineering",
+    "concept": "lift-systems"
+  },
+  {
+    "term": "Valley",
+    "definition": "A spot where a slow train runs out of momentum and rolls back to the low point, stranding riders.",
+    "land": "ride-engineering",
+    "concept": "speed-profile"
+  },
+  {
+    "term": "Block",
+    "definition": "A section of track with its own stop and start control; only one train may occupy it.",
+    "land": "ride-engineering",
+    "concept": "block-system"
+  },
+  {
+    "term": "Trim brake",
+    "definition": "A brake that slows a train to manage speed or forces but cannot stop it.",
+    "land": "ride-engineering",
+    "concept": "brake-types"
+  },
+  {
+    "term": "Eddy current brake",
+    "definition": "A contactless brake in which magnets induce currents in a moving fin, producing drag that rises with speed.",
+    "land": "ride-engineering",
+    "concept": "brake-types"
+  },
+  {
+    "term": "Anti-rollback dog",
+    "definition": "A pivoting pawl under the car that drops into a ratchet so the train can climb but never slide back.",
+    "land": "ride-engineering",
+    "concept": "anti-rollback"
+  },
+  {
+    "term": "Proximity switch",
+    "definition": "An inductive sensor that detects a metal flag passing without contact, used to count cars.",
+    "land": "ride-engineering",
+    "concept": "sensors-and-switches"
+  },
+  {
+    "term": "Upstop wheel",
+    "definition": "A wheel running under the rail that stops the train lifting off in inversions and over hills.",
+    "land": "ride-engineering",
+    "concept": "wheels-and-bogies"
+  },
+  {
+    "term": "Transfer track",
+    "definition": "A sliding or rotating track section that moves trains onto a storage or maintenance siding.",
+    "land": "ride-engineering",
+    "concept": "drive-tires-and-transfer-tracks"
+  },
+  {
+    "term": "S-N curve",
+    "definition": "A plot of stress range against cycles to failure used to predict fatigue life.",
+    "land": "ride-engineering",
+    "concept": "fatigue"
+  },
+  {
+    "term": "Hot-dip galvanizing",
+    "definition": "Coating steel by dipping it in molten zinc, which protects as a barrier and sacrificially.",
+    "land": "ride-engineering",
+    "concept": "corrosion-and-weathering"
+  },
+  {
+    "term": "Head Injury Criterion",
+    "definition": "A crash-test score computed from the head's acceleration over a short window, used to compare coasters with other activities.",
+    "land": "ride-engineering",
+    "concept": "head-and-neck-loads"
+  },
+  {
+    "term": "Headbanging",
+    "definition": "Repeated strikes of the head against a hard restraint caused by lateral jolts on a rough ride.",
+    "land": "ride-engineering",
+    "concept": "rough-rides"
+  }
+]

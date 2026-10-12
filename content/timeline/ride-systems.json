@@ -1,0 +1,74 @@
+[
+ {
+  "date": "1959-06-14",
+  "precision": "day",
+  "title": "Matterhorn Bobsleds opens at Disneyland",
+  "description": "First permanent tubular-steel roller coaster, built by Arrow Development.",
+  "land": "ride-systems",
+  "concept": "steel-coasters",
+  "source": "wikipedia-matterhorn-bobsleds"
+ },
+ {
+  "date": "1967-08-05",
+  "precision": "day",
+  "title": "Adventure Thru Inner Space opens",
+  "description": "First attraction to use Disney's Omnimover continuous-chain vehicle system.",
+  "land": "ride-systems",
+  "concept": "omnimover",
+  "source": "wikipedia-adventure-thru-inner-space"
+ },
+ {
+  "date": "1977",
+  "precision": "year",
+  "title": "King Kobra opens at Kings Dominion",
+  "description": "First Schwarzkopf Shuttle Loop, launched by a dropped weight; flywheel launches followed in 1978.",
+  "land": "ride-systems",
+  "concept": "flywheel-and-catapult-launch",
+  "source": "wikipedia-shuttle-loop"
+ },
+ {
+  "date": "1992-05-09",
+  "precision": "day",
+  "title": "Batman: The Ride opens at Six Flags Great America",
+  "description": "First inverted roller coaster, by Bolliger & Mabillard.",
+  "land": "ride-systems",
+  "concept": "inverted-coasters",
+  "source": "wikipedia-inverted-roller-coaster"
+ },
+ {
+  "date": "1995-03-04",
+  "precision": "day",
+  "title": "Indiana Jones Adventure opens at Disneyland",
+  "description": "Debut of the Enhanced Motion Vehicle, a motion base on a steerable chassis.",
+  "land": "ride-systems",
+  "concept": "enhanced-motion-vehicle",
+  "source": "wikipedia-indiana-jones-adventure"
+ },
+ {
+  "date": "1996-06-18",
+  "precision": "day",
+  "title": "Flight of Fear opens at Kings Island and Kings Dominion",
+  "description": "First roller coasters launched by linear induction motors, by Premier Rides.",
+  "land": "ride-systems",
+  "concept": "lsm-lim-launch",
+  "source": "wikipedia-flight-of-fear"
+ },
+ {
+  "date": "2000-09-04",
+  "precision": "day",
+  "title": "Pooh's Hunny Hunt opens at Tokyo Disneyland",
+  "description": "First full attraction on a sensor-guided trackless ride system.",
+  "land": "ride-systems",
+  "concept": "trackless-ride",
+  "source": "wikipedia-poohs-hunny-hunt"
+ },
+ {
+  "date": "2010-06-18",
+  "precision": "day",
+  "title": "Harry Potter and the Forbidden Journey opens",
+  "description": "KUKA robot arms on a track carry riders through sets and projection domes.",
+  "land": "ride-systems",
+  "concept": "robot-arm-ride",
+  "source": "wikipedia-forbidden-journey"
+ }
+]

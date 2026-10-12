@@ -1,0 +1,152 @@
+[
+ {
+  "term": "Audio-Animatronics",
+  "definition": "Disney's trademark for figures whose movements and sound are played back together from a recorded program.",
+  "land": "show-technology",
+  "concept": "audio-animatronics-history"
+ },
+ {
+  "term": "Actuator",
+  "definition": "A pneumatic, hydraulic or electric device that turns a control signal into one movement of a figure or set piece.",
+  "land": "show-technology",
+  "concept": "figure-actuation"
+ },
+ {
+  "term": "Untethered figure",
+  "definition": "A figure that carries its own power and computing so it can move without hoses or cables to the floor.",
+  "land": "show-technology",
+  "concept": "untethered-figures"
+ },
+ {
+  "term": "Duty cycle",
+  "definition": "How many cycles a figure or effect runs per day, which drives wear, inspection and skin replacement.",
+  "land": "show-technology",
+  "concept": "figure-reliability"
+ },
+ {
+  "term": "Projection mapping",
+  "definition": "Projecting video that has been warped and masked to fit a three-dimensional surface such as a face or a castle.",
+  "land": "show-technology",
+  "concept": "projection-mapping"
+ },
+ {
+  "term": "Fulldome",
+  "definition": "A dome-shaped screen that fills the viewer's field of view, fed by a fisheye projector or several blended projectors.",
+  "land": "show-technology",
+  "concept": "domes-and-wraparound-screens"
+ },
+ {
+  "term": "Edge blending",
+  "definition": "Fading the overlapping edges of neighbouring projectors so several images read as one seamless picture.",
+  "land": "show-technology",
+  "concept": "projector-blending"
+ },
+ {
+  "term": "Squinching",
+  "definition": "Pre-distorting a 3D image so it looks correct from a moving ride vehicle's viewpoint rather than from a fixed seat.",
+  "land": "show-technology",
+  "concept": "stereoscopic-3d"
+ },
+ {
+  "term": "Pepper's ghost",
+  "definition": "An illusion in which a lit figure reflects in an angled sheet of glass so it appears as a transparent ghost on stage.",
+  "land": "show-technology",
+  "concept": "peppers-ghost"
+ },
+ {
+  "term": "Scrim",
+  "definition": "A loosely woven cloth that looks solid when lit from the front and transparent when the scene behind it is lit.",
+  "land": "show-technology",
+  "concept": "scrims-and-transparency"
+ },
+ {
+  "term": "Infinity mirror",
+  "definition": "A mirror facing a half-silvered mirror with lights between them, producing a tunnel of reflections that seems endless.",
+  "land": "show-technology",
+  "concept": "mirrors-and-infinity-rooms"
+ },
+ {
+  "term": "Blacklight",
+  "definition": "A lamp that emits mostly long-wave ultraviolet light, making fluorescent paint glow while the room stays dark.",
+  "land": "show-technology",
+  "concept": "blacklight-and-uv-paint"
+ },
+ {
+  "term": "Misdirection",
+  "definition": "Steering the audience's attention toward one thing so a change elsewhere goes unnoticed.",
+  "land": "show-technology",
+  "concept": "misdirection"
+ },
+ {
+  "term": "DMX512",
+  "definition": "The 1986 serial lighting-control standard that sends 512 channel values per universe at 250 kbit/s.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols"
+ },
+ {
+  "term": "Art-Net",
+  "definition": "A royalty-free protocol from Artistic Licence that carries DMX512 and RDM data over Ethernet.",
+  "land": "show-technology",
+  "concept": "lighting-control-protocols"
+ },
+ {
+  "term": "Gobo",
+  "definition": "A thin metal or glass pattern placed in a spotlight to project a shape such as leaves or a window.",
+  "land": "show-technology",
+  "concept": "theatrical-lighting"
+ },
+ {
+  "term": "Onboard audio",
+  "definition": "Speakers mounted in the ride vehicle so each rider hears a soundtrack that follows the ride.",
+  "land": "show-technology",
+  "concept": "onboard-and-spatial-audio"
+ },
+ {
+  "term": "Sound masking",
+  "definition": "Adding deliberate sound so unwanted mechanical noise becomes less noticeable.",
+  "land": "show-technology",
+  "concept": "audio-triggers-and-masking"
+ },
+ {
+  "term": "Proximate pyrotechnics",
+  "definition": "Flames, flashes and sparks fired close to an audience, governed in the US by NFPA 1126.",
+  "land": "show-technology",
+  "concept": "pyrotechnics"
+ },
+ {
+  "term": "Gerb",
+  "definition": "A pyrotechnic fountain that produces a controlled plume of sparks for a set burn time.",
+  "land": "show-technology",
+  "concept": "pyrotechnics"
+ },
+ {
+  "term": "Mist screen",
+  "definition": "A thin curtain of water droplets used as a see-through projection surface in nighttime shows.",
+  "land": "show-technology",
+  "concept": "water-screens-and-fountains"
+ },
+ {
+  "term": "Show control",
+  "definition": "The system that cues lights, audio, video, figures and effects so they run together on a timeline or from triggers.",
+  "land": "show-technology",
+  "concept": "show-control-systems"
+ },
+ {
+  "term": "Timecode",
+  "definition": "A running clock in hours, minutes, seconds and frames that every show device follows to stay in sync.",
+  "land": "show-technology",
+  "concept": "ride-show-synchronization"
+ },
+ {
+  "term": "Show action equipment",
+  "definition": "Mechanised scenery such as moving walls, drops or boulders that is neither a vehicle nor a character figure.",
+  "land": "show-technology",
+  "concept": "show-action-equipment"
+ },
+ {
+  "term": "Media server",
+  "definition": "A computer built to play or render very large video streams to many projectors in perfect sync.",
+  "land": "show-technology",
+  "concept": "media-servers-and-real-time-engines"
+ }
+]

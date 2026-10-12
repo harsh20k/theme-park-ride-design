@@ -1,0 +1,74 @@
+[
+  {
+    "date": "1952-12-16",
+    "precision": "day",
+    "title": "Walt Disney founds the company that becomes Imagineering",
+    "description": "Set up to design Disneyland; renamed WED Enterprises in 1953 and Walt Disney Imagineering in 1986.",
+    "land": "design-process",
+    "concept": "pipeline-overview",
+    "source": "wikipedia-walt-disney-imagineering"
+  },
+  {
+    "date": "2006-04-07",
+    "precision": "day",
+    "title": "Expedition Everest opens after six years of planning and construction",
+    "description": "Construction began March 2003; the mountain, coaster and yeti are three independent structures coordinated with 4D scheduling.",
+    "land": "design-process",
+    "concept": "site-construction",
+    "source": "wikipedia-expedition-everest"
+  },
+  {
+    "date": "2012-06-05",
+    "precision": "day",
+    "title": "Press tour of Imagineering's DISH projection cave",
+    "description": "Imagineers show how Cars Land and Carthay Circle were walked through at full scale before construction.",
+    "land": "design-process",
+    "concept": "vr-design-review",
+    "source": "mouseplanet-dish-visit"
+  },
+  {
+    "date": "2014",
+    "precision": "year",
+    "title": "WDI's Shanghai castle BIM workflow wins an AIA TAP award",
+    "description": "Architects on Revit, engineers on AutoCAD, with scripted daily data exchange between Glendale and Shanghai.",
+    "land": "design-process",
+    "concept": "engineering-handoff",
+    "source": "designworld-disney-bim-shanghai-castle"
+  },
+  {
+    "date": "2019-06-13",
+    "precision": "day",
+    "title": "Hagrid's Magical Creatures Motorbike Adventure opens",
+    "description": "Site cleared January 2018, first train installed December 2018, ride testing from February 2019.",
+    "land": "design-process",
+    "concept": "phase-timeline",
+    "source": "wikipedia-hagrids-motorbike-adventure"
+  },
+  {
+    "date": "2019-12-05",
+    "precision": "day",
+    "title": "Rise of the Resistance opens, 14 weeks after its land",
+    "description": "Disney had announced in March 2019 that the ride would follow as phase two of Galaxy's Edge.",
+    "land": "design-process",
+    "concept": "testing-and-commissioning",
+    "source": "wikipedia-rise-of-the-resistance"
+  },
+  {
+    "date": "2021-06-08",
+    "precision": "day",
+    "title": "Disney granted patent for automated rockwork rebar design",
+    "description": "US11030356B2 turns a 3D rock mesh into numbered rebar chips for assembly.",
+    "land": "design-process",
+    "concept": "rockwork",
+    "source": "google-patents-us-11030356"
+  },
+  {
+    "date": "2025-05-22",
+    "precision": "day",
+    "title": "Universal Epic Universe opens",
+    "description": "Announced 1 August 2019; construction paused July 2020 to March 2021 during the pandemic.",
+    "land": "design-process",
+    "concept": "phase-timeline",
+    "source": "wikipedia-epic-universe"
+  }
+]

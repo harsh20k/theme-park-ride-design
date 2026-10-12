@@ -1,0 +1,56 @@
+[
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Steel_Vengeance_03.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Steel_Vengeance_03.jpg",
+  "author": "Jeremy Thompson",
+  "license": "CC BY 2.0",
+  "used_in": [
+   "hybrid-coasters"
+  ]
+ },
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Raptor_Gardaland_2011.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Raptor_Gardaland_2011.jpg",
+  "author": "Basilico",
+  "license": "CC BY-SA 3.0",
+  "used_in": [
+   "wing-coasters"
+  ]
+ },
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/AltonTowers-Oblivion.JPG",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:AltonTowers-Oblivion.JPG",
+  "author": "DAllardyce",
+  "license": "Public domain",
+  "used_in": [
+   "dive-coasters"
+  ]
+ },
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Kingda_Ka.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Kingda_Ka.jpg",
+  "author": "Dusso Janladde",
+  "license": "CC BY-SA 3.0",
+  "used_in": [
+   "hydraulic-launch"
+  ]
+ },
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Rapids_ride_S%C3%A4rk%C3%A4nniemi_Tampere_19.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Rapids_ride_S%C3%A4rk%C3%A4nniemi_Tampere_19.jpg",
+  "author": "GualdimG",
+  "license": "CC BY-SA 4.0",
+  "used_in": [
+   "river-rapids"
+  ]
+ },
+ {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Disneyland_Mark_VII_Monorail_-_Blue.jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Disneyland_Mark_VII_Monorail_-_Blue.jpg",
+  "author": "DCLive",
+  "license": "Public domain",
+  "used_in": [
+   "monorail-and-people-movers"
+  ]
+ }
+]

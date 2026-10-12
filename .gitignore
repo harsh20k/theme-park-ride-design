@@ -19,3 +19,4 @@ __pycache__/
 
 # Node (for any experiments)
 node_modules/
+.claude/worktrees/

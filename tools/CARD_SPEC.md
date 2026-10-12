@@ -12,7 +12,7 @@ title: Peak-End Rule              # = title from hierarchy
 land: human-factors               # = land id
 level: beginner                   # from hierarchy: beginner | intermediate | advanced
 abstraction: concept              # super-concept | concept | sub-concept (from hierarchy depth)
-parent: memory                    # from hierarchy; super-concepts use parent: null
+parent: memory                    # from hierarchy; super-concepts use the land id (e.g. parent: human-factors)
 children: []                      # from hierarchy; [] if none
 relations:                        # 3–6 typed cross-links, targets MUST be slugs in hierarchy.txt
   - { type: applies-to, target: finale-design }
