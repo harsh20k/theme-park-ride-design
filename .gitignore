@@ -1,0 +1,21 @@
+# Notes (never sync)
+notes/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.*
+
+# Python (for any experiments)
+__pycache__/
+*.pyc
+.venv/
+
+# Node (for any experiments)
+node_modules/
