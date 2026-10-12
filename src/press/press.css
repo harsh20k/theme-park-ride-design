@@ -1106,3 +1106,25 @@ body.is-searching {
 .PressDetails__endSep {
   opacity: 0.5;
 }
+
+/* draft 4: the plank is a 3D mesh now */
+.Library__plankTop,
+.Library__plankFront {
+  display: none;
+}
+.Library__sections {
+  bottom: -30px;
+}
+.PressBook__badgeNote {
+  opacity: 0.8;
+}
+
+/* planks must end inside the fixed 70vw canvas (15vw margins) */
+.Library {
+  padding-right: 16.5vw;
+}
+@media (max-width: 899px) {
+  .Library {
+    padding-right: calc(42.5px + 1.75vw);
+  }
+}

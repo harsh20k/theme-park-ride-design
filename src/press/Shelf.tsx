@@ -2,7 +2,7 @@ import { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { conceptIndex, landById } from '@/content/api'
 import { booksByLand, type Book } from './books'
-import { LOGO_URL } from './covers'
+import { COVER_IMAGES, LOGO_URL } from './covers'
 import { useShelf } from './store'
 
 /**
@@ -93,6 +93,7 @@ export default function Shelf({ landId, hidden }: { landId: string; hidden?: boo
                     </span>
                     <span className={`PressBook__badge ${hovered === b.id ? 'is-visible' : ''}`} aria-hidden="true">
                       <span className="PressBook__badgeCount">{n}</span> {n === 1 ? 'topic' : 'topics'}
+                      {COVER_IMAGES[b.id] && <span className="PressBook__badgeNote"> · illustrated cover</span>}
                     </span>
                   </Link>
                 </li>

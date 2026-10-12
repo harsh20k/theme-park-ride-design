@@ -50,8 +50,6 @@ export default function Library() {
                   onMouseEnter={() => setHoveredShelf(land.id)}
                   onMouseLeave={() => setHoveredShelf(null)}
                 >
-                  <span className="Library__plankTop" />
-                  <span className="Library__plankFront" />
                   <span className="Library__sections" aria-hidden="true">
                     {sections.map((s) => (
                       <span key={s.id} className="Library__sectionName">

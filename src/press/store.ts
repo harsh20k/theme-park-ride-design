@@ -30,6 +30,8 @@ interface ShelfState {
   dragging: boolean
   initialized: boolean
   searchOpen: boolean
+  /** Last pointer position in viewport px (mutated in place, no re-render). */
+  pointer: { x: number; y: number; active: boolean }
   setMode: (mode: ShelfMode, land: string | null) => void
   setHovered: (id: string | null) => void
   setHoveredShelf: (id: string | null) => void
@@ -57,6 +59,7 @@ export const useShelf = create<ShelfState>((set, get) => ({
   dragging: false,
   initialized: false,
   searchOpen: false,
+  pointer: { x: -1e4, y: -1e4, active: false },
   setMode: (mode, land) => {
     if (get().mode !== mode || get().land !== land) set({ mode, land })
   },
@@ -93,3 +96,18 @@ export const useShelf = create<ShelfState>((set, get) => ({
     if (get().searchOpen !== v) set({ searchOpen: v })
   },
 }))
+
+if (typeof window !== 'undefined') {
+  const p = useShelf.getState().pointer
+  window.addEventListener(
+    'pointermove',
+    (e) => {
+      p.x = e.clientX
+      p.y = e.clientY
+      p.active = e.pointerType !== 'touch'
+    },
+    { passive: true },
+  )
+  window.addEventListener('pointerleave', () => (p.active = false))
+  document.addEventListener('mouseleave', () => (p.active = false))
+}

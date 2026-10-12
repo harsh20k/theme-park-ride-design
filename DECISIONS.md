@@ -129,3 +129,32 @@ Key choices, trade-offs and cuts. Newest at the bottom of each section.
   `> **Formula**` blockquote cards count as visuals; `type: patent` resources;
   corpus timeline shape (`date`/`concept`) maps to `year`/`concepts`;
   super-concepts may name their land as `parent`.
+
+## Draft 4 — a real shelf, a real hardcover
+
+- **Planks are three.js meshes now, not CSS.** Each topic's plank follows its
+  DOM hit-area rect every frame: a wooden box with a dark front edge, two wall
+  brackets (plate, arm, diagonal strut) and a shadow-only wall behind
+  (`ShadowMaterial`, so page text stays visible). Planks and books pitch 9°
+  toward the viewer so the top face always shows, whatever their height on
+  screen. Shadows: one 2048² PCF-soft map covering the visible slab; the wall is
+  only drawn in library mode (on topic pages the offset shadows of lying books
+  read as black blocks).
+- **No smoothing on scroll-driven positions.** Planks and books snap to their
+  DOM rects; only hover lifts and the reading-flow pose are eased. Before, the
+  books lagged the plank while scrolling and never looked seated. Library hover
+  no longer lifts or zooms the books.
+- **Topic shelf hover tilts toward the pointer.** A book counts as "near" when
+  the pointer is over its row or within ~60% of its height above/below; the
+  side nearest the pointer rises (max 7°), on top of the lift.
+- **The hardcover model gained a joint and rounded edges.** Boards are
+  `RoundedBoxGeometry` (radius ≈ 0.6% of the length, capped by board
+  thickness); a recessed hinge strip (4.5% of the width, 42% of a board
+  thickness deep) runs beside the spine on both boards; the cover UVs are
+  remapped from vertex positions so the art is cropped to the board, not
+  stretched. Geometry is cached per size (every book is the same size).
+- **Photo covers never show blank.** The board starts with the procedural
+  art; the photo replaces the map on load, and a failed load logs a warning and
+  keeps the procedural cover. (Reported "white covers" could not be reproduced
+  in Chrome or WebKit against the dev server; the fallback removes the failure
+  mode regardless.) The topic shelf's hover badge now says "illustrated cover".
