@@ -62,11 +62,14 @@ function tex(canvas: HTMLCanvasElement, srgb = true) {
 
 const PHYS = { roughness: 0.9, clearcoat: 0.35, clearcoatRoughness: 0.38, envMapIntensity: 0.65, transparent: true }
 
-function coverMaterial(art: CoverArt, rotate: boolean): THREE.MeshPhysicalMaterial {
+/** The spine and board edges are cloth without the boards' laminate: a little sheen, mostly matte. */
+const MATTE = { clearcoat: 0.08, clearcoatRoughness: 0.7, envMapIntensity: 0.38 }
+
+function coverMaterial(art: CoverArt, rotate: boolean, finish: Partial<typeof PHYS> = {}): THREE.MeshPhysicalMaterial {
   const c = rotate ? tallCanvas(art.color) : art.color
   const f = rotate ? tallCanvas(art.foil) : art.foil
   const r = rotate ? tallCanvas(art.rough) : art.rough
-  return new THREE.MeshPhysicalMaterial({ map: tex(c), metalnessMap: tex(f, false), metalness: 1, roughnessMap: tex(r, false), ...PHYS })
+  return new THREE.MeshPhysicalMaterial({ map: tex(c), metalnessMap: tex(f, false), metalness: 1, roughnessMap: tex(r, false), ...PHYS, ...finish })
 }
 
 /**
@@ -141,7 +144,7 @@ export interface BookMaterials {
 
 export function useBookMaterials(book: Book, dims: BookDims, wanted: boolean): BookMaterials {
   const shared = useMemo(() => {
-    const boardEdge = new THREE.MeshPhysicalMaterial({ color: book.theme.palette[1], roughness: 0.8, clearcoat: 0.3, transparent: true })
+    const boardEdge = new THREE.MeshPhysicalMaterial({ color: book.theme.palette[1], roughness: 0.9, clearcoat: 0.08, clearcoatRoughness: 0.7, transparent: true })
     const inner = new THREE.MeshStandardMaterial({ color: '#efe8d8', roughness: 0.95, transparent: true })
     const pages = new THREE.MeshStandardMaterial({ map: pagesTexture(), color: '#f1ebdc', roughness: 0.9, transparent: true })
     const cloth = new THREE.MeshPhysicalMaterial({ color: book.theme.palette[0], ...PHYS })
@@ -161,7 +164,7 @@ export function useBookMaterials(book: Book, dims: BookDims, wanted: boolean): B
       // Back board: same cloth/marble, no text — reuse the pre-text art.
       const back = coverMaterial(coverArt.plain, false)
       // The spine is a half-cylinder squashed to 38% depth: its unrolled width is ≈1.14 T, so draw the art for that, not for T.
-      const spine = coverMaterial(drawSpine(book.title, book.imprint, book.theme, book.seed, dims.L / (SPINE_ARC * dims.T)), true)
+      const spine = coverMaterial(drawSpine(book.title, book.imprint, book.theme, book.seed, dims.L / (SPINE_ARC * dims.T)), true, MATTE)
       setArt({ cover, back, spine })
     })
     return () => {

@@ -1,9 +1,10 @@
 import { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
-import { Link, useNavigate } from 'react-router'
+import { Link, NavLink, useNavigate } from 'react-router'
 import { conceptIndex, landById } from '@/content/api'
 import { booksByLand, type Book } from './books'
 import { COVER_IMAGES, LOGO_URL } from './covers'
 import { useShelf } from './store'
+import PressFooter from './Footer'
 
 /**
  * A topic's shelf: the header, one invisible row per book (real links, so the
@@ -111,6 +112,7 @@ export default function Shelf({ landId, hidden }: { landId: string; hidden?: boo
           })}
         </ol>
       </div>
+      {!hidden && <PressFooter />}
     </>
   )
 }
@@ -158,14 +160,19 @@ export function PressHeaderBar({ hidden, crumb }: { hidden?: boolean; crumb?: { 
         </h1>
         <p className="PressHeader__tagline">{crumb ? `${crumb.tagline}  ·  ${crumb.count} books` : 'Ideas for designing joy'}</p>
       </div>
-      <button className={`PressSearchButton ${hidden ? 'is-hidden' : ''}`} onClick={() => setSearchOpen(true)} aria-label="Search the library">
+      <div className="PressHeader__actions">
+        <NavLink to="/shelves" className={({ isActive }) => `PressNavLink ${isActive ? 'is-current' : ''}`}>
+          Shelves
+        </NavLink>
+        <button className={`PressSearchButton ${hidden ? 'is-hidden' : ''}`} onClick={() => setSearchOpen(true)} aria-label="Search the library">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
           <circle cx="6.8" cy="6.8" r="4.6" />
           <path d="M10.3 10.3 14 14" />
         </svg>
         <span>Search</span>
-        <kbd>⌘K</kbd>
-      </button>
+          <kbd>⌘K</kbd>
+        </button>
+      </div>
     </header>
   )
 }

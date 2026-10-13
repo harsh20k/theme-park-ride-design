@@ -9,6 +9,7 @@ import { useShelf } from './store'
 import Markdown from './Markdown'
 import Visual from '@/ui/visuals/Visual'
 import { Rail } from './Shelf'
+import { useOpenBook } from './openBook'
 
 /**
  * The reading flow, mirroring press.stripe.com/<book>: a 58/42 split with the
@@ -96,8 +97,8 @@ export default function BookDetails({ id }: { id: string }) {
         <div className="PressDetails__info">
           <div className="PressDetails__right">
             <div className="PressDetails__title">No book called “{id}”.</div>
-            <Link to="/" className="Link">
-              Back to the library
+            <Link to="/shelves" className="Link">
+              Back to the shelves
             </Link>
           </div>
         </div>
@@ -119,8 +120,8 @@ export default function BookDetails({ id }: { id: string }) {
               Back to this shelf
             </Link>
             <span className="PressDetails__endSep"> · </span>
-            <Link to="/" className="Link">
-              All topics
+            <Link to="/shelves" className="Link">
+              All shelves
             </Link>
           </p>
         </div>
@@ -152,6 +153,7 @@ function BookSection({ book, first }: { book: Book; first: boolean }) {
   const sectionRef = useRef<HTMLElement>(null)
   const near = useInView(sectionRef)
   const [concept, setConcept] = useState<Concept | null>(null)
+  const openBook = useOpenBook()
 
   useEffect(() => {
     if (!near || concept) return
@@ -226,7 +228,7 @@ function BookSection({ book, first }: { book: Book; first: boolean }) {
                   <div className="PressDetails__buyGroup">
                     {explore.map((e, i) =>
                       e.to ? (
-                        <Link key={i} to={e.to} className="PressDetails__buy" onClick={() => jumpTo(e.to!)}>
+                        <Link key={i} to={e.to} className="PressDetails__buy" onClick={(ev) => openBook(e.to!.replace('/book/', ''), ev)}>
                           <span className="PressDetails__buyHoverLeft" />
                           <span className="PressDetails__buyLabel">
                             {e.text}
@@ -282,7 +284,7 @@ function BookSection({ book, first }: { book: Book; first: boolean }) {
           <div className="PressPraiseList__label">Related ideas</div>
           <div className="PressPraiseList__carousel">
             {related.map(({ concept: c, type }) => (
-              <Link key={`${type}-${c.id}`} to={`/book/${c.id}`} className="PressPraise" onClick={() => jumpTo(`/book/${c.id}`)}>
+              <Link key={`${type}-${c.id}`} to={`/book/${c.id}`} className="PressPraise" onClick={(ev) => openBook(c.id, ev)}>
                 <div className="PressPraise__quote">{c.summary || c.title}</div>
                 <div className="PressPraise__name">{c.title}</div>
                 <div className="PressPraise__role">
@@ -295,13 +297,6 @@ function BookSection({ book, first }: { book: Book; first: boolean }) {
       )}
     </section>
   )
-}
-
-/** Following a link to another book restarts the flow from that book. */
-function jumpTo(path: string) {
-  const id = path.replace('/book/', '')
-  useShelf.getState().setEntry(id)
-  window.scrollTo({ top: 0 })
 }
 
 function BuyIcon() {

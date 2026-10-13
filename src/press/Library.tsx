@@ -3,6 +3,7 @@ import { lands } from '@/content/api'
 import { booksByLand, sectionsByLand } from './books'
 import { useShelf } from './store'
 import { PressHeaderBar } from './Shelf'
+import PressFooter from './Footer'
 
 /**
  * The library: one horizontal shelf per topic. The topic's section books
@@ -63,6 +64,7 @@ export default function Library() {
           })}
         </ol>
       </main>
+      <PressFooter />
     </>
   )
 }

@@ -12,7 +12,7 @@ page.setDefaultTimeout(90000)
 const errors: string[] = []
 page.on('console', (m) => (m.type() === 'error' ? errors.push(m.text().slice(0, 300)) : null))
 page.on('pageerror', (e) => errors.push(`[pageerror] ${e.message}`))
-await page.goto(base + '/', { waitUntil: 'networkidle' })
+await page.goto(base + '/shelves', { waitUntil: 'networkidle' })
 await page.waitForSelector('.PressCanvas.is-initialized')
 await page.waitForTimeout(5000)
 await page.screenshot({ path: path.join(outDir, 'library.png') })

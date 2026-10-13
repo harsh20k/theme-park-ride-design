@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useParams } from 'react-router'
 import Books3D from './press/Books3D'
+import Home from './press/Home'
 import Library from './press/Library'
 import Search from './press/Search'
 import Shelf from './press/Shelf'
@@ -15,13 +16,29 @@ export default function App() {
       <Books3D />
       <Search />
       <Routes>
-        <Route path="/" element={<LibraryPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/shelves" element={<LibraryPage />} />
         <Route path="/topic/:land" element={<TopicPage />} />
         <Route path="/book/:id" element={<BookPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   )
+}
+
+function HomePage() {
+  const setMode = useShelf((s) => s.setMode)
+  useEffect(() => {
+    const st = useShelf.getState()
+    st.setActive(null)
+    st.setEntry(null)
+    setMode('home', null)
+    document.body.classList.remove('is-activeProduct')
+    document.body.classList.add('is-home')
+    window.scrollTo({ top: 0 })
+    return () => document.body.classList.remove('is-home')
+  }, [setMode])
+  return <Home />
 }
 
 function LibraryPage() {
@@ -33,6 +50,7 @@ function LibraryPage() {
     setMode('library', null)
     document.body.classList.remove('is-activeProduct')
     document.body.classList.add('is-library')
+    window.scrollTo({ top: 0 })
     return () => document.body.classList.remove('is-library')
   }, [setMode])
   return <Library />
@@ -60,7 +78,7 @@ function TopicPage() {
       })
     } else window.scrollTo({ top: 0 })
   }, [land, known, setMode])
-  if (!known) return <Navigate to="/" replace />
+  if (!known) return <Navigate to="/shelves" replace />
   return <Shelf landId={land} />
 }
 

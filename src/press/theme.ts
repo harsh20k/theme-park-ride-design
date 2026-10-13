@@ -12,6 +12,8 @@
  * and the small art used on the library shelves.
  */
 
+import { LOGO_URL } from './covers'
+
 export interface BookTheme {
   /** Page background and text colour while the book is open. */
   bg: string
@@ -830,6 +832,23 @@ export function preloadLogo(url: string): Promise<void> {
     })
   }
   return logoPromise
+}
+
+let ready: Promise<void> | null = null
+/** Resolves when the lettering face and the press mark are loaded, i.e. covers can be painted. */
+export function artReady(): Promise<void> {
+  if (!ready) {
+    const fonts = (document as Document & { fonts?: FontFaceSet }).fonts
+    const logo = preloadLogo(LOGO_URL)
+    const all = fonts
+      ? Promise.all([fonts.load('700 76px Newsreader'), fonts.load('italic 500 42px Newsreader'), fonts.load('500 58px Newsreader'), logo]).then(() => fonts.ready)
+      : logo
+    ready = all.then(
+      () => undefined,
+      () => undefined,
+    )
+  }
+  return ready
 }
 
 /** Draw the emblem centred at (x, y) with the given height, tinted to `color`. Falls back to a drawn mark. */

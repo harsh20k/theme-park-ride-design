@@ -211,3 +211,20 @@ After: first pass 16.7 ms average, 16.8 ms worst, no frame over 25 ms, on both t
 ## Draft 7 — Anton and Work Sans for page text (2026-10-12)
 
 Chosen by the user from a 36-pairing sample sheet (`public/fonts.html`, seven groups from serif to novelty, with a filter and an editable sample title). Titles (header, shelf names, book titles, search results) are Anton in capitals; everything else that is read is Work Sans, including chart and diagram labels. The lettering on the covers and spines stays Newsreader at the user's request, so `FONT` in `src/press/theme.ts` is unchanged and Newsreader is still loaded for the canvas. `--fontTitle` is the new variable for Anton; Anton has one weight, so those rules set `font-weight: 400` and `font-synthesis: none`.
+
+## Draft 8 — home page, footer, calmer reading page (2026-10-12)
+
+**Routes.** `/` is now a home page; the wall of shelves moved to `/shelves`. A "Shelves" link sits beside Search at the top right of every page.
+
+**Home page** (`src/press/Home.tsx`, no 3D canvas content). Hero with the headline "How joy is engineered" over an illustration, the library in five numbers, eight featured books, three beats (Drawn, Calculated, Felt) that each pair an illustration with the shelves and books behind it, and a grid of the thirteen shelves. Featured covers are the same procedural art as the 3D books, painted small on a 2D canvas (`CoverThumb.tsx`) and stood up with CSS, turned the same way as the 3D pose.
+
+**Illustrations.** Four images from fal.ai (Nano Banana Pro, 2K, list price $0.15 each): a cartoon family on a coaster, a cartoon family on a carousel, a blueprint-style park plan and a blueprint-style coaster elevation. Stored as WebP in `public/home/` at two widths. Two were cropped before use: the park plan's skyline strip had a castle silhouette too close to a real, famous one, and the coaster drawing's title block had an invented 1923 date and an engineer's name that matches a real historical designer. Every image is captioned as AI-generated, and the blueprint ones as not real drawings, because this is a reference site and a fake drawing must not pass as a source.
+
+**Footer** (`Footer.tsx`) on the home page, the shelf wall and each topic shelf: brand, the thirteen shelves, library links, and a colophon that states which images are AI-generated.
+
+**Reading page.**
+- The standing book is drawn at its target plus an offset that eases to zero, instead of easing toward the target. Scrolling moves the target, so the book follows the page exactly (it used to trail behind when the related-ideas block pushed it up); only real changes of view are animated.
+- Standing pose is yaw 33°, pitch −12° (was 26°, −7°): more up and to the right.
+- A book scrolling up into the flow arrives face-on with no rotation and turns into the standing pose once 90% of its height is on screen (it only goes flat again below 55%, so it cannot flicker at the threshold).
+- Links from one book to another (in the text, Explore further, Related ideas) fade the page and the 3D book out, swap the flow while nothing is visible, and fade the new book in already in place (`openBook.ts`). Before, inline links changed the URL without restarting the flow, and the other links swapped everything in one frame.
+- Spine and board edges are more matte: clearcoat 0.35 → 0.08, rougher coat, weaker reflections. The boards keep their sheen.

@@ -7,8 +7,7 @@ import { useShelf } from './store'
 import BookModel, { useBookMaterials } from './BookModel'
 import LibraryShelves from './LibraryShelves'
 import { CAM_Y, CAM_Z, FOV, useMetrics, type Metrics } from './metrics'
-import { LOGO_URL } from './covers'
-import { preloadLogo } from './theme'
+import { artReady } from './theme'
 
 /**
  * Fixed, full-height, 70vw-wide canvas (as on press.stripe.com).
@@ -25,8 +24,16 @@ import { preloadLogo } from './theme'
  * the anchor is pushed out by the next section.
  */
 
-/** Standing pose in the reading flow: turned to the right, tilted slightly back so the cover faces a little upward. */
-const STAND = { yaw: THREE.MathUtils.degToRad(26), pitch: THREE.MathUtils.degToRad(-7), roll: THREE.MathUtils.degToRad(-2) }
+/** Standing pose in the reading flow: turned to the right and tilted back, so the cover faces up and to the right. */
+const STAND = { yaw: THREE.MathUtils.degToRad(33), pitch: THREE.MathUtils.degToRad(-12), roll: THREE.MathUtils.degToRad(-2.5) }
+/**
+ * A book scrolling up into the reading flow arrives face-on (no rotation) and
+ * turns into the standing pose once this much of its height is on screen; it
+ * goes flat again only if it drops back below the second figure.
+ */
+const STAND_AT = 0.9
+const FLAT_BELOW = 0.55
+const FRONT_Q = new THREE.Quaternion()
 /** Max tilt toward the pointer on the topic shelf. */
 const HOVER_TILT = THREE.MathUtils.degToRad(7)
 /** Max turn of the standing book toward a pointer on or near it. */
@@ -38,11 +45,7 @@ function useFontsReady(): boolean {
   const [ready, setReady] = useState(false)
   useEffect(() => {
     let alive = true
-    const fonts = (document as Document & { fonts?: FontFaceSet }).fonts
-    const p = fonts
-      ? Promise.all([fonts.load('700 76px Newsreader'), fonts.load('italic 500 42px Newsreader'), fonts.load('500 58px Newsreader'), preloadLogo(LOGO_URL)]).then(() => fonts.ready)
-      : preloadLogo(LOGO_URL)
-    p.then(() => alive && setReady(true)).catch(() => alive && setReady(true))
+    artReady().then(() => alive && setReady(true))
     return () => {
       alive = false
     }
@@ -60,6 +63,13 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
   const quat = useMemo(() => FLAT_Q.clone(), [])
   const scale = useRef(1)
   const opacity = useRef(0) // fades in when the topic opens
+  // The book is drawn at its target plus an offset that eases to zero. Scrolling moves the target, so the
+  // book follows the page exactly; only changes of view (shelf → standing and back) are animated.
+  const off = useMemo(() => new THREE.Vector3(), [])
+  const scaleOff = useRef(0)
+  const view = useRef<'row' | 'stand' | 'aside' | null>(null)
+  const stood = useRef(true)
+  const lastCut = useRef(useShelf.getState().cut)
   const tmpV = useMemo(() => new THREE.Vector3(), [])
   const tmpLift = useMemo(() => new THREE.Vector3(), [])
   const tmpQ = useMemo(() => new THREE.Quaternion(), [])
@@ -68,7 +78,13 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
   useFrame(({ clock }, dt) => {
     const g = group.current
     if (!g) return
-    const { mode, hovered, active, rows, anchors, dragYaw, dragging, pointer } = useShelf.getState()
+    const { mode, hovered, active, rows, anchors, dragYaw, dragging, pointer, turning, cut } = useShelf.getState()
+    // The reading flow was just swapped behind a fade: take the new place at once, no flight.
+    const cutNow = cut !== lastCut.current
+    if (cutNow) {
+      lastCut.current = cut
+      view.current = null
+    }
     const { pxPerUnit, winW, winH, L, visH } = metrics
     const d = Math.min(dt, 1 / 30)
     const k = 1 - Math.exp(-d * 6)
@@ -76,7 +92,7 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
     let targetQ: THREE.Quaternion = FLAT_Q
     let targetScale = 1
     let targetOpacity = 1
-    let snap = false // position follows the DOM exactly (scroll-driven views)
+    let next: 'row' | 'stand' | 'aside' = 'row'
     let lerpK = Math.min(1, k * 1.6)
     tmpLift.set(0, 0, 0)
 
@@ -99,12 +115,18 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       const shrink = 1 - Math.min(0.45, (pushed / winH) * 0.9)
       tmpV.set((cx - winW / 2) / pxPerUnit, (winH / 2 - cy) / pxPerUnit, 2.5)
       targetScale = ((0.8 * r.height) / pxPerUnit / L) * shrink
+      next = 'stand'
+      const bh = 0.8 * r.height * shrink
+      // How much of the book has risen above the bottom of the window.
+      const risen = (winH - (cy - bh / 2)) / bh
+      if (view.current !== 'stand') stood.current = risen >= STAND_AT
+      else if (risen >= STAND_AT) stood.current = true
+      else if (risen < FLAT_BELOW) stood.current = false
       const idle = Math.sin(clock.elapsedTime * 0.5 + index) * 0.02
       // Turn a little toward the pointer, but only while it is on or just beside the book.
       let hoverYaw = 0
       let hoverPitch = 0
-      if (pointer.active && !dragging) {
-        const bh = 0.8 * r.height * shrink
+      if (pointer.active && !dragging && stood.current) {
         const bw = bh * (metrics.W / L)
         const nx = (pointer.x - cx) / (bw / 2)
         const ny = (pointer.y - cy) / (bh / 2)
@@ -113,9 +135,11 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
           hoverPitch = THREE.MathUtils.clamp(ny, -1, 1) * STAND_HOVER.pitch
         }
       }
-      tmpE.set(STAND.pitch + hoverPitch, STAND.yaw + dragYaw + idle + hoverYaw, STAND.roll)
-      tmpQ.setFromEuler(tmpE)
-      targetQ = tmpQ
+      if (stood.current) {
+        tmpE.set(STAND.pitch + hoverPitch, STAND.yaw + dragYaw + idle + hoverYaw, STAND.roll)
+        tmpQ.setFromEuler(tmpE)
+        targetQ = tmpQ
+      } else targetQ = FRONT_Q // still arriving: face-on
       lerpK = k * 1.3
     } else if (mode === 'book' && active) {
       // Not part of the flow: drift aside and fade.
@@ -124,6 +148,7 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       const y = r && r.height ? (winH / 2 - (r.top + r.height / 2)) / pxPerUnit : pos.y
       tmpV.set((index % 2 ? 1 : -1) * visH * 1.4, y, -4)
       targetOpacity = 0
+      next = 'aside'
       lerpK = k * 0.8
     } else {
       // Topic shelf: lying flat on its row.
@@ -132,7 +157,6 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       if (r && r.height) {
         const cy = r.top + r.height / 2
         tmpV.set(0, (winH / 2 - cy) / pxPerUnit, 0)
-        snap = true
         // Near = the pointer is over the row or just outside it.
         const near =
           hovered === book.id ||
@@ -152,12 +176,31 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       }
     }
 
-    if (snap) pos.copy(tmpV)
-    else pos.lerp(tmpV, lerpK)
+    if (next !== view.current) {
+      // A change of view starts from wherever the book is now. Books lying back on the shelf from the
+      // sides (or appearing for the first time) simply take their row.
+      const animate = view.current !== null && (next === 'stand' || next === 'aside' || view.current === 'stand')
+      if (animate) {
+        off.copy(pos).sub(tmpV)
+        scaleOff.current = scale.current - targetScale
+      } else {
+        off.set(0, 0, 0)
+        scaleOff.current = 0
+      }
+      view.current = next
+    }
+    off.multiplyScalar(1 - lerpK)
+    scaleOff.current *= 1 - lerpK
+    pos.copy(tmpV).add(off)
     lift.lerp(tmpLift, k * 1.6)
-    quat.slerp(targetQ, snap ? k * 1.6 : k * 1.1)
-    scale.current += (targetScale - scale.current) * (snap ? 1 : k * 1.1)
-    opacity.current += (targetOpacity - opacity.current) * k * 1.2
+    if (cutNow) {
+      quat.copy(targetQ)
+      opacity.current = 0
+    } else quat.slerp(targetQ, next === 'row' ? k * 1.6 : k * 1.1)
+    scale.current = targetScale + scaleOff.current
+    // Between two books everything fades out quickly, then back in at the usual pace.
+    if (turning) opacity.current += (0 - opacity.current) * Math.min(1, k * 3.5)
+    else opacity.current += (targetOpacity - opacity.current) * k * 1.2
 
     g.position.copy(pos).add(lift)
     g.quaternion.copy(quat)

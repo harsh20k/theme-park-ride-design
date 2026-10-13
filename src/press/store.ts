@@ -2,11 +2,12 @@ import { create } from 'zustand'
 
 /**
  * What the 3D canvas should be showing:
+ *  - home:    the front page; nothing is drawn on the canvas
  *  - library: every topic is a shelf; its section books stand on the plank
  *  - topic:   one topic's books lie on their backs, one per row (the old shelf)
  *  - book:    the reading flow (standing book tracking its sticky anchor)
  */
-export type ShelfMode = 'library' | 'topic' | 'book'
+export type ShelfMode = 'home' | 'library' | 'topic' | 'book'
 
 interface ShelfState {
   mode: ShelfMode
@@ -30,6 +31,10 @@ interface ShelfState {
   dragging: boolean
   initialized: boolean
   searchOpen: boolean
+  /** True while the reading page is faded out between two books (see useOpenBook). */
+  turning: boolean
+  /** Bumped at the moment the reading flow is swapped, so the 3D books take their new places without flying. */
+  cut: number
   /** Last pointer position in viewport px (mutated in place, no re-render). */
   pointer: { x: number; y: number; active: boolean }
   setMode: (mode: ShelfMode, land: string | null) => void
@@ -43,10 +48,12 @@ interface ShelfState {
   setDrag: (yaw: number, dragging: boolean) => void
   setInitialized: (v: boolean) => void
   setSearchOpen: (v: boolean) => void
+  setTurning: (v: boolean) => void
+  bumpCut: () => void
 }
 
 export const useShelf = create<ShelfState>((set, get) => ({
-  mode: 'library',
+  mode: 'home',
   land: null,
   hovered: null,
   hoveredShelf: null,
@@ -59,6 +66,8 @@ export const useShelf = create<ShelfState>((set, get) => ({
   dragging: false,
   initialized: false,
   searchOpen: false,
+  turning: false,
+  cut: 0,
   pointer: { x: -1e4, y: -1e4, active: false },
   setMode: (mode, land) => {
     if (get().mode !== mode || get().land !== land) set({ mode, land })
@@ -95,6 +104,8 @@ export const useShelf = create<ShelfState>((set, get) => ({
   setSearchOpen: (v) => {
     if (get().searchOpen !== v) set({ searchOpen: v })
   },
+  setTurning: (v) => set({ turning: v }),
+  bumpCut: () => set({ cut: get().cut + 1 }),
 }))
 
 if (typeof window !== 'undefined') {

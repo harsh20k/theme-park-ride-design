@@ -17,7 +17,7 @@ const shot = async (name: string, wait = 1200) => {
   await page.screenshot({ path: path.join(outDir, `${name}.png`) })
   console.log('shot', name)
 }
-await page.goto(base + '/', { waitUntil: 'networkidle' })
+await page.goto(base + '/shelves', { waitUntil: 'networkidle' })
 await page.waitForSelector('.PressCanvas.is-initialized')
 await shot('library', 4000)
 await page.hover('.Library__shelf:nth-child(2) .Library__plank')

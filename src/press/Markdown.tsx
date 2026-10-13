@@ -5,9 +5,11 @@ import rehypeKatex from 'rehype-katex'
 import { Link } from 'react-router'
 import { conceptIdFromHref } from '@content/markdown'
 import { conceptById } from '@/content/api'
+import { useOpenBook } from './openBook'
 
 /** Markdown with inline concept links resolved to /book/<id>. */
 export default function Markdown({ children, className }: { children: string; className?: string }) {
+  const openBook = useOpenBook()
   const components: Components = {
     a: ({ href, children: kids }) => {
       const h = href ?? ''
@@ -15,7 +17,7 @@ export default function Markdown({ children, className }: { children: string; cl
       const id = external ? null : conceptIdFromHref(h)
       if (id && conceptById.has(id)) {
         return (
-          <Link to={`/book/${id}`} className="Link">
+          <Link to={`/book/${id}`} className="Link" onClick={(e) => openBook(id, e)}>
             {kids}
           </Link>
         )

@@ -2,7 +2,7 @@
 /** Scroll a page top to bottom and back, and report frame times (ms). */
 import { chromium } from 'playwright-core'
 const base = process.argv[2] ?? 'http://localhost:5173'
-const route = process.argv[3] ?? '/'
+const route = process.argv[3] ?? '/shelves'
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--ignore-gpu-blocklist', '--enable-gpu-rasterization', '--use-angle=metal'] })
 const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 })
 page.setDefaultTimeout(90000)
