@@ -29,6 +29,9 @@ const SHELF_YAW = THREE.MathUtils.degToRad(64)
 export const SHELF_TILT = THREE.MathUtils.degToRad(14)
 const PLANK_T = 0.16
 const WALL_Z = -1.1
+/** A book under or beside the pointer turns toward it and eases a touch off the wall. It does not grow. */
+const HOVER_YAW = THREE.MathUtils.degToRad(6)
+const HOVER_OUT = 0.14
 const SIN = Math.sin(SHELF_TILT)
 const COS = Math.cos(SHELF_TILT)
 const WALL_NORMAL = new THREE.Vector3(0, -SIN, COS)
@@ -245,6 +248,9 @@ function LibraryShelf({ landId, metrics }: { landId: string; metrics: Metrics })
   const bookGroups = useRef<(THREE.Group | null)[]>([])
   const contacts = useRef<(THREE.Mesh | null)[]>([])
   const laidOut = useRef('')
+  /** Resting x and yaw of each book, and how far its hover turn has eased in. */
+  const rest = useRef<{ x: number; yaw: number }[]>([])
+  const turn = useRef<{ yaw: number; out: number }[]>([])
   const [wanted, setWanted] = useState(false)
   const { camera } = useThree()
   const sections = useMemo(() => sectionsByLand.get(landId) ?? [], [landId])
@@ -253,10 +259,10 @@ function LibraryShelf({ landId, metrics }: { landId: string; metrics: Metrics })
   const fwd = useMemo(() => new THREE.Vector3(), [])
   if (!contactMat) contactMat = new THREE.MeshBasicMaterial({ map: contactTexture(), transparent: true, depthWrite: false, toneMapped: false })
 
-  useFrame(() => {
+  useFrame((_, dt) => {
     const g = group.current
     if (!g) return
-    const { mode, shelves } = useShelf.getState()
+    const { mode, shelves, pointer } = useShelf.getState()
     const r = mode === 'library' ? shelves.get(landId)?.getBoundingClientRect() : undefined
     const { winW, winH, pxPerUnit, cw, ch, L, W, T } = metrics
     if (!r || !r.height || r.bottom < -winH * 0.6 || r.top > winH * 1.6) {
@@ -285,6 +291,8 @@ function LibraryShelf({ landId, metrics }: { landId: string; metrics: Metrics })
         const x = -(lay.gap * n) / 2 + lay.gap * (i + 0.5)
         // A degree or two of give, so the row looks placed by hand.
         const yaw = SHELF_YAW + ((b.seed % 7) - 3) * 0.006
+        rest.current[i] = { x, yaw }
+        turn.current[i] = { yaw: 0, out: 0 }
         const bg = bookGroups.current[i]
         if (bg) {
           bg.position.set(x, (L * lay.s * 1.024) / 2, lay.zc)
@@ -311,6 +319,35 @@ function LibraryShelf({ landId, metrics }: { landId: string; metrics: Metrics })
     const far = tmp.dot(fwd) * t
     g.scale.setScalar(far / camera.position.length())
     g.visible = true
+
+    // Hover: the book on or next to the pointer turns toward it.
+    const ease = 1 - Math.exp(-Math.min(dt, 1 / 30) * 9)
+    const half = (lay.gap * pxPerUnit) / 2
+    const top = ay - L * lay.s * 1.024 * COS * pxPerUnit
+    const bottom = ay + lay.zc * SIN * pxPerUnit
+    const inBand = pointer.active && pointer.y > top - 14 && pointer.y < bottom + 28
+    for (let i = 0; i < sections.length; i++) {
+      const at = rest.current[i]
+      const st = turn.current[i]
+      if (!at || !st) continue
+      const off = pointer.x - (ax + at.x * pxPerUnit)
+      const near = inBand && Math.abs(off) < half * 1.5
+      const wantYaw = near ? THREE.MathUtils.clamp(off / half, -1, 1) * HOVER_YAW : 0
+      const wantOut = near ? HOVER_OUT : 0
+      if (Math.abs(wantYaw - st.yaw) < 1e-4 && Math.abs(wantOut - st.out) < 1e-4) continue
+      st.yaw += (wantYaw - st.yaw) * ease
+      st.out += (wantOut - st.out) * ease
+      const bg = bookGroups.current[i]
+      if (bg) {
+        bg.rotation.y = at.yaw + st.yaw
+        bg.position.z = lay.zc + st.out
+      }
+      const c = contacts.current[i]
+      if (c) {
+        c.rotation.y = at.yaw + st.yaw
+        c.position.z = lay.zc + 0.02 + st.out
+      }
+    }
   })
 
   return (

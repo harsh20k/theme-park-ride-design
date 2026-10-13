@@ -29,6 +29,8 @@ import { preloadLogo } from './theme'
 const STAND = { yaw: THREE.MathUtils.degToRad(26), pitch: THREE.MathUtils.degToRad(-7), roll: THREE.MathUtils.degToRad(-2) }
 /** Max tilt toward the pointer on the topic shelf. */
 const HOVER_TILT = THREE.MathUtils.degToRad(7)
+/** Max turn of the standing book toward a pointer on or near it. */
+const STAND_HOVER = { yaw: THREE.MathUtils.degToRad(9), pitch: THREE.MathUtils.degToRad(5) }
 
 const FLAT_Q = new THREE.Quaternion().setFromEuler(new THREE.Euler(-Math.PI / 2, Math.PI / 2, 0, 'YXZ'))
 
@@ -66,7 +68,7 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
   useFrame(({ clock }, dt) => {
     const g = group.current
     if (!g) return
-    const { mode, hovered, active, rows, anchors, dragYaw, pointer } = useShelf.getState()
+    const { mode, hovered, active, rows, anchors, dragYaw, dragging, pointer } = useShelf.getState()
     const { pxPerUnit, winW, winH, L, visH } = metrics
     const d = Math.min(dt, 1 / 30)
     const k = 1 - Math.exp(-d * 6)
@@ -98,7 +100,20 @@ function BookInstance({ book, index, metrics }: { book: Book; index: number; met
       tmpV.set((cx - winW / 2) / pxPerUnit, (winH / 2 - cy) / pxPerUnit, 2.5)
       targetScale = ((0.8 * r.height) / pxPerUnit / L) * shrink
       const idle = Math.sin(clock.elapsedTime * 0.5 + index) * 0.02
-      tmpE.set(STAND.pitch, STAND.yaw + dragYaw + idle, STAND.roll)
+      // Turn a little toward the pointer, but only while it is on or just beside the book.
+      let hoverYaw = 0
+      let hoverPitch = 0
+      if (pointer.active && !dragging) {
+        const bh = 0.8 * r.height * shrink
+        const bw = bh * (metrics.W / L)
+        const nx = (pointer.x - cx) / (bw / 2)
+        const ny = (pointer.y - cy) / (bh / 2)
+        if (Math.abs(nx) < 1.35 && Math.abs(ny) < 1.2) {
+          hoverYaw = THREE.MathUtils.clamp(nx, -1, 1) * STAND_HOVER.yaw
+          hoverPitch = THREE.MathUtils.clamp(ny, -1, 1) * STAND_HOVER.pitch
+        }
+      }
+      tmpE.set(STAND.pitch + hoverPitch, STAND.yaw + dragYaw + idle + hoverYaw, STAND.roll)
       tmpQ.setFromEuler(tmpE)
       targetQ = tmpQ
       lerpK = k * 1.3
