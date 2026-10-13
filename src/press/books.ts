@@ -1,5 +1,6 @@
 import { conceptIndex, landById, lands, shelvesForLand, type ConceptIndexEntry } from '@/content/api'
-import { themeForLand, seedFrom, type BookTheme } from './theme'
+import { themeForBook, seedFrom, hexToHsl, CLOTHS, type BookTheme } from './theme'
+import { COVER_CLOTH } from './covers'
 
 export interface Book {
   id: string
@@ -32,18 +33,36 @@ const SHORT: Record<string, string> = {
   careers: 'Careers',
 }
 
-const landIndex = new Map(lands.map((l, i) => [l.id, i]))
+const CLOTH_HSL = CLOTHS.map(hexToHsl)
 
-function toBook(entry: ConceptIndexEntry, section: string): Book {
+/** Two cloths that would read as the same colour side by side. */
+function alike(a: number, b: number): boolean {
+  if (a < 0 || b < 0) return false
+  if (a === b) return true
+  const x = CLOTH_HSL[a]
+  const y = CLOTH_HSL[b]
+  const grey = x.s < 0.2 || y.s < 0.2
+  const dh = Math.abs(((x.h - y.h + 540) % 360) - 180)
+  return grey ? Math.abs(x.l - y.l) < 0.12 && x.s < 0.2 && y.s < 0.2 : dh < 42 && Math.abs(x.l - y.l) < 0.3
+}
+
+/**
+ * Each book is bound in its own cloth, picked from its id. `avoid` lists the
+ * cloths of its neighbours on the shelf, so two books side by side never look alike.
+ */
+function toBook(entry: ConceptIndexEntry, section: string, avoid: number[]): Book & { cloth: number } {
   const land = landById.get(entry.land)
-  const li = landIndex.get(entry.land) ?? 0
+  const seed = seedFrom(entry.id)
+  let cloth = seed % CLOTHS.length
+  for (let tries = 0; tries < CLOTHS.length && avoid.some((a) => alike(a, cloth)); tries++) cloth = (cloth + 5) % CLOTHS.length
   return {
+    cloth,
     id: entry.id,
     title: entry.title,
     author: land?.title ?? entry.land,
     land: entry.land,
-    theme: themeForLand(land ?? { id: entry.land, title: entry.land, color: '#888888', accent: '#666666', tagline: '', description: '', landmark: '', building: 'pavilion', mood: '', icon: '' }, li),
-    seed: seedFrom(entry.id),
+    theme: themeForBook(seed, COVER_CLOTH[entry.id] ?? cloth),
+    seed,
     entry,
     section,
     imprint: SHORT[entry.land] ?? land?.title ?? entry.land,
@@ -63,14 +82,22 @@ export const libraryIndex = new Map<string, { i: number; n: number }>()
 for (const land of lands) {
   const list: Book[] = []
   const sections: Book[] = []
+  let lastSection = -1
+  let last = -1
   for (const { shelf, books: kids } of shelvesForLand(land.id)) {
     const isReal = conceptIndex.some((c) => c.id === shelf.id)
     if (isReal) {
-      const b = toBook(shelf, shelf.id)
+      // Section books stand side by side in the library, and follow the previous book on the topic shelf.
+      const b = toBook(shelf, shelf.id, [lastSection, last])
+      lastSection = last = b.cloth
       list.push(b)
       sections.push(b)
     }
-    for (const k of kids) list.push(toBook(k, shelf.id))
+    for (const k of kids) {
+      const b = toBook(k, shelf.id, [last])
+      last = b.cloth
+      list.push(b)
+    }
   }
   booksByLand.set(land.id, list)
   sectionsByLand.set(land.id, sections)

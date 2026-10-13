@@ -19,6 +19,15 @@ export default function Shelf({ landId, hidden }: { landId: string; hidden?: boo
   const topics = useMemo(() => topicCounts(), [])
   const list = useMemo(() => booksByLand.get(landId) ?? [], [landId])
   const land = landById.get(landId)
+  // Sections of the shelf, for the rail's table of contents.
+  const sections = useMemo(() => {
+    const out: RailSection[] = []
+    list.forEach((b, i) => {
+      if (b.entry.abstraction === 'super-concept') out.push({ id: b.id, title: b.title, start: i, count: 1 })
+      else if (out.length) out[out.length - 1].count++
+    })
+    return out
+  }, [list])
 
   // Which row is nearest the viewport centre (for the rail).
   useEffect(() => {
@@ -62,7 +71,7 @@ export default function Shelf({ landId, hidden }: { landId: string; hidden?: boo
     <>
       <PressHeaderBar hidden={hidden} crumb={land ? { title: land.title, tagline: land.tagline, count: list.length } : undefined} />
 
-      {!hidden && <Rail items={list} current={current} onJump={jump} hidden={false} />}
+      {!hidden && <Rail items={list} current={current} onJump={jump} hidden={false} sections={sections} />}
 
       <div className={`PressList__container ${hidden ? 'is-hidden' : ''}`}>
         <ol className="PressList" aria-label={`Books in ${land?.title ?? landId}`}>
@@ -161,23 +170,52 @@ export function PressHeaderBar({ hidden, crumb }: { hidden?: boolean; crumb?: { 
   )
 }
 
+export interface RailSection {
+  id: string
+  title: string
+  /** Index of the section's first book in `items`. */
+  start: number
+  count: number
+}
+
+/**
+ * The left rail: one tick per book (longer where a section starts), with the
+ * name of the section in view written up its side. Hovering the rail (or
+ * pressing the section name) opens the list of all sections to jump between.
+ */
 export function Rail({
   items,
   current,
   onJump,
   hidden,
   back,
+  sections,
 }: {
   items: Book[]
   current: number
   onJump: (i: number) => void
   hidden: boolean
   back?: string
+  sections?: RailSection[]
 }) {
   const navigate = useNavigate()
   const [help, setHelp] = useState(false)
+  const [open, setOpen] = useState(false)
+  const starts = useMemo(() => new Set(sections?.map((s) => s.start)), [sections])
+  let now = -1
+  sections?.forEach((s, i) => {
+    if (s.start <= current) now = i
+  })
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [open])
+
   return (
-    <nav className="PressRail" aria-label="Shelf navigation">
+    <nav className={`PressRail ${open ? 'is-open' : ''}`} aria-label="Shelf navigation">
       {back && (
         <button className="PressRail__back" onClick={() => navigate(back)} aria-label="Back to the shelf">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -185,24 +223,66 @@ export function Rail({
           </svg>
         </button>
       )}
-      <ol className={`PressRail__list ${hidden && !back ? 'is-hidden' : ''}`}>
-        {items.map((b, i) => (
-          <li key={b.id}>
-            <button
-              className={`PressRail__dash ${i === current ? 'is-active' : ''}`}
-              onClick={() => (back ? navigate(back) : onJump(i))}
-              aria-label={b.title}
-              title={b.title}
-            />
-          </li>
-        ))}
-      </ol>
+      <div
+        className="PressRail__zone"
+        onMouseEnter={() => sections && setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+        onBlur={(e) => {
+          if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false)
+        }}
+      >
+        <ol className={`PressRail__list ${hidden && !back ? 'is-hidden' : ''}`} style={{ height: `min(60vh, ${items.length * 13}px)` }}>
+          {items.map((b, i) => (
+            <li key={b.id}>
+              <button
+                className={`PressRail__dash ${i === current ? 'is-active' : ''} ${starts.has(i) ? 'is-section' : ''}`}
+                onClick={() => (back ? navigate(back) : onJump(i))}
+                aria-label={b.title}
+                title={b.title}
+                tabIndex={open ? -1 : 0}
+              />
+            </li>
+          ))}
+        </ol>
+        {sections && now >= 0 && (
+          <button className="PressRail__now" onClick={() => setOpen((v) => !v)} aria-expanded={open} aria-label={`Section: ${sections[now].title}. Show all sections`}>
+            <span>{sections[now].title}</span>
+          </button>
+        )}
+        {sections && (
+          <div className="PressRail__toc" aria-hidden={!open}>
+            <p className="PressRail__tocHead">
+              {sections.length} sections · {items.length} books
+            </p>
+            <ol>
+              {sections.map((s, i) => (
+                <li key={s.id}>
+                  <button
+                    className={`PressRail__tocItem ${i === now ? 'is-active' : ''}`}
+                    tabIndex={open ? 0 : -1}
+                    aria-current={i === now ? 'true' : undefined}
+                    onClick={() => {
+                      onJump(s.start)
+                      setOpen(false)
+                    }}
+                  >
+                    <span className="PressRail__tocNum">{i + 1}</span>
+                    <span className="PressRail__tocTitle">{s.title}</span>
+                    <span className="PressRail__tocCount">{s.count}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+      </div>
       <button className="PressRail__help" onClick={() => setHelp((v) => !v)} aria-expanded={help} aria-label="Help">
         ?
       </button>
       {help && (
         <div className="PressRail__helpBox" role="dialog">
-          Scroll to browse the shelf. Hover a book to lift it. Click to open it; keep scrolling to read the next book. Drag the standing book to turn it. <kbd>Esc</kbd> puts it back. <kbd>⌘K</kbd> searches everything.
+          Scroll to browse the shelf. Hover a book to lift it. Hover the rail on the left to see every section and jump between them. Click a book to open it; keep scrolling to read the next one. Drag the standing book to turn
+          it. <kbd>Esc</kbd> puts it back. <kbd>⌘K</kbd> searches everything.
         </div>
       )}
     </nav>

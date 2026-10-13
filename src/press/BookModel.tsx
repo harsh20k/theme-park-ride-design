@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useMemo, useState } from 'react'
+import { forwardRef, useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js'
 import type { Book } from './books'
@@ -123,7 +123,8 @@ function pump() {
   }
   requestAnimationFrame(step)
 }
-function enqueue(job: () => void) {
+/** Run a canvas-painting job on its own frame, so a burst of books never stalls scrolling. */
+export function enqueue(job: () => void) {
   queue.push(job)
   pump()
 }
@@ -168,12 +169,33 @@ export function useBookMaterials(book: Book, dims: BookDims, wanted: boolean): B
     }
   }, [wanted, art, book, dims.W, dims.L, dims.T])
 
+  // Free the textures when the book leaves the scene (each cover is several megabytes on the GPU).
+  const artRef = useRef(art)
+  artRef.current = art
+  useEffect(
+    () => () => {
+      const a = artRef.current
+      for (const m of a ? [a.cover, a.back, a.spine] : []) disposeMaterial(m)
+      for (const m of [shared.boardEdge, shared.inner, shared.cloth]) m.dispose()
+      shared.pages.dispose() // the page-edge texture is shared; keep it
+    },
+    [shared],
+  )
+
   return useMemo(() => {
     const cover = art?.cover ?? shared.cloth
     const back = art?.back ?? shared.cloth
     const spine = art?.spine ?? shared.cloth
     return { cover, back, spine, boardEdge: shared.boardEdge, inner: shared.inner, pages: shared.pages, all: [cover, back, spine, shared.boardEdge, shared.inner, shared.pages] }
   }, [art, shared])
+}
+
+function disposeMaterial(m: THREE.Material) {
+  const pm = m as THREE.MeshPhysicalMaterial
+  pm.map?.dispose()
+  pm.metalnessMap?.dispose()
+  pm.roughnessMap?.dispose()
+  m.dispose()
 }
 
 // ---------------------------------------------------------------------------

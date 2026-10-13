@@ -181,3 +181,25 @@ Key choices, trade-offs and cuts. Newest at the bottom of each section.
 - **Font options** are laid out at `/fonts.html` (nine free faces on the site's
   background with header, title, body and spine samples). Switching is three
   CSS variables, the Google Fonts link and `FONT` in `theme.ts`.
+
+
+## Draft 6 — seated shelves, lighter library, section rail, mixed bindings (2026-10-12)
+
+**Books now sit on the shelf.** The old plank was sized for the books' footprint *along* the shelf, but a book turned spine-out is much deeper than it is wide, so every book overhung the plank front and back and read as floating. Now:
+
+- The plank depth comes from the book's real footprint out from the wall, with a margin behind and in front.
+- A shelf is one group: plank, brackets, books and a soft contact shadow under each book are children of it. The group is placed where the DOM plank is; nothing inside it moves on scroll, so a book cannot drift from its plank.
+- The wall leans back 14° (it was a per-shelf 9° tilt against a vertical wall). Shelves are positioned *on* that leaning wall by casting a ray through the DOM point, and scaled back by the small perspective factor so the plank is exactly as wide as its DOM box. Shadows on the wall are now consistent with the planks and brackets.
+- Every shelf is laid out for the fullest one (8 sections), so books are the same size on all shelves.
+
+**Why the library scroll was choppy, and the fix.** Measured with `scripts/perf-library.ts` (scroll top→bottom→top, 1440×900 @2x): first pass averaged 28 ms a frame with spikes to 150 ms, second pass was a clean 16.7 ms. So the GPU was fine; the hitches were the cover art being painted while new shelves scrolled in. Three changes:
+
+- Paper grain was applied by reading and rewriting every pixel of every canvas. It is now one shared 256 px noise tile laid on as a pattern. Twelve full-size covers and spines paint in about 30 ms in total.
+- Library books are stand-ins (`LibraryShelves.tsx`): boards, page block and spine merged into one mesh, textured from one 640 px sheet holding the cover, spine and page edges; plain standard material, no foil or clearcoat maps. One draw call a book instead of six.
+- Only the open topic's books are mounted in the scene (it was all 543, hidden). Their textures are disposed when the topic closes.
+
+After: first pass 16.7 ms average, 16.8 ms worst, no frame over 25 ms, on both the library and the longest topic shelf.
+
+**Section rail.** The topic rail lists one tick per book, with a longer tick where a section starts and the current section's name written up its side. The ticks now compress to fit (the 106-book shelf used to be cut off at 60vh). Hovering the rail, or pressing the section name, opens the list of all sections with book counts; the current one is marked and any of them can be jumped to. Esc or moving away closes it.
+
+**Mixed bindings.** A shelf no longer shares one colour. Each book takes one of 28 binder's cloths (four of them pale, with ink type instead of foil), one of four foils (gold, pale gold, silver, copper) and one of twelve cover designs, all from its id: combed marble, rosette, diagonal foil lines, gilt border, pinstripe ticking, quarter binding, contour rings, leaves, scallops, terrazzo, broad vertical bands, and stars. Spines get one of four binder's decorations (plain, rules at head and tail, a title label, raised bands). Neighbouring books are never bound in look-alike cloths. The three books with photographed covers keep the cloth colour of their photo.

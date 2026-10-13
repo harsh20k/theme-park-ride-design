@@ -11,5 +11,12 @@ export const COVER_IMAGES: Record<string, string> = {
   'peppers-ghost': '/covers/peppers-ghost.jpg',
 }
 
+/** Cloth colour of the books above, fixed by their photographed cover. */
+export const COVER_CLOTH: Record<string, string> = {
+  'peak-end-rule': '#bb1b5d',
+  'clothoid-loop': '#2d23b4',
+  'peppers-ghost': '#711bbb',
+}
+
 /** The press mark, generated with fal.ai (see DECISIONS.md). */
 export const LOGO_URL = '/brand/logo.png'
