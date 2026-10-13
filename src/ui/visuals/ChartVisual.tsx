@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import vegaEmbed, { type VisualizationSpec } from 'vega-embed'
 
-const FONT = 'Newsreader, Georgia, serif'
+const FONT = 'Work Sans, system-ui, sans-serif'
 
 /** Vega-Lite on the press page: transparent background, ink strokes in the page's --color. */
 function paperConfig(color: string): Record<string, unknown> {

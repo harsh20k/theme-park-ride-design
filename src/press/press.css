@@ -4,9 +4,11 @@
   --backgroundColor: #201819;
   --color: #fff;
   --vh: 1vh;
-  --fontDisplay: 'Newsreader', 'Ivar Display', Georgia, serif;
-  --fontHeadline: 'Newsreader', 'Ivar Headline', Georgia, serif;
-  --fontText: 'Newsreader', 'Ivar Text', Georgia, serif;
+  /* Titles are set in Anton; everything else that is read is Work Sans. The book covers and spines keep Newsreader (theme.ts). */
+  --fontTitle: 'Anton', 'Arial Narrow', Impact, sans-serif;
+  --fontDisplay: 'Work Sans', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --fontHeadline: 'Work Sans', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --fontText: 'Work Sans', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
   --rowHeight: 32.2vh;
 }
 @media (min-width: 900px) {
@@ -1268,4 +1270,51 @@ body.is-searching {
   .PressRail__now {
     display: none;
   }
+}
+
+/* ---------- draft 7: Anton titles, Work Sans text ---------- */
+body {
+  font-weight: 400;
+}
+.PressHeader__name,
+.PressDetails__title,
+.Library__title,
+.Search__hitTitle {
+  font-family: var(--fontTitle);
+  font-weight: 400;
+  font-synthesis: none;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+.PressHeader__name {
+  font-size: 1.35rem;
+  line-height: 1.15;
+  margin-bottom: 4px;
+}
+.PressDetails__title {
+  font-size: calc(28px + 1.1vw);
+  line-height: 1.08;
+}
+@media (min-width: 1600px) {
+  .PressDetails__title {
+    font-size: 2.7em;
+    line-height: 1.08;
+    letter-spacing: 0.015em;
+  }
+}
+.Library__title {
+  font-size: calc(24px + 0.75vw);
+  line-height: 1.08;
+}
+.Search__hitTitle {
+  font-size: 1.15em;
+}
+.PressHeader__tagline {
+  font-weight: 500;
+}
+.Library__title {
+  margin-bottom: 4px;
+}
+.PressDetails__author {
+  margin-top: 8px;
 }

@@ -12,7 +12,7 @@ function init() {
     startOnLoad: false,
     securityLevel: 'strict',
     theme: 'base',
-    fontFamily: 'Newsreader, Georgia, serif',
+    fontFamily: 'Work Sans, system-ui, sans-serif',
     themeVariables: {
       background: 'transparent',
       primaryColor: bg,
