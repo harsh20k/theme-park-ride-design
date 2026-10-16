@@ -927,6 +927,15 @@
   "source": "wikipedia-disneys-animal-kingdom"
  },
  {
+  "date": "1998-07",
+  "precision": "month",
+  "title": "The experience economy is named",
+  "description": "Pine and Gilmore's Harvard Business Review article.",
+  "land": "operations-business",
+  "concept": "experience-economy",
+  "source": "hbr-pine-gilmore-experience-economy-1998"
+ },
+ {
   "date": "1998-12-14",
   "precision": "day",
   "title": "Merlin Entertainments founded",
@@ -1098,6 +1107,15 @@
   "source": "tpi-big-thunder-2003"
  },
  {
+  "date": "2004",
+  "precision": "year",
+  "title": "Rowling signs a letter of intent with Disney",
+  "description": "A Harry Potter area for the Magic Kingdom is agreed in principle; Disney later withdraws.",
+  "land": "history",
+  "concept": "wizarding-world-of-harry-potter",
+  "source": "wikipedia-wizarding-world-orlando"
+ },
+ {
   "date": "2005-05-21",
   "precision": "day",
   "title": "Kingda Ka opens",
@@ -1161,6 +1179,15 @@
   "source": "blooloop-season-pass-origin"
  },
  {
+  "date": "2007-05-31",
+  "precision": "day",
+  "title": "Universal announces the Wizarding World",
+  "description": "A 20-acre Harry Potter land for Islands of Adventure, licensed from Warner Bros.",
+  "land": "history",
+  "concept": "wizarding-world-of-harry-potter",
+  "source": "wikipedia-wizarding-world-orlando"
+ },
+ {
   "date": "2008-04-15",
   "precision": "day",
   "title": "Hard Rock Park opens",
@@ -1182,7 +1209,7 @@
   "date": "2010-06-18",
   "precision": "day",
   "title": "Wizarding World of Harry Potter opens",
-  "description": "Forbidden Journey's KUKA arms debut; Islands of Adventure attendance rises 36%.",
+  "description": "Forbidden Journey's KUKA arms debut; Islands of Adventure attendance rises 29% that year.",
   "land": "history",
   "concept": "forbidden-journey",
   "source": "wikipedia-forbidden-journey"
@@ -1251,6 +1278,15 @@
   "source": "wikipedia-new-texas-giant"
  },
  {
+  "date": "2011-05-20",
+  "precision": "day",
+  "title": "Star Tours \u2013 The Adventures Continue opens",
+  "description": "Randomised film segments give about 1,500 different flights, a lever for re-riding.",
+  "land": "story-experience",
+  "concept": "rerideability",
+  "source": "wikipedia-star-tours-adventures-continue"
+ },
+ {
   "date": "2011-12-03",
   "precision": "day",
   "title": "Transformers: The Ride opens in Singapore",
@@ -1276,6 +1312,15 @@
   "land": "design-process",
   "concept": "vr-design-review",
   "source": "mouseplanet-dish-visit"
+ },
+ {
+  "date": "2012-10-30",
+  "precision": "day",
+  "title": "Disney agrees to buy Lucasfilm",
+  "description": "A $4.05 billion deal that names theme parks among its uses for Star Wars.",
+  "land": "history",
+  "concept": "galaxys-edge",
+  "source": "techcrunch-disney-lucasfilm-2012"
  },
  {
   "date": "2013-03-15",
@@ -1312,6 +1357,15 @@
   "land": "history",
   "concept": "asian-expansion",
   "source": "wikipedia-chimelong-ocean-kingdom"
+ },
+ {
+  "date": "2014-07-08",
+  "precision": "day",
+  "title": "Diagon Alley opens",
+  "description": "The second Wizarding World land, linked to Hogsmeade by the Hogwarts Express.",
+  "land": "history",
+  "concept": "wizarding-world-of-harry-potter",
+  "source": "wikipedia-wizarding-world-orlando"
  },
  {
   "date": "2015",
@@ -1357,6 +1411,15 @@
   "land": "operations-business",
   "concept": "pricing",
   "source": "mouseplanet-seasonal-pricing-2016"
+ },
+ {
+  "date": "2016-03-24",
+  "precision": "day",
+  "title": "Galactica reopens with VR headsets",
+  "description": "Alton Towers' flying coaster Air returns with a Gear VR headset at every seat.",
+  "land": "ai-future",
+  "concept": "galactica-vr-coaster",
+  "source": "wikipedia-galactica-roller-coaster"
  },
  {
   "date": "2016-06-16",
@@ -1474,6 +1537,24 @@
   "land": "masterplanning",
   "concept": "indoor-parks",
   "source": "wikipedia-warner-bros-world-abu-dhabi"
+ },
+ {
+  "date": "2019",
+  "precision": "year",
+  "title": "Galactica's VR headsets removed",
+  "description": "After a 2018 cut-back to three rows, the park removes VR, citing guest feedback.",
+  "land": "ai-future",
+  "concept": "galactica-vr-coaster",
+  "source": "wikipedia-galactica-roller-coaster"
+ },
+ {
+  "date": "2019-05-31",
+  "precision": "day",
+  "title": "Star Wars: Galaxy's Edge opens at Disneyland",
+  "description": "A 14-acre land set on the planet Batuu; Walt Disney World's opens on August 29.",
+  "land": "history",
+  "concept": "galaxys-edge",
+  "source": "wikipedia-galaxys-edge"
  },
  {
   "date": "2019-06-13",

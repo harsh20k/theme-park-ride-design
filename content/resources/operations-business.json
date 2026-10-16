@@ -348,5 +348,35 @@
     "level": "intermediate",
     "why_it_matters": "Free JSON endpoints for live wait times at 80+ parks, refreshed every five minutes; the easiest way to prototype a wait-time app.",
     "verified_on": "2026-10-12"
+  },
+  {
+    "id": "hbr-pine-gilmore-experience-economy-1998",
+    "title": "Welcome to the Experience Economy",
+    "url": "https://hbr.org/1998/07/welcome-to-the-experience-economy",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "B. Joseph Pine II and James H. Gilmore's July-August 1998 Harvard Business Review article that named the experience economy.",
+    "verified_on": "2026-10-16"
+  },
+  {
+    "id": "blogmickey-savis-lightsaber-pricing-2019",
+    "title": "Handbuilt Lightsaber Pricing Revealed for Savi's Workshop in Star Wars: Galaxy's Edge",
+    "url": "https://blogmickey.com/2019/05/handbuilt-lightsaber-pricing-revealed-for-savis-workshop-in-star-wars-galaxys-edge/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "May 2019 report of the opening price ($199 plus tax) and contents of the Savi's Workshop lightsaber experience.",
+    "verified_on": "2026-10-16"
+  },
+  {
+    "id": "blooloop-disney-attendance-q3-2019",
+    "title": "Disney theme park attendance drops",
+    "url": "https://blooloop.com/theme-park/news/disney-theme-park-attendance-drops/",
+    "type": "article",
+    "land": "operations-business",
+    "level": "beginner",
+    "why_it_matters": "August 2019 report that US Disney park attendance fell 3% in the quarter Galaxy's Edge opened, with Bob Iger's explanation.",
+    "verified_on": "2026-10-16"
   }
 ]

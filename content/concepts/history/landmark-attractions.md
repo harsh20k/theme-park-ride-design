@@ -5,7 +5,7 @@ land: history
 level: beginner
 abstraction: super-concept
 parent: null
-children: [pirates-of-the-caribbean, haunted-mansion, space-mountain, matterhorn-bobsleds, indiana-jones-adventure, tower-of-terror, spider-man-and-transformers, forbidden-journey, rise-of-the-resistance, flight-of-passage, expedition-everest, mystic-manor, symbolica]
+children: [pirates-of-the-caribbean, haunted-mansion, space-mountain, matterhorn-bobsleds, indiana-jones-adventure, tower-of-terror, spider-man-and-transformers, forbidden-journey, rise-of-the-resistance, flight-of-passage, expedition-everest, mystic-manor, symbolica, wizarding-world-of-harry-potter, galaxys-edge]
 relations:
   - { type: applies-to, target: ride-classification }
   - { type: example-of, target: dark-rides }

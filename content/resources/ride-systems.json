@@ -1018,5 +1018,15 @@
   "level": "intermediate",
   "why_it_matters": "The dominant ropeway builder: gondolas, 3S tricable systems and Cable Liner people movers.",
   "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-star-tours-adventures-continue",
+  "title": "Star Tours – The Adventures Continue",
+  "url": "https://en.wikipedia.org/wiki/Star_Tours_%E2%80%93_The_Adventures_Continue",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 2011 Star Tours remake that assembles each flight from randomised film segments, about 1,500 combinations by Wikipedia's count.",
+  "verified_on": "2026-10-16"
  }
 ]

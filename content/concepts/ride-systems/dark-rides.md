@@ -5,7 +5,7 @@ land: ride-systems
 level: beginner
 abstraction: super-concept
 parent: null
-children: [classic-dark-ride, omnimover, trackless-ride, enhanced-motion-vehicle, robot-arm-ride, interactive-dark-ride, boat-dark-ride, suspended-dark-ride, media-dark-ride]
+children: [classic-dark-ride, omnimover, trackless-ride, enhanced-motion-vehicle, robot-arm-ride, interactive-dark-ride, boat-dark-ride, suspended-dark-ride, media-dark-ride, multi-system-attractions]
 relations:
   - { type: enables, target: story-driven-design }
   - { type: applies-to, target: show-control-systems }

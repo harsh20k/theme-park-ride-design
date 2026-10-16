@@ -12,6 +12,7 @@ story-experience | Story & Experience Design
     ip-adaptation | IP Adaptation & Original Stories | intermediate
     theme-vs-decoration | Theme vs Decoration | beginner
     architecture-as-character | Architecture as Character | intermediate
+    immersive-lands | Total-Immersion Lands | intermediate
   spatial-storytelling | Spatial Storytelling | beginner
     weenies | Weenies | beginner
     forced-perspective | Forced Perspective | beginner
@@ -28,6 +29,7 @@ story-experience | Story & Experience Design
     tension-and-release | Tension & Release Curve | intermediate
     finale-design | Finale & Unload Design | intermediate
     kinetics-in-scenes | Kinetics & Motion in Scenes | intermediate
+    rerideability | Re-rideability | intermediate
   scripts-and-performance | Scripts & Performance | intermediate
     show-scripts | Show Scripts & Spiels | beginner
     cast-role-play | Cast & Character Role-Play | beginner
@@ -214,6 +216,7 @@ ride-systems | Ride Systems & Types
     boat-dark-ride | Boat Dark Ride | beginner
     suspended-dark-ride | Suspended Dark Ride | intermediate
     media-dark-ride | Screen-Based Dark Ride | intermediate
+    multi-system-attractions | Multi-System Attractions | intermediate
   simulators-and-motion-bases | Simulators & Motion Bases | intermediate
     motion-base | Motion Base | intermediate
       stewart-platform | Stewart Platform | advanced
@@ -465,6 +468,8 @@ operations-business | Operations & Business
     length-of-stay | Hotels, Resorts & Length of Stay | intermediate
     ip-licensing-economics | IP Licensing Economics | intermediate
     industry-structure | Industry Structure | beginner
+    experience-economy | The Experience Economy | beginner
+    retail-as-attraction | Retail as Attraction | intermediate
   data-and-technology | Data & Technology | intermediate
     wait-time-data-and-apps | Wait-Time Data & Apps | beginner
     wearables-and-identity | Wearables & Guest Identity | intermediate
@@ -498,6 +503,8 @@ history | History & Landmark Attractions
     expedition-everest | Expedition Everest | beginner
     mystic-manor | Mystic Manor | beginner
     symbolica | Symbolica | intermediate
+    wizarding-world-of-harry-potter | The Wizarding World of Harry Potter | beginner
+    galaxys-edge | Star Wars: Galaxy's Edge | beginner
   coaster-milestones | Coaster Milestones | beginner
     tubular-steel-breakthrough | Tubular Steel Breakthrough | beginner
     loop-revival | Corkscrew & Loop Revival | beginner
@@ -540,6 +547,7 @@ ai-future | AI & Future Tech
     real-time-engines | Real-Time Engines in Attractions | intermediate
     personalized-dark-rides | Personalized & Branching Rides | advanced
     haptics-and-next-gen-motion | Haptics & Next-Gen Motion | advanced
+    galactica-vr-coaster | Galactica, the VR Coaster Experiment | beginner
   futures-and-ethics | Futures & Ethics | intermediate
     data-privacy | Data Privacy & Surveillance | intermediate
     craft-vs-automation | Human Craft vs Automation | beginner

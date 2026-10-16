@@ -5,7 +5,7 @@ land: operations-business
 level: intermediate
 abstraction: super-concept
 parent: operations-business
-children: [capital-budgets, roi-and-attendance-modeling, pricing, per-capita-spending, seasonality-and-events, length-of-stay, ip-licensing-economics, industry-structure]
+children: [capital-budgets, roi-and-attendance-modeling, pricing, per-capita-spending, seasonality-and-events, length-of-stay, ip-licensing-economics, industry-structure, experience-economy, retail-as-attraction]
 relations:
   - { type: applies-to, target: feasibility-and-early-costing }
   - { type: limits, target: scope-and-value-engineering }

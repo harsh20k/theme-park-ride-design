@@ -23,5 +23,6 @@
   {"term": "Enhanced Motion Vehicle", "definition": "A tracked vehicle with an onboard motion base that adds tilt and bounce, first used on Indiana Jones Adventure.", "land": "history", "concept": "indiana-jones-adventure"},
   {"term": "Trackless ride", "definition": "A dark ride whose vehicles follow a programmed path across a floor using wire or positioning systems, not a track.", "land": "history", "concept": "mystic-manor"},
   {"term": "Thea Award", "definition": "The Themed Entertainment Association's peer award for outstanding projects, given since 1994.", "land": "history", "concept": "landmark-attractions"},
-  {"term": "Park reservation", "definition": "A dated booking required to enter a park, adopted widely after the 2020 reopenings.", "land": "history", "concept": "reservation-era"}
+  {"term": "Park reservation", "definition": "A dated booking required to enter a park, adopted widely after the 2020 reopenings.", "land": "history", "concept": "reservation-era"},
+  {"term": "Batuu", "definition": "The fictional planet whose Black Spire Outpost is the setting of Star Wars: Galaxy's Edge.", "land": "history", "concept": "galaxys-edge"}
 ]

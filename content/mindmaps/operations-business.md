@@ -34,6 +34,8 @@ mindmap
       Hotels, Resorts & Length of Stay
       IP Licensing Economics
       Industry Structure
+      The Experience Economy
+      Retail as Attraction
     data_and_technology[Data & Technology]
       Wait-Time Data & Apps
       Wearables & Guest Identity

@@ -32,6 +32,7 @@ mindmap
       Boat Dark Ride
       Suspended Dark Ride
       Screen-Based Dark Ride
+      Multi-System Attractions
     simulators_and_motion_bases[Simulators & Motion Bases]
       Motion Base
         Stewart Platform

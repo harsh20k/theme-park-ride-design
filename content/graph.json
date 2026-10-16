@@ -71,6 +71,13 @@
    "level": "intermediate"
   },
   {
+   "id": "immersive-lands",
+   "title": "Total-Immersion Lands",
+   "land": "story-experience",
+   "abstraction": "concept",
+   "level": "intermediate"
+  },
+  {
    "id": "spatial-storytelling",
    "title": "Spatial Storytelling",
    "land": "story-experience",
@@ -178,6 +185,13 @@
   {
    "id": "kinetics-in-scenes",
    "title": "Kinetics & Motion in Scenes",
+   "land": "story-experience",
+   "abstraction": "concept",
+   "level": "intermediate"
+  },
+  {
+   "id": "rerideability",
+   "title": "Re-rideability",
    "land": "story-experience",
    "abstraction": "concept",
    "level": "intermediate"
@@ -1438,6 +1452,13 @@
   {
    "id": "media-dark-ride",
    "title": "Screen-Based Dark Ride",
+   "land": "ride-systems",
+   "abstraction": "concept",
+   "level": "intermediate"
+  },
+  {
+   "id": "multi-system-attractions",
+   "title": "Multi-System Attractions",
    "land": "ride-systems",
    "abstraction": "concept",
    "level": "intermediate"
@@ -3116,6 +3137,20 @@
    "level": "beginner"
   },
   {
+   "id": "experience-economy",
+   "title": "The Experience Economy",
+   "land": "operations-business",
+   "abstraction": "concept",
+   "level": "beginner"
+  },
+  {
+   "id": "retail-as-attraction",
+   "title": "Retail as Attraction",
+   "land": "operations-business",
+   "abstraction": "concept",
+   "level": "intermediate"
+  },
+  {
    "id": "data-and-technology",
    "title": "Data & Technology",
    "land": "operations-business",
@@ -3331,6 +3366,20 @@
    "land": "history",
    "abstraction": "concept",
    "level": "intermediate"
+  },
+  {
+   "id": "wizarding-world-of-harry-potter",
+   "title": "The Wizarding World of Harry Potter",
+   "land": "history",
+   "abstraction": "concept",
+   "level": "beginner"
+  },
+  {
+   "id": "galaxys-edge",
+   "title": "Star Wars: Galaxy's Edge",
+   "land": "history",
+   "abstraction": "concept",
+   "level": "beginner"
   },
   {
    "id": "coaster-milestones",
@@ -3613,6 +3662,13 @@
    "level": "advanced"
   },
   {
+   "id": "galactica-vr-coaster",
+   "title": "Galactica, the VR Coaster Experiment",
+   "land": "ai-future",
+   "abstraction": "concept",
+   "level": "beginner"
+  },
+  {
    "id": "futures-and-ethics",
    "title": "Futures & Ethics",
    "land": "ai-future",
@@ -3849,6 +3905,11 @@
    "type": "part-of"
   },
   {
+   "source": "immersive-lands",
+   "target": "themed-storytelling",
+   "type": "part-of"
+  },
+  {
    "source": "weenies",
    "target": "spatial-storytelling",
    "type": "part-of"
@@ -3915,6 +3976,11 @@
   },
   {
    "source": "kinetics-in-scenes",
+   "target": "pacing-and-structure",
+   "type": "part-of"
+  },
+  {
+   "source": "rerideability",
    "target": "pacing-and-structure",
    "type": "part-of"
   },
@@ -4730,6 +4796,11 @@
   },
   {
    "source": "media-dark-ride",
+   "target": "dark-rides",
+   "type": "part-of"
+  },
+  {
+   "source": "multi-system-attractions",
    "target": "dark-rides",
    "type": "part-of"
   },
@@ -5744,6 +5815,16 @@
    "type": "part-of"
   },
   {
+   "source": "experience-economy",
+   "target": "business-and-finance",
+   "type": "part-of"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "business-and-finance",
+   "type": "part-of"
+  },
+  {
    "source": "wait-time-data-and-apps",
    "target": "data-and-technology",
    "type": "part-of"
@@ -5875,6 +5956,16 @@
   },
   {
    "source": "symbolica",
+   "target": "landmark-attractions",
+   "type": "part-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "landmark-attractions",
+   "type": "part-of"
+  },
+  {
+   "source": "galaxys-edge",
    "target": "landmark-attractions",
    "type": "part-of"
   },
@@ -6040,6 +6131,11 @@
   },
   {
    "source": "haptics-and-next-gen-motion",
+   "target": "immersive-media",
+   "type": "part-of"
+  },
+  {
+   "source": "galactica-vr-coaster",
    "target": "immersive-media",
    "type": "part-of"
   },
@@ -6406,6 +6502,31 @@
   {
    "source": "architecture-as-character",
    "target": "tower-of-terror",
+   "type": "example-of"
+  },
+  {
+   "source": "immersive-lands",
+   "target": "breaking-immersion",
+   "type": "limits"
+  },
+  {
+   "source": "immersive-lands",
+   "target": "cast-role-play",
+   "type": "applies-to"
+  },
+  {
+   "source": "immersive-lands",
+   "target": "food-and-retail-placement",
+   "type": "applies-to"
+  },
+  {
+   "source": "immersive-lands",
+   "target": "retail-as-attraction",
+   "type": "enables"
+  },
+  {
+   "source": "immersive-lands",
+   "target": "galaxys-edge",
    "type": "example-of"
   },
   {
@@ -6832,6 +6953,26 @@
    "source": "kinetics-in-scenes",
    "target": "pirates-of-the-caribbean",
    "type": "example-of"
+  },
+  {
+   "source": "rerideability",
+   "target": "motion-simulator-theatre",
+   "type": "applies-to"
+  },
+  {
+   "source": "rerideability",
+   "target": "interactive-narrative",
+   "type": "applies-to"
+  },
+  {
+   "source": "rerideability",
+   "target": "roi-and-attendance-modeling",
+   "type": "enables"
+  },
+  {
+   "source": "rerideability",
+   "target": "galactica-vr-coaster",
+   "type": "contrasts-with"
   },
   {
    "source": "scripts-and-performance",
@@ -11377,6 +11518,31 @@
    "source": "media-dark-ride",
    "target": "ip-adaptation",
    "type": "enables"
+  },
+  {
+   "source": "multi-system-attractions",
+   "target": "show-control-systems",
+   "type": "applies-to"
+  },
+  {
+   "source": "multi-system-attractions",
+   "target": "three-act-ride",
+   "type": "enables"
+  },
+  {
+   "source": "multi-system-attractions",
+   "target": "downtime-and-availability",
+   "type": "causes"
+  },
+  {
+   "source": "multi-system-attractions",
+   "target": "rise-of-the-resistance",
+   "type": "example-of"
+  },
+  {
+   "source": "multi-system-attractions",
+   "target": "forbidden-journey",
+   "type": "example-of"
   },
   {
    "source": "simulators-and-motion-bases",
@@ -17419,6 +17585,51 @@
    "type": "applies-to"
   },
   {
+   "source": "experience-economy",
+   "target": "immersive-lands",
+   "type": "enables"
+  },
+  {
+   "source": "experience-economy",
+   "target": "per-capita-spending",
+   "type": "applies-to"
+  },
+  {
+   "source": "experience-economy",
+   "target": "souvenirs-and-memory-cues",
+   "type": "applies-to"
+  },
+  {
+   "source": "experience-economy",
+   "target": "herding-and-social-proof",
+   "type": "applies-to"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "per-capita-spending",
+   "type": "applies-to"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "food-and-retail-placement",
+   "type": "applies-to"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "souvenirs-and-memory-cues",
+   "type": "applies-to"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "cast-role-play",
+   "type": "applies-to"
+  },
+  {
+   "source": "retail-as-attraction",
+   "target": "throughput-math",
+   "type": "contrasts-with"
+  },
+  {
    "source": "data-and-technology",
    "target": "personalization",
    "type": "enables"
@@ -18286,6 +18497,56 @@
   {
    "source": "symbolica",
    "target": "european-parks",
+   "type": "example-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "land-design",
+   "type": "example-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "immersive-lands",
+   "type": "example-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "retail-as-attraction",
+   "type": "example-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "ip-licensing-economics",
+   "type": "example-of"
+  },
+  {
+   "source": "wizarding-world-of-harry-potter",
+   "target": "roi-and-attendance-modeling",
+   "type": "example-of"
+  },
+  {
+   "source": "galaxys-edge",
+   "target": "immersive-lands",
+   "type": "example-of"
+  },
+  {
+   "source": "galaxys-edge",
+   "target": "cast-role-play",
+   "type": "example-of"
+  },
+  {
+   "source": "galaxys-edge",
+   "target": "reveal-and-concealment",
+   "type": "example-of"
+  },
+  {
+   "source": "galaxys-edge",
+   "target": "retail-as-attraction",
+   "type": "example-of"
+  },
+  {
+   "source": "galaxys-edge",
+   "target": "ip-adaptation",
    "type": "example-of"
   },
   {
@@ -19407,6 +19668,26 @@
    "source": "haptics-and-next-gen-motion",
    "target": "motion-base",
    "type": "contrasts-with"
+  },
+  {
+   "source": "galactica-vr-coaster",
+   "target": "vr-ar-in-parks",
+   "type": "example-of"
+  },
+  {
+   "source": "galactica-vr-coaster",
+   "target": "throughput-math",
+   "type": "example-of"
+  },
+  {
+   "source": "galactica-vr-coaster",
+   "target": "rerideability",
+   "type": "contrasts-with"
+  },
+  {
+   "source": "galactica-vr-coaster",
+   "target": "plussing",
+   "type": "example-of"
   },
   {
    "source": "futures-and-ethics",

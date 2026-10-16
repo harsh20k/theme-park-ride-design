@@ -29,6 +29,8 @@ mindmap
       Expedition Everest
       Mystic Manor
       Symbolica
+      The Wizarding World of Harry Potter
+      Star Wars: Galaxy's Edge
     coaster_milestones[Coaster Milestones]
       Tubular Steel Breakthrough
       Corkscrew & Loop Revival

@@ -540,6 +540,16 @@
   "verified_on": "2026-10-12"
  },
  {
+  "id": "wikipedia-galactica-roller-coaster",
+  "title": "Galactica (roller coaster)",
+  "url": "https://en.wikipedia.org/wiki/Galactica_(roller_coaster)",
+  "type": "article",
+  "land": "ai-future",
+  "level": "beginner",
+  "why_it_matters": "History of Alton Towers' flying coaster Air, its 2016 relaunch with VR headsets, the 2018 cut-back and the 2019 removal of VR.",
+  "verified_on": "2026-10-16"
+ },
+ {
   "id": "wdi-site-home",
   "title": "Walt Disney Imagineering \u2014 official site",
   "url": "https://sites.disney.com/waltdisneyimagineering/",
@@ -2670,6 +2680,26 @@
   "verified_on": "2026-10-12"
  },
  {
+  "id": "cbsnews-wizarding-world-opens-2010",
+  "title": "Harry Potter Theme Park Opens to Eager Muggles",
+  "url": "https://www.cbsnews.com/news/harry-potter-theme-park-opens-to-eager-muggles/",
+  "type": "article",
+  "land": "history",
+  "level": "beginner",
+  "why_it_matters": "Opening-day report citing the SEC-filed licence terms (nine years plus two five-year options, quality conditions) and Rowling's approval of the Butterbeer recipe.",
+  "verified_on": "2026-10-16"
+ },
+ {
+  "id": "techcrunch-disney-lucasfilm-2012",
+  "title": "Disney To Buy 'Star Wars' Maker Lucasfilm For $4.05 Billion",
+  "url": "https://techcrunch.com/2012/10/30/disney-to-acquire-lucasfilm/",
+  "type": "article",
+  "land": "history",
+  "level": "beginner",
+  "why_it_matters": "Report of the October 30, 2012 deal, half cash and half stock, which named theme parks among the uses for Lucasfilm's stories.",
+  "verified_on": "2026-10-16"
+ },
+ {
   "id": "lynch-image-of-the-city",
   "title": "The Image of the City (book)",
   "url": "https://openlibrary.org/books/OL14837731M/The_Image_of_the_City",
@@ -4250,6 +4280,36 @@
   "verified_on": "2026-10-12"
  },
  {
+  "id": "hbr-pine-gilmore-experience-economy-1998",
+  "title": "Welcome to the Experience Economy",
+  "url": "https://hbr.org/1998/07/welcome-to-the-experience-economy",
+  "type": "article",
+  "land": "operations-business",
+  "level": "beginner",
+  "why_it_matters": "B. Joseph Pine II and James H. Gilmore's July-August 1998 Harvard Business Review article that named the experience economy.",
+  "verified_on": "2026-10-16"
+ },
+ {
+  "id": "blogmickey-savis-lightsaber-pricing-2019",
+  "title": "Handbuilt Lightsaber Pricing Revealed for Savi's Workshop in Star Wars: Galaxy's Edge",
+  "url": "https://blogmickey.com/2019/05/handbuilt-lightsaber-pricing-revealed-for-savis-workshop-in-star-wars-galaxys-edge/",
+  "type": "article",
+  "land": "operations-business",
+  "level": "beginner",
+  "why_it_matters": "May 2019 report of the opening price ($199 plus tax) and contents of the Savi's Workshop lightsaber experience.",
+  "verified_on": "2026-10-16"
+ },
+ {
+  "id": "blooloop-disney-attendance-q3-2019",
+  "title": "Disney theme park attendance drops",
+  "url": "https://blooloop.com/theme-park/news/disney-theme-park-attendance-drops/",
+  "type": "article",
+  "land": "operations-business",
+  "level": "beginner",
+  "why_it_matters": "August 2019 report that US Disney park attendance fell 3% in the quarter Galaxy's Edge opened, with Bob Iger's explanation.",
+  "verified_on": "2026-10-16"
+ },
+ {
   "id": "coaster101-brakes-blocks-sensors",
   "title": "Coasters-101: Brakes, Blocks, and Sensors",
   "url": "https://www.coaster101.com/2011/11/23/coasters-101-brakes-blocks-and-sensors/",
@@ -5678,6 +5738,16 @@
   "level": "intermediate",
   "why_it_matters": "The dominant ropeway builder: gondolas, 3S tricable systems and Cable Liner people movers.",
   "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wikipedia-star-tours-adventures-continue",
+  "title": "Star Tours \u2013 The Adventures Continue",
+  "url": "https://en.wikipedia.org/wiki/Star_Tours_%E2%80%93_The_Adventures_Continue",
+  "type": "article",
+  "land": "ride-systems",
+  "level": "beginner",
+  "why_it_matters": "The 2011 Star Tours remake that assembles each flight from randomised film segments, about 1,500 combinations by Wikipedia's count.",
+  "verified_on": "2026-10-16"
  },
  {
   "id": "astm-f24-committee",
@@ -7228,5 +7298,35 @@
   "level": "beginner",
   "why_it_matters": "The entry street as overture, from the train station to the hub and castle.",
   "verified_on": "2026-10-12"
+ },
+ {
+  "id": "wendover-how-to-design-a-theme-park",
+  "title": "How to Design a Theme Park (To Take Tons of Your Money)",
+  "url": "https://www.youtube.com/watch?v=oESoI6XxZTg",
+  "type": "video",
+  "land": "story-experience",
+  "level": "beginner",
+  "why_it_matters": "Wendover Productions' video essay on the Wizarding World and Galaxy's Edge as answers to the experience economy: immersion, payoffs, paid experiences and re-rideability.",
+  "verified_on": "2026-10-16"
+ },
+ {
+  "id": "clickondetroit-galaxys-edge-immersion",
+  "title": "Star Wars: Galaxy's Edge: Is it the most immersive land Disney has built?",
+  "url": "https://www.clickondetroit.com/features/2022/04/13/star-wars-galaxys-edge-is-it-the-most-immersive-land-disney-has-built/",
+  "type": "article",
+  "land": "story-experience",
+  "level": "beginner",
+  "why_it_matters": "Reports how Galaxy's Edge cast members get a Batuu backstory, a side and a home community, greet guests with 'bright suns' and mix their own costumes.",
+  "verified_on": "2026-10-16"
+ },
+ {
+  "id": "disneytouristblog-thermal-detonator-bottles",
+  "title": "Star Wars Land's Coca-Cola Thermal Detonators",
+  "url": "https://www.disneytouristblog.com/coke-star-wars-land-coca-cola-thermal-detonators/",
+  "type": "article",
+  "land": "story-experience",
+  "level": "beginner",
+  "why_it_matters": "Explains the round, Aurebesh-labelled Coca-Cola bottles made for Galaxy's Edge, and where Imagineers took the idea from.",
+  "verified_on": "2026-10-16"
  }
 ]

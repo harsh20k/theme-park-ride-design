@@ -5,7 +5,7 @@ land: ai-future
 level: intermediate
 abstraction: super-concept
 parent: null
-children: [vr-ar-in-parks, real-time-engines, personalized-dark-rides, haptics-and-next-gen-motion]
+children: [vr-ar-in-parks, real-time-engines, personalized-dark-rides, haptics-and-next-gen-motion, galactica-vr-coaster]
 relations:
   - { type: applies-to, target: media-dark-ride }
   - { type: enables, target: presence }

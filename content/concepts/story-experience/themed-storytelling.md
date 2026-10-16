@@ -5,7 +5,7 @@ land: story-experience
 level: beginner
 abstraction: super-concept
 parent: story-experience
-children: [story-driven-design, environmental-storytelling, ip-adaptation, theme-vs-decoration, architecture-as-character]
+children: [story-driven-design, environmental-storytelling, ip-adaptation, theme-vs-decoration, architecture-as-character, immersive-lands]
 relations:
   - { type: enables, target: narrative-transportation }
   - { type: applies-to, target: blue-sky }

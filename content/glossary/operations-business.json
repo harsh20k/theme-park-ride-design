@@ -23,5 +23,6 @@
   {"term": "Per-capita spending", "definition": "Revenue divided by attendance; the average amount each guest visit brings in.", "land": "operations-business", "concept": "per-capita-spending"},
   {"term": "Length of stay", "definition": "The number of days or nights a visiting party spends at a resort.", "land": "operations-business", "concept": "length-of-stay"},
   {"term": "Shoulder season", "definition": "The quieter weeks on either side of a park's peak, often filled with ticketed events.", "land": "operations-business", "concept": "seasonality-and-events"},
-  {"term": "Exit intercept", "definition": "A short survey interview with guests as they leave the park.", "land": "operations-business", "concept": "guest-research"}
+  {"term": "Exit intercept", "definition": "A short survey interview with guests as they leave the park.", "land": "operations-business", "concept": "guest-research"},
+  {"term": "Experience economy", "definition": "Pine and Gilmore's name for an economy where memorable experiences, not goods or services, carry the most value.", "land": "operations-business", "concept": "experience-economy"}
 ]
