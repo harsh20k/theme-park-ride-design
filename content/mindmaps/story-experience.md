@@ -13,6 +13,7 @@ mindmap
       IP Adaptation & Original Stories
       Theme vs Decoration
       Architecture as Character
+      Total-Immersion Lands
     spatial_storytelling[Spatial Storytelling]
       Weenies
       Forced Perspective
@@ -29,6 +30,7 @@ mindmap
       Tension & Release Curve
       Finale & Unload Design
       Kinetics & Motion in Scenes
+      Re-rideability
     scripts_and_performance[Scripts & Performance]
       Show Scripts & Spiels
       Cast & Character Role-Play

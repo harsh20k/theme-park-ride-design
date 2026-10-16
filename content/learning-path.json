@@ -1428,6 +1428,11 @@
     "level": "intermediate"
    },
    {
+    "concept": "immersive-lands",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
     "concept": "sightlines",
     "land": "story-experience",
     "level": "intermediate"
@@ -1464,6 +1469,11 @@
    },
    {
     "concept": "kinetics-in-scenes",
+    "land": "story-experience",
+    "level": "intermediate"
+   },
+   {
+    "concept": "rerideability",
     "land": "story-experience",
     "level": "intermediate"
    },
@@ -2471,6 +2481,11 @@
    },
    {
     "concept": "media-dark-ride",
+    "land": "ride-systems",
+    "level": "intermediate"
+   },
+   {
+    "concept": "multi-system-attractions",
     "land": "ride-systems",
     "level": "intermediate"
    },
@@ -3544,6 +3559,11 @@
     "level": "beginner"
    },
    {
+    "concept": "experience-economy",
+    "land": "operations-business",
+    "level": "beginner"
+   },
+   {
     "concept": "wait-time-data-and-apps",
     "land": "operations-business",
     "level": "beginner"
@@ -3620,6 +3640,11 @@
    },
    {
     "concept": "ip-licensing-economics",
+    "land": "operations-business",
+    "level": "intermediate"
+   },
+   {
+    "concept": "retail-as-attraction",
     "land": "operations-business",
     "level": "intermediate"
    },
@@ -3793,6 +3818,16 @@
     "level": "beginner"
    },
    {
+    "concept": "wizarding-world-of-harry-potter",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
+    "concept": "galaxys-edge",
+    "land": "history",
+    "level": "beginner"
+   },
+   {
     "concept": "tubular-steel-breakthrough",
     "land": "history",
     "level": "beginner"
@@ -3923,6 +3958,11 @@
    },
    {
     "concept": "vr-ar-in-parks",
+    "land": "ai-future",
+    "level": "beginner"
+   },
+   {
+    "concept": "galactica-vr-coaster",
     "land": "ai-future",
     "level": "beginner"
    },

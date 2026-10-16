@@ -144,6 +144,12 @@
   "concept": "vr-ar-in-parks"
  },
  {
+  "term": "Aurebesh",
+  "definition": "The written alphabet of Star Wars, used on signs, name tags and drink labels at Galaxy's Edge.",
+  "land": "story-experience",
+  "concept": "immersive-lands"
+ },
+ {
   "term": "Availability",
   "definition": "The share of scheduled operating time during which a ride is actually open to guests.",
   "land": "operations-business",
@@ -178,6 +184,12 @@
   "definition": "The capacity measure for a water park: how many people can safely be in the water and on the decks at once.",
   "land": "masterplanning",
   "concept": "water-parks"
+ },
+ {
+  "term": "Batuu",
+  "definition": "The fictional planet whose Black Spire Outpost is the setting of Star Wars: Galaxy's Edge.",
+  "land": "history",
+  "concept": "galaxys-edge"
  },
  {
   "term": "BDX droid",
@@ -556,6 +568,12 @@
   "definition": "A short survey interview with guests as they leave the park.",
   "land": "operations-business",
   "concept": "guest-research"
+ },
+ {
+  "term": "Experience economy",
+  "definition": "Pine and Gilmore's name for an economy where memorable experiences, not goods or services, carry the most value.",
+  "land": "operations-business",
+  "concept": "experience-economy"
  },
  {
   "term": "Fail-safe",
@@ -1020,6 +1038,12 @@
   "concept": "mood-boards"
  },
  {
+  "term": "Multi-system attraction",
+  "definition": "One attraction that chains several ride technologies, such as a simulator, a trackless vehicle and a drop.",
+  "land": "ride-systems",
+  "concept": "multi-system-attractions"
+ },
+ {
   "term": "Multibody dynamics",
   "definition": "Simulation that solves the equations of motion for linked bodies such as a train, its bogies, restraints and track.",
   "land": "ai-future",
@@ -1138,6 +1162,12 @@
   "definition": "The design requirement, in standards such as ASTM F2291, that a restraint and seat keep the rider safely in the vehicle through all ride forces.",
   "land": "human-factors",
   "concept": "restraint-fit"
+ },
+ {
+  "term": "Payoff",
+  "definition": "A reward a guest discovers, such as a view, prop, character or ride, placed to repay exploring.",
+  "land": "story-experience",
+  "concept": "reveal-and-concealment"
  },
  {
   "term": "Peak-end rule",
@@ -1318,6 +1348,12 @@
   "definition": "A low-stimulation space with dim lighting and soft seating where an overloaded guest can recover inside the park.",
   "land": "human-factors",
   "concept": "sensory-guides-and-quiet-rooms"
+ },
+ {
+  "term": "Re-rideability",
+  "definition": "How much a guest wants to ride again after the first time.",
+  "land": "story-experience",
+  "concept": "rerideability"
  },
  {
   "term": "Reach envelope",

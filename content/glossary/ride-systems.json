@@ -148,5 +148,11 @@
   "definition": "A park's published scale, from gentle to aggressive, telling guests how intense a ride is.",
   "land": "ride-systems",
   "concept": "ride-classification"
+ },
+ {
+  "term": "Multi-system attraction",
+  "definition": "One attraction that chains several ride technologies, such as a simulator, a trackless vehicle and a drop.",
+  "land": "ride-systems",
+  "concept": "multi-system-attractions"
  }
 ]

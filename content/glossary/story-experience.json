@@ -23,5 +23,8 @@
   {"term": "Interpretation", "definition": "The museum and park-ranger craft of helping visitors find meaning in a place, not just facts.", "land": "story-experience", "concept": "exhibit-interpretation"},
   {"term": "Agency", "definition": "The guest's sense that their choices change what the story shows them.", "land": "story-experience", "concept": "interactive-narrative"},
   {"term": "Walkthrough", "definition": "An attraction with no vehicle, where guests move through story rooms at their own pace.", "land": "story-experience", "concept": "story-rooms-and-walkthroughs"},
-  {"term": "Establishing shot", "definition": "A wide view that shows where the story is set, borrowed from film and used at land entrances.", "land": "story-experience", "concept": "cinematic-grammar"}
+  {"term": "Establishing shot", "definition": "A wide view that shows where the story is set, borrowed from film and used at land entrances.", "land": "story-experience", "concept": "cinematic-grammar"},
+  {"term": "Re-rideability", "definition": "How much a guest wants to ride again after the first time.", "land": "story-experience", "concept": "rerideability"},
+  {"term": "Payoff", "definition": "A reward a guest discovers, such as a view, prop, character or ride, placed to repay exploring.", "land": "story-experience", "concept": "reveal-and-concealment"},
+  {"term": "Aurebesh", "definition": "The written alphabet of Star Wars, used on signs, name tags and drink labels at Galaxy's Edge.", "land": "story-experience", "concept": "immersive-lands"}
 ]

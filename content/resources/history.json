@@ -1128,5 +1128,25 @@
     "level": "intermediate",
     "why_it_matters": "Ownership split: 57% Shanghai Shendi Group, 43% The Walt Disney Company.",
     "verified_on": "2026-10-12"
+  },
+  {
+    "id": "cbsnews-wizarding-world-opens-2010",
+    "title": "Harry Potter Theme Park Opens to Eager Muggles",
+    "url": "https://www.cbsnews.com/news/harry-potter-theme-park-opens-to-eager-muggles/",
+    "type": "article",
+    "land": "history",
+    "level": "beginner",
+    "why_it_matters": "Opening-day report citing the SEC-filed licence terms (nine years plus two five-year options, quality conditions) and Rowling's approval of the Butterbeer recipe.",
+    "verified_on": "2026-10-16"
+  },
+  {
+    "id": "techcrunch-disney-lucasfilm-2012",
+    "title": "Disney To Buy 'Star Wars' Maker Lucasfilm For $4.05 Billion",
+    "url": "https://techcrunch.com/2012/10/30/disney-to-acquire-lucasfilm/",
+    "type": "article",
+    "land": "history",
+    "level": "beginner",
+    "why_it_matters": "Report of the October 30, 2012 deal, half cash and half stock, which named theme parks among the uses for Lucasfilm's stories.",
+    "verified_on": "2026-10-16"
   }
 ]

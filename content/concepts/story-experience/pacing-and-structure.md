@@ -5,7 +5,7 @@ land: story-experience
 level: intermediate
 abstraction: super-concept
 parent: story-experience
-children: [queue-storytelling, ride-beat-sheet, tension-and-release, finale-design, kinetics-in-scenes]
+children: [queue-storytelling, ride-beat-sheet, tension-and-release, finale-design, kinetics-in-scenes, rerideability]
 relations:
   - { type: applies-to, target: peak-end-rule }
   - { type: applies-to, target: occupied-time }

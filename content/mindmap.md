@@ -8,20 +8,20 @@ Depth = abstraction: **Land → Super-concept → Concept → Sub-concept**. Eac
 
 | Land | Super | Concept | Sub | Total |
 |---|---|---|---|---|
-| Story & Experience Design (`story-experience`) | 5 | 25 | 6 | 36 |
+| Story & Experience Design (`story-experience`) | 5 | 27 | 6 | 38 |
 | Human Factors & Guest Psychology (`human-factors`) | 8 | 69 | 29 | 106 |
 | Masterplanning & Park Layout (`masterplanning`) | 5 | 29 | 1 | 35 |
-| Ride Systems & Types (`ride-systems`) | 6 | 45 | 5 | 56 |
+| Ride Systems & Types (`ride-systems`) | 6 | 46 | 5 | 57 |
 | Ride Engineering & Physics (`ride-engineering`) | 7 | 37 | 3 | 47 |
 | Safety & Standards (`safety-standards`) | 4 | 24 | 4 | 32 |
 | Show Technology (`show-technology`) | 6 | 31 | 0 | 37 |
 | Sensory & Environmental Design (`sensory-environment`) | 6 | 25 | 0 | 31 |
 | Design Process & Craft (`design-process`) | 6 | 28 | 0 | 34 |
-| Operations & Business (`operations-business`) | 5 | 28 | 3 | 36 |
-| History & Landmark Attractions (`history`) | 6 | 40 | 0 | 46 |
-| AI & Future Tech (`ai-future`) | 5 | 20 | 0 | 25 |
+| Operations & Business (`operations-business`) | 5 | 30 | 3 | 38 |
+| History & Landmark Attractions (`history`) | 6 | 42 | 0 | 48 |
+| AI & Future Tech (`ai-future`) | 5 | 21 | 0 | 26 |
 | Careers & Learning Path (`careers`) | 4 | 18 | 0 | 22 |
-| **All lands** | 73 | 419 | 51 | **543** |
+| **All lands** | 73 | 427 | 51 | **551** |
 
 ## Full mindmap
 
@@ -39,6 +39,7 @@ mindmap
         IP Adaptation & Original Stories
         Theme vs Decoration
         Architecture as Character
+        Total-Immersion Lands
       spatial_storytelling[Spatial Storytelling]
         Weenies
         Forced Perspective
@@ -55,6 +56,7 @@ mindmap
         Tension & Release Curve
         Finale & Unload Design
         Kinetics & Motion in Scenes
+        Re-rideability
       scripts_and_performance[Scripts & Performance]
         Show Scripts & Spiels
         Cast & Character Role-Play
@@ -238,6 +240,7 @@ mindmap
         Boat Dark Ride
         Suspended Dark Ride
         Screen-Based Dark Ride
+        Multi-System Attractions
       simulators_and_motion_bases[Simulators & Motion Bases]
         Motion Base
           Stewart Platform
@@ -483,6 +486,8 @@ mindmap
         Hotels, Resorts & Length of Stay
         IP Licensing Economics
         Industry Structure
+        The Experience Economy
+        Retail as Attraction
       data_and_technology[Data & Technology]
         Wait-Time Data & Apps
         Wearables & Guest Identity
@@ -515,6 +520,8 @@ mindmap
         Expedition Everest
         Mystic Manor
         Symbolica
+        The Wizarding World of Harry Potter
+        Star Wars: Galaxy's Edge
       coaster_milestones[Coaster Milestones]
         Tubular Steel Breakthrough
         Corkscrew & Loop Revival
@@ -556,6 +563,7 @@ mindmap
         Real-Time Engines in Attractions
         Personalized & Branching Rides
         Haptics & Next-Gen Motion
+        Galactica, the VR Coaster Experiment
       futures_and_ethics[Futures & Ethics]
         Data Privacy & Surveillance
         Human Craft vs Automation
@@ -602,6 +610,7 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `ip-adaptation` — IP Adaptation & Original Stories *(intermediate)*
   - `theme-vs-decoration` — Theme vs Decoration *(beginner)*
   - `architecture-as-character` — Architecture as Character *(intermediate)*
+  - `immersive-lands` — Total-Immersion Lands *(intermediate)*
 - `spatial-storytelling` — Spatial Storytelling *(beginner)*
   - `weenies` — Weenies *(beginner)*
   - `forced-perspective` — Forced Perspective *(beginner)*
@@ -618,6 +627,7 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `tension-and-release` — Tension & Release Curve *(intermediate)*
   - `finale-design` — Finale & Unload Design *(intermediate)*
   - `kinetics-in-scenes` — Kinetics & Motion in Scenes *(intermediate)*
+  - `rerideability` — Re-rideability *(intermediate)*
 - `scripts-and-performance` — Scripts & Performance *(intermediate)*
   - `show-scripts` — Show Scripts & Spiels *(beginner)*
   - `cast-role-play` — Cast & Character Role-Play *(beginner)*
@@ -807,6 +817,7 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `boat-dark-ride` — Boat Dark Ride *(beginner)*
   - `suspended-dark-ride` — Suspended Dark Ride *(intermediate)*
   - `media-dark-ride` — Screen-Based Dark Ride *(intermediate)*
+  - `multi-system-attractions` — Multi-System Attractions *(intermediate)*
 - `simulators-and-motion-bases` — Simulators & Motion Bases *(intermediate)*
   - `motion-base` — Motion Base *(intermediate)*
     - `stewart-platform` — Stewart Platform *(advanced)*
@@ -1064,6 +1075,8 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `length-of-stay` — Hotels, Resorts & Length of Stay *(intermediate)*
   - `ip-licensing-economics` — IP Licensing Economics *(intermediate)*
   - `industry-structure` — Industry Structure *(beginner)*
+  - `experience-economy` — The Experience Economy *(beginner)*
+  - `retail-as-attraction` — Retail as Attraction *(intermediate)*
 - `data-and-technology` — Data & Technology *(intermediate)*
   - `wait-time-data-and-apps` — Wait-Time Data & Apps *(beginner)*
   - `wearables-and-identity` — Wearables & Guest Identity *(intermediate)*
@@ -1098,6 +1111,8 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `expedition-everest` — Expedition Everest *(beginner)*
   - `mystic-manor` — Mystic Manor *(beginner)*
   - `symbolica` — Symbolica *(intermediate)*
+  - `wizarding-world-of-harry-potter` — The Wizarding World of Harry Potter *(beginner)*
+  - `galaxys-edge` — Star Wars: Galaxy's Edge *(beginner)*
 - `coaster-milestones` — Coaster Milestones *(beginner)*
   - `tubular-steel-breakthrough` — Tubular Steel Breakthrough *(beginner)*
   - `loop-revival` — Corkscrew & Loop Revival *(beginner)*
@@ -1141,6 +1156,7 @@ Format: `slug` — Title *(level)*. Indent shows hierarchy.
   - `real-time-engines` — Real-Time Engines in Attractions *(intermediate)*
   - `personalized-dark-rides` — Personalized & Branching Rides *(advanced)*
   - `haptics-and-next-gen-motion` — Haptics & Next-Gen Motion *(advanced)*
+  - `galactica-vr-coaster` — Galactica, the VR Coaster Experiment *(beginner)*
 - `futures-and-ethics` — Futures & Ethics *(intermediate)*
   - `data-privacy` — Data Privacy & Surveillance *(intermediate)*
   - `craft-vs-automation` — Human Craft vs Automation *(beginner)*

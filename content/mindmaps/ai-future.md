@@ -23,6 +23,7 @@ mindmap
       Real-Time Engines in Attractions
       Personalized & Branching Rides
       Haptics & Next-Gen Motion
+      Galactica, the VR Coaster Experiment
     futures_and_ethics[Futures & Ethics]
       Data Privacy & Surveillance
       Human Craft vs Automation
