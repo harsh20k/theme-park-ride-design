@@ -2039,3 +2039,40 @@ a:hover > span > .Home__arrow {
     font-size: 14px;
   }
 }
+
+/* ---------- review fixes: mobile header wrap, viewport-height canvas, search options ---------- */
+/* The canvas matches the visible viewport (dvh collapses with the browser toolbar); the
+   3D mapping uses the canvas height, so books stay on their rows on phones. */
+.PressCanvas__container,
+.PressCanvas {
+  height: 100vh;
+  height: 100dvh;
+}
+.PressCanvas {
+  height: 100vh !important;
+  height: 100dvh !important;
+}
+/* Long topic names and taglines wrap on narrow screens instead of forcing a horizontal scroll. */
+@media (max-width: 899px) {
+  .PressHeader__name,
+  .PressHeader__tagline {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .PressHeader__text {
+    max-width: calc(100vw - 200px);
+  }
+}
+html {
+  overflow-x: clip;
+}
+/* Search results are <li role="option"> now (direct children of the listbox), not buttons. */
+.Search__hit {
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.32px;
+}
+.Search__hit:focus-visible {
+  outline: 1px solid var(--color);
+  outline-offset: -1px;
+}

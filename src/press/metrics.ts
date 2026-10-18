@@ -13,6 +13,12 @@ export interface Metrics extends BookDims {
   visW: number
   pxPerUnit: number
   winW: number
+  /**
+   * Height used to map DOM rects (viewport pixels) to the canvas: the canvas's
+   * own height, not window.innerHeight. The two differ on phones with a
+   * collapsing toolbar (100vh/100dvh ≠ innerHeight); using the canvas height
+   * keeps the 3D books on their rows and anchors.
+   */
   winH: number
   /** Canvas size in CSS pixels. */
   cw: number
@@ -23,7 +29,7 @@ export function useMetrics(): Metrics {
   const { size } = useThree()
   return useMemo(() => {
     const winW = window.innerWidth
-    const winH = window.innerHeight
+    const winH = size.height
     const visH = 2 * CAM_Z * Math.tan(THREE.MathUtils.degToRad(FOV / 2))
     const pxPerUnit = size.height / visH
     const visW = size.width / pxPerUnit

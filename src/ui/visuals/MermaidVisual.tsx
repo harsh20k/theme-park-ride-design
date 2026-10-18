@@ -1,13 +1,14 @@
 import { useEffect, useId, useState } from 'react'
 import mermaid from 'mermaid'
+import { useBodyColors } from './useBodyColors'
 
-let initialised = false
-function init() {
-  if (initialised) return
-  initialised = true
-  // Dark, ink-on-cloth theme to sit on the press pages. Colours follow the page's --color.
-  const color = getComputedStyle(document.body).getPropertyValue('--color').trim() || '#f1e6d2'
-  const bg = getComputedStyle(document.body).getPropertyValue('--backgroundColor').trim() || '#201819'
+let initialisedFor = ''
+
+/** (Re)initialise mermaid whenever the page palette changes — the theme is baked into each render. */
+function init(color: string, bg: string) {
+  const key = `${color}|${bg}`
+  if (initialisedFor === key) return
+  initialisedFor = key
   mermaid.initialize({
     startOnLoad: false,
     securityLevel: 'strict',
@@ -73,12 +74,13 @@ function init() {
 
 export default function MermaidVisual({ source, alt }: { source: string; alt?: string }) {
   const id = useId().replace(/:/g, '')
+  const { color, bg } = useBodyColors()
   const [svg, setSvg] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     let cancelled = false
-    init()
+    init(color, bg)
     mermaid
       .render(`m${id}`, source)
       .then((r) => {
@@ -90,7 +92,7 @@ export default function MermaidVisual({ source, alt }: { source: string; alt?: s
     return () => {
       cancelled = true
     }
-  }, [source, id])
+  }, [source, id, color, bg])
 
   if (error) {
     return (

@@ -103,6 +103,9 @@ function liteGeometry(dims: BookDims): THREE.BufferGeometry {
   const key = `${W.toFixed(4)}|${L.toFixed(4)}|${T.toFixed(4)}`
   const hit = liteCache.get(key)
   if (hit) return hit
+  // Keep only the current size (see bookGeometry): dispose the previous entry.
+  for (const old of liteCache.values()) old.dispose()
+  liteCache.clear()
   const sh = sheetFor(dims)
   const boardT = T * 0.075
   const over = L * 0.012

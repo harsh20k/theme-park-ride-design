@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { lands } from '@/content/api'
-import { booksByLand, sectionsByLand } from './books'
+import { books, booksByLand, sectionsByLand } from './books'
 import { useShelf } from './store'
 import { PressHeaderBar } from './Shelf'
 import PressFooter from './Footer'
@@ -20,7 +20,7 @@ export default function Library() {
       <PressHeaderBar />
       <main className="Library" aria-label="Topics">
         <p className="Library__intro">
-          Thirteen shelves, five hundred and forty-three short books. Pick a topic to open its shelf, or search for anything.
+          {lands.length === 13 ? 'Thirteen' : lands.length} shelves, {books.length} short books. Pick a topic to open its shelf, or search for anything.
         </p>
         <ol className="Library__shelves">
           {lands.map((land) => {

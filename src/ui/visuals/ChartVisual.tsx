@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import vegaEmbed, { type VisualizationSpec } from 'vega-embed'
+import { useBodyColors } from './useBodyColors'
 
 const FONT = 'Work Sans, system-ui, sans-serif'
 
@@ -41,6 +42,8 @@ function paperConfig(color: string): Record<string, unknown> {
 export default function ChartVisual({ source, alt }: { source: string; alt?: string }) {
   const ref = useRef<HTMLDivElement>(null)
   const [error, setError] = useState<string | null>(null)
+  // Live page ink: re-embed when the reading flow re-tints the page for the next book.
+  const { color } = useBodyColors()
 
   useEffect(() => {
     const el = ref.current
@@ -53,7 +56,6 @@ export default function ChartVisual({ source, alt }: { source: string; alt?: str
       setError(`chart spec is not valid JSON: ${(e as Error).message}`)
       return
     }
-    const color = getComputedStyle(el).getPropertyValue('--color').trim() || '#f1e6d2'
     const specWithSize = { width: 'container', ...spec, config: { ...paperConfig(color), ...(spec as { config?: object }).config } } as unknown as VisualizationSpec
     vegaEmbed(el, specWithSize, { actions: false, renderer: 'svg', ast: true })
       .then((r) => {
@@ -66,7 +68,7 @@ export default function ChartVisual({ source, alt }: { source: string; alt?: str
       })
       .catch((e) => setError(String(e?.message ?? e)))
     return () => result?.finalize()
-  }, [source, alt])
+  }, [source, alt, color])
 
   if (error) return <pre className="visual__error">chart could not be drawn: {error}</pre>
   return <div className="visual__chart" ref={ref} />

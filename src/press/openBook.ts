@@ -4,6 +4,20 @@ import { useShelf } from './store'
 
 const FADE_MS = 280
 
+let pendingTimer: number | null = null
+
+/** Cancel a fade-then-open that has not fired yet (the reader left the page first). */
+export function cancelPendingOpen() {
+  if (pendingTimer !== null) {
+    window.clearTimeout(pendingTimer)
+    pendingTimer = null
+  }
+  if (useShelf.getState().turning) {
+    useShelf.getState().setTurning(false)
+    document.body.classList.remove('is-turning')
+  }
+}
+
 /**
  * Open a book from a link. From the shelf this is a plain navigation (the
  * book stands up from its row). From inside another book the page would
@@ -35,7 +49,8 @@ export function useOpenBook() {
       }
       st.setTurning(true)
       document.body.classList.add('is-turning')
-      window.setTimeout(() => {
+      pendingTimer = window.setTimeout(() => {
+        pendingTimer = null
         swap()
         useShelf.getState().bumpCut()
         // Two frames: one for React to lay out the new flow, one for the books to take their places.

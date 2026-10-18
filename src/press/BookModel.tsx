@@ -238,6 +238,15 @@ export function bookGeometry({ W, L, T }: BookDims): BookGeometry {
   const key = `${W.toFixed(4)}|${L.toFixed(4)}|${T.toFixed(4)}`
   const hit = geoCache.get(key)
   if (hit) return hit
+  // All books share one size, so only the current size is worth keeping: free
+  // the previous one instead of leaking a set of GPU buffers per resize step.
+  for (const old of geoCache.values()) {
+    old.board.dispose()
+    old.hinge.dispose()
+    old.pages.dispose()
+    old.spine.dispose()
+  }
+  geoCache.clear()
   const boardT = T * 0.075
   const over = L * 0.012
   const hingeW = W * HINGE_FRAC
